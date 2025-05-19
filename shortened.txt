@@ -1,0 +1,96 @@
+Heidenheim
+Union Berlin
+Mainz
+Milan
+Monza
+Fiorentina
+Bournemouth
+Auxerre
+Monaco
+Roma
+Saint-Etienne
+Angers
+Arsenal
+Aston Villa
+Atalanta
+Athletic Bilbao
+Atletico Madrid
+Bayer Leverkusen
+Bayern Munich
+Bologna
+Borussia Dortmund
+Borussia Monchengladbach
+Brentford
+Brighton
+Osasuna
+Leganes
+Cagliari
+Celta Vigo
+Chelsea
+Como
+Crystal Palace
+Deportivo
+Frankfurt
+Everton
+Augsburg
+Barcelona
+Empoli
+Nantes
+St Pauli
+Toulouse
+Fulham
+Genoa
+Getafe
+Girona
+Verona
+Holstein Kiel
+Inter
+Ipswich
+Juventus
+Lille
+Le Havre
+Leicester
+Liverpool
+Man City
+Man United
+Montpellier
+Newcastle
+Nottingham Forest
+Nice
+Lyon
+Marseille
+PSG
+Parma
+Leipzig
+Lens
+Strasbourg
+Espanyol
+Mallorca
+Rayo Vallecano
+Real Betis
+Real Madrid
+Real Sociedad
+Real Valladolid
+Freiburg
+Lazio
+Napoli
+Werder Bremen
+Sevilla
+Southampton
+Brest
+Reims
+Rennes
+Hoffenheim
+Torino
+Tottenham
+Las Palmas
+Lecce
+Udinese
+Valencia
+Venezia
+Stuttgart
+Bochum
+Wolfsburg
+Villarreal
+West Ham
+Wolves

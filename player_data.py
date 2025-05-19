@@ -1,6 +1,8 @@
 import pandas as pd
 from collections import defaultdict
 import unicodedata
+from team_map import TEAM_NAME_MAP
+
 
 # Helper function to remove accents
 def strip_accents(text):
@@ -11,6 +13,11 @@ def strip_accents(text):
         )
     return text
 
+def clean_team_name(team):
+    team = strip_accents(team.strip())
+    if team in TEAM_NAME_MAP:
+        return TEAM_NAME_MAP[team]
+    return team
 
 # === LOAD CSV FILES ===
 transfers = pd.read_csv("transfers.csv")
@@ -50,7 +57,7 @@ for _, row in merged.iterrows():
     player_id = row['player_id']
     name = strip_accents(row['name'])
     country = strip_accents(row['citizenship_1'])
-    joined = strip_accents(row['joined_club'])
+    joined = clean_team_name(row['joined_club'])
 
 
     if player_id not in player_dict:
@@ -82,5 +89,7 @@ df_out.to_csv("cleaned_players.csv", index=False)
 
 print("✅ Saved cleaned_players.csv at:")
 print(os.path.abspath("cleaned_players.csv"))
+df = pd.read_csv("cleaned_players.csv")
+
 
 
