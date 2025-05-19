@@ -1,97 +1,97 @@
-id,url,club_name,id_current_league,current_mv
-5,https://www.transfermarkt.com/ac-mailand/startseite/verein/5,Milan,IT1,571150000
-11,https://www.transfermarkt.com/fc-arsenal/startseite/verein/11,Arsenal,GB1,1150000000
-12,https://www.transfermarkt.com/as-rom/startseite/verein/12,Roma,IT1,273650000
-13,https://www.transfermarkt.com/atletico-madrid/startseite/verein/13,Atletico Madrid,ES1,454150000
-15,https://www.transfermarkt.com/bayer-04-leverkusen/startseite/verein/15,Bayer Leverkusen,L1,676050000
-16,https://www.transfermarkt.com/borussia-dortmund/startseite/verein/16,Borussia Dortmund,L1,471100000
-18,https://www.transfermarkt.com/borussia-monchengladbach/startseite/verein/18,Borussia Monchengladbach,L1,164650000
-24,https://www.transfermarkt.com/eintracht-frankfurt/startseite/verein/24,Frankfurt,L1,268050000
-27,https://www.transfermarkt.com/bayern-munich/startseite/verein/27,Bayern Munich,L1,1050000000
-29,https://www.transfermarkt.com/fc-everton/startseite/verein/29,Everton,GB1,311800000
-31,https://www.transfermarkt.com/fc-liverpool/startseite/verein/31,Liverpool,GB1,949300000
-35,https://www.transfermarkt.com/fc-st-pauli/startseite/verein/35,St Pauli,L1,37880000
-39,https://www.transfermarkt.com/1-fsv-mainz-05/startseite/verein/39,Mainz,L1,99730000
-46,https://www.transfermarkt.com/inter-milan/startseite/verein/46,Inter,IT1,705550000
-60,https://www.transfermarkt.com/sc-freiburg/startseite/verein/60,Freiburg,L1,181500000
-79,https://www.transfermarkt.com/vfb-stuttgart/startseite/verein/79,Stuttgart,L1,241430000
-80,https://www.transfermarkt.com/vfl-bochum/startseite/verein/80,Bochum,L1,49530000
-82,https://www.transfermarkt.com/vfl-wolfsburg/startseite/verein/82,Wolfsburg,L1,219800000
-86,https://www.transfermarkt.com/sv-werder-bremen/startseite/verein/86,Werder Bremen,L1,109250000
-89,https://www.transfermarkt.com/1-fc-union-berlin/startseite/verein/89,Union Berlin,L1,128330000
-130,https://www.transfermarkt.com/parma-calcio-1913/startseite/verein/130,Parma,IT1,86300000
-131,https://www.transfermarkt.com/fc-barcelona/startseite/verein/131,Barcelona,ES1,890500000
-148,https://www.transfermarkt.com/tottenham-hotspur/startseite/verein/148,Tottenham,GB1,807700000
-150,https://www.transfermarkt.com/real-betis-sevilla/startseite/verein/150,Real Betis,ES1,153200000
-162,https://www.transfermarkt.com/as-monaco/startseite/verein/162,Monaco,FR1,387200000
-167,https://www.transfermarkt.com/fc-augsburg/startseite/verein/167,Augsburg,L1,106950000
-180,https://www.transfermarkt.com/fc-southampton/startseite/verein/180,Southampton,GB1,222800000
-237,https://www.transfermarkt.com/rcd-mallorca/startseite/verein/237,Mallorca,ES1,87200000
-244,https://www.transfermarkt.com/olympique-marseille/startseite/verein/244,Marseille,FR1,255000000
-252,https://www.transfermarkt.com/genua-cfc/startseite/verein/252,Genoa,IT1,152000000
-269,https://www.transfermarkt.com/holstein-kiel/startseite/verein/269,Holstein Kiel,L1,30900000
-273,https://www.transfermarkt.com/fc-stade-rennes/startseite/verein/273,Rennes,FR1,233450000
-276,https://www.transfermarkt.com/hellas-verona/startseite/verein/276,Verona,IT1,58450000
-281,https://www.transfermarkt.com/manchester-city/startseite/verein/281,Man City,GB1,1430000000
-290,https://www.transfermarkt.com/aj-auxerre/startseite/verein/290,Auxerre,FR1,33950000
-331,https://www.transfermarkt.com/ca-osasuna/startseite/verein/331,Osasuna,ES1,100200000
-366,https://www.transfermarkt.com/real-valladolid/startseite/verein/366,Real Valladolid,ES1,46750000
-367,https://www.transfermarkt.com/rayo-vallecano/startseite/verein/367,Rayo Vallecano,ES1,58350000
-368,https://www.transfermarkt.com/fc-sevilla/startseite/verein/368,Sevilla,ES1,171600000
-379,https://www.transfermarkt.com/west-ham-united/startseite/verein/379,West Ham,GB1,454500000
-398,https://www.transfermarkt.com/lazio-rom/startseite/verein/398,Lazio,IT1,230630000
-405,https://www.transfermarkt.com/aston-villa/startseite/verein/405,Aston Villa,GB1,655200000
-410,https://www.transfermarkt.com/udinese-calcio/startseite/verein/410,Udinese,IT1,148730000
-415,https://www.transfermarkt.com/fc-toulouse/startseite/verein/415,Toulouse,FR1,93750000
-416,https://www.transfermarkt.com/fc-turin/startseite/verein/416,Torino,IT1,173100000
-417,https://www.transfermarkt.com/ogc-nizza/startseite/verein/417,Nice,FR1,236050000
-418,https://www.transfermarkt.com/real-madrid/startseite/verein/418,Real Madrid,ES1,1360000000
-430,https://www.transfermarkt.com/ac-florenz/startseite/verein/430,Fiorentina,IT1,257750000
-472,https://www.transfermarkt.com/ud-las-palmas/startseite/verein/472,Las Palmas,ES1,92150000
-506,https://www.transfermarkt.com/juventus-fc/startseite/verein/506,Juventus,IT1,569500000
-533,https://www.transfermarkt.com/tsg-1899-hoffenheim/startseite/verein/533,Hoffenheim,L1,147050000
-543,https://www.transfermarkt.com/wolverhampton-wanderers/startseite/verein/543,Wolves,GB1,419600000
-583,https://www.transfermarkt.com/paris-saint-germain/startseite/verein/583,PSG,FR1,958200000
-607,https://www.transfermarkt.com/venezia-fc/startseite/verein/607,Venezia,IT1,51130000
-618,https://www.transfermarkt.com/as-saint-etienne/startseite/verein/618,Saint-Etienne,FR1,34950000
-621,https://www.transfermarkt.com/athletic-bilbao/startseite/verein/621,Athletic Bilbao,ES1,313400000
-631,https://www.transfermarkt.com/fc-chelsea/startseite/verein/631,Chelsea,GB1,1090000000
-667,https://www.transfermarkt.com/rc-strassburg-alsace/startseite/verein/667,Strasbourg,FR1,104400000
-677,https://www.transfermarkt.com/ipswich-town/startseite/verein/677,Ipswich,GB1,90550000
-681,https://www.transfermarkt.com/real-sociedad-san-sebastian/startseite/verein/681,Real Sociedad,ES1,430200000
-703,https://www.transfermarkt.com/nottingham-forest/startseite/verein/703,Nottingham Forest,GB1,359200000
-714,https://www.transfermarkt.com/espanyol-barcelona/startseite/verein/714,Espanyol,ES1,40800000
-738,https://www.transfermarkt.com/ac-le-havre/startseite/verein/738,Le Havre,FR1,64050000
-749,https://www.transfermarkt.com/fc-empoli/startseite/verein/749,Empoli,IT1,44830000
-762,https://www.transfermarkt.com/newcastle-united/startseite/verein/762,Newcastle,GB1,656650000
-800,https://www.transfermarkt.com/atalanta-bergamo/startseite/verein/800,Atalanta,IT1,436100000
-826,https://www.transfermarkt.com/rc-lens/startseite/verein/826,Lens,FR1,198850000
-873,https://www.transfermarkt.com/crystal-palace/startseite/verein/873,Crystal Palace,GB1,420500000
-931,https://www.transfermarkt.com/fc-fulham/startseite/verein/931,Fulham,GB1,256300000
-940,https://www.transfermarkt.com/celta-vigo/startseite/verein/940,Celta Vigo,ES1,89100000
-969,https://www.transfermarkt.com/montpellier-hsc/startseite/verein/969,Montpellier,FR1,91400000
-985,https://www.transfermarkt.com/manchester-united/startseite/verein/985,Man United,GB1,818150000
-989,https://www.transfermarkt.com/afc-bournemouth/startseite/verein/989,Bournemouth,GB1,373100000
-995,https://www.transfermarkt.com/fc-nantes/startseite/verein/995,Nantes,FR1,79950000
-1003,https://www.transfermarkt.com/leicester-city/startseite/verein/1003,Leicester,GB1,191200000
-1005,https://www.transfermarkt.com/us-lecce/startseite/verein/1005,Lecce,IT1,92500000
-1025,https://www.transfermarkt.com/fc-bologna/startseite/verein/1025,Bologna,IT1,295800000
-1041,https://www.transfermarkt.com/olympique-lyon/startseite/verein/1041,Lyon,FR1,281000000
-1047,https://www.transfermarkt.com/como-1907/startseite/verein/1047,Como,IT1,60350000
-1049,https://www.transfermarkt.com/fc-valencia/startseite/verein/1049,Valencia,ES1,249200000
-1050,https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050,Villarreal,ES1,233200000
-1082,https://www.transfermarkt.com/losc-lille/startseite/verein/1082,Lille,FR1,236900000
-1108,https://www.transfermarkt.com/deportivo-alaves/startseite/verein/1108,Deportivo,ES1,76600000
-1148,https://www.transfermarkt.com/fc-brentford/startseite/verein/1148,Brentford,GB1,419730000
-1237,https://www.transfermarkt.com/brighton-amp-hove-albion/startseite/verein/1237,Brighton,GB1,586100000
-1244,https://www.transfermarkt.com/cd-leganes/startseite/verein/1244,Leganes,ES1,31150000
-1390,https://www.transfermarkt.com/cagliari-calcio/startseite/verein/1390,Cagliari,IT1,71350000
-1420,https://www.transfermarkt.com/sco-angers/startseite/verein/1420,Angers,FR1,26100000
-1421,https://www.transfermarkt.com/stade-reims/startseite/verein/1421,Reims,FR1,115500000
-2036,https://www.transfermarkt.com/1-fc-heidenheim-1846/startseite/verein/2036,Heidenheim,L1,46530000
-2919,https://www.transfermarkt.com/ac-monza/startseite/verein/2919,Monza,IT1,77080000
-3709,https://www.transfermarkt.com/fc-getafe/startseite/verein/3709,Getafe,ES1,70700000
-3911,https://www.transfermarkt.com/stade-brest-29/startseite/verein/3911,Brest,FR1,84950000
-6195,https://www.transfermarkt.com/ssc-neapel/startseite/verein/6195,Napoli,IT1,471300000
-12321,https://www.transfermarkt.com/fc-girona/startseite/verein/12321,Girona,ES1,198500000
-23826,https://www.transfermarkt.com/rasenballsport-leipzig/startseite/verein/23826,Leipzig,L1,460130000
+"id","url","club_name","id_current_league","current_mv"
+5,"https://www.transfermarkt.com/ac-mailand/startseite/verein/5","Milan","IT1",571150000
+11,"https://www.transfermarkt.com/fc-arsenal/startseite/verein/11","Arsenal","GB1",1150000000
+12,"https://www.transfermarkt.com/as-rom/startseite/verein/12","Roma","IT1",273650000
+13,"https://www.transfermarkt.com/atletico-madrid/startseite/verein/13","Atletico Madrid","ES1",454150000
+15,"https://www.transfermarkt.com/bayer-04-leverkusen/startseite/verein/15","Bayer Leverkusen","L1",676050000
+16,"https://www.transfermarkt.com/borussia-dortmund/startseite/verein/16","Borussia Dortmund","L1",471100000
+18,"https://www.transfermarkt.com/borussia-monchengladbach/startseite/verein/18","Borussia Monchengladbach","L1",164650000
+24,"https://www.transfermarkt.com/eintracht-frankfurt/startseite/verein/24","Frankfurt","L1",268050000
+27,"https://www.transfermarkt.com/bayern-munich/startseite/verein/27","Bayern Munich","L1",1050000000
+29,"https://www.transfermarkt.com/fc-everton/startseite/verein/29","Everton","GB1",311800000
+31,"https://www.transfermarkt.com/fc-liverpool/startseite/verein/31","Liverpool","GB1",949300000
+35,"https://www.transfermarkt.com/fc-st-pauli/startseite/verein/35","St Pauli","L1",37880000
+39,"https://www.transfermarkt.com/1-fsv-mainz-05/startseite/verein/39","Mainz","L1",99730000
+46,"https://www.transfermarkt.com/inter-milan/startseite/verein/46","Inter","IT1",705550000
+60,"https://www.transfermarkt.com/sc-freiburg/startseite/verein/60","Freiburg","L1",181500000
+79,"https://www.transfermarkt.com/vfb-stuttgart/startseite/verein/79","Stuttgart","L1",241430000
+80,"https://www.transfermarkt.com/vfl-bochum/startseite/verein/80","Bochum","L1",49530000
+82,"https://www.transfermarkt.com/vfl-wolfsburg/startseite/verein/82","Wolfsburg","L1",219800000
+86,"https://www.transfermarkt.com/sv-werder-bremen/startseite/verein/86","Werder Bremen","L1",109250000
+89,"https://www.transfermarkt.com/1-fc-union-berlin/startseite/verein/89","Union Berlin","L1",128330000
+130,"https://www.transfermarkt.com/parma-calcio-1913/startseite/verein/130","Parma","IT1",86300000
+131,"https://www.transfermarkt.com/fc-barcelona/startseite/verein/131","Barcelona","ES1",890500000
+148,"https://www.transfermarkt.com/tottenham-hotspur/startseite/verein/148","Tottenham","GB1",807700000
+150,"https://www.transfermarkt.com/real-betis-sevilla/startseite/verein/150","Real Betis","ES1",153200000
+162,"https://www.transfermarkt.com/as-monaco/startseite/verein/162","Monaco","FR1",387200000
+167,"https://www.transfermarkt.com/fc-augsburg/startseite/verein/167","Augsburg","L1",106950000
+180,"https://www.transfermarkt.com/fc-southampton/startseite/verein/180","Southampton","GB1",222800000
+237,"https://www.transfermarkt.com/rcd-mallorca/startseite/verein/237","Mallorca","ES1",87200000
+244,"https://www.transfermarkt.com/olympique-marseille/startseite/verein/244","Marseille","FR1",255000000
+252,"https://www.transfermarkt.com/genua-cfc/startseite/verein/252","Genoa","IT1",152000000
+269,"https://www.transfermarkt.com/holstein-kiel/startseite/verein/269","Holstein Kiel","L1",30900000
+273,"https://www.transfermarkt.com/fc-stade-rennes/startseite/verein/273","Rennes","FR1",233450000
+276,"https://www.transfermarkt.com/hellas-verona/startseite/verein/276","Verona","IT1",58450000
+281,"https://www.transfermarkt.com/manchester-city/startseite/verein/281","Man City","GB1",1430000000
+290,"https://www.transfermarkt.com/aj-auxerre/startseite/verein/290","Auxerre","FR1",33950000
+331,"https://www.transfermarkt.com/ca-osasuna/startseite/verein/331","Osasuna","ES1",100200000
+366,"https://www.transfermarkt.com/real-valladolid/startseite/verein/366","Real Valladolid","ES1",46750000
+367,"https://www.transfermarkt.com/rayo-vallecano/startseite/verein/367","Rayo Vallecano","ES1",58350000
+368,"https://www.transfermarkt.com/fc-sevilla/startseite/verein/368","Sevilla","ES1",171600000
+379,"https://www.transfermarkt.com/west-ham-united/startseite/verein/379","West Ham","GB1",454500000
+398,"https://www.transfermarkt.com/lazio-rom/startseite/verein/398","Lazio","IT1",230630000
+405,"https://www.transfermarkt.com/aston-villa/startseite/verein/405","Aston Villa","GB1",655200000
+410,"https://www.transfermarkt.com/udinese-calcio/startseite/verein/410","Udinese","IT1",148730000
+415,"https://www.transfermarkt.com/fc-toulouse/startseite/verein/415","Toulouse","FR1",93750000
+416,"https://www.transfermarkt.com/fc-turin/startseite/verein/416","Torino","IT1",173100000
+417,"https://www.transfermarkt.com/ogc-nizza/startseite/verein/417","Nice","FR1",236050000
+418,"https://www.transfermarkt.com/real-madrid/startseite/verein/418","Real Madrid","ES1",1360000000
+430,"https://www.transfermarkt.com/ac-florenz/startseite/verein/430","Fiorentina","IT1",257750000
+472,"https://www.transfermarkt.com/ud-las-palmas/startseite/verein/472","Las Palmas","ES1",92150000
+506,"https://www.transfermarkt.com/juventus-fc/startseite/verein/506","Juventus","IT1",569500000
+533,"https://www.transfermarkt.com/tsg-1899-hoffenheim/startseite/verein/533","Hoffenheim","L1",147050000
+543,"https://www.transfermarkt.com/wolverhampton-wanderers/startseite/verein/543","Wolves","GB1",419600000
+583,"https://www.transfermarkt.com/paris-saint-germain/startseite/verein/583","PSG","FR1",958200000
+607,"https://www.transfermarkt.com/venezia-fc/startseite/verein/607","Venezia","IT1",51130000
+618,"https://www.transfermarkt.com/as-saint-etienne/startseite/verein/618","Saint-Etienne","FR1",34950000
+621,"https://www.transfermarkt.com/athletic-bilbao/startseite/verein/621","Athletic Bilbao","ES1",313400000
+631,"https://www.transfermarkt.com/fc-chelsea/startseite/verein/631","Chelsea","GB1",1090000000
+667,"https://www.transfermarkt.com/rc-strassburg-alsace/startseite/verein/667","Strasbourg","FR1",104400000
+677,"https://www.transfermarkt.com/ipswich-town/startseite/verein/677","Ipswich","GB1",90550000
+681,"https://www.transfermarkt.com/real-sociedad-san-sebastian/startseite/verein/681","Real Sociedad","ES1",430200000
+703,"https://www.transfermarkt.com/nottingham-forest/startseite/verein/703","Nottingham Forest","GB1",359200000
+714,"https://www.transfermarkt.com/espanyol-barcelona/startseite/verein/714","Espanyol","ES1",40800000
+738,"https://www.transfermarkt.com/ac-le-havre/startseite/verein/738","Le Havre","FR1",64050000
+749,"https://www.transfermarkt.com/fc-empoli/startseite/verein/749","Empoli","IT1",44830000
+762,"https://www.transfermarkt.com/newcastle-united/startseite/verein/762","Newcastle","GB1",656650000
+800,"https://www.transfermarkt.com/atalanta-bergamo/startseite/verein/800","Atalanta","IT1",436100000
+826,"https://www.transfermarkt.com/rc-lens/startseite/verein/826","Lens","FR1",198850000
+873,"https://www.transfermarkt.com/crystal-palace/startseite/verein/873","Crystal Palace","GB1",420500000
+931,"https://www.transfermarkt.com/fc-fulham/startseite/verein/931","Fulham","GB1",256300000
+940,"https://www.transfermarkt.com/celta-vigo/startseite/verein/940","Celta Vigo","ES1",89100000
+969,"https://www.transfermarkt.com/montpellier-hsc/startseite/verein/969","Montpellier","FR1",91400000
+985,"https://www.transfermarkt.com/manchester-united/startseite/verein/985","Man United","GB1",818150000
+989,"https://www.transfermarkt.com/afc-bournemouth/startseite/verein/989","Bournemouth","GB1",373100000
+995,"https://www.transfermarkt.com/fc-nantes/startseite/verein/995","Nantes","FR1",79950000
+1003,"https://www.transfermarkt.com/leicester-city/startseite/verein/1003","Leicester","GB1",191200000
+1005,"https://www.transfermarkt.com/us-lecce/startseite/verein/1005","Lecce","IT1",92500000
+1025,"https://www.transfermarkt.com/fc-bologna/startseite/verein/1025","Bologna","IT1",295800000
+1041,"https://www.transfermarkt.com/olympique-lyon/startseite/verein/1041","Lyon","FR1",281000000
+1047,"https://www.transfermarkt.com/como-1907/startseite/verein/1047","Como","IT1",60350000
+1049,"https://www.transfermarkt.com/fc-valencia/startseite/verein/1049","Valencia","ES1",249200000
+1050,"https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050","Villarreal","ES1",233200000
+1082,"https://www.transfermarkt.com/losc-lille/startseite/verein/1082","Lille","FR1",236900000
+1108,"https://www.transfermarkt.com/deportivo-alaves/startseite/verein/1108","Deportivo","ES1",76600000
+1148,"https://www.transfermarkt.com/fc-brentford/startseite/verein/1148","Brentford","GB1",419730000
+1237,"https://www.transfermarkt.com/brighton-amp-hove-albion/startseite/verein/1237","Brighton","GB1",586100000
+1244,"https://www.transfermarkt.com/cd-leganes/startseite/verein/1244","Leganes","ES1",31150000
+1390,"https://www.transfermarkt.com/cagliari-calcio/startseite/verein/1390","Cagliari","IT1",71350000
+1420,"https://www.transfermarkt.com/sco-angers/startseite/verein/1420","Angers","FR1",26100000
+1421,"https://www.transfermarkt.com/stade-reims/startseite/verein/1421","Reims","FR1",115500000
+2036,"https://www.transfermarkt.com/1-fc-heidenheim-1846/startseite/verein/2036","Heidenheim","L1",46530000
+2919,"https://www.transfermarkt.com/ac-monza/startseite/verein/2919","Monza","IT1",77080000
+3709,"https://www.transfermarkt.com/fc-getafe/startseite/verein/3709","Getafe","ES1",70700000
+3911,"https://www.transfermarkt.com/stade-brest-29/startseite/verein/3911","Brest","FR1",84950000
+6195,"https://www.transfermarkt.com/ssc-neapel/startseite/verein/6195","Napoli","IT1",471300000
+12321,"https://www.transfermarkt.com/fc-girona/startseite/verein/12321","Girona","ES1",198500000
+23826,"https://www.transfermarkt.com/rasenballsport-leipzig/startseite/verein/23826","Leipzig","L1",460130000
