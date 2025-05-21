@@ -4,9 +4,10 @@ import random
 df = pd.read_csv("cleaned_players.csv")
 
 easy_clubs = [
-    "Arsenal FC", "Chelsea FC", "Liverpool FC", "Manchester United",
-    "Real Madrid", "FC Barcelona", "Juventus FC", "FC Bayern Munich",
-    "Paris Saint-Germain", "AC Milan", "Inter Milan", "Borussia Dortmund"
+    "Arsenal", "Chelsea", "Tottenham", "Man United",
+    "Man City", "Liverpool", "PSG", "Barcelona", "Real Madrid",
+    "Atletico Madrid", "Bayern Munich", "Borussia Dortmund",
+    "Juventus", "Milan", "Inter"
 ]
 
 
