@@ -1,7 +1,6 @@
 import pandas as pd
 import random
 
-# Load cleaned data
 df = pd.read_csv("cleaned_players.csv")
 
 easy_clubs = [
