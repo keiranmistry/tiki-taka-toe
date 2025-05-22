@@ -156,8 +156,8 @@ player_id,name,country,team
 115,Victor Ikpeba,Nigeria,Real Betis Balompie
 115,Victor Ikpeba,Nigeria,Borussia Dortmund
 115,Victor Ikpeba,Nigeria,AS Monaco
-116,Sead Kapetanovic,Bosnia-Herzegovina,VfL Wolfsburg
-116,Sead Kapetanovic,Bosnia-Herzegovina,Borussia Dortmund
+116,Sead Kapetanovic,Bosnia and Herzegovina,VfL Wolfsburg
+116,Sead Kapetanovic,Bosnia and Herzegovina,Borussia Dortmund
 119,Jurgen Kohler,Germany,Bayern Munich
 119,Jurgen Kohler,Germany,Borussia Dortmund
 119,Jurgen Kohler,Germany,Juventus FC
@@ -209,8 +209,8 @@ player_id,name,country,team
 162,Marc Ziegler,Germany,VfB Stuttgart
 162,Marc Ziegler,Germany,Borussia Dortmund
 163,Patrick Falk,Germany,Eintracht Frankfurt
-164,Bruno Akrapovic,Bosnia-Herzegovina,VfL Wolfsburg
-164,Bruno Akrapovic,Bosnia-Herzegovina,1.FSV Mainz 05
+164,Bruno Akrapovic,Bosnia and Herzegovina,VfL Wolfsburg
+164,Bruno Akrapovic,Bosnia and Herzegovina,1.FSV Mainz 05
 165,Christian Beeck,Germany,1.FC Union Berlin
 170,Sebastian Helbig,Germany,Bayer 04 Leverkusen
 173,Toralf Konetzke,Germany,FC St. Pauli
@@ -256,9 +256,9 @@ player_id,name,country,team
 213,Willy Sagnol,France,Bayern Munich
 213,Willy Sagnol,France,AS Saint-Etienne
 213,Willy Sagnol,France,AS Monaco
-214,Hasan Salihamidzic,Bosnia-Herzegovina,Bayern Munich
-214,Hasan Salihamidzic,Bosnia-Herzegovina,VfL Wolfsburg
-214,Hasan Salihamidzic,Bosnia-Herzegovina,Juventus FC
+214,Hasan Salihamidzic,Bosnia and Herzegovina,Bayern Munich
+214,Hasan Salihamidzic,Bosnia and Herzegovina,VfL Wolfsburg
+214,Hasan Salihamidzic,Bosnia and Herzegovina,Juventus FC
 215,Roque Santa Cruz,Paraguay,Bayern Munich
 215,Roque Santa Cruz,Paraguay,Real Betis Balompie
 215,Roque Santa Cruz,Paraguay,Manchester City
@@ -327,9 +327,9 @@ player_id,name,country,team
 287,Benjamin Wingerter,Germany,1.FC Union Berlin
 290,Frank Kinkel,Germany,1.FSV Mainz 05
 291,Christof Babatz,Germany,1.FSV Mainz 05
-292,Sergej Barbarez,Bosnia-Herzegovina,1.FC Union Berlin
-292,Sergej Barbarez,Bosnia-Herzegovina,Borussia Dortmund
-292,Sergej Barbarez,Bosnia-Herzegovina,Bayer 04 Leverkusen
+292,Sergej Barbarez,Bosnia and Herzegovina,1.FC Union Berlin
+292,Sergej Barbarez,Bosnia and Herzegovina,Borussia Dortmund
+292,Sergej Barbarez,Bosnia and Herzegovina,Bayer 04 Leverkusen
 293,Marinus Bester,Germany,SV Werder Bremen
 294,Hans Jorg Butt,Germany,Bayern Munich
 294,Hans Jorg Butt,Germany,Bayer 04 Leverkusen
@@ -745,7 +745,7 @@ player_id,name,country,team
 660,Waldemar Kryger,Poland,VfL Wolfsburg
 661,Dietmar Kuhbauer,Austria,Real Sociedad
 661,Dietmar Kuhbauer,Austria,VfL Wolfsburg
-662,Stephan Loboue,Cote d'Ivoire,VfL Wolfsburg
+662,Stephan Loboue,Ivory Coast,VfL Wolfsburg
 663,Marcel Maltritz,Germany,VfL Wolfsburg
 663,Marcel Maltritz,Germany,VfL Bochum
 664,Tomislav Maric,Croatia,TSG 1899 Hoffenheim
@@ -786,7 +786,7 @@ player_id,name,country,team
 685,Massimo Cannizzaro,Italy,Holstein Kiel
 686,Sead Ramovic,Germany,VfL Wolfsburg
 686,Sead Ramovic,Germany,Borussia Monchengladbach
-688,Dong-gook Lee,"Korea, South",SV Werder Bremen
+688,Dong-gook Lee,South Korea,SV Werder Bremen
 689,Enrico Kern,Germany,SV Werder Bremen
 690,Ivan Klasnic,Croatia,FC St. Pauli
 690,Ivan Klasnic,Croatia,SV Werder Bremen
@@ -864,9 +864,9 @@ player_id,name,country,team
 751,Fabian Gerber,Germany,FC St. Pauli
 751,Fabian Gerber,Germany,SC Freiburg
 751,Fabian Gerber,Germany,1.FSV Mainz 05
-752,Zlatan Bajramovic,Bosnia-Herzegovina,FC St. Pauli
-752,Zlatan Bajramovic,Bosnia-Herzegovina,SC Freiburg
-752,Zlatan Bajramovic,Bosnia-Herzegovina,Eintracht Frankfurt
+752,Zlatan Bajramovic,Bosnia and Herzegovina,FC St. Pauli
+752,Zlatan Bajramovic,Bosnia and Herzegovina,SC Freiburg
+752,Zlatan Bajramovic,Bosnia and Herzegovina,Eintracht Frankfurt
 753,Alireza Mansourian,Iran,FC St. Pauli
 754,Piotr Lukasz Staczek,Germany,FC St. Pauli
 755,Deniz Barıs,Turkiye,FC St. Pauli
@@ -935,7 +935,7 @@ player_id,name,country,team
 820,David Montero,Spain,Eintracht Frankfurt
 823,Hanno Balitsch,Germany,1.FSV Mainz 05
 823,Hanno Balitsch,Germany,Bayer 04 Leverkusen
-826,Hajrudin Catic,Bosnia-Herzegovina,1.FC Union Berlin
+826,Hajrudin Catic,Bosnia and Herzegovina,1.FC Union Berlin
 831,Selim Teber,Germany,Eintracht Frankfurt
 831,Selim Teber,Germany,TSG 1899 Hoffenheim
 833,Christoph Preuß,Germany,Eintracht Frankfurt
@@ -1173,8 +1173,8 @@ player_id,name,country,team
 1196,Festus Agu,Nigeria,FC St. Pauli
 1197,Peter Graulund,Denmark,VfL Bochum
 1198,Ivan Kozak,Slovakia,1.FC Union Berlin
-1199,Marko Topic,Bosnia-Herzegovina,VfL Wolfsburg
-1199,Marko Topic,Bosnia-Herzegovina,AC Monza
+1199,Marko Topic,Bosnia and Herzegovina,VfL Wolfsburg
+1199,Marko Topic,Bosnia and Herzegovina,AC Monza
 1204,Sven Beuckert,Germany,1.FC Union Berlin
 1205,Kay Wehner,Germany,1.FC Union Berlin
 1206,Manuel Benthin,Germany,1.FC Union Berlin
@@ -1199,7 +1199,7 @@ player_id,name,country,team
 1222,Cristian Fiel,Germany,VfL Bochum
 1223,Kostadin Vidolov,Bulgaria,1.FC Union Berlin
 1224,Jens-Uwe Zophel,Germany,1.FC Union Berlin
-1231,Almedin Civa,Bosnia-Herzegovina,1.FC Union Berlin
+1231,Almedin Civa,Bosnia and Herzegovina,1.FC Union Berlin
 1233,Martino Gatti,Germany,FC St. Pauli
 1235,Jacek Ratajczak,Poland,VfL Bochum
 1237,Dos Santos,Brazil,AC Monza
@@ -1217,7 +1217,7 @@ player_id,name,country,team
 1255,Marcin Mieciel,Poland,VfL Bochum
 1255,Marcin Mieciel,Poland,Borussia Monchengladbach
 1258,Nderim Nedzipi,North Macedonia,VfL Wolfsburg
-1259,Sead Zilic,Bosnia-Herzegovina,ACF Fiorentina
+1259,Sead Zilic,Bosnia and Herzegovina,ACF Fiorentina
 1261,Tobias Rau,Germany,Bayern Munich
 1261,Tobias Rau,Germany,VfL Wolfsburg
 1262,Miroslav Karhan,Slovakia,Real Betis Balompie
@@ -1285,9 +1285,9 @@ player_id,name,country,team
 1366,Bjorn Brunnemann,Germany,FC St. Pauli
 1366,Bjorn Brunnemann,Germany,1.FC Union Berlin
 1367,Jorg Stiel,Switzerland,Borussia Monchengladbach
-1368,Guy Demel,Cote d'Ivoire,West Ham United
-1368,Guy Demel,Cote d'Ivoire,Borussia Dortmund
-1368,Guy Demel,Cote d'Ivoire,Arsenal FC
+1368,Guy Demel,Ivory Coast,West Ham United
+1368,Guy Demel,Ivory Coast,Borussia Dortmund
+1368,Guy Demel,Ivory Coast,Arsenal FC
 1369,Roda Antar,Lebanon,SC Freiburg
 1370,Matias Cenci,Argentina,FC St. Pauli
 1371,Mile Bozic,Croatia,Bayer 04 Leverkusen
@@ -1296,7 +1296,7 @@ player_id,name,country,team
 1373,Huzeyfe Dogan,Germany,Bayer 04 Leverkusen
 1374,Thorsten Wittek,Germany,Bayer 04 Leverkusen
 1377,Peter Nemeth,Slovakia,Eintracht Frankfurt
-1378,Jae-won Sim,"Korea, South",Eintracht Frankfurt
+1378,Jae-won Sim,South Korea,Eintracht Frankfurt
 1379,Jan Manner,Germany,SC Freiburg
 1380,Benjamin Schwehr,Germany,SC Freiburg
 1381,Maik Franz,Germany,Eintracht Frankfurt
@@ -1580,10 +1580,10 @@ player_id,name,country,team
 1766,Macchambes Younga-Mouhani,Congo,Borussia Monchengladbach
 1770,Ralph Gunesch,Germany,FC St. Pauli
 1770,Ralph Gunesch,Germany,1.FSV Mainz 05
-1772,Du-ri Cha,"Korea, South",Eintracht Frankfurt
-1772,Du-ri Cha,"Korea, South",SC Freiburg
-1772,Du-ri Cha,"Korea, South",1.FSV Mainz 05
-1772,Du-ri Cha,"Korea, South",Bayer 04 Leverkusen
+1772,Du-ri Cha,South Korea,Eintracht Frankfurt
+1772,Du-ri Cha,South Korea,SC Freiburg
+1772,Du-ri Cha,South Korea,1.FSV Mainz 05
+1772,Du-ri Cha,South Korea,Bayer 04 Leverkusen
 1775,Jean-Clotaire Tsoumou-Madza,Congo,FC St. Pauli
 1775,Jean-Clotaire Tsoumou-Madza,Congo,Eintracht Frankfurt
 1778,Moustapha Salifou,Togo,Aston Villa
@@ -1711,13 +1711,13 @@ player_id,name,country,team
 2264,Sascha Maier,Germany,VfB Stuttgart
 2269,Vladimir Manislavic,Serbia,FC Augsburg
 2279,Petr Maslej,Czech Republic,Holstein Kiel
-2287,Sead Mehic,Bosnia-Herzegovina,Eintracht Frankfurt
+2287,Sead Mehic,Bosnia and Herzegovina,Eintracht Frankfurt
 2295,Malte Metzelder,Germany,Borussia Dortmund
 2296,Alexander Meyer,Germany,Bayer 04 Leverkusen
 2299,Peter Michalski,Germany,Holstein Kiel
 2306,Markus Miller,Germany,FC Augsburg
-2309,Zvjezdan Misimovic,Bosnia-Herzegovina,VfL Wolfsburg
-2309,Zvjezdan Misimovic,Bosnia-Herzegovina,VfL Bochum
+2309,Zvjezdan Misimovic,Bosnia and Herzegovina,VfL Wolfsburg
+2309,Zvjezdan Misimovic,Bosnia and Herzegovina,VfL Bochum
 2310,Stefan Mittelbach,Germany,FC Augsburg
 2326,Thorsten Muller,Germany,TSG 1899 Hoffenheim
 2334,Marcel Ndjeng,Cameroon,FC Augsburg
@@ -1730,7 +1730,7 @@ player_id,name,country,team
 2358,Patrick Ochs,Germany,TSG 1899 Hoffenheim
 2360,Michael Oelkuch,Germany,1.FC Union Berlin
 2360,Michael Oelkuch,Germany,VfB Stuttgart
-2362,Branko Okic,Bosnia-Herzegovina,1.FC Heidenheim 1846
+2362,Branko Okic,Bosnia and Herzegovina,1.FC Heidenheim 1846
 2365,Thomas Ollhoff,Germany,TSG 1899 Hoffenheim
 2374,Patrick Owomoyela,Germany,SV Werder Bremen
 2374,Patrick Owomoyela,Germany,Borussia Dortmund
@@ -1922,8 +1922,8 @@ player_id,name,country,team
 3042,Peter Hlinka,Slovakia,FC Augsburg
 3049,Axel Lawaree,Belgium,Sevilla FC
 3049,Axel Lawaree,Belgium,FC Augsburg
-3052,Didier Angan,Cote d'Ivoire,Hellas Verona
-3052,Didier Angan,Cote d'Ivoire,OGC Nice
+3052,Didier Angan,Ivory Coast,Hellas Verona
+3052,Didier Angan,Ivory Coast,OGC Nice
 3053,Eddy Bosnar,Australia,Everton FC
 3063,Alain Masudi,DR Congo,AS Saint-Etienne
 3066,Jurgen Saumel,Austria,Torino FC
@@ -2196,9 +2196,9 @@ player_id,name,country,team
 3201,Stathis Tavlaridis,Greece,AS Saint-Etienne
 3201,Stathis Tavlaridis,Greece,LOSC Lille
 3201,Stathis Tavlaridis,Greece,Arsenal FC
-3202,Kolo Toure,Cote d'Ivoire,Liverpool FC
-3202,Kolo Toure,Cote d'Ivoire,Arsenal FC
-3202,Kolo Toure,Cote d'Ivoire,Manchester City
+3202,Kolo Toure,Ivory Coast,Liverpool FC
+3202,Kolo Toure,Ivory Coast,Arsenal FC
+3202,Kolo Toure,Ivory Coast,Manchester City
 3204,Sebastian Svard,Denmark,Arsenal FC
 3204,Sebastian Svard,Denmark,Borussia Monchengladbach
 3205,David Bentley,England,West Ham United
@@ -3316,10 +3316,10 @@ player_id,name,country,team
 3890,Eduardo,Brazil,RC Lens
 3896,David Sesa,Switzerland,SSC Napoli
 3896,David Sesa,Switzerland,US Lecce
-3899,Ibrahima Bakayoko,Cote d'Ivoire,CA Osasuna
-3899,Ibrahima Bakayoko,Cote d'Ivoire,Montpellier HSC
-3899,Ibrahima Bakayoko,Cote d'Ivoire,Olympique Marseille
-3899,Ibrahima Bakayoko,Cote d'Ivoire,Everton FC
+3899,Ibrahima Bakayoko,Ivory Coast,CA Osasuna
+3899,Ibrahima Bakayoko,Ivory Coast,Montpellier HSC
+3899,Ibrahima Bakayoko,Ivory Coast,Olympique Marseille
+3899,Ibrahima Bakayoko,Ivory Coast,Everton FC
 3900,Henri Camara,Senegal,West Ham United
 3900,Henri Camara,Senegal,Southampton FC
 3900,Henri Camara,Senegal,Wolverhampton Wanderers
@@ -3338,9 +3338,9 @@ player_id,name,country,team
 3904,Ousmane Dabo,France,Stade Rennais FC
 3904,Ousmane Dabo,France,SS Lazio
 3904,Ousmane Dabo,France,AS Monaco
-3905,Dagui Bakari,Cote d'Ivoire,LOSC Lille
-3905,Dagui Bakari,Cote d'Ivoire,RC Lens
-3905,Dagui Bakari,Cote d'Ivoire,Real Valladolid CF
+3905,Dagui Bakari,Ivory Coast,LOSC Lille
+3905,Dagui Bakari,Ivory Coast,RC Lens
+3905,Dagui Bakari,Ivory Coast,Real Valladolid CF
 3906,Pape Sarr,Senegal,RC Lens
 3906,Pape Sarr,Senegal,AS Saint-Etienne
 3906,Pape Sarr,Senegal,Deportivo Alaves
@@ -3392,8 +3392,8 @@ player_id,name,country,team
 3923,Habib Beye,Senegal,Newcastle United
 3923,Habib Beye,Senegal,RC Strasbourg Alsace
 3923,Habib Beye,Senegal,Paris Saint-Germain
-3924,Didier Drogba,Cote d'Ivoire,Chelsea FC
-3924,Didier Drogba,Cote d'Ivoire,Olympique Marseille
+3924,Didier Drogba,Ivory Coast,Chelsea FC
+3924,Didier Drogba,Ivory Coast,Olympique Marseille
 3925,Sebastien Piocelle,France,FC Nantes
 3925,Sebastien Piocelle,France,Hellas Verona
 3926,Marama Vahirua,Tahiti,FC Nantes
@@ -3667,18 +3667,18 @@ player_id,name,country,team
 4150,Nicola Amoruso,Italy,Como 1907
 4151,Aldair,Brazil,AS Roma
 4151,Aldair,Brazil,Genoa CFC
-4152,Saliou Lassissi,Cote d'Ivoire,AS Roma
-4152,Saliou Lassissi,Cote d'Ivoire,Stade Rennais FC
-4152,Saliou Lassissi,Cote d'Ivoire,Parma Calcio 1913
-4152,Saliou Lassissi,Cote d'Ivoire,ACF Fiorentina
+4152,Saliou Lassissi,Ivory Coast,AS Roma
+4152,Saliou Lassissi,Ivory Coast,Stade Rennais FC
+4152,Saliou Lassissi,Ivory Coast,Parma Calcio 1913
+4152,Saliou Lassissi,Ivory Coast,ACF Fiorentina
 4153,Roberto Baggio,Italy,AC Milan
 4153,Roberto Baggio,Italy,Inter Milan
 4153,Roberto Baggio,Italy,Bologna FC 1909
 4153,Roberto Baggio,Italy,Juventus FC
 4153,Roberto Baggio,Italy,ACF Fiorentina
-4164,Bonaventure Kalou,Cote d'Ivoire,AJ Auxerre
-4164,Bonaventure Kalou,Cote d'Ivoire,RC Lens
-4164,Bonaventure Kalou,Cote d'Ivoire,Paris Saint-Germain
+4164,Bonaventure Kalou,Ivory Coast,AJ Auxerre
+4164,Bonaventure Kalou,Ivory Coast,RC Lens
+4164,Bonaventure Kalou,Ivory Coast,Paris Saint-Germain
 4168,Clarence Seedorf,Netherlands,Inter Milan
 4168,Clarence Seedorf,Netherlands,Real Madrid
 4168,Clarence Seedorf,Netherlands,AC Milan
@@ -3783,7 +3783,7 @@ player_id,name,country,team
 4241,Joleon Lescott,England,Wolverhampton Wanderers
 4244,Kirk Hilton,England,Manchester United
 4245,Jimmy Davis,England,Manchester United
-4246,Mirko Hrgovic,Bosnia-Herzegovina,VfL Wolfsburg
+4246,Mirko Hrgovic,Bosnia and Herzegovina,VfL Wolfsburg
 4248,Diego,Brazil,SV Werder Bremen
 4248,Diego,Brazil,VfL Wolfsburg
 4248,Diego,Brazil,Juventus FC
@@ -3956,7 +3956,7 @@ player_id,name,country,team
 4573,Marcel Meeuwis,Netherlands,Borussia Monchengladbach
 4574,Raymond Victoria,Curacao,Bayern Munich
 4579,Tarik Sektioui,Morocco,AJ Auxerre
-4592,Ji-sung Park,"Korea, South",Manchester United
+4592,Ji-sung Park,South Korea,Manchester United
 4594,Tom van der Leegte,Netherlands,VfL Wolfsburg
 4599,Ellery Cairo,Netherlands,SC Freiburg
 4607,Roel Brouwers,Netherlands,Borussia Monchengladbach
@@ -4043,7 +4043,7 @@ player_id,name,country,team
 4879,Marco Streller,Switzerland,VfB Stuttgart
 4899,Marco Walker,Switzerland,1.FSV Mainz 05
 4911,David Degen,Switzerland,Borussia Monchengladbach
-4920,Nevzet Zukic,Bosnia-Herzegovina,TSG 1899 Hoffenheim
+4920,Nevzet Zukic,Bosnia and Herzegovina,TSG 1899 Hoffenheim
 4933,Mikheil Kavelashvili,Georgia,Manchester City
 4945,Alain Nef,Switzerland,Udinese Calcio
 4947,David Pallas,Switzerland,VfL Bochum
@@ -4067,8 +4067,8 @@ player_id,name,country,team
 5034,Marco Haller,Germany,FC Augsburg
 5037,Audenzio Musci,Italy,FC St. Pauli
 5038,Christian Gmunder,Germany,1.FC Heidenheim 1846
-5041,Mirnes Mesic,Bosnia-Herzegovina,TSG 1899 Hoffenheim
-5041,Mirnes Mesic,Bosnia-Herzegovina,SC Freiburg
+5041,Mirnes Mesic,Bosnia and Herzegovina,TSG 1899 Hoffenheim
+5041,Mirnes Mesic,Bosnia and Herzegovina,SC Freiburg
 5044,Erol Aktas,Germany,FC Augsburg
 5059,Michael Fink,Germany,Eintracht Frankfurt
 5059,Michael Fink,Germany,Borussia Monchengladbach
@@ -4214,7 +4214,7 @@ player_id,name,country,team
 5314,Frank Leboeuf,France,Chelsea FC
 5314,Frank Leboeuf,France,Olympique Marseille
 5314,Frank Leboeuf,France,RC Strasbourg Alsace
-5315,Abdoulaye Meite,Cote d'Ivoire,Olympique Marseille
+5315,Abdoulaye Meite,Ivory Coast,Olympique Marseille
 5316,Sebastien Perez,France,AS Saint-Etienne
 5316,Sebastien Perez,France,Olympique Marseille
 5317,Loris Reina,France,Olympique Marseille
@@ -4241,7 +4241,7 @@ player_id,name,country,team
 5333,Pascal Nouma,France,LOSC Lille
 5333,Pascal Nouma,France,RC Strasbourg Alsace
 5333,Pascal Nouma,France,Paris Saint-Germain
-5335,Alen Skoro,Bosnia-Herzegovina,Olympique Marseille
+5335,Alen Skoro,Bosnia and Herzegovina,Olympique Marseille
 5337,Nicolas Puydebois,France,Olympique Lyon
 5337,Nicolas Puydebois,France,RC Strasbourg Alsace
 5338,Remy Vercoutre,France,Olympique Lyon
@@ -4389,17 +4389,17 @@ player_id,name,country,team
 5440,Romain Poyet,France,AJ Auxerre
 5440,Romain Poyet,France,Stade Brestois 29
 5441,Piotr Wlodarczyk,Poland,AJ Auxerre
-5442,Gerard Gnanhouan,Cote d'Ivoire,Montpellier HSC
+5442,Gerard Gnanhouan,Ivory Coast,Montpellier HSC
 5443,Guillaume Gauclin,France,RC Strasbourg Alsace
 5444,Ronan Le Crom,France,AJ Auxerre
 5444,Ronan Le Crom,France,RC Lens
 5444,Ronan Le Crom,France,AS Saint-Etienne
 5444,Ronan Le Crom,France,Paris Saint-Germain
-5445,Lionel Bah,Cote d'Ivoire,Stade Reims
+5445,Lionel Bah,Ivory Coast,Stade Reims
 5446,Nestor Fabbri,Argentina,FC Nantes
 5447,Romain Ferrier,France,Montpellier HSC
 5448,Auriol Guillaume,France,Angers SCO
-5450,Blaise Kouassi,Cote d'Ivoire,Angers SCO
+5450,Blaise Kouassi,Ivory Coast,Angers SCO
 5451,Alaeddine Yahia,Tunisia,Southampton FC
 5451,Alaeddine Yahia,Tunisia,RC Lens
 5451,Alaeddine Yahia,Tunisia,AS Saint-Etienne
@@ -4479,7 +4479,7 @@ player_id,name,country,team
 5496,Willy Grondin,France,FC Nantes
 5496,Willy Grondin,France,Paris Saint-Germain
 5498,Sebastien Pauvert,France,FC Nantes
-5499,Lassina Diabate,Cote d'Ivoire,AJ Auxerre
+5499,Lassina Diabate,Ivory Coast,AJ Auxerre
 5500,Jean-Hugues Ateba,Cameroon,FC Nantes
 5500,Jean-Hugues Ateba,Cameroon,Paris Saint-Germain
 5501,Mauro Cetto,Argentina,FC Nantes
@@ -5167,11 +5167,11 @@ player_id,name,country,team
 5847,Lucas Castroman,Argentina,SS Lazio
 5849,Simone Inzaghi,Italy,Atalanta BC
 5849,Simone Inzaghi,Italy,SS Lazio
-5850,Christian Manfredini,Cote d'Ivoire,CA Osasuna
-5850,Christian Manfredini,Cote d'Ivoire,Juventus FC
-5850,Christian Manfredini,Cote d'Ivoire,Genoa CFC
-5850,Christian Manfredini,Cote d'Ivoire,SS Lazio
-5850,Christian Manfredini,Cote d'Ivoire,ACF Fiorentina
+5850,Christian Manfredini,Ivory Coast,CA Osasuna
+5850,Christian Manfredini,Ivory Coast,Juventus FC
+5850,Christian Manfredini,Ivory Coast,Genoa CFC
+5850,Christian Manfredini,Ivory Coast,SS Lazio
+5850,Christian Manfredini,Ivory Coast,ACF Fiorentina
 5851,Bernardo Corradi,Italy,Valencia CF
 5851,Bernardo Corradi,Italy,Udinese Calcio
 5851,Bernardo Corradi,Italy,Manchester City
@@ -5833,11 +5833,11 @@ player_id,name,country,team
 6134,Fabio Celestini,Switzerland,Olympique Marseille
 6148,Massimiliano Vieri,Australia,SSC Napoli
 6148,Massimiliano Vieri,Australia,Hellas Verona
-6149,Cyril Domoraud,Cote d'Ivoire,RCD Espanyol Barcelona
-6149,Cyril Domoraud,Cote d'Ivoire,Olympique Marseille
-6149,Cyril Domoraud,Cote d'Ivoire,AC Milan
-6149,Cyril Domoraud,Cote d'Ivoire,Inter Milan
-6149,Cyril Domoraud,Cote d'Ivoire,AS Monaco
+6149,Cyril Domoraud,Ivory Coast,RCD Espanyol Barcelona
+6149,Cyril Domoraud,Ivory Coast,Olympique Marseille
+6149,Cyril Domoraud,Ivory Coast,AC Milan
+6149,Cyril Domoraud,Ivory Coast,Inter Milan
+6149,Cyril Domoraud,Ivory Coast,AS Monaco
 6150,Fabricio Coloccini,Argentina,Villarreal CF
 6150,Fabricio Coloccini,Argentina,Newcastle United
 6150,Fabricio Coloccini,Argentina,AC Milan
@@ -5852,8 +5852,8 @@ player_id,name,country,team
 6154,Franco Semioli,Italy,Inter Milan
 6154,Franco Semioli,Italy,Torino FC
 6154,Franco Semioli,Italy,ACF Fiorentina
-6156,Young-pyo Lee,"Korea, South",Borussia Dortmund
-6156,Young-pyo Lee,"Korea, South",Tottenham Hotspur
+6156,Young-pyo Lee,South Korea,Borussia Dortmund
+6156,Young-pyo Lee,South Korea,Tottenham Hotspur
 6157,Gaetano D'Agostino,Italy,AS Roma
 6157,Gaetano D'Agostino,Italy,Udinese Calcio
 6157,Gaetano D'Agostino,Italy,ACF Fiorentina
@@ -5994,9 +5994,9 @@ player_id,name,country,team
 6427,Marco Donadel,Italy,ACF Fiorentina
 6428,Guillermo Giacomazzi,Uruguay,FC Empoli
 6428,Guillermo Giacomazzi,Uruguay,US Lecce
-6429,Axel Konan,Cote d'Ivoire,US Lecce
-6429,Axel Konan,Cote d'Ivoire,Torino FC
-6430,Arnaud Kouyo,Cote d'Ivoire,US Lecce
+6429,Axel Konan,Ivory Coast,US Lecce
+6429,Axel Konan,Ivory Coast,Torino FC
+6430,Arnaud Kouyo,Ivory Coast,US Lecce
 6431,Emanuel Centurion,Argentina,VfB Stuttgart
 6438,Cristian Ledesma,Italy,US Lecce
 6438,Cristian Ledesma,Italy,SS Lazio
@@ -6095,7 +6095,7 @@ player_id,name,country,team
 6689,Florian Hinterberger,Germany,Bayer 04 Leverkusen
 6692,Herbert Waas,Germany,Bologna FC 1909
 6692,Herbert Waas,Germany,Bayer 04 Leverkusen
-6693,Dzemal Berberovic,Bosnia-Herzegovina,Bayer 04 Leverkusen
+6693,Dzemal Berberovic,Bosnia and Herzegovina,Bayer 04 Leverkusen
 6703,Peter Knabel,Germany,FC St. Pauli
 6703,Peter Knabel,Germany,VfL Bochum
 6707,Gunter Haslbeck,Germany,SC Freiburg
@@ -6227,7 +6227,7 @@ player_id,name,country,team
 6856,Spase Dilevski,Australia,Tottenham Hotspur
 6857,Fatih Akyel,Turkiye,RCD Mallorca
 6857,Fatih Akyel,Turkiye,VfL Bochum
-6867,Elvir Bolic,Bosnia-Herzegovina,Rayo Vallecano
+6867,Elvir Bolic,Bosnia and Herzegovina,Rayo Vallecano
 6873,Sinan Kaloglu,Turkiye,VfL Bochum
 6874,Federico Giunti,Italy,Bologna FC 1909
 6874,Federico Giunti,Italy,Parma Calcio 1913
@@ -6237,8 +6237,8 @@ player_id,name,country,team
 6882,Marinko Miletic,Germany,FC St. Pauli
 6893,Gabriel Tamas,Romania,AJ Auxerre
 6893,Gabriel Tamas,Romania,Celta de Vigo
-6900,Elvir Baljic,Bosnia-Herzegovina,Real Madrid
-6900,Elvir Baljic,Bosnia-Herzegovina,Rayo Vallecano
+6900,Elvir Baljic,Bosnia and Herzegovina,Real Madrid
+6900,Elvir Baljic,Bosnia and Herzegovina,Rayo Vallecano
 6913,Antonio Carlos Zago,Brazil,AS Roma
 6923,Oumar Dieng,France,AJ Auxerre
 6923,Oumar Dieng,France,LOSC Lille
@@ -6941,8 +6941,8 @@ player_id,name,country,team
 7744,Ivan Rosado,Spain,Rayo Vallecano
 7745,German Burgos,Argentina,RCD Mallorca
 7745,German Burgos,Argentina,Atletico de Madrid
-7752,Mirsad Hibic,Bosnia-Herzegovina,Sevilla FC
-7752,Mirsad Hibic,Bosnia-Herzegovina,Atletico de Madrid
+7752,Mirsad Hibic,Bosnia and Herzegovina,Sevilla FC
+7752,Mirsad Hibic,Bosnia and Herzegovina,Atletico de Madrid
 7761,Jorge Larena,Spain,Atletico de Madrid
 7761,Jorge Larena,Spain,UD Las Palmas
 7761,Jorge Larena,Spain,Celta de Vigo
@@ -7239,8 +7239,8 @@ player_id,name,country,team
 7968,Gabriel Milito,Argentina,FC Barcelona
 7969,Delio Toledo,Paraguay,RCD Espanyol Barcelona
 7969,Delio Toledo,Paraguay,Udinese Calcio
-7971,Salomon Kalou,Cote d'Ivoire,Chelsea FC
-7971,Salomon Kalou,Cote d'Ivoire,LOSC Lille
+7971,Salomon Kalou,Ivory Coast,Chelsea FC
+7971,Salomon Kalou,Ivory Coast,LOSC Lille
 7973,Jordi Ferron,Spain,Rayo Vallecano
 7975,Paco Jemez,Spain,Rayo Vallecano
 7976,Savio,Brazil,Real Madrid
@@ -7285,9 +7285,9 @@ player_id,name,country,team
 8008,David Karanka,Spain,Athletic Bilbao
 8011,Igor Korneev,Russia,FC Barcelona
 8011,Igor Korneev,Russia,RCD Espanyol Barcelona
-8012,Meho Kodro,Bosnia-Herzegovina,FC Barcelona
-8012,Meho Kodro,Bosnia-Herzegovina,Real Sociedad
-8012,Meho Kodro,Bosnia-Herzegovina,Deportivo Alaves
+8012,Meho Kodro,Bosnia and Herzegovina,FC Barcelona
+8012,Meho Kodro,Bosnia and Herzegovina,Real Sociedad
+8012,Meho Kodro,Bosnia and Herzegovina,Deportivo Alaves
 8013,Robert Prosinecki,Croatia,FC Barcelona
 8013,Robert Prosinecki,Croatia,Real Madrid
 8013,Robert Prosinecki,Croatia,Sevilla FC
@@ -7472,8 +7472,8 @@ player_id,name,country,team
 8551,Mirko Cudini,Italy,Genoa CFC
 8551,Mirko Cudini,Italy,AC Monza
 8551,Mirko Cudini,Italy,Torino FC
-8552,Arouna Kone,Cote d'Ivoire,Sevilla FC
-8552,Arouna Kone,Cote d'Ivoire,Everton FC
+8552,Arouna Kone,Ivory Coast,Sevilla FC
+8552,Arouna Kone,Ivory Coast,Everton FC
 8558,Vladimir Manchev,Bulgaria,Celta de Vigo
 8558,Vladimir Manchev,Bulgaria,LOSC Lille
 8558,Vladimir Manchev,Bulgaria,Real Valladolid CF
@@ -7609,7 +7609,7 @@ player_id,name,country,team
 9340,Marvin Compper,Germany,TSG 1899 Hoffenheim
 9340,Marvin Compper,Germany,RB Leipzig
 9340,Marvin Compper,Germany,Borussia Monchengladbach
-9354,Sejad Salihovic,Bosnia-Herzegovina,TSG 1899 Hoffenheim
+9354,Sejad Salihovic,Bosnia and Herzegovina,TSG 1899 Hoffenheim
 9355,Stefan Schumann,Germany,RB Leipzig
 9367,Stefan Markolf,Germany,1.FSV Mainz 05
 9409,Kevin Muscat,Australia,Crystal Palace
@@ -7662,10 +7662,10 @@ player_id,name,country,team
 9554,Xavier Margairaz,Switzerland,CA Osasuna
 9594,Vincent Kompany,Belgium,Manchester City
 9595,Sergio Hellings,Netherlands,Leicester City
-9597,Aruna Dindane,Cote d'Ivoire,RC Lens
-9597,Aruna Dindane,Cote d'Ivoire,Crystal Palace
-9606,Ki-hyeon Seol,"Korea, South",Fulham FC
-9606,Ki-hyeon Seol,"Korea, South",Wolverhampton Wanderers
+9597,Aruna Dindane,Ivory Coast,RC Lens
+9597,Aruna Dindane,Ivory Coast,Crystal Palace
+9606,Ki-hyeon Seol,South Korea,Fulham FC
+9606,Ki-hyeon Seol,South Korea,Wolverhampton Wanderers
 9608,Hannu Tihinen,Finland,West Ham United
 9611,Christian Wilhelmsson,Sweden,FC Nantes
 9611,Christian Wilhelmsson,Sweden,AS Roma
@@ -7830,7 +7830,7 @@ player_id,name,country,team
 10012,Andy Whing,England,Brighton & Hove Albion
 10013,Dele Adebola,Nigeria,Nottingham Forest
 10013,Dele Adebola,Nigeria,Crystal Palace
-10022,Muhamed Konjic,Bosnia-Herzegovina,AS Monaco
+10022,Muhamed Konjic,Bosnia and Herzegovina,AS Monaco
 10024,Yazid Mansouri,Algeria,Le Havre AC
 10027,Julian Joachim,England,Leicester City
 10027,Julian Joachim,England,Aston Villa
@@ -8037,9 +8037,9 @@ player_id,name,country,team
 12036,Sebastien Renouard,France,Angers SCO
 12043,Deniz Samsa,Turkiye,FC Augsburg
 12053,Robert Palikuca,Croatia,FC St. Pauli
-12060,Kanga Akale,Cote d'Ivoire,AJ Auxerre
-12060,Kanga Akale,Cote d'Ivoire,RC Lens
-12060,Kanga Akale,Cote d'Ivoire,Olympique Marseille
+12060,Kanga Akale,Ivory Coast,AJ Auxerre
+12060,Kanga Akale,Ivory Coast,RC Lens
+12060,Kanga Akale,Ivory Coast,Olympique Marseille
 12061,Gilles De Bilde,Belgium,Aston Villa
 12063,Benjani,Zimbabwe,AJ Auxerre
 12063,Benjani,Zimbabwe,Manchester City
@@ -8125,7 +8125,7 @@ player_id,name,country,team
 12362,Mounir Diane,Morocco,RC Lens
 12363,Guillaume Plessis,France,RC Lens
 12363,Guillaume Plessis,France,Everton FC
-12376,Chun-soo Lee,"Korea, South",Real Sociedad
+12376,Chun-soo Lee,South Korea,Real Sociedad
 12381,Stale Stensaas,Norway,Nottingham Forest
 12384,Alexander Tettey,Norway,Stade Rennais FC
 12386,Gregory Bourillon,France,Stade Reims
@@ -8136,8 +8136,8 @@ player_id,name,country,team
 12387,Jacques Faty,Senegal,Olympique Marseille
 12390,Marc Boucher,France,FC Nantes
 12391,Stephen Drouin,France,FC Nantes
-12392,Emerse Fae,Cote d'Ivoire,FC Nantes
-12392,Emerse Fae,Cote d'Ivoire,OGC Nice
+12392,Emerse Fae,Ivory Coast,FC Nantes
+12392,Emerse Fae,Ivory Coast,OGC Nice
 12393,Luigi Glombard,France,FC Nantes
 12393,Luigi Glombard,France,Leicester City
 12394,Loic Guillon,France,FC Nantes
@@ -8280,24 +8280,24 @@ player_id,name,country,team
 12907,Alessio Cragno,Italy,AC Monza
 12955,Jean-Pierre La Placa,Switzerland,FC Toulouse
 12984,Claude-Arnaud Rivenet,France,Olympique Lyon
-13004,Patrice Zere,Cote d'Ivoire,RC Lens
+13004,Patrice Zere,Ivory Coast,RC Lens
 13006,Patrick Zoundi,Burkina Faso,1.FC Union Berlin
 13021,Logan Bailly,Belgium,Borussia Monchengladbach
 13023,Igor de Camargo,Belgium,TSG 1899 Hoffenheim
 13023,Igor de Camargo,Belgium,Borussia Monchengladbach
 13035,Mohammed Berthe,France,West Ham United
 13035,Mohammed Berthe,France,AFC Bournemouth
-13038,Arthur Boka,Cote d'Ivoire,VfB Stuttgart
-13038,Arthur Boka,Cote d'Ivoire,RC Strasbourg Alsace
-13041,Boubacar Copa,Cote d'Ivoire,Stade Rennais FC
+13038,Arthur Boka,Ivory Coast,VfB Stuttgart
+13038,Arthur Boka,Ivory Coast,RC Strasbourg Alsace
+13041,Boubacar Copa,Ivory Coast,Stade Rennais FC
 13046,Bertrand Crasson,Belgium,SSC Napoli
 13051,Jonas De Roeck,Belgium,FC Augsburg
-13057,Mohamed Diallo,Cote d'Ivoire,FC Nantes
-13058,Emmanuel Eboue,Cote d'Ivoire,Arsenal FC
-13091,Yaya Toure,Cote d'Ivoire,FC Barcelona
-13091,Yaya Toure,Cote d'Ivoire,Manchester City
-13091,Yaya Toure,Cote d'Ivoire,AS Monaco
-13105,Gilles Yapi,Cote d'Ivoire,FC Nantes
+13057,Mohamed Diallo,Ivory Coast,FC Nantes
+13058,Emmanuel Eboue,Ivory Coast,Arsenal FC
+13091,Yaya Toure,Ivory Coast,FC Barcelona
+13091,Yaya Toure,Ivory Coast,Manchester City
+13091,Yaya Toure,Ivory Coast,AS Monaco
+13105,Gilles Yapi,Ivory Coast,FC Nantes
 13121,Bruno Alves,Portugal,Cagliari Calcio
 13121,Bruno Alves,Portugal,Parma Calcio 1913
 13143,Jerome Palatsi,France,Montpellier HSC
@@ -8390,9 +8390,9 @@ player_id,name,country,team
 13369,Cheriffe Maman-Toure,Togo,Olympique Marseille
 13384,Ian Westlake,England,Brighton & Hove Albion
 13384,Ian Westlake,England,Ipswich Town
-13389,Didier Zokora,Cote d'Ivoire,Sevilla FC
-13389,Didier Zokora,Cote d'Ivoire,Tottenham Hotspur
-13389,Didier Zokora,Cote d'Ivoire,AS Saint-Etienne
+13389,Didier Zokora,Ivory Coast,Sevilla FC
+13389,Didier Zokora,Ivory Coast,Tottenham Hotspur
+13389,Didier Zokora,Ivory Coast,AS Saint-Etienne
 13390,Thomas Debenest,France,Angers SCO
 13392,Chris Kanu,Nigeria,Deportivo Alaves
 13395,Areias,Portugal,Celta de Vigo
@@ -8649,9 +8649,9 @@ player_id,name,country,team
 13843,Sammy Traore,Mali,Paris Saint-Germain
 13843,Sammy Traore,Mali,OGC Nice
 13844,Oumar Bakari,France,OGC Nice
-13845,Serge Die,Cote d'Ivoire,OGC Nice
-13846,Georges Ba,Cote d'Ivoire,Montpellier HSC
-13846,Georges Ba,Cote d'Ivoire,OGC Nice
+13845,Serge Die,Ivory Coast,OGC Nice
+13846,Georges Ba,Ivory Coast,Montpellier HSC
+13846,Georges Ba,Ivory Coast,OGC Nice
 13847,Eric Roy,France,Olympique Lyon
 13847,Eric Roy,France,Olympique Marseille
 13847,Eric Roy,France,Rayo Vallecano
@@ -8676,8 +8676,8 @@ player_id,name,country,team
 13918,John Oster,Wales,Crystal Palace
 13925,Thomas Pichlmann,Austria,Hellas Verona
 13937,Stjepan Tomas,Croatia,Como 1907
-13940,Eugene Dadi,Cote d'Ivoire,Nottingham Forest
-13940,Eugene Dadi,Cote d'Ivoire,FC Toulouse
+13940,Eugene Dadi,Ivory Coast,Nottingham Forest
+13940,Eugene Dadi,Ivory Coast,FC Toulouse
 13942,Colin McMenamin,Scotland,Newcastle United
 13959,Igor,Portugal,Girona FC
 13966,Dominic Foley,Ireland,Wolverhampton Wanderers
@@ -8883,7 +8883,7 @@ player_id,name,country,team
 14663,Brent Rahim,Trinidad and Tobago,West Ham United
 14673,Justin Skinner,England,Fulham FC
 14678,Ryan Stevenson,Scotland,Ipswich Town
-14679,Patrice Kobenan Tano,Cote d'Ivoire,Southampton FC
+14679,Patrice Kobenan Tano,Ivory Coast,Southampton FC
 14714,Vincent Talio,France,FC Nantes
 14717,Nicky Walker,Scotland,Leicester City
 14720,Antonio Calderon,Spain,RCD Mallorca
@@ -9193,7 +9193,7 @@ player_id,name,country,team
 15793,Raul Molina,Spain,Rayo Vallecano
 15794,Toni Velamazan,Spain,FC Barcelona
 15794,Toni Velamazan,Spain,RCD Espanyol Barcelona
-15796,Igor Lolo,Cote d'Ivoire,AS Monaco
+15796,Igor Lolo,Ivory Coast,AS Monaco
 15797,Pere Marti,Spain,Villarreal CF
 15798,Cesar Arzo,Spain,Villarreal CF
 15798,Cesar Arzo,Spain,Real Valladolid CF
@@ -9204,8 +9204,8 @@ player_id,name,country,team
 15803,Jonan Garcia,Spain,Athletic Bilbao
 15803,Jonan Garcia,Spain,Deportivo Alaves
 15804,Andoni Iraola,Spain,Athletic Bilbao
-15808,Romaric,Cote d'Ivoire,Sevilla FC
-15808,Romaric,Cote d'Ivoire,RCD Espanyol Barcelona
+15808,Romaric,Ivory Coast,Sevilla FC
+15808,Romaric,Ivory Coast,RCD Espanyol Barcelona
 15814,Alan McCormack,Ireland,Brentford FC
 15819,Toni Gonzalez,Spain,RCD Mallorca
 15820,Martin Liguera,Uruguay,RCD Mallorca
@@ -9385,12 +9385,12 @@ player_id,name,country,team
 16226,Jermaine Easter,Wales,Wolverhampton Wanderers
 16230,Mohamadou Sissoko,France,Udinese Calcio
 16231,Stuart Jones,England,Brighton & Hove Albion
-16232,Elie Kroupi,Cote d'Ivoire,Stade Rennais FC
-16232,Elie Kroupi,Cote d'Ivoire,Angers SCO
+16232,Elie Kroupi,Ivory Coast,Stade Rennais FC
+16232,Elie Kroupi,Ivory Coast,Angers SCO
 16235,Tony Scully,Ireland,Crystal Palace
 16235,Tony Scully,Ireland,Manchester City
 16235,Tony Scully,Ireland,AFC Bournemouth
-16239,Midhat Gluhacevic,Bosnia-Herzegovina,SC Freiburg
+16239,Midhat Gluhacevic,Bosnia and Herzegovina,SC Freiburg
 16255,Irurzun,Spain,CA Osasuna
 16258,Aziz Rabbah,Morocco,RC Strasbourg Alsace
 16264,Mathieu Assou-Ekotto,France,RC Lens
@@ -9759,8 +9759,8 @@ player_id,name,country,team
 17146,Stephen Makinwa,Nigeria,Atalanta BC
 17147,Antonio Marasco,Italy,Venezia FC
 17147,Antonio Marasco,Italy,Hellas Verona
-17148,Vedin Music,Bosnia-Herzegovina,Como 1907
-17148,Vedin Music,Bosnia-Herzegovina,Torino FC
+17148,Vedin Music,Bosnia and Herzegovina,Como 1907
+17148,Vedin Music,Bosnia and Herzegovina,Torino FC
 17149,Simone Pavan,Italy,Venezia FC
 17149,Simone Pavan,Italy,Atalanta BC
 17150,Matteo Pivotto,Italy,AS Roma
@@ -9902,7 +9902,7 @@ player_id,name,country,team
 17495,Steffen Herzberger,Germany,1.FSV Mainz 05
 17503,Dirk Riechmann,Germany,VfL Bochum
 17544,Mauro Macchia,Italy,1.FC Heidenheim 1846
-17545,Mirza Mesic,Bosnia-Herzegovina,FC Nantes
+17545,Mirza Mesic,Bosnia and Herzegovina,FC Nantes
 17555,Nelson,Portugal,Real Betis Balompie
 17555,Nelson,Portugal,CA Osasuna
 17557,Alberto Acosta,Argentina,FC Toulouse
@@ -10111,10 +10111,10 @@ player_id,name,country,team
 18833,Tim Hoogland,Germany,VfB Stuttgart
 18833,Tim Hoogland,Germany,1.FSV Mainz 05
 18840,Mattias Asper,Sweden,Real Sociedad
-18860,Franck Dja Djedje,Cote d'Ivoire,RC Strasbourg Alsace
-18860,Franck Dja Djedje,Cote d'Ivoire,Stade Brestois 29
-18860,Franck Dja Djedje,Cote d'Ivoire,Paris Saint-Germain
-18860,Franck Dja Djedje,Cote d'Ivoire,OGC Nice
+18860,Franck Dja Djedje,Ivory Coast,RC Strasbourg Alsace
+18860,Franck Dja Djedje,Ivory Coast,Stade Brestois 29
+18860,Franck Dja Djedje,Ivory Coast,Paris Saint-Germain
+18860,Franck Dja Djedje,Ivory Coast,OGC Nice
 18875,Pascal Chimbonda,Guadeloupe,Le Havre AC
 18875,Pascal Chimbonda,Guadeloupe,Tottenham Hotspur
 18880,Thiago,Brazil,SV Werder Bremen
@@ -10223,7 +10223,7 @@ player_id,name,country,team
 19136,Marco Storari,Italy,Cagliari Calcio
 19136,Marco Storari,Italy,Juventus FC
 19136,Marco Storari,Italy,ACF Fiorentina
-19138,Marco Zoro,Cote d'Ivoire,Angers SCO
+19138,Marco Zoro,Ivory Coast,Angers SCO
 19139,Jonathan Pitroipa,Burkina Faso,SC Freiburg
 19139,Jonathan Pitroipa,Burkina Faso,Stade Rennais FC
 19178,Salvatore Accursi,Italy,SSC Napoli
@@ -10349,8 +10349,8 @@ player_id,name,country,team
 19819,Raffael,Brazil,Borussia Monchengladbach
 19836,Bismark Ekye,Ghana,ACF Fiorentina
 19846,Simon Charlton,England,Southampton FC
-19857,Steve Gohouri,Cote d'Ivoire,Bologna FC 1909
-19857,Steve Gohouri,Cote d'Ivoire,Borussia Monchengladbach
+19857,Steve Gohouri,Ivory Coast,Bologna FC 1909
+19857,Steve Gohouri,Ivory Coast,Borussia Monchengladbach
 19860,Isaac Larbi,Germany,Holstein Kiel
 19921,Daniele Papis,Italy,Como 1907
 19924,Adrian Pit,Romania,AS Roma
@@ -10542,7 +10542,7 @@ player_id,name,country,team
 20830,Pawel Sobczak,Poland,Genoa CFC
 20831,Boubacar Balde,Guinea,FC Nantes
 20861,Jakob Poulsen,Denmark,AS Monaco
-20869,Moriba Bamba,Cote d'Ivoire,Angers SCO
+20869,Moriba Bamba,Ivory Coast,Angers SCO
 20879,Soren Gonther,Germany,FC St. Pauli
 20895,Riccardo Zampagna,Italy,Atalanta BC
 20896,Raffaele Ametrano,Italy,SSC Napoli
@@ -10648,10 +10648,10 @@ player_id,name,country,team
 21160,Issa Ba,Senegal,AJ Auxerre
 21170,Karim Fradin,Morocco,OGC Nice
 21171,Marc Giraudon,France,Stade Reims
-21173,Marc-Eric Guei,Cote d'Ivoire,Montpellier HSC
-21175,Vedad Ibisevic,Bosnia-Herzegovina,TSG 1899 Hoffenheim
-21175,Vedad Ibisevic,Bosnia-Herzegovina,VfB Stuttgart
-21175,Vedad Ibisevic,Bosnia-Herzegovina,Paris Saint-Germain
+21173,Marc-Eric Guei,Ivory Coast,Montpellier HSC
+21175,Vedad Ibisevic,Bosnia and Herzegovina,TSG 1899 Hoffenheim
+21175,Vedad Ibisevic,Bosnia and Herzegovina,VfB Stuttgart
+21175,Vedad Ibisevic,Bosnia and Herzegovina,Paris Saint-Germain
 21182,David Balleri,Italy,Como 1907
 21182,David Balleri,Italy,Parma Calcio 1913
 21182,David Balleri,Italy,US Lecce
@@ -11374,7 +11374,7 @@ player_id,name,country,team
 22385,Gregory Carmona,France,Montpellier HSC
 22386,Daniel Congre,France,Montpellier HSC
 22386,Daniel Congre,France,FC Toulouse
-22387,Issoumaila Dao,Cote d'Ivoire,FC Toulouse
+22387,Issoumaila Dao,Ivory Coast,FC Toulouse
 22388,Bafetimbi Gomis,France,Olympique Lyon
 22388,Bafetimbi Gomis,France,AS Saint-Etienne
 22388,Bafetimbi Gomis,France,Olympique Marseille
@@ -11480,7 +11480,7 @@ player_id,name,country,team
 22750,Nilmar,Brazil,Villarreal CF
 22754,Karim Kerkar,Algeria,Le Havre AC
 22754,Karim Kerkar,Algeria,Manchester City
-22767,Zeljko Buvac,Bosnia-Herzegovina,1.FSV Mainz 05
+22767,Zeljko Buvac,Bosnia and Herzegovina,1.FSV Mainz 05
 22768,Alexander Conrad,Germany,Eintracht Frankfurt
 22768,Alexander Conrad,Germany,Borussia Dortmund
 22773,Ivo,Brazil,AC Monza
@@ -11728,8 +11728,8 @@ player_id,name,country,team
 23936,Ludovic Jeannel,France,Stade Reims
 23936,Ludovic Jeannel,France,Stade Brestois 29
 23938,Geoffrey Jourdren,France,Montpellier HSC
-23941,Bakari Kone,Cote d'Ivoire,Olympique Marseille
-23941,Bakari Kone,Cote d'Ivoire,OGC Nice
+23941,Bakari Kone,Ivory Coast,Olympique Marseille
+23941,Bakari Kone,Ivory Coast,OGC Nice
 23943,Stephane Le Garrec,France,Stade Rennais FC
 23946,Jean-Michel Lesage,France,Le Havre AC
 23946,Jean-Michel Lesage,France,AJ Auxerre
@@ -11833,7 +11833,7 @@ player_id,name,country,team
 24333,Salvatore Vicari,Italy,Hellas Verona
 24333,Salvatore Vicari,Italy,AC Monza
 24391,Lasse Nilsson,Sweden,AS Saint-Etienne
-24441,Tagro Baleguhe,Cote d'Ivoire,Stade Reims
+24441,Tagro Baleguhe,Ivory Coast,Stade Reims
 24452,Christopher Hauptmann,Germany,Holstein Kiel
 24459,Eden Ben Basat,Israel,FC Toulouse
 24459,Eden Ben Basat,Israel,Stade Brestois 29
@@ -12077,9 +12077,9 @@ player_id,name,country,team
 25781,Tonci Zilic,Croatia,Hellas Verona
 25785,Erwin Hoffer,Austria,SSC Napoli
 25785,Erwin Hoffer,Austria,Eintracht Frankfurt
-25812,Emir Spahic,Bosnia-Herzegovina,Sevilla FC
-25812,Emir Spahic,Bosnia-Herzegovina,Montpellier HSC
-25812,Emir Spahic,Bosnia-Herzegovina,Bayer 04 Leverkusen
+25812,Emir Spahic,Bosnia and Herzegovina,Sevilla FC
+25812,Emir Spahic,Bosnia and Herzegovina,Montpellier HSC
+25812,Emir Spahic,Bosnia and Herzegovina,Bayer 04 Leverkusen
 25834,Joe Lewis,England,Fulham FC
 25840,Sam Togwell,England,Crystal Palace
 25883,Patrick Blondeau,France,Olympique Marseille
@@ -12091,8 +12091,8 @@ player_id,name,country,team
 25962,Miguel Cobas,Spain,UD Las Palmas
 25976,Karim Ziani,Algeria,VfL Wolfsburg
 25976,Karim Ziani,Algeria,Olympique Marseille
-26013,Tchiressoua Guel,Cote d'Ivoire,AS Saint-Etienne
-26013,Tchiressoua Guel,Cote d'Ivoire,Olympique Marseille
+26013,Tchiressoua Guel,Ivory Coast,AS Saint-Etienne
+26013,Tchiressoua Guel,Ivory Coast,Olympique Marseille
 26041,Vlad Munteanu,Romania,AJ Auxerre
 26041,Vlad Munteanu,Romania,VfL Wolfsburg
 26049,Claudiu Niculescu,Romania,Genoa CFC
@@ -12425,7 +12425,7 @@ player_id,name,country,team
 27834,Mario Brkljaca,Croatia,Cagliari Calcio
 27875,Dario Knezevic,Croatia,Juventus FC
 27893,Marko Maric,Croatia,LOSC Lille
-27900,Mensur Mujdza,Bosnia-Herzegovina,SC Freiburg
+27900,Mensur Mujdza,Bosnia and Herzegovina,SC Freiburg
 27912,Nikola Pokrivac,Croatia,AS Monaco
 27924,Antonio Rukavina,Serbia,Villarreal CF
 27924,Antonio Rukavina,Serbia,Borussia Dortmund
@@ -12503,10 +12503,10 @@ player_id,name,country,team
 28066,Cuauhtemoc Blanco,Mexico,Real Valladolid CF
 28075,Andrea Migliorini,Italy,Venezia FC
 28115,Michel Rodriguez,France,Montpellier HSC
-28140,Max Gradel,Cote d'Ivoire,Leicester City
-28140,Max Gradel,Cote d'Ivoire,AS Saint-Etienne
-28140,Max Gradel,Cote d'Ivoire,FC Toulouse
-28140,Max Gradel,Cote d'Ivoire,AFC Bournemouth
+28140,Max Gradel,Ivory Coast,Leicester City
+28140,Max Gradel,Ivory Coast,AS Saint-Etienne
+28140,Max Gradel,Ivory Coast,FC Toulouse
+28140,Max Gradel,Ivory Coast,AFC Bournemouth
 28150,Aaron Galindo,Mexico,Eintracht Frankfurt
 28163,Francisco Rodriguez,Mexico,VfB Stuttgart
 28171,Chory Castro,Uruguay,Real Sociedad
@@ -12584,10 +12584,10 @@ player_id,name,country,team
 28356,Denis Petric,Slovenia,AJ Auxerre
 28356,Denis Petric,Slovenia,FC Nantes
 28356,Denis Petric,Slovenia,Angers SCO
-28396,Edin Dzeko,Bosnia-Herzegovina,Inter Milan
-28396,Edin Dzeko,Bosnia-Herzegovina,AS Roma
-28396,Edin Dzeko,Bosnia-Herzegovina,VfL Wolfsburg
-28396,Edin Dzeko,Bosnia-Herzegovina,Manchester City
+28396,Edin Dzeko,Bosnia and Herzegovina,Inter Milan
+28396,Edin Dzeko,Bosnia and Herzegovina,AS Roma
+28396,Edin Dzeko,Bosnia and Herzegovina,VfL Wolfsburg
+28396,Edin Dzeko,Bosnia and Herzegovina,Manchester City
 28490,Diego Leon,Spain,UD Las Palmas
 28491,Dexter Blackstock,Antigua and Barbuda,Southampton FC
 28491,Dexter Blackstock,Antigua and Barbuda,Nottingham Forest
@@ -12602,7 +12602,7 @@ player_id,name,country,team
 28677,Ljubisa Dundjerski,Serbia,Como 1907
 28683,Gojko Kacar,Serbia,FC Augsburg
 28705,Dusan Veskovac,Serbia,FC Toulouse
-28719,Sanel Jahic,Bosnia-Herzegovina,UD Las Palmas
+28719,Sanel Jahic,Bosnia and Herzegovina,UD Las Palmas
 28728,Colin Doyle,Ireland,Nottingham Forest
 28753,Juan Pablo Caffa,Argentina,Real Betis Balompie
 28759,Anthony Pulis,Wales,Southampton FC
@@ -12740,7 +12740,7 @@ player_id,name,country,team
 28973,Steven Davis,Northern Ireland,Southampton FC
 28978,Temur Ketsbaia,Georgia,Newcastle United
 28978,Temur Ketsbaia,Georgia,Wolverhampton Wanderers
-28984,Sol Bamba,Cote d'Ivoire,Leicester City
+28984,Sol Bamba,Ivory Coast,Leicester City
 28987,Roy Contout,French Guiana,AJ Auxerre
 28990,Charlie Adam,Scotland,Liverpool FC
 29006,Ross McCormack,Scotland,Fulham FC
@@ -12904,11 +12904,11 @@ player_id,name,country,team
 29283,Miguel Comminges,Guadeloupe,Stade Reims
 29284,Thierry Cygan,France,Angers SCO
 29285,Claude Dambury,French Guiana,Stade Reims
-29286,Franck-Augustin Dia,Cote d'Ivoire,Le Havre AC
-29286,Franck-Augustin Dia,Cote d'Ivoire,Angers SCO
-29287,Amara Diane,Cote d'Ivoire,Stade Reims
-29287,Amara Diane,Cote d'Ivoire,Paris Saint-Germain
-29287,Amara Diane,Cote d'Ivoire,RC Strasbourg Alsace
+29286,Franck-Augustin Dia,Ivory Coast,Le Havre AC
+29286,Franck-Augustin Dia,Ivory Coast,Angers SCO
+29287,Amara Diane,Ivory Coast,Stade Reims
+29287,Amara Diane,Ivory Coast,Paris Saint-Germain
+29287,Amara Diane,Ivory Coast,RC Strasbourg Alsace
 29288,Karim Djellabi,Algeria,FC Nantes
 29288,Karim Djellabi,Algeria,AJ Auxerre
 29288,Karim Djellabi,Algeria,Angers SCO
@@ -12926,7 +12926,7 @@ player_id,name,country,team
 29297,William Huck,France,Angers SCO
 29298,Bruce Inkango,France,Angers SCO
 29299,Gilles Kerhuiel,France,Angers SCO
-29300,Jean-Martial Kipre,Cote d'Ivoire,Angers SCO
+29300,Jean-Martial Kipre,Ivory Coast,Angers SCO
 29301,Julien Lachuer,France,Stade Brestois 29
 29301,Julien Lachuer,France,Angers SCO
 29302,Julien Legendre,France,Angers SCO
@@ -12982,7 +12982,7 @@ player_id,name,country,team
 29435,Steve Claridge,England,Brighton & Hove Albion
 29445,Angel Parla-Diaz,Germany,VfL Bochum
 29465,Bruno Marioni,Argentina,Villarreal CF
-29470,Jung-won Seo,"Korea, South",RC Strasbourg Alsace
+29470,Jung-won Seo,South Korea,RC Strasbourg Alsace
 29487,Tamas Sandor,Hungary,Torino FC
 29546,James O'Connor,England,AFC Bournemouth
 29548,Rogerio Cannellini,Brazil,RCD Mallorca
@@ -13146,9 +13146,9 @@ player_id,name,country,team
 30648,Cataldo Montesanto,Italy,AC Monza
 30649,Nicola Mora,Italy,SSC Napoli
 30649,Nicola Mora,Italy,Torino FC
-30650,Zlatan Muslimovic,Bosnia-Herzegovina,Atalanta BC
-30650,Zlatan Muslimovic,Bosnia-Herzegovina,Parma Calcio 1913
-30650,Zlatan Muslimovic,Bosnia-Herzegovina,Udinese Calcio
+30650,Zlatan Muslimovic,Bosnia and Herzegovina,Atalanta BC
+30650,Zlatan Muslimovic,Bosnia and Herzegovina,Parma Calcio 1913
+30650,Zlatan Muslimovic,Bosnia and Herzegovina,Udinese Calcio
 30654,Adrian Ricchiuti,Argentina,Genoa CFC
 30655,Tommaso Romito,Italy,SSC Napoli
 30656,Stefano Rossini,Italy,Atalanta BC
@@ -13170,7 +13170,7 @@ player_id,name,country,team
 30663,Renzo Tasso,Italy,Como 1907
 30664,Cristian Trapella,Italy,Genoa CFC
 30665,Ivano Trotta,Italy,SSC Napoli
-30666,Haris Medunjanin,Bosnia-Herzegovina,Real Valladolid CF
+30666,Haris Medunjanin,Bosnia and Herzegovina,Real Valladolid CF
 30670,Vurnon Anita,Curacao,Newcastle United
 30677,Gustavo Cabral,Argentina,Celta de Vigo
 30687,Maxi Moralez,Argentina,Atalanta BC
@@ -13254,9 +13254,9 @@ player_id,name,country,team
 30945,Julio Cesar,Brazil,Borussia Dortmund
 30945,Julio Cesar,Brazil,Juventus FC
 30945,Julio Cesar,Brazil,Stade Brestois 29
-30982,Chu-young Park,"Korea, South",Celta de Vigo
-30982,Chu-young Park,"Korea, South",Arsenal FC
-30982,Chu-young Park,"Korea, South",AS Monaco
+30982,Chu-young Park,South Korea,Celta de Vigo
+30982,Chu-young Park,South Korea,Arsenal FC
+30982,Chu-young Park,South Korea,AS Monaco
 30985,Jan-Philipp Kalla,Germany,FC St. Pauli
 31005,Fred,Brazil,Olympique Lyon
 31007,Zlatko Junuzovic,Austria,SV Werder Bremen
@@ -13571,7 +13571,7 @@ player_id,name,country,team
 33078,Florian Jungwirth,Germany,VfL Bochum
 33085,Andrea Ciani,Italy,SS Lazio
 33093,Daniele Greco,Italy,SS Lazio
-33114,Adnan Custovic,Bosnia-Herzegovina,Le Havre AC
+33114,Adnan Custovic,Bosnia and Herzegovina,Le Havre AC
 33171,Nicolas Cousin,France,Angers SCO
 33171,Nicolas Cousin,France,Paris Saint-Germain
 33195,Jan Mucha,Slovakia,Everton FC
@@ -13581,9 +13581,9 @@ player_id,name,country,team
 33218,Luca Cigarini,Italy,Atalanta BC
 33218,Luca Cigarini,Italy,Sevilla FC
 33226,Sammy Igoe,England,AFC Bournemouth
-33245,Boubacar Sanogo,Cote d'Ivoire,SV Werder Bremen
-33245,Boubacar Sanogo,Cote d'Ivoire,TSG 1899 Hoffenheim
-33245,Boubacar Sanogo,Cote d'Ivoire,AS Saint-Etienne
+33245,Boubacar Sanogo,Ivory Coast,SV Werder Bremen
+33245,Boubacar Sanogo,Ivory Coast,TSG 1899 Hoffenheim
+33245,Boubacar Sanogo,Ivory Coast,AS Saint-Etienne
 33247,Scott Barron,England,Brentford FC
 33247,Scott Barron,England,Ipswich Town
 33248,Billy Clarke,Ireland,Brentford FC
@@ -13614,8 +13614,8 @@ player_id,name,country,team
 33357,Miranda,Brazil,Inter Milan
 33357,Miranda,Brazil,Atletico de Madrid
 33362,Karim Soltani,Algeria,Le Havre AC
-33366,Abdul Kader Keita,Cote d'Ivoire,Olympique Lyon
-33366,Abdul Kader Keita,Cote d'Ivoire,LOSC Lille
+33366,Abdul Kader Keita,Ivory Coast,Olympique Lyon
+33366,Abdul Kader Keita,Ivory Coast,LOSC Lille
 33378,Patrick Kunig,Germany,RB Leipzig
 33430,Adam Kokoszka,Poland,FC Empoli
 33439,Carlos Bueno,Uruguay,Real Sociedad
@@ -13634,11 +13634,11 @@ player_id,name,country,team
 33458,Alain Cantareil,France,Olympique Marseille
 33458,Alain Cantareil,France,OGC Nice
 33465,Rais M'Bolhi,Algeria,Stade Rennais FC
-33478,Cheik Tiote,Cote d'Ivoire,Newcastle United
-33481,Gervinho,Cote d'Ivoire,AS Roma
-33481,Gervinho,Cote d'Ivoire,LOSC Lille
-33481,Gervinho,Cote d'Ivoire,Arsenal FC
-33481,Gervinho,Cote d'Ivoire,Parma Calcio 1913
+33478,Cheik Tiote,Ivory Coast,Newcastle United
+33481,Gervinho,Ivory Coast,AS Roma
+33481,Gervinho,Ivory Coast,LOSC Lille
+33481,Gervinho,Ivory Coast,Arsenal FC
+33481,Gervinho,Ivory Coast,Parma Calcio 1913
 33483,Calvin Andrew,England,Brighton & Hove Albion
 33483,Calvin Andrew,England,Crystal Palace
 33487,Chris Coyne,Australia,West Ham United
@@ -13742,11 +13742,11 @@ player_id,name,country,team
 33847,Kevin Lejeune,France,FC Nantes
 33848,Baptiste Martin,France,AJ Auxerre
 33870,Marvin Ogunjimi,Belgium,RCD Mallorca
-33873,Asmir Begovic,Bosnia-Herzegovina,Everton FC
-33873,Asmir Begovic,Bosnia-Herzegovina,AC Milan
-33873,Asmir Begovic,Bosnia-Herzegovina,AFC Bournemouth
-33873,Asmir Begovic,Bosnia-Herzegovina,Chelsea FC
-33873,Asmir Begovic,Bosnia-Herzegovina,Ipswich Town
+33873,Asmir Begovic,Bosnia and Herzegovina,Everton FC
+33873,Asmir Begovic,Bosnia and Herzegovina,AC Milan
+33873,Asmir Begovic,Bosnia and Herzegovina,AFC Bournemouth
+33873,Asmir Begovic,Bosnia and Herzegovina,Chelsea FC
+33873,Asmir Begovic,Bosnia and Herzegovina,Ipswich Town
 33882,Fouad Bouguerra,Algeria,FC Nantes
 33885,Paddy Gamble,England,Nottingham Forest
 33895,Jack Hobbs,England,Nottingham Forest
@@ -13808,10 +13808,10 @@ player_id,name,country,team
 34023,Cedric Stoll,France,AS Monaco
 34025,Jonas Thern,Sweden,SSC Napoli
 34025,Jonas Thern,Sweden,AS Roma
-34026,Siaka Tiene,Cote d'Ivoire,Stade Reims
-34026,Siaka Tiene,Cote d'Ivoire,Montpellier HSC
-34026,Siaka Tiene,Cote d'Ivoire,AS Saint-Etienne
-34026,Siaka Tiene,Cote d'Ivoire,Paris Saint-Germain
+34026,Siaka Tiene,Ivory Coast,Stade Reims
+34026,Siaka Tiene,Ivory Coast,Montpellier HSC
+34026,Siaka Tiene,Ivory Coast,AS Saint-Etienne
+34026,Siaka Tiene,Ivory Coast,Paris Saint-Germain
 34053,Cheikh N'Diaye,Senegal,Stade Rennais FC
 34060,Nejmeddin Daghfous,Tunisia,1.FSV Mainz 05
 34065,Nathan Ashton,England,Fulham FC
@@ -14399,7 +14399,7 @@ player_id,name,country,team
 37337,Mario Suarez,Spain,Atletico de Madrid
 37337,Mario Suarez,Spain,ACF Fiorentina
 37338,Florian Tausendpfund,Germany,1.FC Heidenheim 1846
-37357,Edgar Loue,Cote d'Ivoire,RC Strasbourg Alsace
+37357,Edgar Loue,Ivory Coast,RC Strasbourg Alsace
 37366,Joe Gatting,England,Brighton & Hove Albion
 37367,Ismael Falcon,Spain,Atletico de Madrid
 37367,Ismael Falcon,Spain,Celta de Vigo
@@ -14535,7 +14535,7 @@ player_id,name,country,team
 37846,Albert Baning,Cameroon,Paris Saint-Germain
 37852,Deme N'Diaye,Senegal,RC Lens
 37859,Victor Correia,Guinea,RC Strasbourg Alsace
-37889,Enis Nadarevic,Bosnia-Herzegovina,Genoa CFC
+37889,Enis Nadarevic,Bosnia and Herzegovina,Genoa CFC
 37892,Ion Ansotegi,Spain,Real Sociedad
 37892,Ion Ansotegi,Spain,RCD Mallorca
 37896,DJ Campbell,England,Leicester City
@@ -14737,8 +14737,8 @@ player_id,name,country,team
 38803,Jose Montiel,Paraguay,Udinese Calcio
 38807,Vegard Skogheim,Norway,SV Werder Bremen
 38811,Justo Villar,Paraguay,Real Valladolid CF
-38816,Kandia Traore,Cote d'Ivoire,Le Havre AC
-38816,Kandia Traore,Cote d'Ivoire,RC Strasbourg Alsace
+38816,Kandia Traore,Ivory Coast,Le Havre AC
+38816,Kandia Traore,Ivory Coast,RC Strasbourg Alsace
 38817,Sergio Tejera,Spain,RCD Mallorca
 38817,Sergio Tejera,Spain,RCD Espanyol Barcelona
 38817,Sergio Tejera,Spain,Deportivo Alaves
@@ -14839,7 +14839,7 @@ player_id,name,country,team
 39345,Txiki,Spain,CD Leganes
 39345,Txiki,Spain,UD Las Palmas
 39369,Giuseppe Negro,Italy,US Lecce
-39372,Mario Vrancic,Bosnia-Herzegovina,1.FSV Mainz 05
+39372,Mario Vrancic,Bosnia and Herzegovina,1.FSV Mainz 05
 39377,Miles Addison,England,AFC Bournemouth
 39378,Jozy Altidore,United States,Villarreal CF
 39381,Gareth Bale,Wales,Southampton FC
@@ -15191,8 +15191,8 @@ player_id,name,country,team
 41815,Nick Ward,Australia,Brighton & Hove Albion
 41818,Steve De Ridder,Belgium,Southampton FC
 41843,Mikkel Vendelbo,Denmark,Holstein Kiel
-41866,Constant Djakpa,Cote d'Ivoire,Eintracht Frankfurt
-41866,Constant Djakpa,Cote d'Ivoire,Bayer 04 Leverkusen
+41866,Constant Djakpa,Ivory Coast,Eintracht Frankfurt
+41866,Constant Djakpa,Ivory Coast,Bayer 04 Leverkusen
 41897,Sam Sodje,Nigeria,Brentford FC
 41912,Simone Aresti,Italy,Cagliari Calcio
 41913,Ivano Baldanzeddu,Italy,Venezia FC
@@ -15351,9 +15351,9 @@ player_id,name,country,team
 43076,Nivaldo,Brazil,Real Valladolid CF
 43081,Luca Baldo,Italy,AC Monza
 43082,Nicola Belmonte,Italy,Udinese Calcio
-43095,Adama Fofana,Cote d'Ivoire,Inter Milan
-43095,Adama Fofana,Cote d'Ivoire,Bologna FC 1909
-43095,Adama Fofana,Cote d'Ivoire,Como 1907
+43095,Adama Fofana,Ivory Coast,Inter Milan
+43095,Adama Fofana,Ivory Coast,Bologna FC 1909
+43095,Adama Fofana,Ivory Coast,Como 1907
 43096,Dezmon Giraldi,Australia,FC Empoli
 43100,Savio Nsereko,Germany,West Ham United
 43100,Savio Nsereko,Germany,Bologna FC 1909
@@ -15486,9 +15486,9 @@ player_id,name,country,team
 44058,Wojciech Szczesny,Poland,Juventus FC
 44058,Wojciech Szczesny,Poland,Arsenal FC
 44058,Wojciech Szczesny,Poland,Brentford FC
-44059,Ervin Zukanovic,Bosnia-Herzegovina,AS Roma
-44059,Ervin Zukanovic,Bosnia-Herzegovina,Genoa CFC
-44059,Ervin Zukanovic,Bosnia-Herzegovina,Atalanta BC
+44059,Ervin Zukanovic,Bosnia and Herzegovina,AS Roma
+44059,Ervin Zukanovic,Bosnia and Herzegovina,Genoa CFC
+44059,Ervin Zukanovic,Bosnia and Herzegovina,Atalanta BC
 44062,Antonio Adan,Spain,Real Madrid
 44062,Antonio Adan,Spain,Cagliari Calcio
 44062,Antonio Adan,Spain,Atletico de Madrid
@@ -15518,10 +15518,10 @@ player_id,name,country,team
 44137,Giuseppe Greco,Italy,Como 1907
 44139,Juan Albin,Uruguay,Getafe CF
 44139,Juan Albin,Uruguay,RCD Espanyol Barcelona
-44162,Miralem Pjanic,Bosnia-Herzegovina,FC Barcelona
-44162,Miralem Pjanic,Bosnia-Herzegovina,Olympique Lyon
-44162,Miralem Pjanic,Bosnia-Herzegovina,Juventus FC
-44162,Miralem Pjanic,Bosnia-Herzegovina,AS Roma
+44162,Miralem Pjanic,Bosnia and Herzegovina,FC Barcelona
+44162,Miralem Pjanic,Bosnia and Herzegovina,Olympique Lyon
+44162,Miralem Pjanic,Bosnia and Herzegovina,Juventus FC
+44162,Miralem Pjanic,Bosnia and Herzegovina,AS Roma
 44171,Serge N'Gal,Cameroon,Stade Brestois 29
 44227,Ivan Kelava,Croatia,Udinese Calcio
 44256,Jurica Vucko,Croatia,Deportivo Alaves
@@ -15870,8 +15870,8 @@ player_id,name,country,team
 45568,Giacomo Bindi,Italy,AC Monza
 45570,Davide Facchin,Italy,Venezia FC
 45570,Davide Facchin,Italy,Como 1907
-45573,Abdoulaye Diarra,Cote d'Ivoire,Inter Milan
-45573,Abdoulaye Diarra,Cote d'Ivoire,Cagliari Calcio
+45573,Abdoulaye Diarra,Ivory Coast,Inter Milan
+45573,Abdoulaye Diarra,Ivory Coast,Cagliari Calcio
 45575,Simone Fautario,Italy,Inter Milan
 45575,Simone Fautario,Italy,Como 1907
 45576,Attila Filkor,Hungary,Inter Milan
@@ -16092,8 +16092,8 @@ player_id,name,country,team
 47312,Chris Makiese,France,LOSC Lille
 47344,Eyong Enoh,Cameroon,Fulham FC
 47435,Andi Lila,Albania,Parma Calcio 1913
-47513,Mato Jajalo,Bosnia-Herzegovina,Venezia FC
-47513,Mato Jajalo,Bosnia-Herzegovina,Udinese Calcio
+47513,Mato Jajalo,Bosnia and Herzegovina,Venezia FC
+47513,Mato Jajalo,Bosnia and Herzegovina,Udinese Calcio
 47541,Ole Werner,Germany,Holstein Kiel
 47543,Eren Derdiyok,Switzerland,TSG 1899 Hoffenheim
 47543,Eren Derdiyok,Switzerland,Bayer 04 Leverkusen
@@ -16250,8 +16250,8 @@ player_id,name,country,team
 48383,Alex Rhodes,England,Brentford FC
 48393,Sam Tillen,England,Brentford FC
 48394,Gavin Tomlin,England,Brentford FC
-48411,Zoumana Bakayogo,Cote d'Ivoire,Brighton & Hove Albion
-48411,Zoumana Bakayogo,Cote d'Ivoire,Leicester City
+48411,Zoumana Bakayogo,Ivory Coast,Brighton & Hove Albion
+48411,Zoumana Bakayogo,Ivory Coast,Leicester City
 48473,Ricardo Costa,Brazil,CD Leganes
 48494,Chris Breach,England,Brighton & Hove Albion
 48497,Scott Chamberlain,England,Brighton & Hove Albion
@@ -16633,8 +16633,8 @@ player_id,name,country,team
 51663,Pedro Alcala,Spain,Girona FC
 51667,Kiko Olivas,Spain,Girona FC
 51667,Kiko Olivas,Spain,Real Valladolid CF
-51676,Ermin Bicakcic,Bosnia-Herzegovina,TSG 1899 Hoffenheim
-51676,Ermin Bicakcic,Bosnia-Herzegovina,VfB Stuttgart
+51676,Ermin Bicakcic,Bosnia and Herzegovina,TSG 1899 Hoffenheim
+51676,Ermin Bicakcic,Bosnia and Herzegovina,VfB Stuttgart
 51681,Chico Flores,Spain,Genoa CFC
 51681,Chico Flores,Spain,RCD Mallorca
 51682,Cesar Caneda,Spain,Sevilla FC
@@ -16680,7 +16680,7 @@ player_id,name,country,team
 51972,Robbie Kruse,Australia,Bayer 04 Leverkusen
 51977,Pavao Pervan,Austria,VfL Wolfsburg
 52006,Onur Ayık,Turkiye,SV Werder Bremen
-52027,Thierry Doubai,Cote d'Ivoire,Udinese Calcio
+52027,Thierry Doubai,Ivory Coast,Udinese Calcio
 52035,Federico Azcarate,Argentina,CD Leganes
 52059,Zanka,Denmark,Brentford FC
 52063,Toni Calvo,Spain,Parma Calcio 1913
@@ -16725,7 +16725,7 @@ player_id,name,country,team
 52312,Sebastian Giovinco,Italy,FC Empoli
 52312,Sebastian Giovinco,Italy,Juventus FC
 52312,Sebastian Giovinco,Italy,Parma Calcio 1913
-52314,Said Husejinovic,Bosnia-Herzegovina,SV Werder Bremen
+52314,Said Husejinovic,Bosnia and Herzegovina,SV Werder Bremen
 52317,Deniz Naki,Germany,FC St. Pauli
 52328,Gonzalo Bergessio,Argentina,AS Saint-Etienne
 52342,Tobias Scharlau,Germany,1.FC Union Berlin
@@ -16994,7 +16994,7 @@ player_id,name,country,team
 55001,Matteo Rubin,Italy,Torino FC
 55002,Francesco Volpe,Italy,Juventus FC
 55042,Diego Rigonato,Brazil,Stade Reims
-55044,Abraham Gneki Guie,Cote d'Ivoire,OGC Nice
+55044,Abraham Gneki Guie,Ivory Coast,OGC Nice
 55089,Oliver Baumann,Germany,TSG 1899 Hoffenheim
 55089,Oliver Baumann,Germany,SC Freiburg
 55092,Shqipon Bektasi,Germany,1.FC Heidenheim 1846
@@ -17331,8 +17331,8 @@ player_id,name,country,team
 57186,Bakary Kone,Burkina Faso,RC Strasbourg Alsace
 57207,Jordon Mutch,England,Crystal Palace
 57208,Felipe Saad,Brazil,RC Strasbourg Alsace
-57216,Ismael Traore,Cote d'Ivoire,Stade Brestois 29
-57216,Ismael Traore,Cote d'Ivoire,Angers SCO
+57216,Ismael Traore,Ivory Coast,Stade Brestois 29
+57216,Ismael Traore,Ivory Coast,Angers SCO
 57226,Toze Marreco,Portugal,Deportivo Alaves
 57229,Paulinho,Brazil,FC Barcelona
 57229,Paulinho,Brazil,Tottenham Hotspur
@@ -17349,7 +17349,7 @@ player_id,name,country,team
 57292,Michael Girasole,Italy,Atalanta BC
 57293,Jurgen Pandiani,Italy,Atalanta BC
 57293,Jurgen Pandiani,Italy,AC Monza
-57295,Moussa Kone,Cote d'Ivoire,Atalanta BC
+57295,Moussa Kone,Ivory Coast,Atalanta BC
 57299,Michele Marconi,Italy,Venezia FC
 57299,Michele Marconi,Italy,Atalanta BC
 57299,Michele Marconi,Italy,US Lecce
@@ -17424,7 +17424,7 @@ player_id,name,country,team
 57410,Yann Kermorgant,France,Leicester City
 57410,Yann Kermorgant,France,AFC Bournemouth
 57412,Abdellah Kharbouchi,Morocco,Le Havre AC
-57420,Lamine Kone,Cote d'Ivoire,RC Strasbourg Alsace
+57420,Lamine Kone,Ivory Coast,RC Strasbourg Alsace
 57423,Florin Gardos,Romania,Southampton FC
 57427,Benjamin Laurant,France,Le Havre AC
 57430,Damien Lynch,Ireland,Nottingham Forest
@@ -17906,8 +17906,8 @@ player_id,name,country,team
 60588,Abdoul Camara,Guinea,RCD Mallorca
 60588,Abdoul Camara,Guinea,Stade Rennais FC
 60588,Abdoul Camara,Guinea,Angers SCO
-60591,Yannick Sagbo,Cote d'Ivoire,Wolverhampton Wanderers
-60591,Yannick Sagbo,Cote d'Ivoire,AS Monaco
+60591,Yannick Sagbo,Ivory Coast,Wolverhampton Wanderers
+60591,Yannick Sagbo,Ivory Coast,AS Monaco
 60596,Nicolas Seguin,France,Olympique Lyon
 60599,Samuel Souprayen,France,AJ Auxerre
 60599,Samuel Souprayen,France,Stade Rennais FC
@@ -17916,7 +17916,7 @@ player_id,name,country,team
 60602,Yohann Thuram,Guadeloupe,AS Monaco
 60603,Kevin Theophile-Catherine,Martinique,Stade Rennais FC
 60603,Kevin Theophile-Catherine,Martinique,AS Saint-Etienne
-60604,Eric Tie Bi,Cote d'Ivoire,Stade Brestois 29
+60604,Eric Tie Bi,Ivory Coast,Stade Brestois 29
 60607,Pierrick Valdivia,France,RC Lens
 60613,Distel Zola,DR Congo,Le Havre AC
 60613,Distel Zola,DR Congo,AS Monaco
@@ -17930,7 +17930,7 @@ player_id,name,country,team
 60779,Igor Martinez,Spain,Athletic Bilbao
 60779,Igor Martinez,Spain,Deportivo Alaves
 60781,Alan Power,Ireland,Nottingham Forest
-60790,Toni Sunjic,Bosnia-Herzegovina,VfB Stuttgart
+60790,Toni Sunjic,Bosnia and Herzegovina,VfB Stuttgart
 60794,Michael Konsel,Austria,AS Roma
 60794,Michael Konsel,Austria,Venezia FC
 60878,Sebastian Hauck,Germany,RB Leipzig
@@ -17953,8 +17953,8 @@ player_id,name,country,team
 60957,Sebastian Polter,Germany,1.FC Union Berlin
 60957,Sebastian Polter,Germany,VfL Wolfsburg
 60957,Sebastian Polter,Germany,1.FSV Mainz 05
-60979,Yannick Boli,Cote d'Ivoire,Le Havre AC
-60979,Yannick Boli,Cote d'Ivoire,Paris Saint-Germain
+60979,Yannick Boli,Ivory Coast,Le Havre AC
+60979,Yannick Boli,Ivory Coast,Paris Saint-Germain
 60982,Thiago Carleto,Brazil,Valencia CF
 60990,Bruno Ecuele Manga,Gabon,Angers SCO
 60995,Olly Lancashire,England,Southampton FC
@@ -17996,7 +17996,7 @@ player_id,name,country,team
 61445,Jonathan Guillou,France,Stade Reims
 61445,Jonathan Guillou,France,Angers SCO
 61447,Jem Karacan,Turkiye,AFC Bournemouth
-61449,Senad Lulic,Bosnia-Herzegovina,SS Lazio
+61449,Senad Lulic,Bosnia and Herzegovina,SS Lazio
 61464,Karim Yoda,France,Getafe CF
 61488,Oumar Pouye,Senegal,RC Strasbourg Alsace
 61510,Giacomo Cenetti,Italy,Venezia FC
@@ -18083,8 +18083,8 @@ player_id,name,country,team
 61751,Antonio Mazzotta,Italy,US Lecce
 61753,Gianvito Misuraca,Italy,Parma Calcio 1913
 61757,Nicola Rigoni,Italy,AC Monza
-61758,Kevin Koffi,Cote d'Ivoire,SSC Napoli
-61758,Kevin Koffi,Cote d'Ivoire,AS Roma
+61758,Kevin Koffi,Ivory Coast,SSC Napoli
+61758,Kevin Koffi,Ivory Coast,AS Roma
 61759,Samuele Romeo,Italy,FC Empoli
 61770,Emanuele Terranova,Italy,US Lecce
 61778,Gianluigi Bianco,Italy,FC Empoli
@@ -18171,7 +18171,7 @@ player_id,name,country,team
 62269,Fabrizio Rondinara,Italy,Genoa CFC
 62270,Danilo Russo,Italy,Genoa CFC
 62270,Danilo Russo,Italy,Venezia FC
-62351,Abdoulaye Bamba,Cote d'Ivoire,Angers SCO
+62351,Abdoulaye Bamba,Ivory Coast,Angers SCO
 62354,Davide Borin,Italy,Juventus FC
 62355,Donato Bottone,Italy,Juventus FC
 62356,Dario Campagna,Italy,Venezia FC
@@ -18490,7 +18490,7 @@ player_id,name,country,team
 66708,Benjamin Buchel,Liechtenstein,AFC Bournemouth
 66736,Lisandro Magallan,Argentina,Deportivo Alaves
 66783,Charlison Benschop,Curacao,Stade Brestois 29
-66788,Kafoumba Coulibaly,Cote d'Ivoire,OGC Nice
+66788,Kafoumba Coulibaly,Ivory Coast,OGC Nice
 66791,Diallo Guidileye,Mauritania,Stade Brestois 29
 66829,Danny Foster,England,Tottenham Hotspur
 66829,Danny Foster,England,Brentford FC
@@ -18598,9 +18598,9 @@ player_id,name,country,team
 67546,Jorge Pulido,Spain,Rayo Vallecano
 67548,Ruben Rochina,Spain,Rayo Vallecano
 67555,TJ Moncur,England,Fulham FC
-67556,Milan Djuric,Bosnia-Herzegovina,AC Monza
-67556,Milan Djuric,Bosnia-Herzegovina,Hellas Verona
-67556,Milan Djuric,Bosnia-Herzegovina,Parma Calcio 1913
+67556,Milan Djuric,Bosnia and Herzegovina,AC Monza
+67556,Milan Djuric,Bosnia and Herzegovina,Hellas Verona
+67556,Milan Djuric,Bosnia and Herzegovina,Parma Calcio 1913
 67639,Andrey Galabinov,Bulgaria,Bologna FC 1909
 67639,Andrey Galabinov,Bulgaria,Genoa CFC
 67640,Marco Martina Rini,Italy,Hellas Verona
@@ -18609,7 +18609,7 @@ player_id,name,country,team
 67648,Ignacio Gonzalez,Uruguay,AS Monaco
 67685,Marco Fabian,Mexico,Eintracht Frankfurt
 67721,Mohammed Rabiu,Ghana,Udinese Calcio
-67751,Demir Hotic,Bosnia-Herzegovina,VfB Stuttgart
+67751,Demir Hotic,Bosnia and Herzegovina,VfB Stuttgart
 67801,Craig Dobson,Jamaica,Crystal Palace
 67801,Craig Dobson,Jamaica,Brentford FC
 67808,Borja Garcia,Spain,Girona FC
@@ -18664,7 +18664,7 @@ player_id,name,country,team
 68410,Stefanos Kapino,Greece,1.FSV Mainz 05
 68542,German Pacheco,Argentina,Rayo Vallecano
 68558,Alejandro Martinuccio,Argentina,Villarreal CF
-68574,Chong Tese,"Korea, North",VfL Bochum
+68574,Chong Tese,North Korea,VfL Bochum
 68645,Martin Montoya,Spain,Valencia CF
 68645,Martin Montoya,Spain,Real Betis Balompie
 68645,Martin Montoya,Spain,FC Barcelona
@@ -18687,8 +18687,8 @@ player_id,name,country,team
 68902,Jerry Vandam,France,LOSC Lille
 68934,Sebastian Rosano,Uruguay,Cagliari Calcio
 69001,Giedrius Arlauskis,Lithuania,RCD Espanyol Barcelona
-69006,Lacina Traore,Cote d'Ivoire,Everton FC
-69006,Lacina Traore,Cote d'Ivoire,AS Monaco
+69006,Lacina Traore,Ivory Coast,Everton FC
+69006,Lacina Traore,Ivory Coast,AS Monaco
 69015,Andriy Yarmolenko,Ukraine,West Ham United
 69015,Andriy Yarmolenko,Ukraine,Borussia Dortmund
 69035,Wesley Ngo Baheng,France,Newcastle United
@@ -19323,7 +19323,7 @@ player_id,name,country,team
 74956,Marcel Buchel,Liechtenstein,FC Empoli
 74960,Martin Dubravka,Slovakia,Newcastle United
 74960,Martin Dubravka,Slovakia,Manchester United
-74996,Izet Hajrovic,Bosnia-Herzegovina,SV Werder Bremen
+74996,Izet Hajrovic,Bosnia and Herzegovina,SV Werder Bremen
 75057,Jordi Vinuesa,Spain,Girona FC
 75058,William Matheus,Brazil,FC Toulouse
 75127,Ezequiel Munoz,Argentina,Genoa CFC
@@ -19338,9 +19338,9 @@ player_id,name,country,team
 75249,Sergio Segura,Spain,Rayo Vallecano
 75282,Francois Bellugou,France,AJ Auxerre
 75282,Francois Bellugou,France,Montpellier HSC
-75287,Seydou Doumbia,Cote d'Ivoire,Girona FC
-75287,Seydou Doumbia,Cote d'Ivoire,AS Roma
-75287,Seydou Doumbia,Cote d'Ivoire,Newcastle United
+75287,Seydou Doumbia,Ivory Coast,Girona FC
+75287,Seydou Doumbia,Ivory Coast,AS Roma
+75287,Seydou Doumbia,Ivory Coast,Newcastle United
 75295,John Verhoek,Netherlands,FC St. Pauli
 75295,John Verhoek,Netherlands,Stade Rennais FC
 75295,John Verhoek,Netherlands,1.FC Heidenheim 1846
@@ -19384,8 +19384,8 @@ player_id,name,country,team
 75681,Jorge Gonzalez,Spain,CD Leganes
 75736,Iker Guerenu,Spain,Deportivo Alaves
 75764,Miguel Alfonso,Spain,CD Leganes
-75816,Miroslav Stevanovic,Bosnia-Herzegovina,Sevilla FC
-75816,Miroslav Stevanovic,Bosnia-Herzegovina,Deportivo Alaves
+75816,Miroslav Stevanovic,Bosnia and Herzegovina,Sevilla FC
+75816,Miroslav Stevanovic,Bosnia and Herzegovina,Deportivo Alaves
 75820,Juan Aguilera,Spain,CD Leganes
 75821,Nacho Aznar,Spain,CD Leganes
 75823,Daniel Camacho,Spain,CD Leganes
@@ -19456,10 +19456,10 @@ player_id,name,country,team
 76277,Laurent Koscielny,France,Arsenal FC
 76280,Tenema N'Diaye,Mali,FC Nantes
 76285,Tono,Spain,Real Sociedad
-76293,Giovanni Sio,Cote d'Ivoire,Montpellier HSC
-76293,Giovanni Sio,Cote d'Ivoire,FC Augsburg
-76293,Giovanni Sio,Cote d'Ivoire,VfL Wolfsburg
-76293,Giovanni Sio,Cote d'Ivoire,Stade Rennais FC
+76293,Giovanni Sio,Ivory Coast,Montpellier HSC
+76293,Giovanni Sio,Ivory Coast,FC Augsburg
+76293,Giovanni Sio,Ivory Coast,VfL Wolfsburg
+76293,Giovanni Sio,Ivory Coast,Stade Rennais FC
 76329,Marcelo Estigarribia,Paraguay,Juventus FC
 76329,Marcelo Estigarribia,Paraguay,Atalanta BC
 76355,Iban Perez,Spain,CA Osasuna
@@ -19540,7 +19540,7 @@ player_id,name,country,team
 77448,Klaus Funk,Germany,Eintracht Frankfurt
 77448,Klaus Funk,Germany,VfB Stuttgart
 77448,Klaus Funk,Germany,SV Werder Bremen
-77449,Cyriac,Cote d'Ivoire,Fulham FC
+77449,Cyriac,Ivory Coast,Fulham FC
 77451,Rigobert Gruber,Germany,Eintracht Frankfurt
 77451,Rigobert Gruber,Germany,SV Werder Bremen
 77467,Frank Klobke,Germany,SV Werder Bremen
@@ -19566,7 +19566,7 @@ player_id,name,country,team
 77639,Marian Kello,Slovakia,Wolverhampton Wanderers
 77695,Egidio Capra,Italy,Como 1907
 77695,Egidio Capra,Italy,AC Milan
-77708,Geoffroy Serey Die,Cote d'Ivoire,VfB Stuttgart
+77708,Geoffroy Serey Die,Ivory Coast,VfB Stuttgart
 77713,Gerardo Carrera,Spain,UD Las Palmas
 77720,Ivan Pillud,Argentina,Hellas Verona
 77720,Ivan Pillud,Argentina,RCD Espanyol Barcelona
@@ -19662,7 +19662,7 @@ player_id,name,country,team
 78847,Berardino Capocchiano,Italy,SS Lazio
 78864,Kazuo Ozaki,Japan,FC St. Pauli
 78917,Julien Faussurier,France,Stade Brestois 29
-78947,Adnan Zahirovic,Bosnia-Herzegovina,VfL Bochum
+78947,Adnan Zahirovic,Bosnia and Herzegovina,VfL Bochum
 78950,Sonny Kittel,Germany,Eintracht Frankfurt
 78956,Driss Fettouhi,Morocco,Le Havre AC
 78959,Martin Kelly,England,Liverpool FC
@@ -19720,13 +19720,13 @@ player_id,name,country,team
 79806,Peter Reid,England,Manchester City
 79893,Yannis Salibur,France,RCD Mallorca
 79893,Yannis Salibur,France,AS Saint-Etienne
-79946,Youssouf Kamara,Cote d'Ivoire,SSC Napoli
+79946,Youssouf Kamara,Ivory Coast,SSC Napoli
 79960,Alex Sandro,Brazil,Juventus FC
 79967,Simon Zoller,Germany,FC St. Pauli
 79967,Simon Zoller,Germany,VfL Bochum
 79969,Gerhard Rodax,Austria,Atletico de Madrid
-79989,Serges Deble,Cote d'Ivoire,FC Nantes
-79989,Serges Deble,Cote d'Ivoire,Angers SCO
+79989,Serges Deble,Ivory Coast,FC Nantes
+79989,Serges Deble,Ivory Coast,Angers SCO
 80007,Clemens Fandrich,Germany,RB Leipzig
 80009,Odair Fortes,Cape Verde,Stade Reims
 80023,Cleber Chala,Ecuador,Southampton FC
@@ -19773,7 +19773,7 @@ player_id,name,country,team
 80491,Jose Luis Sierra,Chile,Real Valladolid CF
 80524,Kurt Robinson,England,Ipswich Town
 80629,Christopher Kramer,Germany,Holstein Kiel
-80696,Jean-Jacques Gosso,Cote d'Ivoire,AS Monaco
+80696,Jean-Jacques Gosso,Ivory Coast,AS Monaco
 80697,Leonard Kweuke,Cameroon,Eintracht Frankfurt
 80698,Jean-Eudes Maurice,Haiti,RC Lens
 80698,Jean-Eudes Maurice,Haiti,Paris Saint-Germain
@@ -19880,11 +19880,11 @@ player_id,name,country,team
 81785,Shinji Kagawa,Japan,Manchester United
 81789,Maya Yoshida,Japan,Southampton FC
 81793,Tadanari Lee,Japan,Southampton FC
-81796,Sung-yueng Ki,"Korea, South",Newcastle United
-81796,Sung-yueng Ki,"Korea, South",RCD Mallorca
-81801,Chung-yong Lee,"Korea, South",VfL Bochum
-81801,Chung-yong Lee,"Korea, South",Crystal Palace
-81808,Wilfried Bony,Cote d'Ivoire,Manchester City
+81796,Sung-yueng Ki,South Korea,Newcastle United
+81796,Sung-yueng Ki,South Korea,RCD Mallorca
+81801,Chung-yong Lee,South Korea,VfL Bochum
+81801,Chung-yong Lee,South Korea,Crystal Palace
+81808,Wilfried Bony,Ivory Coast,Manchester City
 81819,Hermann Gerland,Germany,VfL Bochum
 81827,Karsten Heine,Germany,1.FC Union Berlin
 81828,Alfred Schon,Germany,TSG 1899 Hoffenheim
@@ -20298,8 +20298,8 @@ player_id,name,country,team
 84645,Bernd Klotz,Germany,Borussia Dortmund
 84650,Michael Konig,Germany,Eintracht Frankfurt
 84651,Thomas Lauf,Germany,Eintracht Frankfurt
-84658,Radmilo Mihajlovic,Bosnia-Herzegovina,Bayern Munich
-84658,Radmilo Mihajlovic,Bosnia-Herzegovina,Eintracht Frankfurt
+84658,Radmilo Mihajlovic,Bosnia and Herzegovina,Bayern Munich
+84658,Radmilo Mihajlovic,Bosnia and Herzegovina,Eintracht Frankfurt
 84659,Andreas Muller,Germany,Borussia Dortmund
 84660,Norbert Nachtweih,Germany,Eintracht Frankfurt
 84660,Norbert Nachtweih,Germany,Bayern Munich
@@ -20603,7 +20603,7 @@ player_id,name,country,team
 87052,Nicolao Cardoso,Italy,SSC Napoli
 87052,Nicolao Cardoso,Italy,Nottingham Forest
 87052,Nicolao Cardoso,Italy,FC Empoli
-87067,Dino Fazlic,Bosnia-Herzegovina,Fulham FC
+87067,Dino Fazlic,Bosnia and Herzegovina,Fulham FC
 87075,Gunnar Einarsson,Iceland,Brentford FC
 87162,Simon Makienok,Denmark,FC St. Pauli
 87210,Davide Astori,Italy,AS Roma
@@ -20638,7 +20638,7 @@ player_id,name,country,team
 87672,Junior Stanislas,England,AFC Bournemouth
 87840,Gonzalo Castellani,Argentina,Villarreal CF
 87856,Roderick Miranda,Portugal,Wolverhampton Wanderers
-87862,Ivica Jozic,Bosnia-Herzegovina,VfL Wolfsburg
+87862,Ivica Jozic,Bosnia and Herzegovina,VfL Wolfsburg
 87863,Aleksandr Karataev,Russia,1.FSV Mainz 05
 87884,Mario Rui,Portugal,SSC Napoli
 87884,Mario Rui,Portugal,AS Roma
@@ -20773,9 +20773,9 @@ player_id,name,country,team
 88909,Riccardo Saponara,Italy,Hellas Verona
 88909,Riccardo Saponara,Italy,Genoa CFC
 88909,Riccardo Saponara,Italy,ACF Fiorentina
-88971,Jonathan Kodjia,Cote d'Ivoire,Stade Reims
-88971,Jonathan Kodjia,Cote d'Ivoire,Aston Villa
-88971,Jonathan Kodjia,Cote d'Ivoire,Angers SCO
+88971,Jonathan Kodjia,Ivory Coast,Stade Reims
+88971,Jonathan Kodjia,Ivory Coast,Aston Villa
+88971,Jonathan Kodjia,Ivory Coast,Angers SCO
 88978,Jose Antonio Camacho,Spain,Real Madrid
 88983,Nathan Eccleston,England,Liverpool FC
 88989,Roger Milla,Cameroon,Montpellier HSC
@@ -21008,7 +21008,7 @@ player_id,name,country,team
 90695,Jorge Serna,Colombia,Como 1907
 90742,Adilson,Brazil,Sevilla FC
 90742,Adilson,Brazil,Real Betis Balompie
-90748,Jo-gook Jeong,"Korea, South",AJ Auxerre
+90748,Jo-gook Jeong,South Korea,AJ Auxerre
 90836,Steve Cook,England,Brighton & Hove Albion
 90836,Steve Cook,England,Nottingham Forest
 90836,Steve Cook,England,AFC Bournemouth
@@ -21054,11 +21054,11 @@ player_id,name,country,team
 91763,Pablo Hernandez,Chile,Celta de Vigo
 91795,Stefano Nava,Italy,Parma Calcio 1913
 91795,Stefano Nava,Italy,AC Milan
-91841,Ja-cheol Koo,"Korea, South",FC Augsburg
-91841,Ja-cheol Koo,"Korea, South",VfL Wolfsburg
-91841,Ja-cheol Koo,"Korea, South",1.FSV Mainz 05
-91845,Heung-min Son,"Korea, South",Tottenham Hotspur
-91845,Heung-min Son,"Korea, South",Bayer 04 Leverkusen
+91841,Ja-cheol Koo,South Korea,FC Augsburg
+91841,Ja-cheol Koo,South Korea,VfL Wolfsburg
+91841,Ja-cheol Koo,South Korea,1.FSV Mainz 05
+91845,Heung-min Son,South Korea,Tottenham Hotspur
+91845,Heung-min Son,South Korea,Bayer 04 Leverkusen
 91849,Thomas Delaney,Denmark,SV Werder Bremen
 91849,Thomas Delaney,Denmark,Borussia Dortmund
 91849,Thomas Delaney,Denmark,TSG 1899 Hoffenheim
@@ -21197,8 +21197,8 @@ player_id,name,country,team
 93678,Gaetan Charbonnier,France,AJ Auxerre
 93678,Gaetan Charbonnier,France,Stade Brestois 29
 93681,Sacha Clemence,France,Angers SCO
-93690,Brice Dja Djedje,Cote d'Ivoire,RC Lens
-93690,Brice Dja Djedje,Cote d'Ivoire,Olympique Marseille
+93690,Brice Dja Djedje,Ivory Coast,RC Lens
+93690,Brice Dja Djedje,Ivory Coast,Olympique Marseille
 93698,Amir Falahen,Palestine,SC Freiburg
 93701,Christopher Glombard,Martinique,Stade Reims
 93704,Josuha Guilavogui,France,VfL Wolfsburg
@@ -21244,7 +21244,7 @@ player_id,name,country,team
 93853,Martin Kobylanski,Germany,1.FC Union Berlin
 93862,Denys Prychynenko,Ukraine,1.FC Union Berlin
 93874,David Urban,Germany,Holstein Kiel
-93905,Muhamed Besic,Bosnia-Herzegovina,Everton FC
+93905,Muhamed Besic,Bosnia and Herzegovina,Everton FC
 93922,Erik Durm,Germany,Eintracht Frankfurt
 93922,Erik Durm,Germany,Borussia Dortmund
 93926,Johannes Wurtz,Germany,SV Werder Bremen
@@ -21256,9 +21256,9 @@ player_id,name,country,team
 93936,Kike Garcia,Spain,CA Osasuna
 93936,Kike Garcia,Spain,Deportivo Alaves
 93946,Andrzej Buncol,Poland,Bayer 04 Leverkusen
-94005,Sead Kolasinac,Bosnia-Herzegovina,Atalanta BC
-94005,Sead Kolasinac,Bosnia-Herzegovina,Arsenal FC
-94005,Sead Kolasinac,Bosnia-Herzegovina,Olympique Marseille
+94005,Sead Kolasinac,Bosnia and Herzegovina,Atalanta BC
+94005,Sead Kolasinac,Bosnia and Herzegovina,Arsenal FC
+94005,Sead Kolasinac,Bosnia and Herzegovina,Olympique Marseille
 94014,Dan-Patrick Poggenberg,Germany,Holstein Kiel
 94030,Denis Thomalla,Germany,TSG 1899 Hoffenheim
 94030,Denis Thomalla,Germany,1.FC Heidenheim 1846
@@ -21837,8 +21837,8 @@ player_id,name,country,team
 96625,Gunter Wienhold,Germany,Eintracht Frankfurt
 96625,Gunter Wienhold,Germany,SC Freiburg
 96627,Klaus Bruckmann,Germany,Bayer 04 Leverkusen
-96628,Bum-kun Cha,"Korea, South",Eintracht Frankfurt
-96628,Bum-kun Cha,"Korea, South",Bayer 04 Leverkusen
+96628,Bum-kun Cha,South Korea,Eintracht Frankfurt
+96628,Bum-kun Cha,South Korea,Bayer 04 Leverkusen
 96630,Ante Coric,Croatia,AS Roma
 96631,Dietmar Demuth,Germany,FC St. Pauli
 96631,Dietmar Demuth,Germany,Bayer 04 Leverkusen
@@ -22052,7 +22052,7 @@ player_id,name,country,team
 97162,Ralf Obermuller,Germany,VfB Stuttgart
 97163,Hermann Ohlicher,Germany,VfB Stuttgart
 97164,Jan Olsson,Sweden,VfB Stuttgart
-97168,Predrag Pasic,Bosnia-Herzegovina,VfB Stuttgart
+97168,Predrag Pasic,Bosnia and Herzegovina,VfB Stuttgart
 97170,Klaus Perfetto,Germany,VfB Stuttgart
 97171,Jurgen Prange,Germany,VfB Stuttgart
 97173,Cristian Rami,Argentina,Angers SCO
@@ -22237,7 +22237,7 @@ player_id,name,country,team
 97417,Heinz de Lange,Germany,Borussia Monchengladbach
 97419,Dieter Bedurftig,Germany,Borussia Monchengladbach
 97430,Gunter Jansen,Germany,Borussia Monchengladbach
-97444,Edhem Sljivo,Bosnia-Herzegovina,OGC Nice
+97444,Edhem Sljivo,Bosnia and Herzegovina,OGC Nice
 97446,Willi Wicken,Germany,Borussia Monchengladbach
 97447,Michel van de Korput,Netherlands,Torino FC
 97453,Horst Ehrmantraut,Germany,Eintracht Frankfurt
@@ -22594,7 +22594,7 @@ player_id,name,country,team
 100694,Massimiliano Brizzi,Italy,Como 1907
 100702,Jose Espinal,Dominican Republic,Atalanta BC
 100718,Stefan Jambo,Germany,1.FSV Mainz 05
-100722,Lago Junior,Cote d'Ivoire,RCD Mallorca
+100722,Lago Junior,Ivory Coast,RCD Mallorca
 100724,Markus Kernal,Austria,1.FC Union Berlin
 100740,Tiziano Maggiolini,Italy,Venezia FC
 100743,Luca Matteassi,Italy,Hellas Verona
@@ -22673,7 +22673,6 @@ player_id,name,country,team
 101063,Waldemar Kischka,Germany,1.FSV Mainz 05
 101066,Milan Lednicky,Slovakia,1.FSV Mainz 05
 101068,Jurgen Losekam,Germany,1.FSV Mainz 05
-101069,Jan-Michael Fritz (Marggraf),Germany,1.FSV Mainz 05
 101071,Michael Osei,Ghana,Eintracht Frankfurt
 101071,Michael Osei,Ghana,1.FSV Mainz 05
 101072,Tommi Paavola,Finland,1.FSV Mainz 05
@@ -23080,13 +23079,13 @@ player_id,name,country,team
 102646,Mirko Taccola,Italy,Cagliari Calcio
 102654,Raphael Clapson,France,Le Havre AC
 102679,Clement Tainmont,France,Stade Reims
-102688,Faruk Hadzibegic,Bosnia-Herzegovina,Real Betis Balompie
-102688,Faruk Hadzibegic,Bosnia-Herzegovina,FC Toulouse
+102688,Faruk Hadzibegic,Bosnia and Herzegovina,Real Betis Balompie
+102688,Faruk Hadzibegic,Bosnia and Herzegovina,FC Toulouse
 102702,Predrag Spasic,Serbia,Real Madrid
 102702,Predrag Spasic,Serbia,CA Osasuna
 102704,Dragan Stojkovic,Serbia,Hellas Verona
 102704,Dragan Stojkovic,Serbia,Olympique Marseille
-102705,Safet Susic,Bosnia-Herzegovina,Paris Saint-Germain
+102705,Safet Susic,Bosnia and Herzegovina,Paris Saint-Germain
 102706,Zlatko Vujovic,Croatia,Paris Saint-Germain
 102706,Zlatko Vujovic,Croatia,OGC Nice
 102707,Zoran Vulic,Croatia,FC Nantes
@@ -23297,8 +23296,8 @@ player_id,name,country,team
 104495,Lyle Taylor,Montserrat,AFC Bournemouth
 104497,Simon Wormull,England,Brighton & Hove Albion
 104497,Simon Wormull,England,Brentford FC
-104536,Hamed Diallo,Cote d'Ivoire,Le Havre AC
-104536,Hamed Diallo,Cote d'Ivoire,Angers SCO
+104536,Hamed Diallo,Ivory Coast,Le Havre AC
+104536,Hamed Diallo,Ivory Coast,Angers SCO
 104543,Theo Defourny,Belgium,Olympique Lyon
 104555,Zeli Ismail,England,Wolverhampton Wanderers
 104586,Lee Tomlin,England,Nottingham Forest
@@ -23673,7 +23672,7 @@ player_id,name,country,team
 108760,Marcel Dib,France,Olympique Marseille
 108760,Marcel Dib,France,AS Monaco
 108761,Jean-Luc Ettori,France,AS Monaco
-108763,Youssouf Fofana,Cote d'Ivoire,AS Monaco
+108763,Youssouf Fofana,Ivory Coast,AS Monaco
 108765,Jerome Gnako,France,OGC Nice
 108765,Jerome Gnako,France,Angers SCO
 108765,Jerome Gnako,France,AS Monaco
@@ -23726,7 +23725,7 @@ player_id,name,country,team
 109140,Jurgen Roloff,Germany,FC St. Pauli
 109140,Jurgen Roloff,Germany,Holstein Kiel
 109184,Mario Maek,Germany,1.FC Union Berlin
-109186,Leo Maric,Bosnia-Herzegovina,1.FC Union Berlin
+109186,Leo Maric,Bosnia and Herzegovina,1.FC Union Berlin
 109188,Thomas Petzold,Germany,1.FC Union Berlin
 109190,Markus Sailer,Germany,FC St. Pauli
 109256,Haris Seferovic,Switzerland,US Lecce
@@ -23879,7 +23878,7 @@ player_id,name,country,team
 111005,Frederic Bulot,Gabon,Stade Reims
 111005,Frederic Bulot,Gabon,AS Monaco
 111011,Yvan Erichot,France,AS Monaco
-111018,Isaac Kone,Cote d'Ivoire,AS Monaco
+111018,Isaac Kone,Ivory Coast,AS Monaco
 111025,Romain Padovani,France,AS Monaco
 111036,Mehdi Abeid,Algeria,FC Nantes
 111036,Mehdi Abeid,Algeria,Newcastle United
@@ -23990,8 +23989,8 @@ player_id,name,country,team
 111881,Takashi Usami,Japan,TSG 1899 Hoffenheim
 111893,Giancarlo Gonzalez,Costa Rica,Bologna FC 1909
 111895,Gaudenzio Bernasconi,Italy,Atalanta BC
-111900,Ju-ho Park,"Korea, South",Borussia Dortmund
-111900,Ju-ho Park,"Korea, South",1.FSV Mainz 05
+111900,Ju-ho Park,South Korea,Borussia Dortmund
+111900,Ju-ho Park,South Korea,1.FSV Mainz 05
 111961,Suso,Spain,Sevilla FC
 111961,Suso,Spain,Genoa CFC
 111961,Suso,Spain,Liverpool FC
@@ -24036,7 +24035,7 @@ player_id,name,country,team
 112591,Ramon Diaz,Argentina,Inter Milan
 112591,Ramon Diaz,Argentina,AS Monaco
 112591,Ramon Diaz,Argentina,ACF Fiorentina
-112606,Ali Bamba,Cote d'Ivoire,RC Strasbourg Alsace
+112606,Ali Bamba,Ivory Coast,RC Strasbourg Alsace
 112617,Philip Heise,Germany,VfB Stuttgart
 112617,Philip Heise,Germany,1.FC Heidenheim 1846
 112663,Eliran Atar,Israel,Stade Reims
@@ -24191,7 +24190,7 @@ player_id,name,country,team
 116272,Benedikt Rocker,Germany,VfB Stuttgart
 116434,Kaliph Sidibe,France,FC St. Pauli
 116468,Dieter Suchanek,Germany,VfL Wolfsburg
-116562,Emir Granov,Bosnia-Herzegovina,Rayo Vallecano
+116562,Emir Granov,Bosnia and Herzegovina,Rayo Vallecano
 116589,Jean-Luc Beauchet,France,Le Havre AC
 116648,Marcus Bettinelli,England,Chelsea FC
 116648,Marcus Bettinelli,England,Fulham FC
@@ -24995,7 +24994,7 @@ player_id,name,country,team
 123742,Gaston Ramirez,Uruguay,Southampton FC
 123742,Gaston Ramirez,Uruguay,Bologna FC 1909
 123742,Gaston Ramirez,Uruguay,AC Monza
-123920,Vauvenargues Kehi,Cote d'Ivoire,RC Strasbourg Alsace
+123920,Vauvenargues Kehi,Ivory Coast,RC Strasbourg Alsace
 123951,Aaron Mooy,Australia,Brighton & Hove Albion
 123951,Aaron Mooy,Australia,Manchester City
 123957,Kevin Osei,Ghana,Olympique Marseille
@@ -25116,9 +25115,9 @@ player_id,name,country,team
 125781,Antoine Griezmann,France,FC Barcelona
 125781,Antoine Griezmann,France,Real Sociedad
 125781,Antoine Griezmann,France,Atletico de Madrid
-125783,Sanjin Prcic,Bosnia-Herzegovina,RC Strasbourg Alsace
-125783,Sanjin Prcic,Bosnia-Herzegovina,Stade Rennais FC
-125783,Sanjin Prcic,Bosnia-Herzegovina,Torino FC
+125783,Sanjin Prcic,Bosnia and Herzegovina,RC Strasbourg Alsace
+125783,Sanjin Prcic,Bosnia and Herzegovina,Stade Rennais FC
+125783,Sanjin Prcic,Bosnia and Herzegovina,Torino FC
 125854,Paul Watson,Scotland,Ipswich Town
 125858,Kerem Demirbay,Germany,TSG 1899 Hoffenheim
 125858,Kerem Demirbay,Germany,Bayer 04 Leverkusen
@@ -25201,7 +25200,7 @@ player_id,name,country,team
 126597,Paolo Grossi,Italy,Hellas Verona
 126625,Juankar,Spain,Real Betis Balompie
 126634,Francesco Rossi,Italy,Atalanta BC
-126638,Jeong-ho Hong,"Korea, South",FC Augsburg
+126638,Jeong-ho Hong,South Korea,FC Augsburg
 126649,Adama Toure,Mali,Paris Saint-Germain
 126656,Faouzi Ghoulam,Algeria,SSC Napoli
 126656,Faouzi Ghoulam,Algeria,AS Saint-Etienne
@@ -25293,12 +25292,12 @@ player_id,name,country,team
 126924,Guy N'Gosso,Cameroon,Angers SCO
 126928,Vaclav Danek,Czech Republic,Le Havre AC
 127015,Zoran Stojadinovic,Serbia,RCD Mallorca
-127032,Serge Aurier,Cote d'Ivoire,Villarreal CF
-127032,Serge Aurier,Cote d'Ivoire,RC Lens
-127032,Serge Aurier,Cote d'Ivoire,Nottingham Forest
-127032,Serge Aurier,Cote d'Ivoire,FC Toulouse
-127032,Serge Aurier,Cote d'Ivoire,Paris Saint-Germain
-127032,Serge Aurier,Cote d'Ivoire,Tottenham Hotspur
+127032,Serge Aurier,Ivory Coast,Villarreal CF
+127032,Serge Aurier,Ivory Coast,RC Lens
+127032,Serge Aurier,Ivory Coast,Nottingham Forest
+127032,Serge Aurier,Ivory Coast,FC Toulouse
+127032,Serge Aurier,Ivory Coast,Paris Saint-Germain
+127032,Serge Aurier,Ivory Coast,Tottenham Hotspur
 127036,Adama Diakite,France,RC Lens
 127040,Bilal Hamdi,Algeria,Stade Brestois 29
 127044,Anthony Rogie,France,RC Lens
@@ -25604,7 +25603,7 @@ player_id,name,country,team
 129652,Silviu Vuia,Romania,VfL Wolfsburg
 129674,Jeremy Toljan,Germany,TSG 1899 Hoffenheim
 129674,Jeremy Toljan,Germany,Borussia Dortmund
-129679,Cheick Doukoure,Cote d'Ivoire,CD Leganes
+129679,Cheick Doukoure,Ivory Coast,CD Leganes
 129688,Ryo Miyaichi,Japan,FC St. Pauli
 129688,Ryo Miyaichi,Japan,Arsenal FC
 129693,Gaku Shibasaki,Japan,Getafe CF
@@ -25633,7 +25632,7 @@ player_id,name,country,team
 129893,Molla Wague,Mali,Nottingham Forest
 129893,Molla Wague,Mali,Udinese Calcio
 129896,Robert Ambrusics,Hungary,Leicester City
-129990,Hyun-jun Suk,"Korea, South",Stade Reims
+129990,Hyun-jun Suk,South Korea,Stade Reims
 130026,Juan Alvarez,Spain,Sevilla FC
 130036,Antonio Orejuela,Spain,Rayo Vallecano
 130036,Antonio Orejuela,Spain,RCD Mallorca
@@ -25796,7 +25795,7 @@ player_id,name,country,team
 131402,Alessandro Scialpi,Italy,Venezia FC
 131402,Alessandro Scialpi,Italy,Como 1907
 131449,Gerd Schmidt,Germany,1.FSV Mainz 05
-131480,Il-lok Yun,"Korea, South",Montpellier HSC
+131480,Il-lok Yun,South Korea,Montpellier HSC
 131505,Rodrigo,Spain,Valencia CF
 131506,Samu Saiz,Spain,Getafe CF
 131506,Samu Saiz,Spain,Girona FC
@@ -25854,8 +25853,8 @@ player_id,name,country,team
 132393,Vladimir Petrovic,Serbia,Stade Brestois 29
 132395,Zoran Vujovic,Croatia,OGC Nice
 132399,Nikola Jovanovic,Montenegro,Manchester United
-132409,Vahid Halilhodzic,Bosnia-Herzegovina,FC Nantes
-132409,Vahid Halilhodzic,Bosnia-Herzegovina,Paris Saint-Germain
+132409,Vahid Halilhodzic,Bosnia and Herzegovina,FC Nantes
+132409,Vahid Halilhodzic,Bosnia and Herzegovina,Paris Saint-Germain
 132410,Ivica Surjak,Croatia,Udinese Calcio
 132410,Ivica Surjak,Croatia,Paris Saint-Germain
 132414,Dolly Menga,Angola,Torino FC
@@ -25871,7 +25870,7 @@ player_id,name,country,team
 132494,Alcides Ghiggia,Italy,AS Roma
 132494,Alcides Ghiggia,Italy,AC Milan
 132511,Meik Spieler,Germany,TSG 1899 Hoffenheim
-132529,Jin-su Kim,"Korea, South",TSG 1899 Hoffenheim
+132529,Jin-su Kim,South Korea,TSG 1899 Hoffenheim
 132547,Oscar Wirth,Chile,Real Valladolid CF
 132583,Lars Meyer,Germany,1.FSV Mainz 05
 132590,Cedric Carrez,France,LOSC Lille
@@ -26689,9 +26688,9 @@ player_id,name,country,team
 142281,Anthony Ujah,Nigeria,SV Werder Bremen
 142281,Anthony Ujah,Nigeria,1.FC Union Berlin
 142281,Anthony Ujah,Nigeria,1.FSV Mainz 05
-142310,Willy Boly,Cote d'Ivoire,AJ Auxerre
-142310,Willy Boly,Cote d'Ivoire,Nottingham Forest
-142310,Willy Boly,Cote d'Ivoire,Wolverhampton Wanderers
+142310,Willy Boly,Ivory Coast,AJ Auxerre
+142310,Willy Boly,Ivory Coast,Nottingham Forest
+142310,Willy Boly,Ivory Coast,Wolverhampton Wanderers
 142370,Mathias Abero,Uruguay,Bologna FC 1909
 142381,Sandy Clark,Scotland,West Ham United
 142389,Mark Gillespie,England,Newcastle United
@@ -26763,7 +26762,7 @@ player_id,name,country,team
 143559,Matija Nastasic,Serbia,RCD Mallorca
 143559,Matija Nastasic,Serbia,Manchester City
 143559,Matija Nastasic,Serbia,ACF Fiorentina
-143576,Sam Dominique Abouo,Cote d'Ivoire,AS Monaco
+143576,Sam Dominique Abouo,Ivory Coast,AS Monaco
 143715,Jean-Max Discolle,France,Angers SCO
 143751,Dragan Radojicic,Montenegro,UD Las Palmas
 143794,Lucao,Brazil,Bayer 04 Leverkusen
@@ -26811,7 +26810,7 @@ player_id,name,country,team
 144945,Charles Devineau,France,FC Nantes
 145115,Valon Berisha,Kosovo,Stade Reims
 145115,Valon Berisha,Kosovo,SS Lazio
-145121,Josip Katalinski,Bosnia-Herzegovina,OGC Nice
+145121,Josip Katalinski,Bosnia and Herzegovina,OGC Nice
 145128,Stanislav Karasi,Serbia,LOSC Lille
 145192,Luciano Spinosi,Italy,AS Roma
 145192,Luciano Spinosi,Italy,Juventus FC
@@ -26821,7 +26820,7 @@ player_id,name,country,team
 145267,Claude Fichaux,France,Le Havre AC
 145267,Claude Fichaux,France,LOSC Lille
 145267,Claude Fichaux,France,AS Saint-Etienne
-145323,Marko Filipovic,Bosnia-Herzegovina,Angers SCO
+145323,Marko Filipovic,Bosnia and Herzegovina,Angers SCO
 145341,Francesco Morini,Italy,Juventus FC
 145342,Tarcisio Burgnich,Italy,SSC Napoli
 145342,Tarcisio Burgnich,Italy,Inter Milan
@@ -26854,8 +26853,8 @@ player_id,name,country,team
 145377,Ferruccio Valcareggi,Italy,Bologna FC 1909
 145377,Ferruccio Valcareggi,Italy,AC Milan
 145377,Ferruccio Valcareggi,Italy,ACF Fiorentina
-145416,Junior Tallo,Cote d'Ivoire,AS Roma
-145416,Junior Tallo,Cote d'Ivoire,LOSC Lille
+145416,Junior Tallo,Ivory Coast,AS Roma
+145416,Junior Tallo,Ivory Coast,LOSC Lille
 145420,Dennis Engelman,Germany,Bayer 04 Leverkusen
 145452,Luis Pereira,Brazil,Atletico de Madrid
 145453,Marinho Peres,Brazil,FC Barcelona
@@ -26897,7 +26896,7 @@ player_id,name,country,team
 145581,Afriyie Acquah,Ghana,Parma Calcio 1913
 145581,Afriyie Acquah,Ghana,Torino FC
 145596,Francesco Giraldi,Italy,Hellas Verona
-145599,Dragan Jakovljevic,Bosnia-Herzegovina,FC Nantes
+145599,Dragan Jakovljevic,Bosnia and Herzegovina,FC Nantes
 145602,Nicolas Castillo,Chile,1.FSV Mainz 05
 145634,Itzik Zohar,Israel,Crystal Palace
 145675,Jean-Claude Pagal,Cameroon,RC Lens
@@ -26941,8 +26940,8 @@ player_id,name,country,team
 145918,Diogo Salomao,Portugal,RCD Mallorca
 145922,Jon Flanagan,England,Liverpool FC
 145923,Michael Ihiekwe,England,Wolverhampton Wanderers
-145988,Wilfried Zaha,Cote d'Ivoire,Manchester United
-145988,Wilfried Zaha,Cote d'Ivoire,Crystal Palace
+145988,Wilfried Zaha,Ivory Coast,Manchester United
+145988,Wilfried Zaha,Ivory Coast,Crystal Palace
 146062,Leandro de Muner,Argentina,Deportivo Alaves
 146093,Nicola Segato,Italy,Venezia FC
 146096,Federico Palacios,Germany,RB Leipzig
@@ -27560,7 +27559,7 @@ player_id,name,country,team
 153935,Andrea Vignali,Italy,Parma Calcio 1913
 153959,Andre Roosenburg,Netherlands,ACF Fiorentina
 153987,Daniane Jawad,Morocco,Genoa CFC
-154009,Johnson Soumahoro,Cote d'Ivoire,AJ Auxerre
+154009,Johnson Soumahoro,Ivory Coast,AJ Auxerre
 154015,Rinus Schaap,Netherlands,FC Toulouse
 154058,Sylvain Deplace,France,Olympique Lyon
 154058,Sylvain Deplace,France,Montpellier HSC
@@ -27588,7 +27587,7 @@ player_id,name,country,team
 154388,Marcello Fiorentini,Italy,SS Lazio
 154396,Danilo Soares,Brazil,TSG 1899 Hoffenheim
 154396,Danilo Soares,Brazil,VfL Bochum
-154541,Yong-jae Lee,"Korea, South",FC Nantes
+154541,Yong-jae Lee,South Korea,FC Nantes
 154542,Romeo Zondervan,Netherlands,Ipswich Town
 154562,Andoni Ayarza,Spain,Athletic Bilbao
 154562,Andoni Ayarza,Spain,Rayo Vallecano
@@ -27857,8 +27856,8 @@ player_id,name,country,team
 156995,Shoji Jo,Japan,Real Valladolid CF
 157003,Abdul-Aziz Tetteh,Ghana,CD Leganes
 157003,Abdul-Aziz Tetteh,Ghana,Udinese Calcio
-157058,Ibrahim Sissoko,Cote d'Ivoire,VfL Wolfsburg
-157058,Ibrahim Sissoko,Cote d'Ivoire,AS Saint-Etienne
+157058,Ibrahim Sissoko,Ivory Coast,VfL Wolfsburg
+157058,Ibrahim Sissoko,Ivory Coast,AS Saint-Etienne
 157096,Sylvain Kastendeuch,France,AS Saint-Etienne
 157096,Sylvain Kastendeuch,France,FC Toulouse
 157166,Sidy Kone,Mali,Olympique Lyon
@@ -28388,9 +28387,9 @@ player_id,name,country,team
 164145,Ivan Lucic,Austria,Bayern Munich
 164227,Christian Paoletti,Italy,FC Empoli
 164231,Romario Benzar,Romania,US Lecce
-164265,Dong-won Ji,"Korea, South",FC Augsburg
-164265,Dong-won Ji,"Korea, South",Borussia Dortmund
-164265,Dong-won Ji,"Korea, South",1.FSV Mainz 05
+164265,Dong-won Ji,South Korea,FC Augsburg
+164265,Dong-won Ji,South Korea,Borussia Dortmund
+164265,Dong-won Ji,South Korea,1.FSV Mainz 05
 164277,Gen Shoji,Japan,FC Toulouse
 164325,Giuseppe Di Masi,Italy,AS Roma
 164332,Luca Viviani,Italy,Hellas Verona
@@ -28684,8 +28683,8 @@ player_id,name,country,team
 168006,Ali Bouafia,Algeria,Olympique Lyon
 168006,Ali Bouafia,Algeria,Olympique Marseille
 168006,Ali Bouafia,Algeria,RC Strasbourg Alsace
-168012,Moussa Traore,Cote d'Ivoire,Stade Rennais FC
-168012,Moussa Traore,Cote d'Ivoire,Angers SCO
+168012,Moussa Traore,Ivory Coast,Stade Rennais FC
+168012,Moussa Traore,Ivory Coast,Angers SCO
 168027,Guillaume Sabourin,France,AS Saint-Etienne
 168032,Sylvain Prat,France,Stade Brestois 29
 168036,Xavier Poitrinal,France,Stade Reims
@@ -28718,8 +28717,8 @@ player_id,name,country,team
 168383,Emmanuel Viard,France,Stade Reims
 168408,Lubomir Satka,Slovakia,Newcastle United
 168432,Gianmaria Cucurnia,Italy,Parma Calcio 1913
-168437,Amara Konate,Cote d'Ivoire,AS Roma
-168437,Amara Konate,Cote d'Ivoire,Parma Calcio 1913
+168437,Amara Konate,Ivory Coast,AS Roma
+168437,Amara Konate,Ivory Coast,Parma Calcio 1913
 168471,Renaud Emond,Belgium,FC Nantes
 168477,Jefferson Oliveira,Brazil,Venezia FC
 168477,Jefferson Oliveira,Brazil,Udinese Calcio
@@ -28728,7 +28727,7 @@ player_id,name,country,team
 168498,Ronnie Ekelund,Denmark,Southampton FC
 168498,Ronnie Ekelund,Denmark,FC Toulouse
 168498,Ronnie Ekelund,Denmark,Manchester City
-168500,Alain Gouamene,Cote d'Ivoire,FC Toulouse
+168500,Alain Gouamene,Ivory Coast,FC Toulouse
 168501,Salem Harcheche,Algeria,AS Saint-Etienne
 168511,Yoann Terrien,France,Angers SCO
 168514,Remy Loret,France,FC Toulouse
@@ -28876,13 +28875,13 @@ player_id,name,country,team
 170478,Axel Ngando,France,AJ Auxerre
 170478,Axel Ngando,France,Stade Rennais FC
 170478,Axel Ngando,France,Angers SCO
-170481,Jean-Daniel Akpa Akpro,Cote d'Ivoire,AC Monza
-170481,Jean-Daniel Akpa Akpro,Cote d'Ivoire,FC Empoli
-170481,Jean-Daniel Akpa Akpro,Cote d'Ivoire,FC Toulouse
-170481,Jean-Daniel Akpa Akpro,Cote d'Ivoire,SS Lazio
+170481,Jean-Daniel Akpa Akpro,Ivory Coast,AC Monza
+170481,Jean-Daniel Akpa Akpro,Ivory Coast,FC Empoli
+170481,Jean-Daniel Akpa Akpro,Ivory Coast,FC Toulouse
+170481,Jean-Daniel Akpa Akpro,Ivory Coast,SS Lazio
 170485,Yanick Aguemon,Benin,FC Toulouse
 170485,Yanick Aguemon,Benin,RC Strasbourg Alsace
-170495,Ismael Diomande,Cote d'Ivoire,AS Saint-Etienne
+170495,Ismael Diomande,Ivory Coast,AS Saint-Etienne
 170509,Baptiste Valette,France,Montpellier HSC
 170509,Baptiste Valette,France,AS Saint-Etienne
 170511,Abdoul Karim Sylla,Netherlands,Montpellier HSC
@@ -28996,7 +28995,7 @@ player_id,name,country,team
 171159,Leo Stulac,Slovenia,FC Empoli
 171159,Leo Stulac,Slovenia,Venezia FC
 171159,Leo Stulac,Slovenia,Parma Calcio 1913
-171165,Mamadou Kone,Cote d'Ivoire,CD Leganes
+171165,Mamadou Kone,Ivory Coast,CD Leganes
 171167,Jairo Samperio,Spain,Sevilla FC
 171167,Jairo Samperio,Spain,1.FSV Mainz 05
 171167,Jairo Samperio,Spain,UD Las Palmas
@@ -29020,7 +29019,7 @@ player_id,name,country,team
 171424,Riyad Mahrez,Algeria,Leicester City
 171424,Riyad Mahrez,Algeria,Manchester City
 171427,Drissa Traore,France,Le Havre AC
-171433,Sejad Halilovic,Bosnia-Herzegovina,Real Valladolid CF
+171433,Sejad Halilovic,Bosnia and Herzegovina,Real Valladolid CF
 171515,Peter Sichmann,Germany,Bayer 04 Leverkusen
 171527,Miodrag Djuric,Serbia,FC Augsburg
 171537,Kurt Kalchschmid,Germany,FC Augsburg
@@ -29071,8 +29070,8 @@ player_id,name,country,team
 171922,Joachim Fernandez,France,Angers SCO
 171923,Ernest Mtawali,Malawi,FC Toulouse
 171924,Mickael Serreau,France,FC Toulouse
-171925,Donald-Olivier Sie,Cote d'Ivoire,Stade Reims
-171925,Donald-Olivier Sie,Cote d'Ivoire,FC Toulouse
+171925,Donald-Olivier Sie,Ivory Coast,Stade Reims
+171925,Donald-Olivier Sie,Ivory Coast,FC Toulouse
 171941,Igor Gurinovich,Belarus,Brighton & Hove Albion
 171977,Marcelino,Spain,Newcastle United
 171977,Marcelino,Spain,RCD Mallorca
@@ -29210,9 +29209,9 @@ player_id,name,country,team
 173625,Laurent Sachy,France,FC Toulouse
 173625,Laurent Sachy,France,OGC Nice
 173627,Eric Taborda,France,FC Toulouse
-173628,Joel Tiehi,Cote d'Ivoire,Le Havre AC
-173628,Joel Tiehi,Cote d'Ivoire,RC Lens
-173628,Joel Tiehi,Cote d'Ivoire,FC Toulouse
+173628,Joel Tiehi,Ivory Coast,Le Havre AC
+173628,Joel Tiehi,Ivory Coast,RC Lens
+173628,Joel Tiehi,Ivory Coast,FC Toulouse
 173629,Uche Agbo,Nigeria,Montpellier HSC
 173630,Herve Arsene,Madagascar,RC Lens
 173632,Philippe Avenet,France,RC Lens
@@ -29445,7 +29444,7 @@ player_id,name,country,team
 174448,Patrice Marquet,France,RC Lens
 174448,Patrice Marquet,France,Paris Saint-Germain
 174449,David McDougald,England,Brighton & Hove Albion
-174452,Didier Otokore,Cote d'Ivoire,AJ Auxerre
+174452,Didier Otokore,Ivory Coast,AJ Auxerre
 174457,Habib Sissoko,Mali,Stade Brestois 29
 174458,Jean-Christophe Thomas,France,AS Saint-Etienne
 174458,Jean-Christophe Thomas,France,Stade Rennais FC
@@ -29460,7 +29459,7 @@ player_id,name,country,team
 174604,Pierre Aubameyang,Gabon,FC Toulouse
 174604,Pierre Aubameyang,Gabon,OGC Nice
 174606,Pierre-Yves David,France,Stade Brestois 29
-174638,Lazar Mutapdzija,Bosnia-Herzegovina,FC St. Pauli
+174638,Lazar Mutapdzija,Bosnia and Herzegovina,FC St. Pauli
 174694,Rony Lopes,Portugal,OGC Nice
 174694,Rony Lopes,Portugal,Sevilla FC
 174694,Rony Lopes,Portugal,LOSC Lille
@@ -30364,9 +30363,9 @@ player_id,name,country,team
 177317,Dennis Mortimer,England,Brighton & Hove Albion
 177317,Dennis Mortimer,England,Aston Villa
 177318,Graham Moseley,England,Brighton & Hove Albion
-177321,Abdul Razak,Cote d'Ivoire,West Ham United
-177321,Abdul Razak,Cote d'Ivoire,Brighton & Hove Albion
-177321,Abdul Razak,Cote d'Ivoire,Manchester City
+177321,Abdul Razak,Ivory Coast,West Ham United
+177321,Abdul Razak,Ivory Coast,Brighton & Hove Albion
+177321,Abdul Razak,Ivory Coast,Manchester City
 177322,John Robson,England,Aston Villa
 177452,Abdon Prats,Spain,RCD Mallorca
 177456,Sergey Zhukov,Russia,1.FSV Mainz 05
@@ -30453,16 +30452,16 @@ player_id,name,country,team
 178217,Pol Garcia,Spain,Juventus FC
 178217,Pol Garcia,Spain,Como 1907
 178219,Thom Haye,Indonesia,US Lecce
-178313,Jean-Eudes Aholou,Cote d'Ivoire,Angers SCO
-178313,Jean-Eudes Aholou,Cote d'Ivoire,AS Saint-Etienne
-178313,Jean-Eudes Aholou,Cote d'Ivoire,RC Strasbourg Alsace
-178313,Jean-Eudes Aholou,Cote d'Ivoire,AS Monaco
+178313,Jean-Eudes Aholou,Ivory Coast,Angers SCO
+178313,Jean-Eudes Aholou,Ivory Coast,AS Saint-Etienne
+178313,Jean-Eudes Aholou,Ivory Coast,RC Strasbourg Alsace
+178313,Jean-Eudes Aholou,Ivory Coast,AS Monaco
 178425,Dani Garcia,Spain,Athletic Bilbao
 178459,Davie Selke,Germany,SV Werder Bremen
 178459,Davie Selke,Germany,RB Leipzig
 178540,Chaker Alhadhur,Comoros,FC Nantes
-178614,Jean Michael Seri,Cote d'Ivoire,Fulham FC
-178614,Jean Michael Seri,Cote d'Ivoire,OGC Nice
+178614,Jean Michael Seri,Ivory Coast,Fulham FC
+178614,Jean Michael Seri,Ivory Coast,OGC Nice
 178738,Juan Carlos,Spain,FC Barcelona
 178738,Juan Carlos,Spain,Valencia CF
 178738,Juan Carlos,Spain,Atletico de Madrid
@@ -30486,7 +30485,7 @@ player_id,name,country,team
 179299,Ernst Melchior,Austria,FC Nantes
 179308,Diego Rubio,Chile,Real Valladolid CF
 179309,Roman Schramseis jun.,Austria,Udinese Calcio
-179334,Dragan Glogovac,Bosnia-Herzegovina,Getafe CF
+179334,Dragan Glogovac,Bosnia and Herzegovina,Getafe CF
 179336,Kenny Verhoene,Belgium,Crystal Palace
 179354,Shalom Tikva,Israel,RC Lens
 179408,Cheick Diarra,Mali,AJ Auxerre
@@ -30631,10 +30630,10 @@ player_id,name,country,team
 181365,Jari Rantanen,Finland,Leicester City
 181373,Antoine Conte,Guinea,Stade Reims
 181373,Antoine Conte,Guinea,Paris Saint-Germain
-181375,Sebastien Haller,Cote d'Ivoire,AJ Auxerre
-181375,Sebastien Haller,Cote d'Ivoire,Borussia Dortmund
-181375,Sebastien Haller,Cote d'Ivoire,Eintracht Frankfurt
-181375,Sebastien Haller,Cote d'Ivoire,West Ham United
+181375,Sebastien Haller,Ivory Coast,AJ Auxerre
+181375,Sebastien Haller,Ivory Coast,Borussia Dortmund
+181375,Sebastien Haller,Ivory Coast,Eintracht Frankfurt
+181375,Sebastien Haller,Ivory Coast,West Ham United
 181378,Gaetan Laborde,France,Montpellier HSC
 181378,Gaetan Laborde,France,Stade Brestois 29
 181378,Gaetan Laborde,France,OGC Nice
@@ -30757,12 +30756,12 @@ player_id,name,country,team
 182889,Wylan Cyprien,France,Parma Calcio 1913
 182889,Wylan Cyprien,France,OGC Nice
 182891,Thomas Didillon-Hodl,France,AS Monaco
-182893,Seko Fofana,Cote d'Ivoire,Fulham FC
-182893,Seko Fofana,Cote d'Ivoire,RC Lens
-182893,Seko Fofana,Cote d'Ivoire,Udinese Calcio
-182894,Jean-Philippe Gbamin,Cote d'Ivoire,RC Lens
-182894,Jean-Philippe Gbamin,Cote d'Ivoire,Everton FC
-182894,Jean-Philippe Gbamin,Cote d'Ivoire,1.FSV Mainz 05
+182893,Seko Fofana,Ivory Coast,Fulham FC
+182893,Seko Fofana,Ivory Coast,RC Lens
+182893,Seko Fofana,Ivory Coast,Udinese Calcio
+182894,Jean-Philippe Gbamin,Ivory Coast,RC Lens
+182894,Jean-Philippe Gbamin,Ivory Coast,Everton FC
+182894,Jean-Philippe Gbamin,Ivory Coast,1.FSV Mainz 05
 182903,Zakarie Labidi,France,Olympique Lyon
 182903,Zakarie Labidi,France,Stade Brestois 29
 182904,Clement Lenglet,France,Sevilla FC
@@ -30791,8 +30790,8 @@ player_id,name,country,team
 182956,Yaya Sane,Senegal,Stade Brestois 29
 182963,Lass Bangoura,Guinea,Stade Reims
 182963,Lass Bangoura,Guinea,Rayo Vallecano
-183031,Koffi Djidji,Cote d'Ivoire,FC Nantes
-183031,Koffi Djidji,Cote d'Ivoire,Torino FC
+183031,Koffi Djidji,Ivory Coast,FC Nantes
+183031,Koffi Djidji,Ivory Coast,Torino FC
 183045,Federico Comini,Argentina,Rayo Vallecano
 183078,Fabrice Moreau,Cameroon,Rayo Vallecano
 183078,Fabrice Moreau,Cameroon,Olympique Marseille
@@ -31019,7 +31018,7 @@ player_id,name,country,team
 187248,Fulvio Fedi,Italy,Bologna FC 1909
 187285,Chris David,Netherlands,Fulham FC
 187383,Kwame Yeboah,Australia,Borussia Monchengladbach
-187392,Thomas Toure,Cote d'Ivoire,Angers SCO
+187392,Thomas Toure,Ivory Coast,Angers SCO
 187421,Jacopo Zenga,Italy,Como 1907
 187463,Yoan Loche,France,Olympique Lyon
 187491,Timo Baumgartl,Germany,1.FC Union Berlin
@@ -31143,7 +31142,7 @@ player_id,name,country,team
 189410,Rodrigo Aguirre,Uruguay,FC Empoli
 189410,Rodrigo Aguirre,Uruguay,Udinese Calcio
 189432,Gaspar Iniguez,Argentina,Udinese Calcio
-189435,Jeremi Kimmakon,Cote d'Ivoire,Paris Saint-Germain
+189435,Jeremi Kimmakon,Ivory Coast,Paris Saint-Germain
 189441,Lucas Ocampos,Argentina,Olympique Marseille
 189441,Lucas Ocampos,Argentina,Sevilla FC
 189441,Lucas Ocampos,Argentina,AC Milan
@@ -31549,10 +31548,10 @@ player_id,name,country,team
 196978,Ivan Lakicevic,Serbia,Venezia FC
 197040,Lazaros Fotias,Greece,Parma Calcio 1913
 197122,Unai Garcia,Spain,CA Osasuna
-197126,Kenan Kodro,Bosnia-Herzegovina,CA Osasuna
-197126,Kenan Kodro,Bosnia-Herzegovina,Athletic Bilbao
-197126,Kenan Kodro,Bosnia-Herzegovina,1.FSV Mainz 05
-197126,Kenan Kodro,Bosnia-Herzegovina,Real Valladolid CF
+197126,Kenan Kodro,Bosnia and Herzegovina,CA Osasuna
+197126,Kenan Kodro,Bosnia and Herzegovina,Athletic Bilbao
+197126,Kenan Kodro,Bosnia and Herzegovina,1.FSV Mainz 05
+197126,Kenan Kodro,Bosnia and Herzegovina,Real Valladolid CF
 197131,Marco Sangalli,Spain,Deportivo Alaves
 197135,Joseba Zaldua,Spain,Real Sociedad
 197135,Joseba Zaldua,Spain,CD Leganes
@@ -31770,7 +31769,7 @@ player_id,name,country,team
 199635,Eric Lanini,Italy,Juventus FC
 199635,Eric Lanini,Italy,Parma Calcio 1913
 199635,Eric Lanini,Italy,Como 1907
-199662,Jared Bi Zamble,Cote d'Ivoire,AC Monza
+199662,Jared Bi Zamble,Ivory Coast,AC Monza
 199704,Yunis Abdelhamid,Morocco,Stade Reims
 199704,Yunis Abdelhamid,Morocco,AS Saint-Etienne
 199713,Alessandro Gatto,Italy,Hellas Verona
@@ -32388,7 +32387,7 @@ player_id,name,country,team
 213670,Lucas Torro,Spain,Real Madrid
 213841,Matheus Doria,Brazil,Olympique Marseille
 213847,Jordan Roberts,England,Ipswich Town
-213854,Cedric Gondo,Cote d'Ivoire,SS Lazio
+213854,Cedric Gondo,Ivory Coast,SS Lazio
 213911,Antonio Loi,Italy,Cagliari Calcio
 214028,Craig Liddle,England,Aston Villa
 214056,Daniel Amartey,Ghana,Leicester City
@@ -32506,7 +32505,7 @@ player_id,name,country,team
 214884,Tim Dalton,Ireland,AFC Bournemouth
 214893,John Coady,Ireland,Chelsea FC
 214977,Aleksandr Tolmachev,Russia,1.FC Union Berlin
-215037,Dusan Mijic,Bosnia-Herzegovina,RCD Espanyol Barcelona
+215037,Dusan Mijic,Bosnia and Herzegovina,RCD Espanyol Barcelona
 215089,Djavan Anderson,Suriname,SS Lazio
 215099,Daley Sinkgraven,Netherlands,UD Las Palmas
 215099,Daley Sinkgraven,Netherlands,Bayer 04 Leverkusen
@@ -32545,7 +32544,7 @@ player_id,name,country,team
 215390,Gustavo Gomez,Paraguay,AC Milan
 215426,Jacques Fatton,Switzerland,Olympique Lyon
 215428,Roger Vonlanthen,Switzerland,Inter Milan
-215532,Fousseni Bamba,Cote d'Ivoire,RC Strasbourg Alsace
+215532,Fousseni Bamba,Ivory Coast,RC Strasbourg Alsace
 215566,Jean-Francois Domergue,France,Olympique Lyon
 215566,Jean-Francois Domergue,France,LOSC Lille
 215566,Jean-Francois Domergue,France,Olympique Marseille
@@ -32628,8 +32627,8 @@ player_id,name,country,team
 215894,Angelo Domenghini,Italy,Hellas Verona
 215895,Giorgio Ferrini,Italy,Torino FC
 215971,Milan Damjanovic,Serbia,Angers SCO
-215973,Vahidin Musemic,Bosnia-Herzegovina,OGC Nice
-215974,Ivica Osim,Bosnia-Herzegovina,RC Strasbourg Alsace
+215973,Vahidin Musemic,Bosnia and Herzegovina,OGC Nice
+215974,Ivica Osim,Bosnia and Herzegovina,RC Strasbourg Alsace
 215975,Ilija Pantelic,Serbia,Olympique Marseille
 215975,Ilija Pantelic,Serbia,Paris Saint-Germain
 215977,Adrien Thomasson,France,FC Nantes
@@ -32680,9 +32679,9 @@ player_id,name,country,team
 216464,Carlos Fernandez,Spain,Sevilla FC
 216464,Carlos Fernandez,Spain,Real Sociedad
 216548,Nicolas Verdier,France,Stade Brestois 29
-216569,Jeremie Boga,Cote d'Ivoire,Stade Rennais FC
-216569,Jeremie Boga,Cote d'Ivoire,OGC Nice
-216569,Jeremie Boga,Cote d'Ivoire,Atalanta BC
+216569,Jeremie Boga,Ivory Coast,Stade Rennais FC
+216569,Jeremie Boga,Ivory Coast,OGC Nice
+216569,Jeremie Boga,Ivory Coast,Atalanta BC
 216583,Eric Pean,France,Olympique Lyon
 216583,Eric Pean,France,LOSC Lille
 216583,Eric Pean,France,Angers SCO
@@ -34436,7 +34435,7 @@ player_id,name,country,team
 227516,Giuseppe Scienza,Italy,Venezia FC
 227516,Giuseppe Scienza,Italy,Torino FC
 227518,Marco Sesia,Italy,Torino FC
-227520,Haris Skoro,Bosnia-Herzegovina,Torino FC
+227520,Haris Skoro,Bosnia and Herzegovina,Torino FC
 227525,Antonio Terracciano,Italy,Hellas Verona
 227528,Stefano Vavoli,Italy,Hellas Verona
 227530,Alvise Zago,Italy,Bologna FC 1909
@@ -34804,9 +34803,9 @@ player_id,name,country,team
 229170,Laurent Roussey,France,AS Saint-Etienne
 229170,Laurent Roussey,France,FC Toulouse
 229176,Fabian Schleusener,Germany,SC Freiburg
-229181,Blaz Sliskovic,Bosnia-Herzegovina,RC Lens
-229181,Blaz Sliskovic,Bosnia-Herzegovina,Stade Rennais FC
-229181,Blaz Sliskovic,Bosnia-Herzegovina,Olympique Marseille
+229181,Blaz Sliskovic,Bosnia and Herzegovina,RC Lens
+229181,Blaz Sliskovic,Bosnia and Herzegovina,Stade Rennais FC
+229181,Blaz Sliskovic,Bosnia and Herzegovina,Olympique Marseille
 229185,Jean-Pierre Tempet,France,FC Nantes
 229185,Jean-Pierre Tempet,France,RC Lens
 229193,Salvatore Avallone,Italy,Juventus FC
@@ -35015,8 +35014,8 @@ player_id,name,country,team
 234702,Giora Spiegel,Israel,Olympique Lyon
 234702,Giora Spiegel,Israel,RC Strasbourg Alsace
 234703,Mordechai Spiegler,Israel,Paris Saint-Germain
-234781,Maxwel Cornet,Cote d'Ivoire,West Ham United
-234781,Maxwel Cornet,Cote d'Ivoire,Olympique Lyon
+234781,Maxwel Cornet,Ivory Coast,West Ham United
+234781,Maxwel Cornet,Ivory Coast,Olympique Lyon
 234803,Andrew Robertson,Scotland,Liverpool FC
 234811,Rui Silva,Portugal,Real Betis Balompie
 234866,Rai Marchan,Spain,CD Leganes
@@ -35216,7 +35215,6 @@ player_id,name,country,team
 237858,Felice Borel,Italy,SSC Napoli
 237858,Felice Borel,Italy,Juventus FC
 237858,Felice Borel,Italy,Torino FC
-237859,Jaroslav Boucek,CSSR,Stade Rennais FC
 237860,Georg Braun,Austria,Stade Rennais FC
 237864,Armando Castellazzi,Italy,Inter Milan
 237867,Gianpiero Combi,Italy,Juventus FC
@@ -35373,8 +35371,8 @@ player_id,name,country,team
 240065,Antonio Lopez,Spain,Sevilla FC
 240065,Antonio Lopez,Spain,Atletico de Madrid
 240071,Christoph Trox,Germany,1.FSV Mainz 05
-240094,Dramane Konate,Cote d'Ivoire,FC Empoli
-240094,Dramane Konate,Cote d'Ivoire,Hellas Verona
+240094,Dramane Konate,Ivory Coast,FC Empoli
+240094,Dramane Konate,Ivory Coast,Hellas Verona
 240097,Zoran Maric,Serbia,Celta de Vigo
 240102,Giulio Mulas,Italy,Parma Calcio 1913
 240111,Tudor Sbarcea,Romania,FC Empoli
@@ -36055,7 +36053,7 @@ player_id,name,country,team
 248377,Luigi Sassanelli,Italy,SS Lazio
 248395,Pawel Bochniewicz,Poland,Udinese Calcio
 248444,Gunnar Johansson,Sweden,Olympique Marseille
-248454,Nikola Vasilj,Bosnia-Herzegovina,FC St. Pauli
+248454,Nikola Vasilj,Bosnia and Herzegovina,FC St. Pauli
 248483,Chris Ikonomidis,Australia,SS Lazio
 248565,Josip Visnjic,Serbia,Rayo Vallecano
 248633,Sune Andersson,Sweden,AS Roma
@@ -36402,9 +36400,9 @@ player_id,name,country,team
 251251,George Heslop,England,Manchester City
 251256,Derek Smethurst,South Africa,Chelsea FC
 251289,Jordan Lyden,Australia,Aston Villa
-251295,Dzenis Burnic,Bosnia-Herzegovina,Borussia Dortmund
-251295,Dzenis Burnic,Bosnia-Herzegovina,1.FC Heidenheim 1846
-251295,Dzenis Burnic,Bosnia-Herzegovina,VfB Stuttgart
+251295,Dzenis Burnic,Bosnia and Herzegovina,Borussia Dortmund
+251295,Dzenis Burnic,Bosnia and Herzegovina,1.FC Heidenheim 1846
+251295,Dzenis Burnic,Bosnia and Herzegovina,VfB Stuttgart
 251299,Finn Dahmen,Germany,FC Augsburg
 251299,Finn Dahmen,Germany,1.FSV Mainz 05
 251302,Niklas Dorsch,Germany,Bayern Munich
@@ -36539,7 +36537,7 @@ player_id,name,country,team
 253543,Adriano Teixeira,Brazil,Celta de Vigo
 253544,Chema,Spain,RCD Mallorca
 253545,Rafa Gomez,Spain,Valencia CF
-253546,Vladimir Gudelj,Bosnia-Herzegovina,Celta de Vigo
+253546,Vladimir Gudelj,Bosnia and Herzegovina,Celta de Vigo
 253548,Nico Hernandez,Uruguay,Villarreal CF
 253551,Emilio Lopez,Spain,CA Osasuna
 253551,Emilio Lopez,Spain,CD Leganes
@@ -36981,7 +36979,7 @@ player_id,name,country,team
 258482,Boris Radunovic,Serbia,Atalanta BC
 258482,Boris Radunovic,Serbia,Hellas Verona
 258519,Hidde ter Avest,Netherlands,Udinese Calcio
-258684,Edin Spreco,Bosnia-Herzegovina,Stade Rennais FC
+258684,Edin Spreco,Bosnia and Herzegovina,Stade Rennais FC
 258829,Mauro Conte,Italy,Juventus FC
 258845,Nacho Conte,Spain,Sevilla FC
 258846,Chano,Spain,Real Betis Balompie
@@ -37017,7 +37015,7 @@ player_id,name,country,team
 259278,David Lee,England,Tottenham Hotspur
 259280,Alex Smith,England,Everton FC
 259281,Jim Whitley,Northern Ireland,Manchester City
-259350,Chang-hoon Kwon,"Korea, South",SC Freiburg
+259350,Chang-hoon Kwon,South Korea,SC Freiburg
 259446,Gunter Kaltenbrunner,Austria,OGC Nice
 259450,Erich Habitzl,Austria,FC Nantes
 259450,Erich Habitzl,Austria,RC Lens
@@ -37062,11 +37060,11 @@ player_id,name,country,team
 259874,Erich Schanko,Germany,Borussia Dortmund
 259880,Jakob Streitle,Germany,Bayern Munich
 259930,Gabriel Fernandez,Uruguay,Celta de Vigo
-259953,Rade Krunic,Bosnia-Herzegovina,FC Empoli
-259953,Rade Krunic,Bosnia-Herzegovina,Hellas Verona
-259953,Rade Krunic,Bosnia-Herzegovina,AC Milan
+259953,Rade Krunic,Bosnia and Herzegovina,FC Empoli
+259953,Rade Krunic,Bosnia and Herzegovina,Hellas Verona
+259953,Rade Krunic,Bosnia and Herzegovina,AC Milan
 260053,Jiri Pavlenka,Czech Republic,SV Werder Bremen
-260166,Ui-jo Hwang,"Korea, South",Nottingham Forest
+260166,Ui-jo Hwang,South Korea,Nottingham Forest
 260230,Moi Delgado,Spain,Real Valladolid CF
 260655,Eduard Lowen,Germany,FC Augsburg
 260655,Eduard Lowen,Germany,VfL Bochum
@@ -37083,7 +37081,7 @@ player_id,name,country,team
 261361,Claudio Balesini,Italy,FC Empoli
 261361,Claudio Balesini,Italy,Torino FC
 261367,Connor Dymond,England,Crystal Palace
-261406,Seung-woo Ryu,"Korea, South",Bayer 04 Leverkusen
+261406,Seung-woo Ryu,South Korea,Bayer 04 Leverkusen
 261493,Cristian Cedres,Spain,UD Las Palmas
 261504,Aleix Garcia,Spain,Girona FC
 261504,Aleix Garcia,Spain,Bayer 04 Leverkusen
@@ -37169,12 +37167,12 @@ player_id,name,country,team
 262980,Jefferson Lerma,Colombia,AFC Bournemouth
 263027,Alexis Zapata,Colombia,Udinese Calcio
 263065,Marijan Coric,Croatia,Parma Calcio 1913
-263183,Roger Assale,Cote d'Ivoire,SV Werder Bremen
-263183,Roger Assale,Cote d'Ivoire,CD Leganes
+263183,Roger Assale,Ivory Coast,SV Werder Bremen
+263183,Roger Assale,Ivory Coast,CD Leganes
 263236,Kevin Danso,Austria,FC Augsburg
 263236,Kevin Danso,Austria,RC Lens
 263236,Kevin Danso,Austria,Southampton FC
-263267,Riad Bajic,Bosnia-Herzegovina,Udinese Calcio
+263267,Riad Bajic,Bosnia and Herzegovina,Udinese Calcio
 263281,Herve Diedhiou,Senegal,Parma Calcio 1913
 263285,Ferran Giner,Spain,RCD Mallorca
 263361,Maximilian Wober,Austria,Sevilla FC
@@ -37253,7 +37251,7 @@ player_id,name,country,team
 265320,Emanuele Cicerelli,Italy,SS Lazio
 265504,Firmin Mubele,DR Congo,Stade Rennais FC
 265504,Firmin Mubele,DR Congo,FC Toulouse
-265558,Jasminko Velic,Bosnia-Herzegovina,CD Leganes
+265558,Jasminko Velic,Bosnia and Herzegovina,CD Leganes
 265569,Youssef Ait Bennasser,Morocco,AS Saint-Etienne
 265569,Youssef Ait Bennasser,Morocco,AS Monaco
 265573,Younes Bnou Marzouk,Morocco,Juventus FC
@@ -37377,7 +37375,7 @@ player_id,name,country,team
 268583,Giuseppe Ticli,Italy,Inter Milan
 268583,Giuseppe Ticli,Italy,AC Monza
 268583,Giuseppe Ticli,Italy,AC Milan
-268590,Eloge Yao,Cote d'Ivoire,Inter Milan
+268590,Eloge Yao,Ivory Coast,Inter Milan
 268670,Gerard Gumbau,Spain,Girona FC
 268670,Gerard Gumbau,Spain,CD Leganes
 268670,Gerard Gumbau,Spain,Rayo Vallecano
@@ -37761,7 +37759,7 @@ player_id,name,country,team
 279995,Humberto Ramirez,Spain,UD Las Palmas
 280021,Inaki Urkizu,Spain,Real Sociedad
 280147,Ayoub Abou,Morocco,Getafe CF
-280239,Seung-woo Lee,"Korea, South",Hellas Verona
+280239,Seung-woo Lee,South Korea,Hellas Verona
 280387,Vincent Sierro,Switzerland,SC Freiburg
 280387,Vincent Sierro,Switzerland,FC Toulouse
 280418,Gianluca Nucera,Switzerland,Parma Calcio 1913
@@ -37853,7 +37851,7 @@ player_id,name,country,team
 282660,Maximilian Mittelstadt,Germany,VfB Stuttgart
 282671,Nili Perdomo,Spain,UD Las Palmas
 282672,Benito Ramirez,Spain,UD Las Palmas
-282689,Seung-ho Paik,"Korea, South",Girona FC
+282689,Seung-ho Paik,South Korea,Girona FC
 282694,Augusto Solari,Argentina,Celta de Vigo
 282700,Enric Franquesa,Spain,Villarreal CF
 282700,Enric Franquesa,Spain,Girona FC
@@ -38026,10 +38024,10 @@ player_id,name,country,team
 286296,Franck Cedric,Cameroon,AS Roma
 286297,Lorenzo Pellegrini,Italy,AS Roma
 286378,Sacha Bastien,France,Stade Reims
-286384,Eric Bailly,Cote d'Ivoire,Manchester United
-286384,Eric Bailly,Cote d'Ivoire,Villarreal CF
-286384,Eric Bailly,Cote d'Ivoire,RCD Espanyol Barcelona
-286384,Eric Bailly,Cote d'Ivoire,Olympique Marseille
+286384,Eric Bailly,Ivory Coast,Manchester United
+286384,Eric Bailly,Ivory Coast,Villarreal CF
+286384,Eric Bailly,Ivory Coast,RCD Espanyol Barcelona
+286384,Eric Bailly,Ivory Coast,Olympique Marseille
 286415,Pau Lopez,Spain,RCD Espanyol Barcelona
 286415,Pau Lopez,Spain,Olympique Marseille
 286415,Pau Lopez,Spain,AS Roma
@@ -38067,7 +38065,7 @@ player_id,name,country,team
 287269,Matteo Fissore,Italy,Como 1907
 287282,Nico Hidalgo,Spain,Juventus FC
 287298,Ameth Lo,Senegal,SS Lazio
-287313,Andrej Modic,Bosnia-Herzegovina,AC Milan
+287313,Andrej Modic,Bosnia and Herzegovina,AC Milan
 287343,Lorenzo Saporetti,Italy,Parma Calcio 1913
 287367,Luca Vignali,Italy,Como 1907
 287369,Paolo Zirafa,Italy,AC Monza
@@ -38391,9 +38389,9 @@ player_id,name,country,team
 289977,Raimundo Lezama,Spain,Southampton FC
 289977,Raimundo Lezama,Spain,Athletic Bilbao
 289992,Antonio Valero,Spain,Sevilla FC
-290017,Hassane Kamara,Cote d'Ivoire,Stade Reims
-290017,Hassane Kamara,Cote d'Ivoire,Udinese Calcio
-290017,Hassane Kamara,Cote d'Ivoire,OGC Nice
+290017,Hassane Kamara,Ivory Coast,Stade Reims
+290017,Hassane Kamara,Ivory Coast,Udinese Calcio
+290017,Hassane Kamara,Ivory Coast,OGC Nice
 290032,Kevin Ruegg,Switzerland,Hellas Verona
 290087,Matteo Biggeri,Italy,FC Empoli
 290161,Dario Baruffi,Italy,Hellas Verona
@@ -38404,7 +38402,7 @@ player_id,name,country,team
 290166,Per Bredesen,Norway,AC Milan
 290166,Per Bredesen,Norway,SS Lazio
 290167,Isidro Brunet,Spain,Real Madrid
-290171,Kyoung-rok Choi,"Korea, South",FC St. Pauli
+290171,Kyoung-rok Choi,South Korea,FC St. Pauli
 290172,Stan Crowther,England,Chelsea FC
 290172,Stan Crowther,England,Brighton & Hove Albion
 290172,Stan Crowther,England,Aston Villa
@@ -38568,9 +38566,9 @@ player_id,name,country,team
 291869,Angelo Franzosi,Italy,Genoa CFC
 291883,Ermando Malinverni,Italy,Atalanta BC
 292179,Joe Haverty,Ireland,Arsenal FC
-292246,Hee-chan Hwang,"Korea, South",RB Leipzig
-292246,Hee-chan Hwang,"Korea, South",Wolverhampton Wanderers
-292269,In-hyeok Park,"Korea, South",TSG 1899 Hoffenheim
+292246,Hee-chan Hwang,South Korea,RB Leipzig
+292246,Hee-chan Hwang,South Korea,Wolverhampton Wanderers
+292269,In-hyeok Park,South Korea,TSG 1899 Hoffenheim
 292333,Ransford Selasi,Ghana,US Lecce
 292376,Angel Luis,Spain,Villarreal CF
 292376,Angel Luis,Spain,RCD Mallorca
@@ -38594,10 +38592,10 @@ player_id,name,country,team
 292782,Julius Schubert,Slovakia,Torino FC
 292808,Wout Faes,Belgium,Stade Reims
 292808,Wout Faes,Belgium,Leicester City
-292818,Jonathan Bamba,Cote d'Ivoire,LOSC Lille
-292818,Jonathan Bamba,Cote d'Ivoire,AS Saint-Etienne
-292818,Jonathan Bamba,Cote d'Ivoire,Angers SCO
-292818,Jonathan Bamba,Cote d'Ivoire,Celta de Vigo
+292818,Jonathan Bamba,Ivory Coast,LOSC Lille
+292818,Jonathan Bamba,Ivory Coast,AS Saint-Etienne
+292818,Jonathan Bamba,Ivory Coast,Angers SCO
+292818,Jonathan Bamba,Ivory Coast,Celta de Vigo
 292820,Alois Confais,France,Le Havre AC
 292822,Aldo Kalulu,DR Congo,Olympique Lyon
 292822,Aldo Kalulu,DR Congo,Stade Rennais FC
@@ -38642,8 +38640,8 @@ player_id,name,country,team
 293200,Nikola Vlasic,Croatia,West Ham United
 293200,Nikola Vlasic,Croatia,Everton FC
 293200,Nikola Vlasic,Croatia,Torino FC
-293210,Amer Gojak,Bosnia-Herzegovina,Torino FC
-293231,Darko Todorovic,Bosnia-Herzegovina,Holstein Kiel
+293210,Amer Gojak,Bosnia and Herzegovina,Torino FC
+293231,Darko Todorovic,Bosnia and Herzegovina,Holstein Kiel
 293257,Matija Sarkic,Montenegro,Wolverhampton Wanderers
 293281,Jacob Bruun Larsen,Denmark,TSG 1899 Hoffenheim
 293281,Jacob Bruun Larsen,Denmark,VfB Stuttgart
@@ -38714,7 +38712,7 @@ player_id,name,country,team
 293897,Johnny Gavin,Ireland,Tottenham Hotspur
 293897,Johnny Gavin,Ireland,Crystal Palace
 293898,Tommy Eglington,Ireland,Everton FC
-293944,Habib Maiga,Cote d'Ivoire,AS Saint-Etienne
+293944,Habib Maiga,Ivory Coast,AS Saint-Etienne
 294057,James Maddison,England,Leicester City
 294057,James Maddison,England,Tottenham Hotspur
 294065,Salvatore D'Angelo,Italy,SSC Napoli
@@ -38763,12 +38761,12 @@ player_id,name,country,team
 294779,Andrea Orlandini,Italy,ACF Fiorentina
 294782,Francesco Rocca,Italy,AS Roma
 294783,Moreno Roggi,Italy,ACF Fiorentina
-294791,Chris Bedia,Cote d'Ivoire,1.FC Union Berlin
+294791,Chris Bedia,Ivory Coast,1.FC Union Berlin
 294798,Nathan,Brazil,Chelsea FC
-294808,Franck Kessie,Cote d'Ivoire,FC Barcelona
-294808,Franck Kessie,Cote d'Ivoire,Atalanta BC
-294808,Franck Kessie,Cote d'Ivoire,AC Milan
-294818,Willy Ta Bi,Cote d'Ivoire,Atalanta BC
+294808,Franck Kessie,Ivory Coast,FC Barcelona
+294808,Franck Kessie,Ivory Coast,Atalanta BC
+294808,Franck Kessie,Ivory Coast,AC Milan
+294818,Willy Ta Bi,Ivory Coast,Atalanta BC
 294873,Thiago Maia,Brazil,LOSC Lille
 294876,Kevin Mendez,Uruguay,AS Roma
 294894,Leo Suarez,Argentina,Villarreal CF
@@ -38848,8 +38846,8 @@ player_id,name,country,team
 296237,Cesar Ruminski,France,Le Havre AC
 296242,Davy Walsh,Ireland,Aston Villa
 296347,Nenad Bjekovic,Serbia,OGC Nice
-296356,Souleyman Doumbia,Cote d'Ivoire,Stade Rennais FC
-296356,Souleyman Doumbia,Cote d'Ivoire,Angers SCO
+296356,Souleyman Doumbia,Ivory Coast,Stade Rennais FC
+296356,Souleyman Doumbia,Ivory Coast,Angers SCO
 296378,Luca Itter,Germany,VfL Wolfsburg
 296378,Luca Itter,Germany,SC Freiburg
 296397,Arne Maier,Germany,FC Augsburg
@@ -38913,8 +38911,8 @@ player_id,name,country,team
 297485,Pepito Ramos,Spain,RCD Espanyol Barcelona
 297500,Enea Dionisio,Italy,Cagliari Calcio
 297541,Stephen Whitworth,England,Leicester City
-297583,Woo-yeong Jeong,"Korea, South",SC Freiburg
-297583,Woo-yeong Jeong,"Korea, South",VfB Stuttgart
+297583,Woo-yeong Jeong,South Korea,SC Freiburg
+297583,Woo-yeong Jeong,South Korea,VfB Stuttgart
 297630,Marco Carraro,Italy,Atalanta BC
 297645,Riccardo Marchizza,Italy,FC Empoli
 297646,Alessandro Mattioli,Italy,Inter Milan
@@ -39819,7 +39817,7 @@ player_id,name,country,team
 307340,Dennis Stevens,England,Everton FC
 307341,Andrea Trainotti,Italy,AC Monza
 307344,Alberto Acquadro,Italy,Venezia FC
-307397,Yi-young Park,"Korea, South",FC St. Pauli
+307397,Yi-young Park,South Korea,FC St. Pauli
 307431,Georges Casolari,France,FC Toulouse
 307431,Georges Casolari,France,AS Monaco
 307453,Marcelo Ledesma,Argentina,AC Monza
@@ -40841,8 +40839,8 @@ player_id,name,country,team
 314359,Davide Ciotti,Italy,Parma Calcio 1913
 314362,Hayden Coulson,England,Ipswich Town
 314366,Kyle Edwards,England,Ipswich Town
-314398,Jae-sung Lee,"Korea, South",Holstein Kiel
-314398,Jae-sung Lee,"Korea, South",1.FSV Mainz 05
+314398,Jae-sung Lee,South Korea,Holstein Kiel
+314398,Jae-sung Lee,South Korea,1.FSV Mainz 05
 314464,David Linde,Spain,Sevilla FC
 314476,Angelo,Spain,Getafe CF
 314477,Mauricio,Brazil,Celta de Vigo
@@ -40967,7 +40965,7 @@ player_id,name,country,team
 316551,Jake Clarke-Salter,England,Chelsea FC
 316575,Moritz-Broni Kwarteng,Germany,VfL Bochum
 316657,Kaj Hansen,Denmark,RC Lens
-316751,Ali Keita,Cote d'Ivoire,Stade Brestois 29
+316751,Ali Keita,Ivory Coast,Stade Brestois 29
 316758,Frank O'Donnell,Scotland,Nottingham Forest
 316758,Frank O'Donnell,Scotland,Aston Villa
 316884,Dominik Greif,Slovakia,RCD Mallorca
@@ -41153,9 +41151,9 @@ player_id,name,country,team
 321743,Len Goulden,England,West Ham United
 321743,Len Goulden,England,Chelsea FC
 321744,Willie Hall,England,Tottenham Hotspur
-321747,Petar Manola,Bosnia-Herzegovina,SSC Napoli
-321747,Petar Manola,Bosnia-Herzegovina,Olympique Lyon
-321747,Petar Manola,Bosnia-Herzegovina,SS Lazio
+321747,Petar Manola,Bosnia and Herzegovina,SSC Napoli
+321747,Petar Manola,Bosnia and Herzegovina,Olympique Lyon
+321747,Petar Manola,Bosnia and Herzegovina,SS Lazio
 321748,Joe Mercer,England,Arsenal FC
 321748,Joe Mercer,England,Everton FC
 321754,Vic Woodley,England,Chelsea FC
@@ -41181,7 +41179,7 @@ player_id,name,country,team
 322036,Jean Laurent,France,Montpellier HSC
 322036,Jean Laurent,France,Stade Rennais FC
 322050,Andre Tassin,France,Stade Reims
-322065,Dennis Hadzikadunic,Bosnia-Herzegovina,RCD Mallorca
+322065,Dennis Hadzikadunic,Bosnia and Herzegovina,RCD Mallorca
 322293,Felix Beijmo,Sweden,SV Werder Bremen
 322305,Jean-Victor Makengo,France,FC Toulouse
 322305,Jean-Victor Makengo,France,Udinese Calcio
@@ -41214,7 +41212,7 @@ player_id,name,country,team
 323934,Matheus Pereira,Brazil,Juventus FC
 323934,Matheus Pereira,Brazil,FC Empoli
 323954,Walace,Brazil,Udinese Calcio
-324051,Diaby Sekana,Cote d'Ivoire,Stade Brestois 29
+324051,Diaby Sekana,Ivory Coast,Stade Brestois 29
 324219,Cliff Bastin,England,Arsenal FC
 324222,Ray Bowden,England,Newcastle United
 324222,Ray Bowden,England,Arsenal FC
@@ -41314,7 +41312,7 @@ player_id,name,country,team
 325643,Albert Emon,France,Olympique Marseille
 325643,Albert Emon,France,AS Monaco
 325786,Gustav Gottenkieny,Switzerland,SC Freiburg
-325819,Djakaridja Traore,Cote d'Ivoire,Girona FC
+325819,Djakaridja Traore,Ivory Coast,Girona FC
 325924,Ahmed Touba,Algeria,US Lecce
 325993,Oliver Abildgaard,Denmark,Como 1907
 325993,Oliver Abildgaard,Denmark,Hellas Verona
@@ -41352,7 +41350,7 @@ player_id,name,country,team
 327863,Akim Zedadka,Algeria,LOSC Lille
 327911,Felipe Pires,Brazil,TSG 1899 Hoffenheim
 328238,Tony Green,Scotland,Newcastle United
-328264,Smail Prevljak,Bosnia-Herzegovina,RB Leipzig
+328264,Smail Prevljak,Bosnia and Herzegovina,RB Leipzig
 328480,Pepelu,Spain,Valencia CF
 328528,Willie Carr,Scotland,Wolverhampton Wanderers
 328558,Mick Hill,Wales,Crystal Palace
@@ -41626,10 +41624,10 @@ player_id,name,country,team
 335411,Vincenzo Chiarenza,Italy,SS Lazio
 335412,Rinaldo Piraccini,Italy,SS Lazio
 335450,Robert Tripsa,Romania,AC Monza
-335457,Ermedin Demirovic,Bosnia-Herzegovina,FC Augsburg
-335457,Ermedin Demirovic,Bosnia-Herzegovina,SC Freiburg
-335457,Ermedin Demirovic,Bosnia-Herzegovina,VfB Stuttgart
-335457,Ermedin Demirovic,Bosnia-Herzegovina,Deportivo Alaves
+335457,Ermedin Demirovic,Bosnia and Herzegovina,FC Augsburg
+335457,Ermedin Demirovic,Bosnia and Herzegovina,SC Freiburg
+335457,Ermedin Demirovic,Bosnia and Herzegovina,VfB Stuttgart
+335457,Ermedin Demirovic,Bosnia and Herzegovina,Deportivo Alaves
 335461,Renat Dadashov,Azerbaijan,Eintracht Frankfurt
 335461,Renat Dadashov,Azerbaijan,Wolverhampton Wanderers
 335591,Rob Hunt,England,Brighton & Hove Albion
@@ -41770,8 +41768,8 @@ player_id,name,country,team
 336635,Jacopo Triveri,Italy,Como 1907
 336646,Akram Afif,Qatar,Villarreal CF
 336671,Gianluca De Angelis,Italy,Hellas Verona
-336704,Alassane Traore,Cote d'Ivoire,Inter Milan
-336704,Alassane Traore,Cote d'Ivoire,Udinese Calcio
+336704,Alassane Traore,Ivory Coast,Inter Milan
+336704,Alassane Traore,Ivory Coast,Udinese Calcio
 336729,Cedric Omoigui,Nigeria,RCD Mallorca
 336730,James Boriko,Equatorial Guinea,RCD Mallorca
 336731,Nacho Gil,Spain,Valencia CF
@@ -41868,8 +41866,8 @@ player_id,name,country,team
 337715,Umar Sadiq,Nigeria,Torino FC
 337716,Claud Adjapong,Italy,Hellas Verona
 337716,Claud Adjapong,Italy,US Lecce
-337725,Christian Kouame,Cote d'Ivoire,Genoa CFC
-337725,Christian Kouame,Cote d'Ivoire,ACF Fiorentina
+337725,Christian Kouame,Ivory Coast,Genoa CFC
+337725,Christian Kouame,Ivory Coast,ACF Fiorentina
 337726,Moussa Souare,Guinea,Inter Milan
 337787,Connor Ronan,Ireland,Wolverhampton Wanderers
 337800,Gedson Fernandes,Portugal,Tottenham Hotspur
@@ -41921,7 +41919,7 @@ player_id,name,country,team
 338296,Roberto Canestrari,Italy,Cagliari Calcio
 338297,Alessandro Turrin,Italy,Atalanta BC
 338333,Mattia Persano,Italy,US Lecce
-338415,Ibrahim Hajtic,Bosnia-Herzegovina,1.FC Heidenheim 1846
+338415,Ibrahim Hajtic,Bosnia and Herzegovina,1.FC Heidenheim 1846
 338423,Stefano Pino,Italy,US Lecce
 338424,Mikel Merino,Spain,CA Osasuna
 338424,Mikel Merino,Spain,Borussia Dortmund
@@ -42073,8 +42071,6 @@ player_id,name,country,team
 340879,Merih Demiral,Turkiye,Juventus FC
 340879,Merih Demiral,Turkiye,Atalanta BC
 340883,Branislav Sekulic,Serbia,Montpellier HSC
-340888,Ljubisa Stefanovic,Jugoslawien (SFR),AS Saint-Etienne
-340888,Ljubisa Stefanovic,Jugoslawien (SFR),FC Toulouse
 340918,Caoimhin Kelleher,Ireland,Liverpool FC
 340950,Diogo Jota,Portugal,Liverpool FC
 340950,Diogo Jota,Portugal,Atletico de Madrid
@@ -42146,7 +42142,7 @@ player_id,name,country,team
 342046,Axel Tuanzebe,DR Congo,Ipswich Town
 342048,Grady Diangana,DR Congo,West Ham United
 342100,Sahverdi Cetin,Turkiye,Eintracht Frankfurt
-342141,Young-jae Seo,"Korea, South",Holstein Kiel
+342141,Young-jae Seo,South Korea,Holstein Kiel
 342165,David Philipp,Germany,SV Werder Bremen
 342202,Loic Badiashile,France,Stade Rennais FC
 342202,Loic Badiashile,France,AS Monaco
@@ -42180,10 +42176,10 @@ player_id,name,country,team
 343016,Alexandre Vincent,France,AJ Auxerre
 343034,Carmelo Dato,Italy,Como 1907
 343042,Allen McKnight,Northern Ireland,West Ham United
-343052,Nicolas Pepe,Cote d'Ivoire,LOSC Lille
-343052,Nicolas Pepe,Cote d'Ivoire,Arsenal FC
-343052,Nicolas Pepe,Cote d'Ivoire,Angers SCO
-343052,Nicolas Pepe,Cote d'Ivoire,OGC Nice
+343052,Nicolas Pepe,Ivory Coast,LOSC Lille
+343052,Nicolas Pepe,Ivory Coast,Arsenal FC
+343052,Nicolas Pepe,Ivory Coast,Angers SCO
+343052,Nicolas Pepe,Ivory Coast,OGC Nice
 343074,Corrado Ferracuti,Italy,Como 1907
 343075,Claudio Salvi,Italy,Como 1907
 343101,Michele Arrigoni,Italy,ACF Fiorentina
@@ -42385,7 +42381,7 @@ player_id,name,country,team
 347425,Eustaquio Zubillaga,Spain,Real Sociedad
 347425,Eustaquio Zubillaga,Spain,UD Las Palmas
 347434,Rafael Mayoral,Spain,Celta de Vigo
-347530,Edin Curic,Bosnia-Herzegovina,UD Las Palmas
+347530,Edin Curic,Bosnia and Herzegovina,UD Las Palmas
 347600,Marco Costa,Italy,AC Monza
 347710,Alessandro Balconi,Italy,Como 1907
 347799,Sergio Buso,Italy,Bologna FC 1909
@@ -43018,7 +43014,7 @@ player_id,name,country,team
 353159,Julian Romero,Spain,Atletico de Madrid
 353159,Julian Romero,Spain,Getafe CF
 353159,Julian Romero,Spain,UD Las Palmas
-353161,Serge-Alain Maguy,Cote d'Ivoire,Atletico de Madrid
+353161,Serge-Alain Maguy,Ivory Coast,Atletico de Madrid
 353162,Tilico,Brazil,Atletico de Madrid
 353173,Falou Samb,Senegal,Genoa CFC
 353186,Michael Wocker,Germany,1.FSV Mainz 05
@@ -43067,7 +43063,7 @@ player_id,name,country,team
 353982,Jean-Pierre Bade,France,Olympique Marseille
 353982,Jean-Pierre Bade,France,RC Strasbourg Alsace
 353998,Aaron Mattia Tabacchi,Italy,Bologna FC 1909
-354017,Adnan Kanuric,Bosnia-Herzegovina,Nottingham Forest
+354017,Adnan Kanuric,Bosnia and Herzegovina,Nottingham Forest
 354029,Juli,Spain,RCD Mallorca
 354029,Juli,Spain,Deportivo Alaves
 354029,Juli,Spain,Real Valladolid CF
@@ -43096,7 +43092,7 @@ player_id,name,country,team
 354466,Toni,Spain,UD Las Palmas
 354468,Juan Jose Vallina,Spain,Getafe CF
 354482,Amir Murillo,Panama,Olympique Marseille
-354502,Veroliub Kostadinovic,Bosnia-Herzegovina,Holstein Kiel
+354502,Veroliub Kostadinovic,Bosnia and Herzegovina,Holstein Kiel
 354519,Ulrik Steffen,Germany,Holstein Kiel
 354620,Giovanni Milanesi,Italy,Bologna FC 1909
 354664,Junior Flemmings,Jamaica,FC Toulouse
@@ -43345,7 +43341,7 @@ player_id,name,country,team
 358359,Cesar Esteban,Spain,Real Valladolid CF
 358504,Ritsu Doan,Japan,SC Freiburg
 358509,Mehdi Chahiri,France,RC Strasbourg Alsace
-358515,Jean-Philippe Krasso,Cote d'Ivoire,AS Saint-Etienne
+358515,Jean-Philippe Krasso,Ivory Coast,AS Saint-Etienne
 358695,Tony Brien,Ireland,Leicester City
 358808,Mariano Pulido,Spain,Sevilla FC
 358811,Manuel Fernandez,Spain,RCD Espanyol Barcelona
@@ -43557,7 +43553,7 @@ player_id,name,country,team
 364760,Giancarlo Amadeo,Italy,FC Empoli
 364761,Paolo Amadesi,Italy,Torino FC
 364822,Juan Roman Rodriguez,Spain,UD Las Palmas
-364827,Cedric Kipre,Cote d'Ivoire,Stade Reims
+364827,Cedric Kipre,Ivory Coast,Stade Reims
 364857,Falaye Sacko,Mali,Montpellier HSC
 364857,Falaye Sacko,Mali,AS Saint-Etienne
 364861,Fousseni Diabate,Mali,Leicester City
@@ -43822,9 +43818,9 @@ player_id,name,country,team
 371142,Myziane Maolida,Comoros,OGC Nice
 371145,Imad Faraj,France,LOSC Lille
 371148,Lenny Vallier,France,Stade Reims
-371149,Evan Ndicka,Cote d'Ivoire,AJ Auxerre
-371149,Evan Ndicka,Cote d'Ivoire,AS Roma
-371149,Evan Ndicka,Cote d'Ivoire,Eintracht Frankfurt
+371149,Evan Ndicka,Ivory Coast,AJ Auxerre
+371149,Evan Ndicka,Ivory Coast,AS Roma
+371149,Evan Ndicka,Ivory Coast,Eintracht Frankfurt
 371174,Diego Lainez,Mexico,Real Betis Balompie
 371191,Gianelia Amoretti,Italy,Hellas Verona
 371200,Walter Ballarin,Italy,Venezia FC
@@ -43985,9 +43981,9 @@ player_id,name,country,team
 375710,Jeando Fuchs,Cameroon,Deportivo Alaves
 375816,Manuel De Luca,Italy,Torino FC
 375857,Kristijan Bistrovic,Croatia,US Lecce
-375877,Vakoun Bayo,Cote d'Ivoire,FC Toulouse
-375885,Ibrahim Sangare,Cote d'Ivoire,Nottingham Forest
-375885,Ibrahim Sangare,Cote d'Ivoire,FC Toulouse
+375877,Vakoun Bayo,Ivory Coast,FC Toulouse
+375885,Ibrahim Sangare,Ivory Coast,Nottingham Forest
+375885,Ibrahim Sangare,Ivory Coast,FC Toulouse
 376062,Giovanni Battioni,Italy,SS Lazio
 376064,Franco Battisodo,Italy,Parma Calcio 1913
 376065,Ennio Battistelli,Italy,US Lecce
@@ -44463,7 +44459,7 @@ player_id,name,country,team
 390519,Ciro Pezzella,Italy,US Lecce
 390521,Tullio Tinti,Italy,Bologna FC 1909
 390638,Arthur Cabral,Brazil,ACF Fiorentina
-390667,Jean-Armel Drole,Cote d'Ivoire,UD Las Palmas
+390667,Jean-Armel Drole,Ivory Coast,UD Las Palmas
 390683,Alfredo Fulvi,Italy,Cagliari Calcio
 390688,Juan Iglesias,Spain,Getafe CF
 390698,Pietro Biagioli,Italy,Torino FC
@@ -44489,10 +44485,10 @@ player_id,name,country,team
 391005,Mads Roerslev,Denmark,Brentford FC
 391011,Tommaso Lelj,Italy,Venezia FC
 391049,Gabriel Meli,Italy,FC Empoli
-391064,Muhamed Tehe Olawale,Cote d'Ivoire,Parma Calcio 1913
-391065,Hamed Junior Traore,Cote d'Ivoire,SSC Napoli
-391065,Hamed Junior Traore,Cote d'Ivoire,FC Empoli
-391065,Hamed Junior Traore,Cote d'Ivoire,AFC Bournemouth
+391064,Muhamed Tehe Olawale,Ivory Coast,Parma Calcio 1913
+391065,Hamed Junior Traore,Ivory Coast,SSC Napoli
+391065,Hamed Junior Traore,Ivory Coast,FC Empoli
+391065,Hamed Junior Traore,Ivory Coast,AFC Bournemouth
 391110,Nick Hayes,England,Ipswich Town
 391132,Matt Butcher,England,AFC Bournemouth
 391257,Brahim Konate,France,AJ Auxerre
@@ -44563,7 +44559,7 @@ player_id,name,country,team
 392956,Enrico Del Prato,Italy,Parma Calcio 1913
 392959,Andrea Colpani,Italy,AC Monza
 392959,Andrea Colpani,Italy,ACF Fiorentina
-392964,Emmanuel Latte Lath,Cote d'Ivoire,Atalanta BC
+392964,Emmanuel Latte Lath,Ivory Coast,Atalanta BC
 392966,Nadir Zortea,Italy,Cagliari Calcio
 392966,Nadir Zortea,Italy,Atalanta BC
 393203,Emre Aslan,Turkiye,RB Leipzig
@@ -44648,7 +44644,7 @@ player_id,name,country,team
 395516,Moussa Diaby,France,Bayer 04 Leverkusen
 395519,Metehan Guclu,Turkiye,Stade Rennais FC
 395522,Samuel Essende,DR Congo,FC Augsburg
-395523,Wilfried Kanga,Cote d'Ivoire,Angers SCO
+395523,Wilfried Kanga,Ivory Coast,Angers SCO
 395527,Emmanuele Matino,Italy,Parma Calcio 1913
 395602,Alexandre Olliero,France,FC Nantes
 395602,Alexandre Olliero,France,Stade Reims
@@ -44791,7 +44787,7 @@ player_id,name,country,team
 398207,Giancarlo Bolognesi,Italy,ACF Fiorentina
 398208,Giorgio Bolognesi,Italy,Cagliari Calcio
 398267,George Pilbeam,England,Brentford FC
-398275,Abdoulaye Traore,Cote d'Ivoire,Hellas Verona
+398275,Abdoulaye Traore,Ivory Coast,Hellas Verona
 398402,Sam Surridge,England,Nottingham Forest
 398402,Sam Surridge,England,AFC Bournemouth
 398455,Giovanni Ludovici,Italy,Genoa CFC
@@ -44950,7 +44946,7 @@ player_id,name,country,team
 402052,Massimo Mattolini,Italy,ACF Fiorentina
 402079,Ignacio Ramirez,Uruguay,AS Saint-Etienne
 402117,Jules Keita,Guinea,RC Lens
-402193,Kwang-song Han,"Korea, North",Cagliari Calcio
+402193,Kwang-song Han,North Korea,Cagliari Calcio
 402326,Paolo Pellicano,Italy,Venezia FC
 402537,Nicolo Rota,Italy,Como 1907
 402555,Yuri Senesi,Italy,Venezia FC
@@ -45287,7 +45283,7 @@ player_id,name,country,team
 412975,Alan Curbishley,England,Brighton & Hove Albion
 412975,Alan Curbishley,England,Aston Villa
 412980,Luca Varola,Italy,AC Monza
-413014,Esad Dugalic,Bosnia-Herzegovina,AS Saint-Etienne
+413014,Esad Dugalic,Bosnia and Herzegovina,AS Saint-Etienne
 413032,Ibrahima Diallo,France,Southampton FC
 413032,Ibrahima Diallo,France,Stade Brestois 29
 413032,Ibrahima Diallo,France,AS Monaco
@@ -45416,8 +45412,8 @@ player_id,name,country,team
 418560,Erling Haaland,Norway,Borussia Dortmund
 418560,Erling Haaland,Norway,Manchester City
 418571,Hamza Rafia,Tunisia,US Lecce
-418651,Yahia Fofana,Cote d'Ivoire,Le Havre AC
-418651,Yahia Fofana,Cote d'Ivoire,Angers SCO
+418651,Yahia Fofana,Ivory Coast,Le Havre AC
+418651,Yahia Fofana,Ivory Coast,Angers SCO
 418652,Leroy Abanda,France,AC Milan
 418658,Charles Abi,France,AS Saint-Etienne
 418659,Amine Gouiri,Algeria,Olympique Lyon
@@ -45431,7 +45427,7 @@ player_id,name,country,team
 418884,Andrea Cagnano,Italy,Inter Milan
 418884,Andrea Cagnano,Italy,Como 1907
 419025,Conor Coventry,Ireland,West Ham United
-419255,Marijan Cavar,Bosnia-Herzegovina,Eintracht Frankfurt
+419255,Marijan Cavar,Bosnia and Herzegovina,Eintracht Frankfurt
 419382,Adama Traore,Mali,Paris Saint-Germain
 419391,Ted Hufton,England,West Ham United
 419392,Tom Cooper,England,Liverpool FC
@@ -45547,8 +45543,8 @@ player_id,name,country,team
 422629,Giovanni Cattozzo,Italy,Atalanta BC
 422700,Tomas Cardona,Argentina,UD Las Palmas
 422715,Arial Mendy,Senegal,RC Lens
-422850,Ghislain Konan,Cote d'Ivoire,Stade Reims
-422986,Halid Sabanovic,Bosnia-Herzegovina,Angers SCO
+422850,Ghislain Konan,Ivory Coast,Stade Reims
+422986,Halid Sabanovic,Bosnia and Herzegovina,Angers SCO
 423068,Juan Bugarin,Spain,Celta de Vigo
 423166,Pipa,Spain,RCD Espanyol Barcelona
 423436,Santiago Ascacibar,Argentina,VfB Stuttgart
@@ -45633,7 +45629,7 @@ player_id,name,country,team
 428791,Paulinho,Brazil,Bayer 04 Leverkusen
 428948,Andoni Zubiaurre,Spain,Real Sociedad
 428953,Pierre Magnon,France,Stade Brestois 29
-428954,Stephane Diarra,Cote d'Ivoire,AS Saint-Etienne
+428954,Stephane Diarra,Ivory Coast,AS Saint-Etienne
 428985,Gastone Baldi,Italy,Bologna FC 1909
 428986,Ettore Leale,Italy,Genoa CFC
 428987,Alberto Pozzi,Italy,Bologna FC 1909
@@ -45670,8 +45666,8 @@ player_id,name,country,team
 429790,Luka Ilic,Serbia,Manchester City
 429874,Ansgar Knauff,Germany,Eintracht Frankfurt
 429874,Ansgar Knauff,Germany,Borussia Dortmund
-429901,Paul Akouokou,Cote d'Ivoire,Real Betis Balompie
-429901,Paul Akouokou,Cote d'Ivoire,Olympique Lyon
+429901,Paul Akouokou,Ivory Coast,Real Betis Balompie
+429901,Paul Akouokou,Ivory Coast,Olympique Lyon
 429983,Jørgen Strand Larsen,Norway,Wolverhampton Wanderers
 429983,Jørgen Strand Larsen,Norway,Celta de Vigo
 429987,Tiago Dantas,Portugal,Bayern Munich
@@ -47197,7 +47193,7 @@ player_id,name,country,team
 469858,Ulysses Llanez,United States,VfL Wolfsburg
 469870,Gabriele Valentini,Italy,Hellas Verona
 469871,Sante Crepaldi,Italy,ACF Fiorentina
-469976,Christopher Operi,Cote d'Ivoire,Le Havre AC
+469976,Christopher Operi,Ivory Coast,Le Havre AC
 470228,Vincenzo Montefusco,Italy,SSC Napoli
 470229,Giovanni Re,Italy,US Lecce
 470391,Jayden Braaf,Netherlands,Hellas Verona
@@ -48278,8 +48274,8 @@ player_id,name,country,team
 482280,Bernard Mendy,France,AS Saint-Etienne
 482284,Krzysztof Frankowski,Poland,FC Nantes
 482284,Krzysztof Frankowski,Poland,Le Havre AC
-482285,Boris Diecket,Cote d'Ivoire,FC Nantes
-482285,Boris Diecket,Cote d'Ivoire,Angers SCO
+482285,Boris Diecket,Ivory Coast,FC Nantes
+482285,Boris Diecket,Ivory Coast,Angers SCO
 482286,Victor Ramos,Argentina,FC Nantes
 482287,Jorge Dominguez,Argentina,OGC Nice
 482288,Victor Trossero,Argentina,FC Nantes
@@ -48302,7 +48298,7 @@ player_id,name,country,team
 482301,Jean Deloffre,France,Angers SCO
 482301,Jean Deloffre,France,OGC Nice
 482302,Dominique Berthaud,France,Paris Saint-Germain
-482307,Aboubacar Cisse,Cote d'Ivoire,OGC Nice
+482307,Aboubacar Cisse,Ivory Coast,OGC Nice
 482308,Pascal Pain,France,Le Havre AC
 482309,Michel Furic,France,FC Nantes
 482310,Patrick Martet,France,Le Havre AC
@@ -48382,7 +48378,7 @@ player_id,name,country,team
 482984,Gasperino Cinelli,Italy,SS Lazio
 482989,Mark Morris,England,Brighton & Hove Albion
 482989,Mark Morris,England,AFC Bournemouth
-483007,Belmin Dizdarevic,Bosnia-Herzegovina,Montpellier HSC
+483007,Belmin Dizdarevic,Bosnia and Herzegovina,Montpellier HSC
 483014,Esquerdinha,Brazil,US Lecce
 483023,Eitel Galle,Germany,Holstein Kiel
 483046,Josip Stanisic,Croatia,Bayern Munich
@@ -48681,7 +48677,7 @@ player_id,name,country,team
 485479,Joel Caddeo,France,Stade Brestois 29
 485480,Thierry Le Blan,France,Stade Brestois 29
 485481,Pascal Coiffier,France,Stade Brestois 29
-485482,Michel Goba,Cote d'Ivoire,Stade Brestois 29
+485482,Michel Goba,Ivory Coast,Stade Brestois 29
 485483,Herve Guegan,France,Stade Brestois 29
 485483,Herve Guegan,France,Angers SCO
 485484,Mady Toure,Guinea,Stade Brestois 29
@@ -48776,8 +48772,8 @@ player_id,name,country,team
 486321,Jose Souto,France,RC Strasbourg Alsace
 486322,Jean-Paul Rabier,France,RC Lens
 486322,Jean-Paul Rabier,France,Stade Rennais FC
-486325,Jean-Michel Guede,Cote d'Ivoire,Montpellier HSC
-486325,Jean-Michel Guede,Cote d'Ivoire,Stade Brestois 29
+486325,Jean-Michel Guede,Ivory Coast,Montpellier HSC
+486325,Jean-Michel Guede,Ivory Coast,Stade Brestois 29
 486326,Moncef Djebali,Tunisia,RC Lens
 486326,Moncef Djebali,Tunisia,Olympique Marseille
 486329,Souleymane Camara,Senegal,Stade Reims
@@ -48983,7 +48979,7 @@ player_id,name,country,team
 488329,Franco Migliorati,Italy,AC Milan
 488362,Conor Gallagher,England,Chelsea FC
 488362,Conor Gallagher,England,Crystal Palace
-488385,Didier Wacouboue,Cote d'Ivoire,Olympique Marseille
+488385,Didier Wacouboue,Ivory Coast,Olympique Marseille
 488471,Jose Luis Ceballos,Argentina,UD Las Palmas
 488475,Mario Musiello,Italy,Como 1907
 488517,Luis Angel Clemot,Spain,Villarreal CF
@@ -49473,9 +49469,9 @@ player_id,name,country,team
 500517,Klaus-Dieter Helbig,Germany,1.FC Union Berlin
 500540,Steve Elliott,England,Nottingham Forest
 500559,Gary Cobb,England,Fulham FC
-500574,Boban Bozovic,Bosnia-Herzegovina,RC Lens
-500689,Evann Guessand,Cote d'Ivoire,FC Nantes
-500689,Evann Guessand,Cote d'Ivoire,OGC Nice
+500574,Boban Bozovic,Bosnia and Herzegovina,RC Lens
+500689,Evann Guessand,Ivory Coast,FC Nantes
+500689,Evann Guessand,Ivory Coast,OGC Nice
 500727,Toni Blanch,Spain,Deportivo Alaves
 500738,John Hawley,England,Arsenal FC
 500740,Brian Law,Wales,Wolverhampton Wanderers
@@ -49640,8 +49636,8 @@ player_id,name,country,team
 503431,Egidio Malpeli,Italy,FC Empoli
 503431,Egidio Malpeli,Italy,AC Monza
 503446,Heinrich Gartner,Germany,Eintracht Frankfurt
-503482,Min-jae Kim,"Korea, South",SSC Napoli
-503482,Min-jae Kim,"Korea, South",Bayern Munich
+503482,Min-jae Kim,South Korea,SSC Napoli
+503482,Min-jae Kim,South Korea,Bayern Munich
 503485,Alexandro Cavagnera,Belgium,AC Milan
 503587,Tony McAndrew,Scotland,Chelsea FC
 503607,Peter Haddock,England,Newcastle United
@@ -49656,7 +49652,7 @@ player_id,name,country,team
 503717,John Ryan,England,Newcastle United
 503733,Anthony Gordon,England,Newcastle United
 503733,Anthony Gordon,England,Everton FC
-503740,Kouadio-Yves Dabila,Cote d'Ivoire,LOSC Lille
+503740,Kouadio-Yves Dabila,Ivory Coast,LOSC Lille
 503743,Morgan Rogers,England,Aston Villa
 503743,Morgan Rogers,England,AFC Bournemouth
 503745,Gustavo Gutierrez,Spain,CD Leganes
@@ -50000,7 +49996,7 @@ player_id,name,country,team
 508885,Alain Philippe,France,Stade Rennais FC
 508885,Alain Philippe,France,Stade Brestois 29
 508886,Patrick Eon,France,Stade Brestois 29
-508887,Ambroise Kedie,Cote d'Ivoire,Stade Brestois 29
+508887,Ambroise Kedie,Ivory Coast,Stade Brestois 29
 508888,Patrice Lagadec,France,Stade Brestois 29
 508889,Pascal Valleau,France,Stade Reims
 508889,Pascal Valleau,France,Stade Brestois 29
@@ -50663,7 +50659,7 @@ player_id,name,country,team
 520540,Jose Bilbao,Spain,CA Osasuna
 520569,Patrick Abraham,France,Le Havre AC
 520571,Marc Lerebours,France,AS Monaco
-520574,Laurent Pokou,Cote d'Ivoire,Stade Rennais FC
+520574,Laurent Pokou,Ivory Coast,Stade Rennais FC
 520583,Gerhard Pastoors,Germany,FC Augsburg
 520587,Riccardo Bulgarani,Italy,Inter Milan
 520587,Riccardo Bulgarani,Italy,Parma Calcio 1913
@@ -50765,8 +50761,8 @@ player_id,name,country,team
 522489,Justus Eccarius,Germany,FC St. Pauli
 522497,Rolf Borner,Germany,FC St. Pauli
 522498,Werner Kloth,Germany,Holstein Kiel
-522681,Ben Lhassine Kone,Cote d'Ivoire,Como 1907
-522681,Ben Lhassine Kone,Cote d'Ivoire,Torino FC
+522681,Ben Lhassine Kone,Ivory Coast,Como 1907
+522681,Ben Lhassine Kone,Ivory Coast,Torino FC
 522685,Antonio Fernandez,Spain,Atletico de Madrid
 522707,Karl-Heinz Rosenblatt,Germany,VfL Bochum
 522737,Daniel Sanlaville,France,AS Saint-Etienne
@@ -50978,7 +50974,7 @@ player_id,name,country,team
 527778,Rene Bocchi,France,OGC Nice
 527780,Eric Spadiny,France,Olympique Lyon
 527782,Olivier Bernard,France,Olympique Lyon
-527783,Sima Nikolic,Bosnia-Herzegovina,Olympique Lyon
+527783,Sima Nikolic,Bosnia and Herzegovina,Olympique Lyon
 527787,Saverio Toscano,Italy,US Lecce
 527827,Philippe Solomenko,France,Olympique Lyon
 527832,Rafa Asensio,Spain,Atletico de Madrid
@@ -51150,8 +51146,8 @@ player_id,name,country,team
 536811,Nicolo Milani,Italy,Atalanta BC
 536816,Niccolo Ghisleni,Italy,Atalanta BC
 536827,Alex Masogo,Spain,CD Leganes
-536835,Amad Diallo,Cote d'Ivoire,Atalanta BC
-536835,Amad Diallo,Cote d'Ivoire,Manchester United
+536835,Amad Diallo,Ivory Coast,Atalanta BC
+536835,Amad Diallo,Ivory Coast,Manchester United
 537127,Theo Sainte-Luce,France,Montpellier HSC
 537140,Oscar Malltezi,Italy,Genoa CFC
 537143,Leonardo Raggio,Italy,Genoa CFC
@@ -51906,7 +51902,7 @@ player_id,name,country,team
 548848,Gianfranco Bisiol,Italy,Venezia FC
 549107,Helmut Thommessen,Germany,Borussia Monchengladbach
 549111,Frederic Chevalme,France,Angers SCO
-549112,Barate Cisse,Cote d'Ivoire,Angers SCO
+549112,Barate Cisse,Ivory Coast,Angers SCO
 549113,Vincent Garnier,France,Angers SCO
 549123,Anthony Gilbert,France,Angers SCO
 549140,Taoufik Belghith,Tunisia,AS Monaco
@@ -52300,9 +52296,9 @@ player_id,name,country,team
 556974,Emilio Fernandez,Spain,Getafe CF
 557094,Paolo Guerrini,Italy,FC Empoli
 557147,Jose Gragera,Spain,RCD Espanyol Barcelona
-557149,Kang-in Lee,"Korea, South",RCD Mallorca
-557149,Kang-in Lee,"Korea, South",Valencia CF
-557149,Kang-in Lee,"Korea, South",Paris Saint-Germain
+557149,Kang-in Lee,South Korea,RCD Mallorca
+557149,Kang-in Lee,South Korea,Valencia CF
+557149,Kang-in Lee,South Korea,Paris Saint-Germain
 557226,Corrado Tamietti,Italy,SSC Napoli
 557226,Corrado Tamietti,Italy,Venezia FC
 557228,Silverio Tricoli,Italy,SSC Napoli
@@ -52458,7 +52454,7 @@ player_id,name,country,team
 561489,Otello Zironi,Italy,Parma Calcio 1913
 561489,Otello Zironi,Italy,SS Lazio
 561613,Joan Garcia,Spain,RCD Espanyol Barcelona
-561653,Yves Kouadio,Cote d'Ivoire,Parma Calcio 1913
+561653,Yves Kouadio,Ivory Coast,Parma Calcio 1913
 561745,Lautaro de Leon,Uruguay,Celta de Vigo
 562030,Musa Juwara,The Gambia,Bologna FC 1909
 562049,Edoardo Bove,Italy,AS Roma
@@ -52790,7 +52786,7 @@ player_id,name,country,team
 571743,Armando Broja,Albania,Chelsea FC
 571743,Armando Broja,Albania,Southampton FC
 571743,Armando Broja,Albania,Fulham FC
-571821,Christ Tiehi,Cote d'Ivoire,Le Havre AC
+571821,Christ Tiehi,Ivory Coast,Le Havre AC
 571836,Willi Hofer,Germany,Borussia Monchengladbach
 571913,Alfonso Santagiuliana,Italy,Torino FC
 571920,Mario Ventimiglia,Italy,Juventus FC
@@ -53013,7 +53009,6 @@ player_id,name,country,team
 579729,Paul Erards,Germany,Borussia Monchengladbach
 579746,Giuseppe Agostino,Italy,Genoa CFC
 579834,Mario Zanotti,Italy,US Lecce
-579859,Zlatko Zebic,Jugoslawien (SFR),Parma Calcio 1913
 579930,Armand Lauriente,France,Stade Rennais FC
 579970,Jorge Gabrich,Argentina,FC Barcelona
 579970,Jorge Gabrich,Argentina,Stade Reims
@@ -53253,7 +53248,7 @@ player_id,name,country,team
 586089,Giosue' Sanvito,Italy,AC Milan
 586092,Limbergo Taccola,Italy,AS Roma
 586096,Glauco Ferron,Italy,Venezia FC
-586097,Vinko Golob,Bosnia-Herzegovina,Venezia FC
+586097,Vinko Golob,Bosnia and Herzegovina,Venezia FC
 586098,Lidio Massagrande,Italy,Venezia FC
 586099,Spasoje Nikolic,North Macedonia,Venezia FC
 586099,Spasoje Nikolic,North Macedonia,Stade Rennais FC
@@ -53378,9 +53373,9 @@ player_id,name,country,team
 590690,Victor Garcia,Spain,Real Valladolid CF
 590728,Rene Gaulon,France,Stade Rennais FC
 590731,Samuel Edimo,Cameroon,Montpellier HSC
-590734,Ignace Wognin,Cote d'Ivoire,RC Lens
-590734,Ignace Wognin,Cote d'Ivoire,Angers SCO
-590735,Jean Tokpa,Cote d'Ivoire,Montpellier HSC
+590734,Ignace Wognin,Ivory Coast,RC Lens
+590734,Ignace Wognin,Ivory Coast,Angers SCO
+590735,Jean Tokpa,Ivory Coast,Montpellier HSC
 590789,Giacomo Conti,Italy,Hellas Verona
 590843,Alessandro Cattelan,Italy,Venezia FC
 590846,Bruno Dal Bon,Italy,Hellas Verona
@@ -53878,7 +53873,7 @@ player_id,name,country,team
 614634,Giuseppe Mainiero,Italy,Parma Calcio 1913
 614635,Paul Bradshaw,England,Wolverhampton Wanderers
 614675,Renato Fioravanti,Italy,Cagliari Calcio
-614742,Drissa Camara,Cote d'Ivoire,Parma Calcio 1913
+614742,Drissa Camara,Ivory Coast,Parma Calcio 1913
 614811,Joe White,England,Newcastle United
 614886,Gino Calcaterra,Italy,Venezia FC
 614886,Gino Calcaterra,Italy,Udinese Calcio
@@ -53933,7 +53928,7 @@ player_id,name,country,team
 616628,Giorgio Cittadini,Italy,Atalanta BC
 616628,Giorgio Cittadini,Italy,AC Monza
 616631,Matteo Ruggeri,Italy,Atalanta BC
-616638,Alassane Sidibe,Cote d'Ivoire,Atalanta BC
+616638,Alassane Sidibe,Ivory Coast,Atalanta BC
 616667,Mattia Pagliuca,Italy,Bologna FC 1909
 617009,Alex Paulsen,New Zealand,AFC Bournemouth
 617018,Marko Stamenic,New Zealand,Nottingham Forest
@@ -54423,7 +54418,7 @@ player_id,name,country,team
 638351,Jose Bermudez,Spain,Celta de Vigo
 638362,Pocholo,Spain,Celta de Vigo
 638367,Frank Upton,England,Chelsea FC
-638571,Sang-bin Jeong,"Korea, South",Wolverhampton Wanderers
+638571,Sang-bin Jeong,South Korea,Wolverhampton Wanderers
 638588,Martin Pascual,Spain,Rayo Vallecano
 638589,Angel Algobia,Spain,Getafe CF
 638652,Miguel Angel Lamata,Spain,Sevilla FC
@@ -54434,14 +54429,14 @@ player_id,name,country,team
 638781,David Nurse,England,Manchester City
 638793,Tajon Buchanan,Canada,Inter Milan
 638985,Stefano Montanini,Italy,Parma Calcio 1913
-639040,Yun-sang Hong,"Korea, South",VfL Wolfsburg
+639040,Yun-sang Hong,South Korea,VfL Wolfsburg
 639075,Isauro Alvarez,Spain,Real Betis Balompie
 639076,Joan Casassas,Spain,Real Betis Balompie
 639078,Antonio Viqueira,Spain,Real Betis Balompie
 639080,Jose Nebot,Spain,RCD Mallorca
 639080,Jose Nebot,Spain,Real Betis Balompie
 639080,Jose Nebot,Spain,Valencia CF
-639240,Kyu-hyun Park,"Korea, South",SV Werder Bremen
+639240,Kyu-hyun Park,South Korea,SV Werder Bremen
 639421,Trevor Howard,England,AFC Bournemouth
 639427,Colin Suggett,England,Newcastle United
 639504,Mert Arslan,Germany,1.FC Heidenheim 1846
@@ -54532,7 +54527,7 @@ player_id,name,country,team
 644716,Bryan Wade,England,Brighton & Hove Albion
 644717,Robert Codner,England,Brighton & Hove Albion
 644717,Robert Codner,England,Leicester City
-644771,Odilon Kossounou,Cote d'Ivoire,Bayer 04 Leverkusen
+644771,Odilon Kossounou,Ivory Coast,Bayer 04 Leverkusen
 644856,David Riley,England,Nottingham Forest
 644916,Bruno Barberi,Italy,Cagliari Calcio
 644916,Bruno Barberi,Italy,Juventus FC
@@ -54666,8 +54661,8 @@ player_id,name,country,team
 648706,Riccardo Alberto Villa,Italy,Como 1907
 648706,Riccardo Alberto Villa,Italy,AC Milan
 648745,Luigi Obuel,Italy,Udinese Calcio
-648779,Wilfried Singo,Cote d'Ivoire,Torino FC
-648779,Wilfried Singo,Cote d'Ivoire,AS Monaco
+648779,Wilfried Singo,Ivory Coast,Torino FC
+648779,Wilfried Singo,Ivory Coast,AS Monaco
 648787,Paul Fitzpatrick,England,Leicester City
 648812,Sabit Abdulai,Ghana,Getafe CF
 648909,Fabio Blanco,Spain,Eintracht Frankfurt
@@ -54715,7 +54710,7 @@ player_id,name,country,team
 650996,Bruno Prati,Italy,ACF Fiorentina
 651002,Giacomo Faticanti,Italy,US Lecce
 651005,Cher Ndour,Italy,Paris Saint-Germain
-651269,Armin Gigovic,Bosnia-Herzegovina,Holstein Kiel
+651269,Armin Gigovic,Bosnia and Herzegovina,Holstein Kiel
 651418,Italo Salvadori,Italy,Venezia FC
 651569,Daniel Mosquera,Colombia,Hellas Verona
 651735,Magnus Knudsen,Norway,Holstein Kiel
@@ -54736,7 +54731,7 @@ player_id,name,country,team
 652861,Marcos,Spain,Girona FC
 652935,Giovanni Landini,Italy,FC Empoli
 652971,Giovanni Tombesi,Italy,Venezia FC
-652996,Said Hamulic,Bosnia-Herzegovina,FC Toulouse
+652996,Said Hamulic,Bosnia and Herzegovina,FC Toulouse
 653117,Ugo Starace,Italy,US Lecce
 653172,Mario Bergamaschi,Italy,AC Monza
 653285,Marc North,England,Leicester City
@@ -54844,8 +54839,8 @@ player_id,name,country,team
 658494,Giordano Picciga,Italy,Inter Milan
 658494,Giordano Picciga,Italy,US Lecce
 658525,Vittorio Redaelli,Italy,Inter Milan
-658534,Lasso Coulibaly,Cote d'Ivoire,AJ Auxerre
-658536,Simon Adingra,Cote d'Ivoire,Brighton & Hove Albion
+658534,Lasso Coulibaly,Ivory Coast,AJ Auxerre
+658536,Simon Adingra,Ivory Coast,Brighton & Hove Albion
 658554,Giovanni Felini,Italy,Hellas Verona
 658554,Giovanni Felini,Italy,Udinese Calcio
 658556,Emilio Zamperini,Italy,Hellas Verona
@@ -55163,7 +55158,7 @@ player_id,name,country,team
 667640,Alexandru Borbei,Romania,US Lecce
 667649,Tommy Mason,New Zealand,Fulham FC
 667717,Harry Freedman,Scotland,Crystal Palace
-667862,Mirza Hasanbegovic,Bosnia-Herzegovina,Venezia FC
+667862,Mirza Hasanbegovic,Bosnia and Herzegovina,Venezia FC
 667965,Oussama Targhalline,Morocco,Le Havre AC
 667965,Oussama Targhalline,Morocco,Olympique Marseille
 667967,Yassine Kechta,Morocco,Le Havre AC
@@ -55351,7 +55346,7 @@ player_id,name,country,team
 683840,Pedri,Spain,FC Barcelona
 683840,Pedri,Spain,UD Las Palmas
 683891,Serge-Philippe Raux-Yao,France,AJ Auxerre
-683895,Emmanuel Agbadou,Cote d'Ivoire,Stade Reims
+683895,Emmanuel Agbadou,Ivory Coast,Stade Reims
 684062,Hianga'a Mbock,France,Stade Brestois 29
 684210,Jaidon Anthony,England,AFC Bournemouth
 684315,Nnamdi Collins,Germany,Eintracht Frankfurt
@@ -55448,7 +55443,7 @@ player_id,name,country,team
 693095,Jacob Greaves,England,Ipswich Town
 693302,Salvatore Mantovani,Italy,Venezia FC
 693312,Elias Damergy,Tunisia,Stade Rennais FC
-693593,Jean Enrico Kouadio,Cote d'Ivoire,Como 1907
+693593,Jean Enrico Kouadio,Ivory Coast,Como 1907
 694383,Joe Davin,Scotland,Ipswich Town
 694385,George Dougan,Scotland,Ipswich Town
 694389,Gerry Baker,United States,Ipswich Town
@@ -55467,7 +55462,7 @@ player_id,name,country,team
 696346,Jay Stansfield,England,Fulham FC
 696589,Tim Iroegbunam,England,Aston Villa
 696589,Tim Iroegbunam,England,Everton FC
-696598,Ibrahim Cisse,Cote d'Ivoire,OGC Nice
+696598,Ibrahim Cisse,Ivory Coast,OGC Nice
 696600,Simon Ngapandouetnbu,Cameroon,Olympique Marseille
 696849,Etienne Green,England,AS Saint-Etienne
 696854,Walter Antonello,Italy,Venezia FC
@@ -55534,7 +55529,7 @@ player_id,name,country,team
 700954,Ken Fencott,England,Aston Villa
 700975,Mike Kear,England,Nottingham Forest
 700997,Matteo Sementa,Italy,Parma Calcio 1913
-700998,Chaka Traore,Cote d'Ivoire,AC Milan
+700998,Chaka Traore,Ivory Coast,AC Milan
 701057,Rico Lewis,England,Manchester City
 701064,John Cottam,England,Nottingham Forest
 701067,Jim McIntosh,Scotland,Nottingham Forest
@@ -55546,7 +55541,7 @@ player_id,name,country,team
 702156,Gil,Spain,Real Madrid
 702320,Jim Thorburn,Scotland,Ipswich Town
 702372,Steeve-Mike Eyango,France,Genoa CFC
-702441,Sinaly Diomande,Cote d'Ivoire,Olympique Lyon
+702441,Sinaly Diomande,Ivory Coast,Olympique Lyon
 702473,Roger Fry,England,Southampton FC
 702636,Christian Peyron,France,OGC Nice
 702696,Bob Wilson,England,Aston Villa
@@ -55620,7 +55615,7 @@ player_id,name,country,team
 709726,Hugo Ekitike,France,Stade Reims
 709726,Hugo Ekitike,France,Eintracht Frankfurt
 709726,Hugo Ekitike,France,Paris Saint-Germain
-709767,Ji-soo Kim,"Korea, South",Brentford FC
+709767,Ji-soo Kim,South Korea,Brentford FC
 709957,Alex Valle,Spain,FC Barcelona
 709969,Ilias Akhomach,Morocco,Villarreal CF
 709985,Jeppe Corfitzen,Denmark,US Lecce
@@ -55658,8 +55653,8 @@ player_id,name,country,team
 711969,Lorenz Assignon,France,Stade Rennais FC
 711976,Andy Diouf,France,RC Lens
 711976,Andy Diouf,France,Stade Rennais FC
-711980,Guela Doue,Cote d'Ivoire,Stade Rennais FC
-711980,Guela Doue,Cote d'Ivoire,RC Strasbourg Alsace
+711980,Guela Doue,Ivory Coast,Stade Rennais FC
+711980,Guela Doue,Ivory Coast,RC Strasbourg Alsace
 711983,John Holsgrove,England,Crystal Palace
 711983,John Holsgrove,England,Wolverhampton Wanderers
 711989,John Oldfield,England,Wolverhampton Wanderers
@@ -55772,15 +55767,15 @@ player_id,name,country,team
 718841,Eamonn Collins,Ireland,Southampton FC
 719083,Dominique Deplagne,France,Montpellier HSC
 719084,Roger Alleman,France,Montpellier HSC
-719085,Mama Ouattara,Cote d'Ivoire,Montpellier HSC
+719085,Mama Ouattara,Ivory Coast,Montpellier HSC
 719086,Jean-Louis Gasset,France,Montpellier HSC
 719087,Jean-Pierre Duch,France,Montpellier HSC
 719089,Bernard Ducuing,France,Stade Reims
 719089,Bernard Ducuing,France,Montpellier HSC
 719090,Bernard Mayot,France,Montpellier HSC
 719091,Michel Granier,France,Montpellier HSC
-719092,Desire Sikely,Cote d'Ivoire,Montpellier HSC
-719092,Desire Sikely,Cote d'Ivoire,Olympique Marseille
+719092,Desire Sikely,Ivory Coast,Montpellier HSC
+719092,Desire Sikely,Ivory Coast,Olympique Marseille
 719093,Jean-Pierre Kern,France,Montpellier HSC
 719093,Jean-Pierre Kern,France,RC Strasbourg Alsace
 719116,Jean-Max Ursulet,France,OGC Nice
@@ -56211,7 +56206,7 @@ player_id,name,country,team
 740458,Angel Castro,Spain,Getafe CF
 740458,Angel Castro,Spain,CD Leganes
 740509,Nacho Vera,Spain,UD Las Palmas
-740517,Eldin Lolic,Bosnia-Herzegovina,Cagliari Calcio
+740517,Eldin Lolic,Bosnia and Herzegovina,Cagliari Calcio
 740706,Armando Tuani,Italy,Parma Calcio 1913
 740884,Bertie Lutton,Northern Ireland,West Ham United
 740884,Bertie Lutton,Northern Ireland,Brighton & Hove Albion
@@ -56495,7 +56490,7 @@ player_id,name,country,team
 763749,Jean-Pierre Knayer,France,Olympique Lyon
 763749,Jean-Pierre Knayer,France,Olympique Marseille
 763749,Jean-Pierre Knayer,France,FC Toulouse
-763820,Gnato Gbala,Cote d'Ivoire,RC Lens
+763820,Gnato Gbala,Ivory Coast,RC Lens
 763983,Giuseppe Rossetti,Italy,Torino FC
 764230,Inigo Saenz,Spain,Getafe CF
 764230,Inigo Saenz,Spain,CD Leganes
@@ -56863,14 +56858,14 @@ player_id,name,country,team
 787083,Giuseppe Marra,Italy,SSC Napoli
 787144,Massimiliano Farrugia,Italy,Como 1907
 787151,Lukas Ullrich,Germany,Borussia Monchengladbach
-787232,David Datro Fofana,Cote d'Ivoire,Chelsea FC
-787232,David Datro Fofana,Cote d'Ivoire,1.FC Union Berlin
+787232,David Datro Fofana,Ivory Coast,Chelsea FC
+787232,David Datro Fofana,Ivory Coast,1.FC Union Berlin
 787459,Tony Leach,England,Newcastle United
 787618,Valentin Carboni,Argentina,Inter Milan
 787618,Valentin Carboni,Argentina,AC Monza
 787727,Saverio Macri,Italy,AC Monza
 787830,Mark Kelly,England,Fulham FC
-787907,Benjamin Tahirovic,Bosnia-Herzegovina,AS Roma
+787907,Benjamin Tahirovic,Bosnia and Herzegovina,AS Roma
 787912,El Chadaille Bitshiabu,France,RB Leipzig
 787912,El Chadaille Bitshiabu,France,Paris Saint-Germain
 788099,Umberto Di Giamberardino,Italy,Bologna FC 1909
@@ -56949,8 +56944,8 @@ player_id,name,country,team
 794539,Billy Houghton,England,Ipswich Town
 794543,Steve Stacey,England,Ipswich Town
 794628,Edmur Ribeiro,Brazil,Celta de Vigo
-794648,Sekou Toure,Cote d'Ivoire,Montpellier HSC
-794648,Sekou Toure,Cote d'Ivoire,OGC Nice
+794648,Sekou Toure,Ivory Coast,Montpellier HSC
+794648,Sekou Toure,Ivory Coast,OGC Nice
 794758,Warren Kamanzi,Norway,FC Toulouse
 794908,Renzo Vandelli,Italy,Bologna FC 1909
 794908,Renzo Vandelli,Italy,US Lecce
@@ -57018,7 +57013,7 @@ player_id,name,country,team
 798857,Steve Wignall,England,Brentford FC
 798863,Dave Hubbick,England,Ipswich Town
 798925,Fode Doucoure,Mali,Stade Reims
-798927,N'Dri Koffi,Cote d'Ivoire,Stade Reims
+798927,N'Dri Koffi,Ivory Coast,Stade Reims
 798929,Gvidas Gineitis,Lithuania,Torino FC
 799051,Trevor Swinburne,England,Brentford FC
 799052,Alan Whitehead,England,Brentford FC
@@ -57086,16 +57081,16 @@ player_id,name,country,team
 806517,Venerino Papa,Italy,AC Milan
 806519,Armando Bellolio,Italy,AC Milan
 806524,Hilmir Rafn Mikaelsson,Iceland,Venezia FC
-806793,Clement Akpa,Cote d'Ivoire,AJ Auxerre
+806793,Clement Akpa,Ivory Coast,AJ Auxerre
 806948,Frank Feller,Germany,1.FC Heidenheim 1846
 806955,Dario Sits,Latvia,Parma Calcio 1913
 807128,Saidou Sow,Guinea,AS Saint-Etienne
 807128,Saidou Sow,Guinea,RC Strasbourg Alsace
-807165,Bamo Meite,Cote d'Ivoire,Olympique Marseille
+807165,Bamo Meite,Ivory Coast,Olympique Marseille
 807195,Danilo Cassandra,Italy,AS Roma
 807434,Lee Hodges,England,West Ham United
 807434,Lee Hodges,England,Ipswich Town
-807477,Emmanuel Moh,Cote d'Ivoire,Montpellier HSC
+807477,Emmanuel Moh,Ivory Coast,Montpellier HSC
 807508,Paddy Greenwood,England,Nottingham Forest
 807596,Steve Greaves,England,Brighton & Hove Albion
 807596,Steve Greaves,England,Ipswich Town
@@ -57175,8 +57170,8 @@ player_id,name,country,team
 819239,Daniel Hysaj,Albania,SSC Napoli
 819295,Ray McHale,England,Brighton & Hove Albion
 819301,Bobby Horn,England,Crystal Palace
-819419,Armel Zohouri,Cote d'Ivoire,OGC Nice
-819420,Trazie Thomas,Cote d'Ivoire,OGC Nice
+819419,Armel Zohouri,Ivory Coast,OGC Nice
+819420,Trazie Thomas,Ivory Coast,OGC Nice
 819636,Dzenan Pejcinovic,Germany,VfL Wolfsburg
 819839,Steve Foley,England,Fulham FC
 820146,Check Keita,France,Stade Reims
@@ -57383,7 +57378,7 @@ player_id,name,country,team
 837300,Eligio Peretti,Italy,Inter Milan
 837301,Angelo Boselli,Italy,Inter Milan
 837308,Les Jones,Wales,Aston Villa
-837329,Jean N'Guessan,Cote d'Ivoire,OGC Nice
+837329,Jean N'Guessan,Ivory Coast,OGC Nice
 837330,John Groves,England,AFC Bournemouth
 837347,Ignacio Gonzalez,Spain,Celta de Vigo
 837348,Ramon Masague,Spain,RCD Espanyol Barcelona
@@ -57470,8 +57465,8 @@ player_id,name,country,team
 847151,Horst Schiller,Germany,1.FC Union Berlin
 847240,Bako Toure,Mali,FC Nantes
 847240,Bako Toure,Mali,Olympique Marseille
-847257,Ange Ahoussou,Cote d'Ivoire,OGC Nice
-847279,Oumar Diakite,Cote d'Ivoire,Stade Reims
+847257,Ange Ahoussou,Ivory Coast,OGC Nice
+847279,Oumar Diakite,Ivory Coast,Stade Reims
 847386,Alex Bell,Scotland,Manchester United
 847487,Maxime Bastian,France,RC Strasbourg Alsace
 847581,Odon Wellisch,Hungary,Inter Milan
@@ -57500,7 +57495,7 @@ player_id,name,country,team
 850235,Paul Decker,Germany,1.FC Union Berlin
 851884,Georg Bayerer,Germany,Bayern Munich
 851925,Rolf Rohrberg,Germany,Holstein Kiel
-852024,Benie Traore,Cote d'Ivoire,FC Nantes
+852024,Benie Traore,Ivory Coast,FC Nantes
 852031,Alfred Boller,Germany,FC St. Pauli
 852052,Franz Linken,Germany,FC St. Pauli
 852052,Franz Linken,Germany,Holstein Kiel
@@ -57550,7 +57545,7 @@ player_id,name,country,team
 855243,Bruno Morin,France,Stade Rennais FC
 855243,Bruno Morin,France,Angers SCO
 855256,Alex Scott,England,AFC Bournemouth
-855615,Abdoulaye Bakayoko,Cote d'Ivoire,AS Saint-Etienne
+855615,Abdoulaye Bakayoko,Ivory Coast,AS Saint-Etienne
 855647,Francisco Nieto,Spain,FC Barcelona
 855647,Francisco Nieto,Spain,Girona FC
 855647,Francisco Nieto,Spain,Rayo Vallecano
@@ -57615,12 +57610,10 @@ player_id,name,country,team
 862588,Bobby Laverick,England,Everton FC
 862589,John McClelland,England,Manchester City
 862628,Marvin Elimbi,France,RC Strasbourg Alsace
-862731,Reinhard Gartner,East Germany (GDR),1.FC Union Berlin
-862825,Joachim Ernst,East Germany (GDR),1.FC Union Berlin
 862867,Peter Watson,England,Nottingham Forest
 862951,Tony McNamara,England,Liverpool FC
 862951,Tony McNamara,England,Everton FC
-862961,San Lee,"Korea, South",Brentford FC
+862961,San Lee,South Korea,Brentford FC
 862972,Josue Escartin,France,Stade Brestois 29
 863153,Jean Debuf,France,LOSC Lille
 863154,Bernard Stakowiak,France,LOSC Lille
@@ -57740,7 +57733,7 @@ player_id,name,country,team
 874079,Gary Jackson,England,Manchester City
 874529,Ruggero Maineri,Italy,Genoa CFC
 874538,Ryan Trevitt,England,Brentford FC
-874558,Josselin Possian,Cote d'Ivoire,AJ Auxerre
+874558,Josselin Possian,Ivory Coast,AJ Auxerre
 875911,Brian Chambers,England,Arsenal FC
 875911,Brian Chambers,England,AFC Bournemouth
 876034,Yanis Guermouche,Algeria,Montpellier HSC
@@ -57772,7 +57765,7 @@ player_id,name,country,team
 880227,Tudor Martin,Wales,Wolverhampton Wanderers
 880229,Stan Davies,Wales,Everton FC
 880235,Keith Jones,Wales,Aston Villa
-880330,Moise Sahi Dion,Cote d'Ivoire,RC Strasbourg Alsace
+880330,Moise Sahi Dion,Ivory Coast,RC Strasbourg Alsace
 880435,Jack Humphreys,Wales,Everton FC
 880443,Karl Krebs,Austria,FC Toulouse
 880447,Georg Waitz,Austria,RC Lens
@@ -57987,7 +57980,6 @@ player_id,name,country,team
 901597,Johann Vanna,Austria,RC Strasbourg Alsace
 901902,Sabino Bilbao,Spain,Athletic Bilbao
 901903,Silverio,Spain,Real Sociedad
-901956,Josef Strobl,CSSR,RC Strasbourg Alsace
 902221,Bill Townley,England,Manchester City
 902276,Billy Meredith,Wales,Manchester United
 902276,Billy Meredith,Wales,Manchester City
@@ -58047,7 +58039,7 @@ player_id,name,country,team
 911382,Babacar Thiam,Senegal,Angers SCO
 911485,Noah Baudouin,France,Venezia FC
 911564,Simon Boyer,France,Stade Reims
-911985,Mohamed Kone,Cote d'Ivoire,Le Havre AC
+911985,Mohamed Kone,Ivory Coast,Le Havre AC
 912455,Simon Walde,Germany,Borussia Monchengladbach
 912902,Guillaume Restes,France,FC Toulouse
 913429,Tim Kohler,Germany,RB Leipzig
@@ -58109,7 +58101,7 @@ player_id,name,country,team
 924339,Christopher Negele,Germany,1.FC Heidenheim 1846
 924349,Issa Doumbia,Italy,Venezia FC
 924447,Tunde Akinsola,Nigeria,Real Valladolid CF
-924511,Joseph Bleziri,Cote d'Ivoire,FC Toulouse
+924511,Joseph Bleziri,Ivory Coast,FC Toulouse
 924662,Stanislas Curyl,France,Olympique Marseille
 924800,Axel Camblan,France,Stade Brestois 29
 925584,Axel Guessand,France,Udinese Calcio
@@ -58190,7 +58182,6 @@ player_id,name,country,team
 943360,Wilhelm Schaden,Austria,RC Strasbourg Alsace
 943795,Jovan Milosevic,Serbia,VfB Stuttgart
 943837,Vitor Roque,Brazil,FC Barcelona
-944386,Bela Andrasik,CSSR,Torino FC
 944397,Gyorgy Szeder,Hungary,FC Barcelona
 944427,Edhy Zuliani,Algeria,FC Toulouse
 944582,Matija Marsenic,Montenegro,Bayer 04 Leverkusen
@@ -58538,7 +58529,7 @@ player_id,name,country,team
 962250,Tommy Meehan,England,Chelsea FC
 962250,Tommy Meehan,England,Manchester United
 962421,Karl Pekarna,Austria,Bayern Munich
-962555,Abakar Sylla,Cote d'Ivoire,RC Strasbourg Alsace
+962555,Abakar Sylla,Ivory Coast,RC Strasbourg Alsace
 962667,Sam Hardy,England,Nottingham Forest
 962667,Sam Hardy,England,Liverpool FC
 962667,Sam Hardy,England,Aston Villa
@@ -59011,7 +59002,7 @@ player_id,name,country,team
 1003241,Gary Bellamy,England,Wolverhampton Wanderers
 1003242,John Gregory,England,Fulham FC
 1004301,Jeremy Jacquet,France,Stade Rennais FC
-1004327,Min-hyeok Yang,"Korea, South",Tottenham Hotspur
+1004327,Min-hyeok Yang,South Korea,Tottenham Hotspur
 1004344,Ali Dembele,France,Venezia FC
 1004344,Ali Dembele,France,Torino FC
 1004618,Stredair Appuah,France,FC Nantes
@@ -59036,7 +59027,7 @@ player_id,name,country,team
 1007934,Roddy Brathwaite,England,Fulham FC
 1008813,Karl Bortoli,Austria,Le Havre AC
 1009583,Arthur Hudgell,England,Crystal Palace
-1009596,Junior Diaz,Cote d'Ivoire,FC Nantes
+1009596,Junior Diaz,Ivory Coast,FC Nantes
 1009633,David Pejicic,Slovenia,Udinese Calcio
 1010146,Hugh McLaren,Scotland,Nottingham Forest
 1010198,Georges Janin,France,Olympique Marseille
@@ -59484,7 +59475,6 @@ player_id,name,country,team
 1056721,Gottlieb Havlicek,Austria,RC Strasbourg Alsace
 1056776,Ken Tucker,England,West Ham United
 1056777,Stan Newsham,England,AFC Bournemouth
-1056855,Milan Becic,Jugoslawien (SFR),Montpellier HSC
 1056916,Istvan Lukacs,Hungary,AS Saint-Etienne
 1056976,Don Campbell,England,Liverpool FC
 1056993,Estevao,Brazil,Chelsea FC
@@ -59739,7 +59729,7 @@ player_id,name,country,team
 1099460,Willi Ginzel,Germany,1.FC Union Berlin
 1099506,Klaus Eppel,Germany,FC St. Pauli
 1099646,Jose Galera,Spain,Celta de Vigo
-1099652,Patrick Ouotro,Cote d'Ivoire,RC Strasbourg Alsace
+1099652,Patrick Ouotro,Ivory Coast,RC Strasbourg Alsace
 1100421,Patrick Charpentier,France,AS Monaco
 1100433,Bruno Differding,France,Le Havre AC
 1100450,Robert Jacques,France,Stade Reims
@@ -59805,7 +59795,7 @@ player_id,name,country,team
 1111014,Bertrand Marchand,France,Stade Rennais FC
 1111444,Jim Kerray,Scotland,Newcastle United
 1111663,Kingstone Mutandwa,Zambia,Cagliari Calcio
-1111820,Junior Ajayi,Cote d'Ivoire,Hellas Verona
+1111820,Junior Ajayi,Ivory Coast,Hellas Verona
 1111912,Adama Bojang,The Gambia,Stade Reims
 1112012,Fred Tomley,England,Liverpool FC
 1112049,Tommy McKechnie,Scotland,AFC Bournemouth
@@ -60141,7 +60131,7 @@ player_id,name,country,team
 1144461,Egon Johnsson,Sweden,RC Lens
 1144534,Maurice Gransart,France,Olympique Marseille
 1144648,Dirk Geger,Germany,VfL Wolfsburg
-1144999,Luck Zogbe,Cote d'Ivoire,Stade Brestois 29
+1144999,Luck Zogbe,Ivory Coast,Stade Brestois 29
 1145120,Antonio Garcia,Spain,Le Havre AC
 1145120,Antonio Garcia,Spain,LOSC Lille
 1145997,Max Payan,France,AS Monaco
@@ -60205,7 +60195,6 @@ player_id,name,country,team
 1148459,Barthelemy Mesas,France,Olympique Marseille
 1148600,Carlo Confalonieri,Italy,FC Empoli
 1148666,Roland Predal,France,Montpellier HSC
-1148825,Andre Lukac,CSSR,Angers SCO
 1148897,Marian Calinski,Poland,RC Lens
 1149337,Jerzy Pietrzyk,Poland,FC Nantes
 1149364,Jozsef Ebner,Hungary,Stade Rennais FC
@@ -60264,12 +60253,8 @@ player_id,name,country,team
 1152124,Ignacy Gruchala,Poland,RC Lens
 1152141,Edmond Delepine,France,Montpellier HSC
 1152143,Zygmont Blaszczyk,France,Le Havre AC
-1152357,Milan Roeder,CSSR,Le Havre AC
-1152357,Milan Roeder,CSSR,LOSC Lille
 1152361,Ron Anderson,England,Newcastle United
 1152365,Harry Jackson,England,Manchester City
-1152438,Ottokar Sykora,CSSR,AS Monaco
-1152479,Jaroslav Repka,CSSR,AS Monaco
 1152486,Harry Clifton,England,Newcastle United
 1152492,Eugen Csakany,Germany,Eintracht Frankfurt
 1152492,Eugen Csakany,Germany,1.FSV Mainz 05
@@ -60356,7 +60341,7 @@ player_id,name,country,team
 1159237,William McPhillips,Scotland,Newcastle United
 1159288,Louis Bourgeois,France,Stade Reims
 1159288,Louis Bourgeois,France,LOSC Lille
-1159380,Joseph Damai,Cote d'Ivoire,AS Saint-Etienne
+1159380,Joseph Damai,Ivory Coast,AS Saint-Etienne
 1159451,Arnold Grundy,England,Newcastle United
 1160110,Frank Clempson,England,Manchester United
 1160402,Horst Mareth,Germany,VfL Wolfsburg
@@ -60516,9 +60501,8 @@ player_id,name,country,team
 1177489,Ronnie Clayton,England,Arsenal FC
 1177602,Jean-Claude Begue,France,RC Lens
 1178124,Ryszard Janecky,Poland,ACF Fiorentina
-1178207,Radoslav Bebic,Jugoslawien (SFR),Real Valladolid CF
 1178262,Manuel Guerrero,Spain,Sevilla FC
-1178758,Malick Junior Yalcouye,Cote d'Ivoire,Brighton & Hove Albion
+1178758,Malick Junior Yalcouye,Ivory Coast,Brighton & Hove Albion
 1179116,Joseph Brotons,France,Stade Rennais FC
 1179116,Joseph Brotons,France,Olympique Marseille
 1179198,Rene Andreo,France,Montpellier HSC
@@ -60831,7 +60815,6 @@ player_id,name,country,team
 1221230,Thomas Feeney,England,Newcastle United
 1221591,Tom McBain,Scotland,Newcastle United
 1221611,Norman Watson,England,Leicester City
-1224951,Miloslav Jankovsky,CSSR,AS Saint-Etienne
 1227141,James,Brazil,CD Leganes
 1227524,Fritz Wackt,Austria,Stade Rennais FC
 1228164,David Cunningham,Scotland,Aston Villa
@@ -61050,7 +61033,6 @@ player_id,name,country,team
 1270718,Jean Gielly,France,OGC Nice
 1270746,Jaume Ribera,Spain,Girona FC
 1270782,Juan Mis,Spain,Girona FC
-1270890,Miroslaw Jankowski,CSSR,AS Saint-Etienne
 1270903,Jacques Villemain,France,Montpellier HSC
 1270959,Toto,Spain,Villarreal CF
 1270972,Julio Engonga,Spain,UD Las Palmas
