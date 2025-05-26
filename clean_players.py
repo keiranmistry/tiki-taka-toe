@@ -3,8 +3,7 @@ from collections import defaultdict
 import unicodedata
 from team_map import TEAM_NAME_MAP
 
-
-# Helper function to remove accents
+# Remove accents function
 def strip_accents(text):
     if isinstance(text, str):
         return ''.join(
@@ -13,43 +12,44 @@ def strip_accents(text):
         )
     return text
 
+# Remove accents from teams and use map to replace name
 def clean_team_name(team):
     team = strip_accents(team.strip())
     if team in TEAM_NAME_MAP:
         return TEAM_NAME_MAP[team]
     return team
 
-# === LOAD CSV FILES ===
+# Load dataset
 transfers = pd.read_csv("transfers.csv")
 players = pd.read_csv("players.csv")
 clubs = pd.read_csv("clubs.csv")
 
-# === RENAME COLUMNS FOR MERGING ===
+# Rename columns for distinguish ids
 players = players.rename(columns={"id": "player_id"})
 clubs = clubs.rename(columns={"id": "club_id"})
 
-# === MERGE PLAYER INFO INTO TRANSFERS ===
+# Combine metadata fields for players
 merged = transfers.merge(players[['player_id', 'name', 'citizenship_1']], on="player_id", how="left")
 
-# === MERGE JOINED CLUB INFO ===
+# Combine metadata fields for clubs
 merged = merged.merge(clubs[['club_id', 'club_name', 'id_current_league']], 
                       left_on="joined_club_id", 
                       right_on="club_id", 
                       how="left")
 
-# === RENAME AND CLEAN ===
+# Clean data
 merged = merged.rename(columns={"club_name": "joined_club", "id_current_league": "league"})
 merged = merged.drop(columns=["club_id"])
 merged = merged.dropna(subset=["name", "citizenship_1", "joined_club", "league"])
 
-# === FILTER FOR MAJOR LEAGUES ===
+# Filter for Europe's top 5 leagues
 target_leagues = {"IT1", "GB1", "ES1", "L1", "FR1"}
 merged = merged[merged["league"].isin(target_leagues)]
 print("Number of rows after filtering:", len(merged))
 print("Sample rows after filtering:")
 print(merged[['player_id', 'name', 'citizenship_1', 'joined_club']].head())
 
-# === BUILD PLAYER DICTIONARY ===
+# Build player dictionary
 player_dict = {}
 name_to_ids = defaultdict(list)
 
@@ -69,7 +69,7 @@ for _, row in merged.iterrows():
     player_dict[player_id]["teams"].add(joined)
 
 
-# === Convert player_dict to flat rows for CSV ===
+# Convert dictionary into CSV file
 rows = []
 
 for pid, info in player_dict.items():
@@ -82,7 +82,7 @@ for pid, info in player_dict.items():
         })
 
 
-# === Save to cleaned_players.csv ===
+# Save to CSV file
 import os
 df_out = pd.DataFrame(rows)
 df_out.to_csv("cleaned_players.csv", index=False)

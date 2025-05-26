@@ -1,0 +1,123 @@
+easy_clubs = [
+    "Arsenal", "Chelsea", "Tottenham", "Man United",
+    "Man City", "Liverpool", "PSG", "Barcelona", "Real Madrid",
+    "Atletico Madrid", "Bayern Munich", "Borussia Dortmund",
+    "Juventus", "Milan", "Inter"
+]
+
+medium_clubs = [
+    "Monaco", "Roma", "Atalanta", "Aston Villa", "Bayer Leverkusen", 
+    "Everton", "Newcastle", "Marseille", "Leipzig", "Real Sociedad",
+    "Napoli", "Sevilla", "Brighton", "West Ham"
+]
+
+TEAM_NAME_MAP = {
+    "1.FC Heidenheim 1846": "Heidenheim",
+    "1.FC Union Berlin": "Union Berlin",
+    "1.FSV Mainz 05": "Mainz",
+    "AC Milan": "Milan",
+    "AC Monza": "Monza",
+    "ACF Fiorentina": "Fiorentina",
+    "AFC Bournemouth": "Bournemouth",
+    "AJ Auxerre": "Auxerre",
+    "AS Monaco": "Monaco",
+    "AS Roma": "Roma",
+    "AS Saint-Etienne": "Saint-Etienne",
+    "Angers SCO": "Angers",
+    "Arsenal FC": "Arsenal",
+    "Aston Villa": "Aston Villa",
+    "Atalanta BC": "Atalanta",
+    "Athletic Bilbao": "Athletic Bilbao",
+    "Atletico de Madrid": "Atletico Madrid",
+    "Bayer 04 Leverkusen": "Bayer Leverkusen",
+    "Bayern Munich": "Bayern Munich",
+    "Bologna FC 1909": "Bologna",
+    "Borussia Dortmund": "Borussia Dortmund",
+    "Borussia Monchengladbach": "Borussia Monchengladbach",
+    "Brentford FC": "Brentford",
+    "Brighton & Hove Albion": "Brighton",
+    "CA Osasuna": "Osasuna",
+    "CD Leganes": "Leganes",
+    "Cagliari Calcio": "Cagliari",
+    "Celta de Vigo": "Celta Vigo",
+    "Chelsea FC": "Chelsea",
+    "Como 1907": "Como",
+    "Crystal Palace": "Crystal Palace",
+    "Deportivo Alaves": "Deportivo",
+    "Eintracht Frankfurt": "Frankfurt",
+    "Everton FC": "Everton",
+    "FC Augsburg": "Augsburg",
+    "FC Barcelona": "Barcelona",
+    "FC Empoli": "Empoli",
+    "FC Nantes": "Nantes",
+    "FC St. Pauli": "St Pauli",
+    "FC Toulouse": "Toulouse",
+    "Fulham FC": "Fulham",
+    "Genoa CFC": "Genoa",
+    "Getafe CF": "Getafe",
+    "Girona FC": "Girona",
+    "Hellas Verona": "Verona",
+    "Holstein Kiel": "Holstein Kiel",
+    "Inter Milan": "Inter",
+    "Ipswich Town": "Ipswich",
+    "Juventus FC": "Juventus",
+    "LOSC Lille": "Lille",
+    "Le Havre AC": "Le Havre",
+    "Leicester City": "Leicester",
+    "Liverpool FC": "Liverpool",
+    "Manchester City": "Man City",
+    "Manchester United": "Man United",
+    "Montpellier HSC": "Montpellier",
+    "Newcastle United": "Newcastle",
+    "Nottingham Forest": "Nottingham Forest",
+    "OGC Nice": "Nice",
+    "Olympique Lyon": "Lyon",
+    "Olympique Marseille": "Marseille",
+    "Paris Saint-Germain": "PSG",
+    "Parma Calcio 1913": "Parma",
+    "RB Leipzig": "Leipzig",
+    "RC Lens": "Lens",
+    "RC Strasbourg Alsace": "Strasbourg",
+    "RCD Espanyol Barcelona": "Espanyol",
+    "RCD Mallorca": "Mallorca",
+    "Rayo Vallecano": "Rayo Vallecano",
+    "Real Betis Balompie": "Real Betis",
+    "Real Madrid": "Real Madrid",
+    "Real Sociedad": "Real Sociedad",
+    "Real Valladolid CF": "Real Valladolid",
+    "SC Freiburg": "Freiburg",
+    "SS Lazio": "Lazio",
+    "SSC Napoli": "Napoli",
+    "SV Werder Bremen": "Werder Bremen",
+    "Sevilla FC": "Sevilla",
+    "Southampton FC": "Southampton",
+    "Stade Brestois 29": "Brest",
+    "Stade Reims": "Reims",
+    "Stade Rennais FC": "Rennes",
+    "TSG 1899 Hoffenheim": "Hoffenheim",
+    "Torino FC": "Torino",
+    "Tottenham Hotspur": "Tottenham",
+    "UD Las Palmas": "Las Palmas",
+    "US Lecce": "Lecce",
+    "Udinese Calcio": "Udinese",
+    "Valencia CF": "Valencia",
+    "Venezia FC": "Venezia",
+    "VfB Stuttgart": "Stuttgart",
+    "VfL Bochum": "Bochum",
+    "VfL Wolfsburg": "Wolfsburg",
+    "Villarreal CF": "Villarreal",
+    "West Ham United": "West Ham",
+    "Wolverhampton Wanderers": "Wolves"
+}
+
+# Generate the set of all clubs
+all_clubs = set(TEAM_NAME_MAP.values())
+
+# Convert easy and medium clubs to sets
+easy_set = set(easy_clubs)
+medium_set = set(medium_clubs)
+
+# Get hard clubs by subtracting easy and medium clubs from all clubs
+hard_clubs = sorted(all_clubs - easy_set - medium_set)
+
+print(hard_clubs)
