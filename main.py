@@ -1,5 +1,6 @@
 import pandas as pd
 import random
+from valid_pairs import VALID_PAIRS
 
 df = pd.read_csv("cleaned_players.csv")
 
@@ -37,9 +38,39 @@ easy_countries = [
     "Portugal", "Argentina", "Brazil", "Netherlands"
 ]
 
-# Now sample from these instead
-clubs = random.sample(easy_clubs, 3)
-countries = random.sample(easy_countries, 3)
+
+print("Choose difficulty\n" \
+    "1: Easy\n2: Medium\n3: Hard")
+choice = input()
+choice = int(choice)
+while choice != 1 and choice != 2 and choice != 3:
+    print("Enter valid input.")
+    choice = input()
+    choice = int(choice)
+if choice == 1:
+    difficulty = easy_clubs
+elif choice == 2:
+    difficulty = medium_clubs
+else:
+    difficulty = hard_clubs
+    
+# Build sets of valid countries and clubs based on VALID_PAIRS
+valid_pairs = set(VALID_PAIRS.keys())
+valid_countries = set([country for (country, _) in valid_pairs])
+valid_clubs = set([club for (_, club) in valid_pairs])
+
+# Filter your desired pools to ensure they're valid
+filtered_clubs = [club for club in difficulty if club in valid_clubs]
+filtered_countries = [country for country in easy_countries if country in valid_countries]
+
+# Keep picking until we find a valid 3x3 grid
+while True:
+    clubs = random.sample(filtered_clubs, 3)
+    countries = random.sample(filtered_countries, 3)
+
+    # Ensure all (country, club) pairs exist in VALID_PAIRS
+    if all((country, club) in valid_pairs for club in clubs for country in countries):
+        break
 
 # ✅ Display the selected grid
 print("\n🎯 Soccer Tic Tac Toe Grid:\n")
@@ -52,19 +83,7 @@ for club in clubs:
         row.append("   ___     ")
     print(" | ".join(row))
 
-# Build a quick lookup: player name → list of (club, country)
-from collections import defaultdict
-
-# Build helper: name → list of team-country pairs
-player_lookup = defaultdict(list)
-
-for _, row in df.iterrows():
-    name = row["name"]
-    country = row["country"]
-    team = row["team"]
-    player_lookup[name].append((team, country))
-
-# Create a set of all (club, country) pairs in the grid
+# Save valid cell positions
 grid_cells = [(club, country) for club in clubs for country in countries]
 
 # Track guessed cells
@@ -113,14 +132,33 @@ while len(guessed) < 9:
         print("❌ That club-country combo is not in the grid. Try again.")
         continue
 
-    valid = False
-    for pid in name_to_ids.get(player_guess, []):
-        info = player_dict[pid]
-        if info["country"] == country_guess and club_guess in info["teams"]:
-            guessed[(club_guess, country_guess)] = player_guess
-            print("✅ Correct!")
-            valid = True
-            break
+    key = (country_guess, club_guess)
+    valid_names = VALID_PAIRS.get(key, [])
 
-    if not valid:
-        print("❌ Incorrect. Try again.")
+    # Normalize user guess
+    guess = player_guess.strip().lower()
+
+    # Step 1: Check full name match
+    for name in valid_names:
+        if guess == name.lower():
+            guessed[(club_guess, country_guess)] = name
+            print("✅ Correct! (full name match)")
+            break
+    else:
+        # Step 2: Check partial match (everything except the first word)
+        matched = False
+        for name in valid_names:
+            parts = name.split()
+            if len(parts) == 1:
+                partial = parts[0].lower()
+            else:
+                partial = " ".join(parts[1:]).lower()
+            if guess == partial:
+                guessed[(club_guess, country_guess)] = name
+                print(f"✅ Correct! (matched partial: {name})")
+                matched = True
+                break
+
+        if not matched:
+            print("❌ Incorrect. Try again.")
+
