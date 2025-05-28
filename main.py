@@ -72,7 +72,7 @@ while True:
     if all((country, club) in valid_pairs for club in clubs for country in countries):
         break
 
-# ✅ Display the selected grid
+# Display grid
 print("\n🎯 Soccer Tic Tac Toe Grid:\n")
 print("            | " + " | ".join([c[:10].ljust(10) for c in countries]))
 print("------------+" + "------------+" * 3)
