@@ -1,2 +1,3 @@
 clean up code
 create part where it fills in grid accordingly
+create part to give answer
