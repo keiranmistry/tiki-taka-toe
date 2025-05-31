@@ -3,4 +3,5 @@ create part where it fills in grid accordingly
 create part to give answer
 create part to save streak
 start frontend with react maybe?
+- look at tailwind css
 - retrieve photos from web scraping tools or using id and link table?
