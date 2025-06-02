@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv("cleaned_players.csv")
 
 # Replace country with replacement
-df["country"] = df["country"].replace("Bosnia-Herzegovina", "Bosnia and Herzegovina")
+df["country"] = df["country"].replace("old", "new")
 
 # Save it back to the same file
 df.to_csv("cleaned_players.csv", index=False)
