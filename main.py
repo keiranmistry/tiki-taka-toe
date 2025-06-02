@@ -162,3 +162,8 @@ while len(guessed) < 9:
         if not matched:
             print("❌ Incorrect. Try again.")
 
+def makeGuess (guess):
+    #make a guess function that intakes a users guess
+    # function should keep track of number of cells that a guess is valid towards
+    # if it is valid to more than 1, use command line to get user to input what cell they want to add it to
+    return
