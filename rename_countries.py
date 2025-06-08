@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Load the cleaned players file
+# Load cleaned players file
 df = pd.read_csv("cleaned_players.csv")
 
 # Replace country with replacement
