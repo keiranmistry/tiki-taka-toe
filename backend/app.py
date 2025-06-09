@@ -1,12 +1,24 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 import random
-from backend.valid_pairs import VALID_PAIRS
+import os
+
+# === Import local modules ===
+from valid_pairs import VALID_PAIRS
+from difficulty import easy_clubs, medium_clubs, hard_clubs  # Assuming these are in difficulty.py
 
 app = Flask(__name__)
-df = pd.read_csv("data/cleaned_players.csv")
 
-# Helper: get a valid grid
+# === Load cleaned player data ===
+DATA_PATH = os.path.join("data", "cleaned_players.csv")
+df = pd.read_csv(DATA_PATH)
+
+# === Root health check ===
+@app.route("/")
+def home():
+    return "Backend is working!"
+
+# === Helper to generate a valid grid ===
 def generate_grid(clubs, countries):
     valid_pairs = set(VALID_PAIRS.keys())
     valid_clubs = [club for club in clubs if any((c, club) in valid_pairs for c in countries)]
@@ -18,41 +30,50 @@ def generate_grid(clubs, countries):
         if all((c, club) in valid_pairs for club in selected_clubs for c in selected_countries):
             return selected_clubs, selected_countries
 
+# === Endpoint to generate a grid ===
 @app.route("/generate-grid")
 def generate_grid_endpoint():
-    clubs = request.args.get("difficulty", "easy")
-    if clubs == "medium":
-        from backend.difficulty import medium_clubs as club_pool
-    elif clubs == "hard":
-        from backend.difficulty import hard_clubs as club_pool
+    difficulty = request.args.get("difficulty", "easy")
+
+    if difficulty == "medium":
+        club_pool = medium_clubs
+    elif difficulty == "hard":
+        club_pool = hard_clubs
     else:
-        from backend.difficulty import easy_clubs as club_pool
+        club_pool = easy_clubs
 
-    countries = ["England", "France", "Spain", "Germany", "Italy",
-                 "Portugal", "Argentina", "Brazil", "Netherlands"]
+    countries = [
+        "England", "France", "Spain", "Germany", "Italy",
+        "Portugal", "Argentina", "Brazil", "Netherlands"
+    ]
 
-    grid_clubs, grid_countries = generate_grid(club_pool, countries)
+    clubs, countries = generate_grid(club_pool, countries)
+
     return jsonify({
-        "clubs": grid_clubs,
-        "countries": grid_countries
+        "clubs": clubs,
+        "countries": countries
     })
 
+# === Endpoint to validate a player guess ===
 @app.route("/submit-guess", methods=["POST"])
 def submit_guess():
     data = request.get_json()
-    club = data["club"]
-    country = data["country"]
-    player_input = data["player"]
+    club = data.get("club", "").strip()
+    country = data.get("country", "").strip()
+    player_input = data.get("player", "").strip()
 
-    guesses = df[(df["team"] == club) & (df["country"] == country)]
-    for _, row in guesses.iterrows():
+    matches = df[(df["team"] == club) & (df["country"] == country)]
+
+    for _, row in matches.iterrows():
         full_name = row["name"]
         parts = full_name.strip().split()
         alt_name = " ".join(parts[1:]) if len(parts) > 1 else parts[0]
+
         if player_input.lower() in (full_name.lower(), alt_name.lower()):
             return jsonify({"result": "correct", "player": full_name})
 
     return jsonify({"result": "incorrect"})
 
+# === Run server ===
 if __name__ == "__main__":
     app.run(debug=True)
