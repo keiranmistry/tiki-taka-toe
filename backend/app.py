@@ -2,16 +2,17 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pandas as pd
 import random
+import os
 from valid_pairs import VALID_PAIRS
+from difficulty import easy_clubs, medium_clubs, hard_clubs
 
+# Define app first
+app = Flask(__name__)
+
+# THEN enable CORS
 CORS(app)
 
-
-# === Import local modules ===
-from valid_pairs import VALID_PAIRS
-from difficulty import easy_clubs, medium_clubs, hard_clubs  # Assuming these are in difficulty.py
-
-app = Flask(__name__)
+# Now continue with your code...
 
 # === Load cleaned player data ===
 DATA_PATH = os.path.join("data", "cleaned_players.csv")
