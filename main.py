@@ -1,6 +1,6 @@
 import pandas as pd
 import random
-from valid_pairs import VALID_PAIRS
+from backend.valid_pairs import VALID_PAIRS
 
 df = pd.read_csv("cleaned_players.csv")
 

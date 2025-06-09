@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 import random
-from valid_pairs import VALID_PAIRS
+from backend.valid_pairs import VALID_PAIRS
 
 app = Flask(__name__)
 df = pd.read_csv("data/cleaned_players.csv")
@@ -22,11 +22,11 @@ def generate_grid(clubs, countries):
 def generate_grid_endpoint():
     clubs = request.args.get("difficulty", "easy")
     if clubs == "medium":
-        from difficulty import medium_clubs as club_pool
+        from backend.difficulty import medium_clubs as club_pool
     elif clubs == "hard":
-        from difficulty import hard_clubs as club_pool
+        from backend.difficulty import hard_clubs as club_pool
     else:
-        from difficulty import easy_clubs as club_pool
+        from backend.difficulty import easy_clubs as club_pool
 
     countries = ["England", "France", "Spain", "Germany", "Italy",
                  "Portugal", "Argentina", "Brazil", "Netherlands"]
