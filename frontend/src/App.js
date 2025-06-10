@@ -34,7 +34,7 @@ function App() {
     .then(data => {
       if (data.result === "correct") {
         const key = `${clubInput}|${countryInput}`;
-        setGuesses({ ...guesses, [key]: data.player });
+        setGuesses({ ...guesses, [key]: { name: data.player, id: data.id } });
         setMessage("✅ Correct!");
       } else {
         setMessage("❌ Incorrect");
@@ -58,7 +58,18 @@ function App() {
               <td><strong>{club}</strong></td>
               {countries.map(country => {
                 const key = `${club}|${country}`;
-                return <td key={key}>{guesses[key] || "___"}</td>;
+                return (
+                    <td key={key}>
+                        {guesses[key] ? (
+                        <img
+                            src={`https://img.a.transfermarkt.technology/portrait/header/${guesses[key].id}.jpg`}
+                            alt={guesses[key].name}
+                            style={{ width: "60px", height: "60px", borderRadius: "50%" }}
+                            onError={(e) => e.target.style.display = 'none'}
+                        />
+                        ) : "___"}
+                    </td>
+                    );
               })}
             </tr>
           ))}

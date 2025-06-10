@@ -6,6 +6,10 @@ import os
 from valid_pairs import VALID_PAIRS
 from difficulty import easy_clubs, medium_clubs, hard_clubs
 
+import requests
+from flask import send_file
+from io import BytesIO
+
 # Define app first
 app = Flask(__name__)
 
@@ -58,6 +62,17 @@ def generate_grid_endpoint():
         "clubs": clubs,
         "countries": countries
     })
+
+@app.route("/player-image/<int:player_id>")
+def player_image(player_id):
+    url = f"https://img.a.transfermarkt.technology/portrait/header/{player_id}.png"
+    try:
+        response = requests.get(url, timeout=5)
+        response.raise_for_status()
+        return send_file(BytesIO(response.content), mimetype="image/png")
+    except Exception:
+        return "Image not available", 404
+
 
 # === Endpoint to validate a player guess ===
 @app.route("/submit-guess", methods=["POST"])
