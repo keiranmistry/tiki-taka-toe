@@ -1,4 +1,4 @@
-clean up code
+clean up code [done]
 create part where it fills in grid accordingly
 create part to give answer
 create part to save streak
