@@ -5,4 +5,4 @@ create part to save streak
 start frontend with react maybe?
 - look at tailwind css
 - retrieve photos from web scraping tools or using id and link table?
-- find another way to pull 
+- find another way to pull photos
