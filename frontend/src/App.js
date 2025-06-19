@@ -1,92 +1,101 @@
 import React, { useEffect, useState } from 'react';
 
 function App() {
-  const [clubs, setClubs] = useState([]);
-  const [countries, setCountries] = useState([]);
-  const [guesses, setGuesses] = useState({});
-  const [clubInput, setClubInput] = useState('');
-  const [countryInput, setCountryInput] = useState('');
-  const [playerInput, setPlayerInput] = useState('');
-  const [message, setMessage] = useState('');
-  const [clubLogos, setClubLogos] = useState([]);
+    const [clubs, setClubs] = useState([]);
+    const [countries, setCountries] = useState([]);
+    const [guesses, setGuesses] = useState({});
+    const [clubInput, setClubInput] = useState('');
+    const [countryInput, setCountryInput] = useState('');
+    const [playerInput, setPlayerInput] = useState('');
+    const [message, setMessage] = useState('');
+    const [clubLogos, setClubLogos] = useState([]);
 
-  useEffect(() => {
-    fetch("http://127.0.0.1:5000/generate-grid")
-      .then(res => res.json())
-      .then(data => {
-        setClubs(data.clubs);
-        setCountries(data.countries);
-        setClubLogos(data.club_logos);
-      });
-  }, []);
+    useEffect(() => {
+        fetch("http://127.0.0.1:5000/generate-grid")
+            .then(res => res.json())
+            .then(data => {
+                setClubs(data.clubs);
+                setCountries(data.countries);
+                setClubLogos(data.club_logos);
+            });
+    }, []);
 
-  const handleGuess = () => {
-    fetch("http://127.0.0.1:5000/submit-guess", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        club: clubInput,
-        country: countryInput,
-        player: playerInput
-      })
-    })
-    .then(res => res.json())
-    .then(data => {
-      if (data.result === "correct") {
-        const key = `${clubInput}|${countryInput}`;
-        setGuesses({ ...guesses, [key]: { name: data.player, id: data.id } });
-        setMessage("✅ Correct!");
-      } else {
-        setMessage("❌ Incorrect");
-      }
-    });
-  };
+    const handleGuess = () => {
+        fetch("http://127.0.0.1:5000/submit-guess", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                club: clubInput,
+                country: countryInput,
+                player: playerInput
+            })
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.result === "correct") {
+                    const key = `${clubInput}|${countryInput}`;
+                    setGuesses({ ...guesses, [key]: { name: data.player, id: data.id } });
+                    setMessage("✅ Correct!");
+                } else {
+                    setMessage("❌ Incorrect");
+                }
+            });
+    };
 
-  return (
-    <div style={{ padding: '20px' }}>
-      <h1>⚽ Soccer Tic Tac Toe</h1>
-      <table border="1" cellPadding="10">
-        <thead>
-          <tr>
-            <th></th>
-            {countries.map(country => <th key={country}>{country}</th>)}
-          </tr>
-        </thead>
-        <tbody>
-          {clubs.map(club => (
-            <tr key={club}>
-              <td><strong>{club}</strong></td>
-              {countries.map(country => {
-                const key = `${club}|${country}`;
-                return (
-                    <td key={key}>
-                        {guesses[key] ? (
-                        <img
-                            src={`https://img.a.transfermarkt.technology/portrait/header/${guesses[key].id}.jpg`}
-                            alt={guesses[key].name}
-                            style={{ width: "60px", height: "60px", borderRadius: "50%" }}
-                            onError={(e) => e.target.style.display = 'none'}
-                        />
-                        ) : "___"}
-                    </td>
-                    );
-              })}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    return (
+        <div style={{ padding: '20px' }}>
+            <h1>⚽ Soccer Tic Tac Toe</h1>
+            <table border="1" cellPadding="10">
+                <thead>
+                    <tr>
+                        <th></th>
+                        {countries.map(country => <th key={country}>{country}</th>)}
+                    </tr>
+                </thead>
+                <tbody>
+                    {clubs.map(club => (
+                        <tr key={club}>
+                            <td>
+                                <img
+                                    src={club.logo}
+                                    alt={club.name}
+                                    style={{ width: "30px", height: "30px", marginRight: "8px", verticalAlign: "middle" }}
+                                    onError={(e) => (e.target.style.display = "none")}
+                                />
+                                <strong>{club.name}</strong>
+                            </td>
 
-      <h2>Enter Your Guess</h2>
-      <input placeholder="Club" value={clubInput} onChange={e => setClubInput(e.target.value)} />
-      <input placeholder="Country" value={countryInput} onChange={e => setCountryInput(e.target.value)} />
-      <input placeholder="Player" value={playerInput} onChange={e => setPlayerInput(e.target.value)} />
-      <button onClick={handleGuess}>Submit</button>
+                            {countries.map(country => {
+                                const key = `${club}|${country}`;
+                                return (
+                                    <td key={key}>
+                                        {guesses[key] ? (
+                                            <img
+                                                src={`https://img.a.transfermarkt.technology/portrait/header/${guesses[key].id}.jpg`}
+                                                alt={guesses[key].name}
+                                                style={{ width: "60px", height: "60px", borderRadius: "50%" }}
+                                                onError={(e) => e.target.style.display = 'none'}
+                                            />
+                                        ) : "___"}
+                                    </td>
+                                );
+                            })}
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
 
-      <p>{message}</p>
-    </div>
-  );
+            <h2>Enter Your Guess</h2>
+            <input placeholder="Club" value={clubInput} onChange={e => setClubInput(e.target.value)} />
+            <input placeholder="Country" value={countryInput} onChange={e => setCountryInput(e.target.value)} />
+            <input placeholder="Player" value={playerInput} onChange={e => setPlayerInput(e.target.value)} />
+            <button onClick={handleGuess}>Submit</button>
+
+            <p>{message}</p>
+        </div>
+    );
 }
 
 export default App;
