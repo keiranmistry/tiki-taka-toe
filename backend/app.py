@@ -6,7 +6,6 @@ import os
 from valid_pairs import VALID_PAIRS
 from difficulty import easy_clubs, medium_clubs, hard_clubs
 
-import csv
 import requests
 from flask import send_file
 from io import BytesIO
@@ -40,14 +39,6 @@ def generate_grid(clubs, countries):
         if all((c, club) in valid_pairs for club in selected_clubs for c in selected_countries):
             return selected_clubs, selected_countries
 
-## === Imaging ===
-CLUB_NAME_TO_ID = {}
-with open("clubs.csv", encoding="utf-8") as f:
-    reader = csv.DictReader(f)
-    for row in reader:
-        CLUB_NAME_TO_ID[row["club_name"]] = row["id"]
-
-
 # === Endpoint to generate a grid ===
 @app.route("/generate-grid")
 def generate_grid_endpoint():
@@ -68,12 +59,7 @@ def generate_grid_endpoint():
     clubs, countries = generate_grid(club_pool, countries)
 
     return jsonify({
-        "clubs": [
-        {
-            "name": club,
-            "logo": f"https://tmssl.akamaized.net//images/wappen/head/{CLUB_NAME_TO_ID.get(club, '0')}.png"
-        } for club in clubs
-    ],
+        "clubs": clubs,
         "countries": countries
     })
 
