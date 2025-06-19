@@ -8,6 +8,7 @@ function App() {
   const [countryInput, setCountryInput] = useState('');
   const [playerInput, setPlayerInput] = useState('');
   const [message, setMessage] = useState('');
+  const [clubLogos, setClubLogos] = useState([]);
 
   useEffect(() => {
     fetch("http://127.0.0.1:5000/generate-grid")
@@ -15,6 +16,7 @@ function App() {
       .then(data => {
         setClubs(data.clubs);
         setCountries(data.countries);
+        setClubLogos(data.club_logos);
       });
   }, []);
 
