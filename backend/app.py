@@ -4,7 +4,7 @@ import pandas as pd
 import random
 import os
 from valid_pairs import VALID_PAIRS
-from difficulty import easy_clubs, medium_clubs, hard_clubs
+from difficulty import easy_clubs, medium_clubs, hard_clubs, easy_countries, medium_countries, hard_countries
 
 import requests
 from flask import send_file
@@ -16,11 +16,12 @@ app = Flask(__name__)
 # THEN enable CORS
 CORS(app)
 
-# Now continue with your code...
-
 # === Load cleaned player data ===
 DATA_PATH = os.path.join("data", "cleaned_players.csv")
 df = pd.read_csv(DATA_PATH)
+
+# === Game state tracking ===
+active_games = {}
 
 # === Root health check ===
 @app.route("/")
@@ -33,16 +34,26 @@ def generate_grid(clubs, countries):
     valid_clubs = [club for club in clubs if any((c, club) in valid_pairs for c in countries)]
     valid_countries = [c for c in countries if any((c, club) in valid_pairs for club in clubs)]
 
-    while True:
+    # Ensure we have enough valid combinations
+    if len(valid_clubs) < 3 or len(valid_countries) < 3:
+        return None, None
+
+    # Try multiple times to find a valid grid
+    for _ in range(100):
         selected_clubs = random.sample(valid_clubs, 3)
         selected_countries = random.sample(valid_countries, 3)
+        
+        # Check if all combinations are valid
         if all((c, club) in valid_pairs for club in selected_clubs for c in selected_countries):
             return selected_clubs, selected_countries
+    
+    return None, None
 
 # === Endpoint to generate a grid ===
 @app.route("/generate-grid")
 def generate_grid_endpoint():
     difficulty = request.args.get("difficulty", "easy")
+    game_id = request.args.get("game_id", "default")
 
     if difficulty == "medium":
         club_pool = medium_clubs
@@ -51,16 +62,32 @@ def generate_grid_endpoint():
     else:
         club_pool = easy_clubs
 
-    countries = [
-        "England", "France", "Spain", "Germany", "Italy",
-        "Portugal", "Argentina", "Brazil", "Netherlands"
-    ]
+    if difficulty == "medium":
+        country_pool = medium_countries
+    elif difficulty == "hard":
+        country_pool = hard_countries
+    else:
+        country_pool = easy_countries
 
-    clubs, countries = generate_grid(club_pool, countries)
+    clubs, countries = generate_grid(club_pool, country_pool)
+    
+    if clubs is None:
+        return jsonify({"error": "Could not generate valid grid"}), 400
+
+    # Store game state
+    active_games[game_id] = {
+        "clubs": clubs,
+        "countries": countries,
+        "difficulty": difficulty,
+        "guesses": {},
+        "completed": False
+    }
 
     return jsonify({
         "clubs": clubs,
-        "countries": countries
+        "countries": countries,
+        "difficulty": difficulty,
+        "game_id": game_id
     })
 
 @app.route("/player-image/<int:player_id>")
@@ -73,7 +100,6 @@ def player_image(player_id):
     except Exception:
         return "Image not available", 404
 
-
 # === Endpoint to validate a player guess ===
 @app.route("/submit-guess", methods=["POST"])
 def submit_guess():
@@ -81,19 +107,110 @@ def submit_guess():
     club = data.get("club", "").strip()
     country = data.get("country", "").strip()
     player_input = data.get("player", "").strip()
+    game_id = data.get("game_id", "default")
 
+    # Validate game exists
+    if game_id not in active_games:
+        return jsonify({"error": "Game not found"}), 404
+
+    game = active_games[game_id]
+    
+    # Validate the cell is in the current grid
+    if club not in game["clubs"] or country not in game["countries"]:
+        return jsonify({"error": "Invalid club or country for this grid"}), 400
+
+    # Check if cell already filled
+    cell_key = f"{club}|{country}"
+    if cell_key in game["guesses"]:
+        return jsonify({"error": "Cell already filled"}), 400
+
+    # Find matching players
     matches = df[(df["team"] == club) & (df["country"] == country)]
 
     for _, row in matches.iterrows():
         full_name = row["name"]
+        player_id = row.get("player_id", None)
         parts = full_name.strip().split()
         alt_name = " ".join(parts[1:]) if len(parts) > 1 else parts[0]
 
         if player_input.lower() in (full_name.lower(), alt_name.lower()):
-            return jsonify({"result": "correct", "player": full_name})
+            # Store the guess
+            game["guesses"][cell_key] = {
+                "name": full_name,
+                "id": player_id,
+                "club": club,
+                "country": country
+            }
+            
+            # Check if game is complete
+            if len(game["guesses"]) == 9:
+                game["completed"] = True
+            
+            return jsonify({
+                "result": "correct", 
+                "player": full_name,
+                "id": player_id,
+                "completed": game["completed"]
+            })
 
     return jsonify({"result": "incorrect"})
 
+# === Endpoint to get game state ===
+@app.route("/game-state/<game_id>")
+def get_game_state(game_id):
+    if game_id not in active_games:
+        return jsonify({"error": "Game not found"}), 404
+    
+    game = active_games[game_id]
+    return jsonify({
+        "clubs": game["clubs"],
+        "countries": game["countries"],
+        "difficulty": game["difficulty"],
+        "guesses": game["guesses"],
+        "completed": game["completed"]
+    })
+
+# === Endpoint to reset game ===
+@app.route("/reset-game/<game_id>")
+def reset_game(game_id):
+    if game_id in active_games:
+        del active_games[game_id]
+    return jsonify({"message": "Game reset successfully"})
+
+# === Endpoint to get hints ===
+@app.route("/hint/<game_id>")
+def get_hint(game_id):
+    if game_id not in active_games:
+        return jsonify({"error": "Game not found"}), 404
+    
+    game = active_games[game_id]
+    
+    # Find an unfilled cell
+    unfilled_cells = []
+    for club in game["clubs"]:
+        for country in game["countries"]:
+            cell_key = f"{club}|{country}"
+            if cell_key not in game["guesses"]:
+                unfilled_cells.append((club, country))
+    
+    if not unfilled_cells:
+        return jsonify({"error": "No unfilled cells"}), 400
+    
+    # Pick a random unfilled cell
+    club, country = random.choice(unfilled_cells)
+    
+    # Get a sample player for this combination
+    matches = df[(df["team"] == club) & (df["country"] == country)]
+    
+    if len(matches) > 0:
+        sample_player = matches.iloc[0]["name"]
+        return jsonify({
+            "hint": f"Try a player from {country} who played for {club}",
+            "sample_player": sample_player
+        })
+    
+    return jsonify({"error": "No players found for this combination"}), 400
+
 # === Run server ===
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
