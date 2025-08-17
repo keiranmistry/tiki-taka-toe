@@ -1,7 +1,7 @@
 /* Font Face Declaration */
 @font-face {
   font-family: 'Champions';
-  src: url('../../Champions-Bold.ttf') format('truetype');
+  src: url('./assets/Champions-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -17,10 +17,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Champions', 'Arial', sans-serif;
-  background: #0E1E5B url('../../uefa-champions-league-star-football-logo-8dv90jbvwwhzp9c0.jpg') no-repeat center center fixed;
+  background: #0E1E5B url('./assets/uefa-champions-league-star-football-logo-8dv90jbvwwhzp9c0.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #FFFFFF;
   min-height: 100vh;
+  line-height: 1.6;
   overflow-x: auto;
 }
 
@@ -1657,6 +1658,13 @@ body {
   margin-top: 20px;
 }
 
+/* Game Section Wrapper */
+.game-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Guess Section with Animations */
 .guess-section {
   background: linear-gradient(135deg, 
@@ -1694,4 +1702,75 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Hint Display Styling */
+.hint-display {
+  background: linear-gradient(135deg, 
+    rgba(53, 98, 166, 0.95) 0%, 
+    rgba(53, 98, 166, 0.85) 50%, 
+    rgba(53, 98, 166, 0.9) 100%);
+  color: #FFFFFF;
+  padding: 20px 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px) saturate(150%);
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  animation: slideInUp 0.4s ease-out;
+}
+
+.hint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.hint-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.hint-progress {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hint-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-family: 'Champions', 'Arial', sans-serif;
+}
+
+.hint-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hint-name {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hint-separator {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  margin: 0 4px;
 }

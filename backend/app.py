@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pandas as pd
 import random
 import os
-from valid_pairs import VALID_PAIRS
+from data.valid_pairs import VALID_PAIRS
 from difficulty import easy_clubs, medium_clubs, hard_clubs, easy_countries, medium_countries, hard_countries
 
 import requests
@@ -182,50 +182,61 @@ def reset_game(game_id):
 def get_hint(game_id):
     if game_id not in active_games:
         return jsonify({"error": "Game not found"}), 400
-    
+
     game = active_games[game_id]
-    
+
     # Get club and country from query parameters
     club = request.args.get('club')
     country = request.args.get('country')
-    
+    hint_count = int(request.args.get('hint_count', 1))  # Default to 1 if not provided
+
     if not club or not country:
         return jsonify({"error": "Club and country parameters are required"}), 400
-    
+
     # Debug: Print what we received vs what's in the game
-    print(f"Received club: '{club}', country: '{country}'")
+    print(f"Received club: '{club}', country: '{country}', hint_count: {hint_count}")
     print(f"Game clubs: {game['clubs']}")
     print(f"Game countries: {game['countries']}")
-    
+
     # Validate the cell is in the current grid
     if club not in game["clubs"]:
         return jsonify({"error": f"Club '{club}' not found in grid. Available clubs: {game['clubs']}"}), 400
-    
+
     if country not in game["countries"]:
         return jsonify({"error": f"Country '{country}' not found in grid. Available countries: {game['countries']}"}), 400
-    
+
     # Check if cell already filled
     cell_key = f"{club}|{country}"
     if cell_key in game["guesses"]:
         return jsonify({"error": "Cell already filled"}), 400
-    
+
     # Get a sample player for this specific combination
     matches = df[(df["team"] == club) & (df["country"] == country)]
-    
+
     if len(matches) > 0:
         sample_player = matches.iloc[0]["name"]
-        
-        # Create hangman-like hint
+
+        # Create hangman-like hint that builds upon previous hints
         name_length = len(sample_player)
-        # Reveal approximately 1/3 of the letters (minimum 2, maximum 5)
-        letters_to_reveal = max(2, min(5, name_length // 3))
         
-        # Create a list of positions to reveal
+        # For first hint: reveal 2 letters, for subsequent hints: reveal 1-2 more letters
+        if hint_count == 1:
+            letters_to_reveal = 2
+        else:
+            # Add 1-2 more letters for each additional hint
+            additional_letters = min(hint_count - 1, 4)  # Cap at 4 additional hints
+            letters_to_reveal = min(2 + additional_letters, name_length - 1)  # Leave at least 1 letter hidden
+        
+        # Always use the same positions for consistency across multiple hints
+        # This ensures we build upon the previous hint rather than randomizing each time
         positions = list(range(name_length))
+        # Use a deterministic seed based on club and country to ensure consistent letter positions
+        random.seed(f"{club}_{country}")
         random.shuffle(positions)
-        reveal_positions = positions[:letters_to_reveal]
+        random.seed()  # Reset seed
         
-        # Build the hint string
+        reveal_positions = positions[:letters_to_reveal]
+
         hint_string = ""
         for i, char in enumerate(sample_player):
             if i in reveal_positions:
@@ -234,14 +245,17 @@ def get_hint(game_id):
                 hint_string += " "
             else:
                 hint_string += "_"
-        
+
         return jsonify({
             "hint": f"Player name: {hint_string}",
             "sample_player": sample_player,
             "club": club,
-            "country": country
+            "country": country,
+            "hint_count": hint_count,
+            "total_letters_revealed": letters_to_reveal,
+            "name_length": name_length
         })
-    
+
     return jsonify({"error": "No players found for this combination"}), 400
 
 # === Run server ===

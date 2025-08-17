@@ -18,6 +18,7 @@ function App() {
   const [hintDetails, setHintDetails] = useState(null);
   const [hints, setHints] = useState({});
   const [isFadingOut, setIsFadingOut] = useState(false);
+  const [hintCounts, setHintCounts] = useState({});
   const [loading, setLoading] = useState(false);
   const [score, setScore] = useState(0);
   const [selectedCell, setSelectedCell] = useState(null);
@@ -303,6 +304,7 @@ function App() {
       setHintDetails(null);
       setHints({});
       setIsFadingOut(false); // Reset fade-out state
+      setHintCounts({}); // Reset hint counts
       
       // Generate a unique game ID
       const newGameId = `game_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
@@ -445,18 +447,39 @@ function App() {
       setMessageType('error');
       return;
     }
-    
+
     try {
       setLoading(true);
-      const response = await fetch(`http://127.0.0.1:5001/hint/${gameId}?club=${encodeURIComponent(selectedCell.club)}&country=${encodeURIComponent(selectedCell.country)}`);
-      const data = await response.json();
       
+      // Get current hint count for this cell
+      const cellKey = `${selectedCell.club}|${selectedCell.country}`;
+      const currentHintCount = (hintCounts[cellKey] || 0) + 1;
+      
+      const response = await fetch(`http://127.0.0.1:5001/hint/${gameId}?club=${encodeURIComponent(selectedCell.club)}&country=${encodeURIComponent(selectedCell.country)}&hint_count=${currentHintCount}`);
+      const data = await response.json();
+
       if (response.ok) {
         setHintText(data.hint);
-        setHintDetails({ club: data.club, country: data.country });
+        setHintDetails({ 
+          club: data.club, 
+          country: data.country,
+          hintCount: data.hint_count,
+          totalLettersRevealed: data.total_letters_revealed,
+          nameLength: data.name_length
+        });
         setShowHint(true);
-        setScore(prev => Math.max(0, prev - 2)); // Penalty for using hint
-        setMessage('💡 Hint received! (-2 points)');
+        
+        // Update hint count for this cell
+        setHintCounts(prev => ({
+          ...prev,
+          [cellKey]: currentHintCount
+        }));
+        
+        // Increasing penalty: 2 points for first hint, 3 for second, 4 for third, etc.
+        const penalty = Math.min(2 + (currentHintCount - 1), 5); // Cap at 5 points
+        setScore(prev => Math.max(0, prev - penalty));
+        
+        setMessage(`💡 Hint ${currentHintCount} received! (-${penalty} points)`);
         setMessageType('info');
       } else {
         setMessage(`❌ ${data.error}`);
@@ -658,6 +681,7 @@ function App() {
               </div>
               <div className="btn-container">
                 <button 
+                  type="button"
                   onClick={handleGuess} 
                   className="btn btn-primary"
                   disabled={loading}
@@ -669,26 +693,27 @@ function App() {
             
             <div className="hint-section">
               <button 
+                type="button"
                 onClick={getHint} 
-                className="btn btn-hint"
+                className="btn btn-secondary"
                 disabled={loading || !selectedCell}
               >
-                {hints[`${selectedCell?.club}|${selectedCell?.country}`] ? 
-                  '💡 Show Hint' : 
-                  '💡 Get Hint (-2 points)'
-                }
+                {loading ? 'Getting Hint...' : `💡 Get Hint ${hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] ? `#${hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] + 1}` : ''}`}
               </button>
-              {showHint && (
-                <div className="hint-text">
-                  <div className="hint-header">💡 HINT</div>
-                  <div className="hint-name">{hintText}</div>
-                  {hintDetails && (
-                    <div className="hint-location">
-                      <span className="hint-label">Club:</span> {hintDetails.club}
-                      <span className="hint-separator">|</span>
-                      <span className="hint-label">Country:</span> {hintDetails.country}
+              {showHint && hintDetails && (
+                <div className="hint-display">
+                  <div className="hint-header">
+                    <h3>💡 Hint #{hintDetails.hintCount}</h3>
+                    <div className="hint-progress">
+                      {hintDetails.totalLettersRevealed}/{hintDetails.nameLength} letters revealed
                     </div>
-                  )}
+                  </div>
+                  <div className="hint-text">{hintText}</div>
+                  <div className="hint-location">
+                    <span className="hint-name">{hintDetails.club}</span>
+                    <span className="hint-separator">|</span>
+                    <span className="hint-name">{hintDetails.country}</span>
+                  </div>
                 </div>
               )}
             </div>
