@@ -181,7 +181,7 @@ def reset_game(game_id):
 @app.route("/hint/<game_id>")
 def get_hint(game_id):
     if game_id not in active_games:
-        return jsonify({"error": "Game not found"}), 404
+        return jsonify({"error": "Game not found"}), 400
     
     game = active_games[game_id]
     
@@ -192,9 +192,17 @@ def get_hint(game_id):
     if not club or not country:
         return jsonify({"error": "Club and country parameters are required"}), 400
     
+    # Debug: Print what we received vs what's in the game
+    print(f"Received club: '{club}', country: '{country}'")
+    print(f"Game clubs: {game['clubs']}")
+    print(f"Game countries: {game['countries']}")
+    
     # Validate the cell is in the current grid
-    if club not in game["clubs"] or country not in game["countries"]:
-        return jsonify({"error": "Invalid club or country for this grid"}), 400
+    if club not in game["clubs"]:
+        return jsonify({"error": f"Club '{club}' not found in grid. Available clubs: {game['clubs']}"}), 400
+    
+    if country not in game["countries"]:
+        return jsonify({"error": f"Country '{country}' not found in grid. Available countries: {game['countries']}"}), 400
     
     # Check if cell already filled
     cell_key = f"{club}|{country}"

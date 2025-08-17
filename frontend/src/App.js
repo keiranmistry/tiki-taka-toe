@@ -17,6 +17,7 @@ function App() {
   const [hintText, setHintText] = useState('');
   const [hintDetails, setHintDetails] = useState(null);
   const [hints, setHints] = useState({});
+  const [isFadingOut, setIsFadingOut] = useState(false);
   const [loading, setLoading] = useState(false);
   const [score, setScore] = useState(0);
   const [selectedCell, setSelectedCell] = useState(null);
@@ -301,12 +302,22 @@ function App() {
       setHintText('');
       setHintDetails(null);
       setHints({});
+      setIsFadingOut(false); // Reset fade-out state
       
-      const response = await fetch(`http://127.0.0.1:5001/generate-grid?difficulty=${difficultyLevel}`);
+      // Generate a unique game ID
+      const newGameId = `game_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+      
+      const response = await fetch(`http://127.0.0.1:5001/generate-grid?difficulty=${difficultyLevel}&game_id=${newGameId}`);
       const data = await response.json();
       
       if (response.ok) {
-        setGameId(data.game_id);
+        setGameId(newGameId);
+        setClubs(data.clubs);
+        setCountries(data.countries);
+        setDifficulty(data.difficulty);
+        console.log('Game ID set to:', newGameId);
+        console.log('Clubs:', data.clubs);
+        console.log('Countries:', data.countries);
         setMessage('🎮 New game generated! Click any square to start playing.');
         setMessageType('success');
       } else {
@@ -328,6 +339,13 @@ function App() {
   const handleCellClick = (club, country) => {
     if (!gameId) return;
     
+    // Validate that this club and country are part of the current game
+    if (!clubs.includes(club) || !countries.includes(country)) {
+      setMessage(`❌ Invalid cell: ${club} (${country}) is not part of the current game`);
+      setMessageType('error');
+      return;
+    }
+    
     const key = `${club}|${country}`;
     const guess = guesses[key];
     
@@ -344,16 +362,11 @@ function App() {
     setMessage(`🎯 Selected: ${club} (${country})`);
     setMessageType('success');
     
-    // Check if we have a hint for this square and show it
-    if (hints[key]) {
-      setHintText(hints[key].hint);
-      setHintDetails({ club, country });
-      setShowHint(true);
-    } else {
-      setShowHint(false);
-      setHintText('');
-      setHintDetails(null);
-    }
+    // Clear any existing hint when selecting a new cell
+    setShowHint(false);
+    setHintText('');
+    setHintDetails(null);
+    setIsFadingOut(false);
   };
 
   const handleGuess = async () => {
@@ -392,14 +405,19 @@ function App() {
         }));
         
         setScore(prev => prev + 10);
-        setMessage(`✅ Correct! ${data.player} played for ${clubInput} and is from ${countryInput}`);
+        setMessage(`✅ Correct! ${data.player} played for ${clubInput} and nationally represents ${countryInput}`);
         setMessageType('success');
         
-        // Clear selection and inputs
-        setSelectedCell(null);
-        setClubInput('');
-        setCountryInput('');
-        setPlayerInput('');
+        // Trigger fade-out animation
+        setIsFadingOut(true);
+        setTimeout(() => {
+          setIsFadingOut(false);
+          // Clear selection and inputs
+          setSelectedCell(null);
+          setClubInput('');
+          setCountryInput('');
+          setPlayerInput('');
+        }, 500); // Match duration of fade-out animation
         
         if (data.completed) {
           setGameCompleted(true);
@@ -422,35 +440,24 @@ function App() {
   };
 
   const getHint = async () => {
-    if (!gameId || !selectedCell) return;
-    
-    const cellKey = `${selectedCell.club}|${selectedCell.country}`;
-    
-    // Check if we already have a hint for this square
-    if (hints[cellKey]) {
-      setHintText(hints[cellKey].hint);
-      setHintDetails({ club: selectedCell.club, country: selectedCell.country });
-      setShowHint(true);
+    if (!gameId || !selectedCell) {
+      setMessage('❌ Please select a square first');
+      setMessageType('error');
       return;
     }
     
     try {
+      setLoading(true);
       const response = await fetch(`http://127.0.0.1:5001/hint/${gameId}?club=${encodeURIComponent(selectedCell.club)}&country=${encodeURIComponent(selectedCell.country)}`);
       const data = await response.json();
       
       if (response.ok) {
-        // Store the hint for this square
-        const newHint = {
-          hint: data.hint,
-          club: data.club,
-          country: data.country
-        };
-        setHints(prev => ({ ...prev, [cellKey]: newHint }));
-        
         setHintText(data.hint);
         setHintDetails({ club: data.club, country: data.country });
         setShowHint(true);
         setScore(prev => Math.max(0, prev - 2)); // Penalty for using hint
+        setMessage('💡 Hint received! (-2 points)');
+        setMessageType('info');
       } else {
         setMessage(`❌ ${data.error}`);
         setMessageType('error');
@@ -458,6 +465,8 @@ function App() {
     } catch (error) {
       setMessage('❌ Error getting hint');
       setMessageType('error');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -607,8 +616,8 @@ function App() {
           </div>
         )}
 
-        {selectedCell && !gameCompleted && (
-          <div className="guess-section">
+        {selectedCell && (
+          <div className={`guess-section ${isFadingOut ? 'fade-out' : ''}`}>
             <h2>Enter Your Guess</h2>
             <div className="input-field-container">
               <div className="input-group">
@@ -638,6 +647,11 @@ function App() {
                   placeholder="Enter player name"
                   value={playerInput}
                   onChange={e => setPlayerInput(e.target.value)}
+                  onKeyDown={e => {
+                    if (e.key === 'Enter' && playerInput.trim()) {
+                      handleGuess();
+                    }
+                  }}
                   className="input-field"
                   disabled={loading}
                 />
