@@ -15,6 +15,7 @@ function App() {
   const [gameCompleted, setGameCompleted] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [hintText, setHintText] = useState('');
+  const [hintDetails, setHintDetails] = useState(null);
   const [loading, setLoading] = useState(false);
   const [score, setScore] = useState(0);
   const [selectedCell, setSelectedCell] = useState(null);
@@ -415,6 +416,7 @@ function App() {
       
       if (response.ok) {
         setHintText(data.hint);
+        setHintDetails({ club: data.club, country: data.country });
         setShowHint(true);
         setScore(prev => Math.max(0, prev - 2)); // Penalty for using hint
       } else {
@@ -500,7 +502,7 @@ function App() {
       <div className="container">
         <header className="header">
           <h1>⚽ Tiki Taka Toe</h1>
-          <p className="subtitle">Click on any square to fill in a player!</p>
+          <p className="subtitle">Tic-Tac-Toe with a soccer-themed twist</p>
         </header>
 
         <div className="game-controls">
@@ -576,8 +578,8 @@ function App() {
         {selectedCell && !gameCompleted && (
           <div className="guess-section">
             <h2>Enter Your Guess</h2>
-            <div className="input-group">
-              <div className="input-field-container">
+            <div className="input-field-container">
+              <div className="input-group">
                 <label>Club</label>
                 <input
                   type="text"
@@ -587,7 +589,7 @@ function App() {
                   readOnly
                 />
               </div>
-              <div className="input-field-container">
+              <div className="input-group">
                 <label>Country</label>
                 <input
                   type="text"
@@ -597,7 +599,7 @@ function App() {
                   readOnly
                 />
               </div>
-              <div className="input-field-container">
+              <div className="input-group">
                 <label>Player Name</label>
                 <input
                   type="text"
@@ -608,13 +610,15 @@ function App() {
                   disabled={loading}
                 />
               </div>
-              <button 
-                onClick={handleGuess} 
-                className="btn btn-primary"
-                disabled={loading}
-              >
-                {loading ? 'Submitting...' : 'Submit Guess'}
-              </button>
+              <div className="btn-container">
+                <button 
+                  onClick={handleGuess} 
+                  className="btn btn-primary"
+                  disabled={loading}
+                >
+                  {loading ? 'Submitting...' : 'Submit Guess'}
+                </button>
+              </div>
             </div>
             
             <div className="hint-section">
@@ -627,7 +631,14 @@ function App() {
               </button>
               {showHint && (
                 <div className="hint-text">
-                  {hintText}
+                  <div className="hint-header">💡 HINT</div>
+                  <div className="hint-name">{hintText}</div>
+                  {hintDetails && (
+                    <div className="hint-location">
+                      <span className="hint-label">Club:</span> {hintDetails.club} | 
+                      <span className="hint-label"> Country:</span> {hintDetails.country}
+                    </div>
+                  )}
                 </div>
               )}
             </div>

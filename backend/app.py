@@ -204,9 +204,32 @@ def get_hint(game_id):
     
     if len(matches) > 0:
         sample_player = matches.iloc[0]["name"]
+        
+        # Create hangman-like hint
+        name_length = len(sample_player)
+        # Reveal approximately 1/3 of the letters (minimum 2, maximum 5)
+        letters_to_reveal = max(2, min(5, name_length // 3))
+        
+        # Create a list of positions to reveal
+        positions = list(range(name_length))
+        random.shuffle(positions)
+        reveal_positions = positions[:letters_to_reveal]
+        
+        # Build the hint string
+        hint_string = ""
+        for i, char in enumerate(sample_player):
+            if i in reveal_positions:
+                hint_string += char
+            elif char == " ":
+                hint_string += " "
+            else:
+                hint_string += "_"
+        
         return jsonify({
-            "hint": f"Try a player from {country} who played for {club}",
-            "sample_player": sample_player
+            "hint": f"Player name: {hint_string}",
+            "sample_player": sample_player,
+            "club": club,
+            "country": country
         })
     
     return jsonify({"error": "No players found for this combination"}), 400
