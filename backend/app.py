@@ -185,21 +185,23 @@ def get_hint(game_id):
     
     game = active_games[game_id]
     
-    # Find an unfilled cell
-    unfilled_cells = []
-    for club in game["clubs"]:
-        for country in game["countries"]:
-            cell_key = f"{club}|{country}"
-            if cell_key not in game["guesses"]:
-                unfilled_cells.append((club, country))
+    # Get club and country from query parameters
+    club = request.args.get('club')
+    country = request.args.get('country')
     
-    if not unfilled_cells:
-        return jsonify({"error": "No unfilled cells"}), 400
+    if not club or not country:
+        return jsonify({"error": "Club and country parameters are required"}), 400
     
-    # Pick a random unfilled cell
-    club, country = random.choice(unfilled_cells)
+    # Validate the cell is in the current grid
+    if club not in game["clubs"] or country not in game["countries"]:
+        return jsonify({"error": "Invalid club or country for this grid"}), 400
     
-    # Get a sample player for this combination
+    # Check if cell already filled
+    cell_key = f"{club}|{country}"
+    if cell_key in game["guesses"]:
+        return jsonify({"error": "Cell already filled"}), 400
+    
+    # Get a sample player for this specific combination
     matches = df[(df["team"] == club) & (df["country"] == country)]
     
     if len(matches) > 0:

@@ -16,6 +16,7 @@ function App() {
   const [showHint, setShowHint] = useState(false);
   const [hintText, setHintText] = useState('');
   const [hintDetails, setHintDetails] = useState(null);
+  const [hints, setHints] = useState({});
   const [loading, setLoading] = useState(false);
   const [score, setScore] = useState(0);
   const [selectedCell, setSelectedCell] = useState(null);
@@ -284,37 +285,36 @@ function App() {
     return "⚽"; // Fallback for unknown clubs
   };
 
-  const generateNewGame = async (selectedDifficulty) => {
-    setLoading(true);
-    setMessage('');
-    setGuesses({});
-    setGameCompleted(false);
-    setScore(0);
-    setShowHint(false);
-    setSelectedCell(null);
-    setClubInput('');
-    setCountryInput('');
-    setPlayerInput('');
-    
-    const newGameId = `game_${Date.now()}`;
-    setGameId(newGameId);
-    
+  const generateNewGame = async (difficultyLevel = difficulty) => {
     try {
-      const response = await fetch(`http://127.0.0.1:5001/generate-grid?difficulty=${selectedDifficulty}&game_id=${newGameId}`);
+      setLoading(true);
+      setMessage('');
+      setMessageType('');
+      setGuesses({});
+      setGameCompleted(false);
+      setScore(0);
+      setSelectedCell(null);
+      setClubInput('');
+      setCountryInput('');
+      setPlayerInput('');
+      setShowHint(false);
+      setHintText('');
+      setHintDetails(null);
+      setHints({});
+      
+      const response = await fetch(`http://127.0.0.1:5001/generate-grid?difficulty=${difficultyLevel}`);
       const data = await response.json();
       
       if (response.ok) {
-        setClubs(data.clubs);
-        setCountries(data.countries);
-        setDifficulty(data.difficulty);
-        setMessage(`🎮 New ${data.difficulty} game started! Click on any square to fill in a player!`);
+        setGameId(data.game_id);
+        setMessage('🎮 New game generated! Click any square to start playing.');
         setMessageType('success');
       } else {
-        setMessage(`❌ Error: ${data.error}`);
+        setMessage(`❌ ${data.error}`);
         setMessageType('error');
       }
     } catch (error) {
-      setMessage('❌ Network error. Please try again.');
+      setMessage('❌ Error generating new game');
       setMessageType('error');
     } finally {
       setLoading(false);
@@ -326,10 +326,12 @@ function App() {
   }, []);
 
   const handleCellClick = (club, country) => {
-    const key = `${club}|${country}`;
+    if (!gameId) return;
     
-    // Don't allow clicking on already filled cells
-    if (guesses[key]) {
+    const key = `${club}|${country}`;
+    const guess = guesses[key];
+    
+    if (guess) {
       setMessage('❌ This cell is already filled!');
       setMessageType('error');
       return;
@@ -338,8 +340,20 @@ function App() {
     setSelectedCell({ club, country });
     setClubInput(club);
     setCountryInput(country);
-    setMessage(`✅ Selected: ${club} (${country}). Now enter a player name!`);
-    setMessageType('info');
+    setPlayerInput('');
+    setMessage(`🎯 Selected: ${club} (${country})`);
+    setMessageType('success');
+    
+    // Check if we have a hint for this square and show it
+    if (hints[key]) {
+      setHintText(hints[key].hint);
+      setHintDetails({ club, country });
+      setShowHint(true);
+    } else {
+      setShowHint(false);
+      setHintText('');
+      setHintDetails(null);
+    }
   };
 
   const handleGuess = async () => {
@@ -408,13 +422,31 @@ function App() {
   };
 
   const getHint = async () => {
-    if (!gameId) return;
+    if (!gameId || !selectedCell) return;
+    
+    const cellKey = `${selectedCell.club}|${selectedCell.country}`;
+    
+    // Check if we already have a hint for this square
+    if (hints[cellKey]) {
+      setHintText(hints[cellKey].hint);
+      setHintDetails({ club: selectedCell.club, country: selectedCell.country });
+      setShowHint(true);
+      return;
+    }
     
     try {
-      const response = await fetch(`http://127.0.0.1:5001/hint/${gameId}`);
+      const response = await fetch(`http://127.0.0.1:5001/hint/${gameId}?club=${encodeURIComponent(selectedCell.club)}&country=${encodeURIComponent(selectedCell.country)}`);
       const data = await response.json();
       
       if (response.ok) {
+        // Store the hint for this square
+        const newHint = {
+          hint: data.hint,
+          club: data.club,
+          country: data.country
+        };
+        setHints(prev => ({ ...prev, [cellKey]: newHint }));
+        
         setHintText(data.hint);
         setHintDetails({ club: data.club, country: data.country });
         setShowHint(true);
@@ -625,9 +657,12 @@ function App() {
               <button 
                 onClick={getHint} 
                 className="btn btn-hint"
-                disabled={loading || showHint}
+                disabled={loading || !selectedCell}
               >
-                💡 Get Hint (-2 points)
+                {hints[`${selectedCell?.club}|${selectedCell?.country}`] ? 
+                  '💡 Show Hint' : 
+                  '💡 Get Hint (-2 points)'
+                }
               </button>
               {showHint && (
                 <div className="hint-text">
@@ -635,8 +670,9 @@ function App() {
                   <div className="hint-name">{hintText}</div>
                   {hintDetails && (
                     <div className="hint-location">
-                      <span className="hint-label">Club:</span> {hintDetails.club} | 
-                      <span className="hint-label"> Country:</span> {hintDetails.country}
+                      <span className="hint-label">Club:</span> {hintDetails.club}
+                      <span className="hint-separator">|</span>
+                      <span className="hint-label">Country:</span> {hintDetails.country}
                     </div>
                   )}
                 </div>
