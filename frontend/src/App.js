@@ -17,6 +17,271 @@ function App() {
   const [hintText, setHintText] = useState('');
   const [loading, setLoading] = useState(false);
   const [score, setScore] = useState(0);
+  const [selectedCell, setSelectedCell] = useState(null);
+
+  // Function to convert country names to flag emojis
+  const getCountryFlag = (countryName) => {
+    const countryFlags = {
+      "England": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "France": "🇫🇷",
+      "Spain": "🇪🇸",
+      "Germany": "🇩🇪",
+      "Italy": "🇮🇹",
+      "Portugal": "🇵🇹",
+      "Argentina": "🇦🇷",
+      "Brazil": "🇧🇷",
+      "Netherlands": "🇳🇱",
+      "Belgium": "🇧🇪",
+      "Switzerland": "🇨🇭",
+      "Austria": "🇦🇹",
+      "Czech Republic": "🇨🇿",
+      "Poland": "🇵🇱",
+      "Hungary": "🇭🇺",
+      "Romania": "🇷🇴",
+      "Bulgaria": "🇧🇬",
+      "Serbia": "🇷🇸",
+      "Croatia": "🇭🇷",
+      "Slovenia": "🇸🇮",
+      "Slovakia": "🇸🇰",
+      "Ukraine": "🇺🇦",
+      "Russia": "🇷🇺",
+      "Turkey": "🇹🇷",
+      "Greece": "🇬🇷",
+      "Norway": "🇳🇴",
+      "Sweden": "🇸🇪",
+      "Denmark": "🇩🇰",
+      "Finland": "🇫🇮",
+      "Iceland": "🇮🇸",
+      "Estonia": "🇪🇪",
+      "Latvia": "🇱🇻",
+      "Lithuania": "🇱🇹",
+      "Belarus": "🇧🇾",
+      "Moldova": "🇲🇩",
+      "Albania": "🇦🇱",
+      "Montenegro": "🇲🇪",
+      "Bosnia and Herzegovina": "🇧🇦",
+      "North Macedonia": "🇲🇰",
+      "Kosovo": "🇽🇰",
+      "Luxembourg": "🇱🇺",
+      "Malta": "🇲🇹",
+      "Cyprus": "🇨🇾",
+      "Georgia": "🇬🇪",
+      "Armenia": "🇦🇲",
+      "Azerbaijan": "🇦🇿",
+      "Kazakhstan": "🇰🇿",
+      "Uzbekistan": "🇺🇿",
+      "Kyrgyzstan": "🇰🇬",
+      "Tajikistan": "🇹🇯",
+      "Turkmenistan": "🇹🇲",
+      "Mongolia": "🇲🇳",
+      "China": "🇨🇳",
+      "Japan": "🇯🇵",
+      "South Korea": "🇰🇷",
+      "North Korea": "🇰🇵",
+      "Vietnam": "🇻🇳",
+      "Thailand": "🇹🇭",
+      "Malaysia": "🇲🇾",
+      "Singapore": "🇸🇬",
+      "Indonesia": "🇮🇩",
+      "Philippines": "🇵🇭",
+      "India": "🇮🇳",
+      "Pakistan": "🇵🇰",
+      "Bangladesh": "🇧🇩",
+      "Sri Lanka": "🇱🇰",
+      "Nepal": "🇳🇵",
+      "Bhutan": "🇧🇹",
+      "Myanmar": "🇲🇲",
+      "Laos": "🇱🇦",
+      "Cambodia": "🇰🇭",
+      "Brunei": "🇧🇳",
+      "East Timor": "🇹🇱",
+      "Papua New Guinea": "🇵🇬",
+      "Fiji": "🇫🇯",
+      "Vanuatu": "🇻🇺",
+      "Solomon Islands": "🇸🇧",
+      "New Caledonia": "🇳🇨",
+      "Tahiti": "🇵🇫",
+      "Samoa": "🇼🇸",
+      "Tonga": "🇹🇴",
+      "American Samoa": "🇦🇸",
+      "Guam": "🇬🇺",
+      "Northern Mariana Islands": "🇲🇵",
+      "Palau": "🇵🇼",
+      "Marshall Islands": "🇲🇭",
+      "Micronesia": "🇫🇲",
+      "Nauru": "🇳🇷",
+      "Tuvalu": "🇹🇻",
+      "Kiribati": "🇰🇮",
+      "Wallis and Futuna": "🇼🇫",
+      "Cook Islands": "🇨🇰",
+      "Niue": "🇳🇺",
+      "Tokelau": "🇹🇰"
+    };
+    
+    return countryFlags[countryName] || countryName;
+  };
+
+  // Function to get club badges from Transfermarkt
+  const getClubBadge = (clubName) => {
+    // Map club names to Transfermarkt club IDs
+    const clubIds = {
+      // Premier League
+      "Arsenal": "11",
+      "Chelsea": "631",
+      "Tottenham": "148",
+      "Man United": "985",
+      "Man City": "281",
+      "Liverpool": "31",
+      "Everton": "29",
+      "Newcastle": "762",
+      "Aston Villa": "405",
+      "Brighton": "1237",
+      "West Ham": "379",
+      "Bournemouth": "989",
+      "Brentford": "1148",
+      "Crystal Palace": "873",
+      "Fulham": "931",
+      "Leicester": "1003",
+      "Nottingham Forest": "703",
+      "Southampton": "180",
+      "Wolves": "543",
+      
+      // La Liga
+      "Barcelona": "131",
+      "Real Madrid": "418",
+      "Atletico Madrid": "13",
+      "Real Sociedad": "681",
+      "Real Betis": "150",
+      "Real Valladolid": "366",
+      "Sevilla": "368",
+      "Valencia": "1049",
+      "Villarreal": "1050",
+      "Athletic Bilbao": "621",
+      "Celta Vigo": "940",
+      "Espanyol": "714",
+      "Getafe": "3709",
+      "Girona": "12321",
+      "Las Palmas": "472",
+      "Mallorca": "237",
+      "Osasuna": "331",
+      "Rayo Vallecano": "367",
+      "Alaves": "1108",
+      "Cadiz": "536",
+      
+      // Bundesliga
+      "Bayern Munich": "27",
+      "Borussia Dortmund": "16",
+      "Bayer Leverkusen": "15",
+      "Leipzig": "23826",
+      "Borussia Monchengladbach": "18",
+      "Eintracht Frankfurt": "24",
+      "VfB Stuttgart": "79",
+      "VfL Wolfsburg": "82",
+      "SC Freiburg": "60",
+      "1. FC Heidenheim": "12321",
+      "TSG Hoffenheim": "533",
+      "1. FC Union Berlin": "89",
+      "1. FC Koln": "3",
+      "SV Werder Bremen": "86",
+      "1. FSV Mainz 05": "39",
+      "VfL Bochum": "2",
+      "FC Augsburg": "16",
+      "FC St. Pauli": "105",
+      
+      // Serie A
+      "Juventus": "506",
+      "Milan": "5",
+      "Inter": "46",
+      "Napoli": "6195",
+      "Roma": "12",
+      "Lazio": "398",
+      "Atalanta": "800",
+      "Fiorentina": "430",
+      "Torino": "416",
+      "Bologna": "1038",
+      "Genoa": "252",
+      "Monza": "12321",
+      "Cagliari": "1390",
+      "Empoli": "391",
+      "Frosinone": "12321",
+      "Lecce": "1005",
+      "Salernitana": "12321",
+      "Sassuolo": "6574",
+      "Udinese": "410",
+      "Verona": "276",
+      "Como": "12321",
+      
+      // Ligue 1
+      "PSG": "583",
+      "Monaco": "162",
+      "Marseille": "164",
+      "Lyon": "1041",
+      "Lille": "1082",
+      "Lens": "1081",
+      "Nice": "4171",
+      "Reims": "1427",
+      "Rennes": "273",
+      "Strasbourg": "167",
+      "Nantes": "995",
+      "Montpellier": "969",
+      "Toulouse": "415",
+      "Brest": "12321",
+      "Le Havre": "12321",
+      "Metz": "347",
+      "Clermont": "12321",
+      "Lorient": "1420",
+      
+      // Other Major Clubs
+      "Porto": "2120",
+      "Benfica": "118",
+      "Sporting CP": "2120",
+      "Vitoria Guimaraes": "12321",
+      "Ajax": "610",
+      "Feyenoord": "234",
+      "PSV": "383",
+      "Club Brugge": "458",
+      "Anderlecht": "261",
+      "Standard Liege": "12321",
+      "Red Bull Salzburg": "409",
+      "Rapid Vienna": "12321",
+      "Slavia Prague": "12321",
+      "Sparta Prague": "12321",
+      "Dinamo Zagreb": "12321",
+      "Hajduk Split": "12321",
+      "Ferencvaros": "12321",
+      "Debrecen": "12321",
+      "Legia Warsaw": "12321",
+      "Lech Poznan": "12321",
+      "Slovan Bratislava": "12321",
+      "Spartak Moscow": "12321",
+      "CSKA Moscow": "12321",
+      "Lokomotiv Moscow": "12321",
+      "Zenit St Petersburg": "12321",
+      "Galatasaray": "12321",
+      "Fenerbahce": "12321",
+      "Besiktas": "12321",
+      "Trabzonspor": "12321",
+      "Olympiacos": "12321",
+      "Panathinaikos": "12321",
+      "AEK Athens": "12321",
+      "PAOK Thessaloniki": "12321",
+      "Rosenborg": "12321",
+      "Molde": "12321",
+      "Malmo": "12321",
+      "AIK Stockholm": "12321",
+      "Hammarby": "12321",
+      "FC Copenhagen": "12321",
+      "Midtjylland": "12321",
+      "Brondby": "12321"
+    };
+    
+    const clubId = clubIds[clubName];
+    if (clubId) {
+      return `https://tmssl.akamaized.net/images/wappen/head/${clubId}.png`;
+    }
+    
+    return "⚽"; // Fallback for unknown clubs
+  };
 
   const generateNewGame = async (selectedDifficulty) => {
     setLoading(true);
@@ -25,6 +290,10 @@ function App() {
     setGameCompleted(false);
     setScore(0);
     setShowHint(false);
+    setSelectedCell(null);
+    setClubInput('');
+    setCountryInput('');
+    setPlayerInput('');
     
     const newGameId = `game_${Date.now()}`;
     setGameId(newGameId);
@@ -37,7 +306,7 @@ function App() {
         setClubs(data.clubs);
         setCountries(data.countries);
         setDifficulty(data.difficulty);
-        setMessage(`🎮 New ${data.difficulty} game started! Fill all 9 cells to win!`);
+        setMessage(`🎮 New ${data.difficulty} game started! Click on any square to fill in a player!`);
         setMessageType('success');
       } else {
         setMessage(`❌ Error: ${data.error}`);
@@ -55,9 +324,26 @@ function App() {
     generateNewGame('easy');
   }, []);
 
+  const handleCellClick = (club, country) => {
+    const key = `${club}|${country}`;
+    
+    // Don't allow clicking on already filled cells
+    if (guesses[key]) {
+      setMessage('❌ This cell is already filled!');
+      setMessageType('error');
+      return;
+    }
+    
+    setSelectedCell({ club, country });
+    setClubInput(club);
+    setCountryInput(country);
+    setMessage(`✅ Selected: ${club} (${country}). Now enter a player name!`);
+    setMessageType('info');
+  };
+
   const handleGuess = async () => {
     if (!clubInput || !countryInput || !playerInput) {
-      setMessage('❌ Please fill in all fields', 'error');
+      setMessage('❌ Please select a cell and enter a player name', 'error');
       return;
     }
 
@@ -94,16 +380,17 @@ function App() {
         setMessage(`✅ Correct! ${data.player} played for ${clubInput} and is from ${countryInput}`);
         setMessageType('success');
         
+        // Clear selection and inputs
+        setSelectedCell(null);
+        setClubInput('');
+        setCountryInput('');
+        setPlayerInput('');
+        
         if (data.completed) {
           setGameCompleted(true);
           setMessage('🎉 Congratulations! You completed the grid!');
           setMessageType('success');
         }
-        
-        // Clear inputs
-        setClubInput('');
-        setCountryInput('');
-        setPlayerInput('');
       } else if (response.status === 400) {
         setMessage(`❌ ${data.error}`);
         setMessageType('error');
@@ -160,6 +447,7 @@ function App() {
   const getCellContent = (club, country) => {
     const key = `${club}|${country}`;
     const guess = guesses[key];
+    const isSelected = selectedCell && selectedCell.club === club && selectedCell.country === country;
     
     if (guess) {
       return (
@@ -189,12 +477,30 @@ function App() {
     return <div className="empty-cell">___</div>;
   };
 
+  const getCellClassName = (club, country) => {
+    const key = `${club}|${country}`;
+    const guess = guesses[key];
+    const isSelected = selectedCell && selectedCell.club === club && selectedCell.country === country;
+    
+    let className = "grid-cell";
+    
+    if (guess) {
+      className += " filled-cell";
+    } else if (isSelected) {
+      className += " selected-cell";
+    } else {
+      className += " clickable-cell";
+    }
+    
+    return className;
+  };
+
   return (
     <div className="app">
       <div className="container">
         <header className="header">
           <h1>⚽ Tiki Taka Toe</h1>
-          <p className="subtitle">Fill the grid with players who match the club and country!</p>
+          <p className="subtitle">Click on any square to fill in a player!</p>
         </header>
 
         <div className="game-controls">
@@ -228,12 +534,17 @@ function App() {
 
         {clubs.length > 0 && countries.length > 0 && (
           <div className="game-grid">
+            <div className="game-instructions">
+              <p>Click on any empty square to select the club and country, then enter a player name!</p>
+            </div>
+            
             <table className="grid-table">
               <thead>
                 <tr>
                   <th className="corner-cell"></th>
                   {countries.map(country => (
                     <th key={country} className="country-header">
+                      <div className="country-flag">{getCountryFlag(country)}</div>
                       <div className="country-name">{country}</div>
                     </th>
                   ))}
@@ -243,10 +554,15 @@ function App() {
                 {clubs.map(club => (
                   <tr key={club}>
                     <td className="club-header">
+                      <div className="club-badge"><img src={getClubBadge(club)} alt={club} /></div>
                       <div className="club-name">{club}</div>
                     </td>
                     {countries.map(country => (
-                      <td key={`${club}|${country}`} className="grid-cell">
+                      <td 
+                        key={`${club}|${country}`} 
+                        className={getCellClassName(club, country)}
+                        onClick={() => handleCellClick(club, country)}
+                      >
                         {getCellContent(club, country)}
                       </td>
                     ))}
@@ -257,34 +573,41 @@ function App() {
           </div>
         )}
 
-        {!gameCompleted && (
+        {selectedCell && !gameCompleted && (
           <div className="guess-section">
             <h2>Enter Your Guess</h2>
             <div className="input-group">
-              <input
-                type="text"
-                placeholder="Club"
-                value={clubInput}
-                onChange={e => setClubInput(e.target.value)}
-                className="input-field"
-                disabled={loading}
-              />
-              <input
-                type="text"
-                placeholder="Country"
-                value={countryInput}
-                onChange={e => setCountryInput(e.target.value)}
-                className="input-field"
-                disabled={loading}
-              />
-              <input
-                type="text"
-                placeholder="Player Name"
-                value={playerInput}
-                onChange={e => setPlayerInput(e.target.value)}
-                className="input-field"
-                disabled={loading}
-              />
+              <div className="input-field-container">
+                <label>Club</label>
+                <input
+                  type="text"
+                  value={clubInput}
+                  className="input-field"
+                  disabled={loading}
+                  readOnly
+                />
+              </div>
+              <div className="input-field-container">
+                <label>Country</label>
+                <input
+                  type="text"
+                  value={countryInput}
+                  className="input-field"
+                  disabled={loading}
+                  readOnly
+                />
+              </div>
+              <div className="input-field-container">
+                <label>Player Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter player name"
+                  value={playerInput}
+                  onChange={e => setPlayerInput(e.target.value)}
+                  className="input-field"
+                  disabled={loading}
+                />
+              </div>
               <button 
                 onClick={handleGuess} 
                 className="btn btn-primary"
@@ -331,9 +654,10 @@ function App() {
         )}
 
         <div className="game-info">
-          <h3>How to Play:</h3>
+          <h3>Game Rules:</h3>
           <ul>
-            <li>Fill each cell with a player who has played for the club AND is from the country</li>
+            <li><strong>Click any empty square</strong> to select the club and country</li>
+            <li>Enter a player name who has played for that club AND is from that country</li>
             <li>You can use full names or last names</li>
             <li>Get hints if you're stuck (costs 2 points)</li>
             <li>Complete all 9 cells to win!</li>
