@@ -80,7 +80,10 @@ def generate_grid_endpoint():
         "countries": countries,
         "difficulty": difficulty,
         "guesses": {},
-        "completed": False
+        "completed": False,
+        "score": 0,
+        "hints_used": 0,
+        "total_hint_penalty": 0
     }
 
     return jsonify({
@@ -134,10 +137,21 @@ def submit_guess():
         alt_name = " ".join(parts[1:]) if len(parts) > 1 else parts[0]
 
         if player_input.lower() in (full_name.lower(), alt_name.lower()):
+            # Calculate points based on difficulty
+            if game["difficulty"] == "easy":
+                points = 20
+            elif game["difficulty"] == "medium":
+                points = 50
+            else:  # hard
+                points = 100
+            
+            # Add points to score
+            game["score"] += points
+            
             # Store the guess
             game["guesses"][cell_key] = {
                 "name": full_name,
-                "id": player_id,
+                "id": player_id if player_id else None,  # Handle case where ID might not exist
                 "club": club,
                 "country": country
             }
@@ -150,7 +164,9 @@ def submit_guess():
                 "result": "correct", 
                 "player": full_name,
                 "id": player_id,
-                "completed": game["completed"]
+                "completed": game["completed"],
+                "score": game["score"],
+                "points_earned": points
             })
 
     return jsonify({"result": "incorrect"})
@@ -216,24 +232,20 @@ def get_hint(game_id):
     if len(matches) > 0:
         sample_player = matches.iloc[0]["name"]
 
-        # Create hangman-like hint that builds upon previous hints
+        # Create hangman-like hint that reveals random letters each time
         name_length = len(sample_player)
         
-        # For first hint: reveal 2 letters, for subsequent hints: reveal 1-2 more letters
+        # For first hint: reveal 2 letters, for subsequent hints: reveal 1-2 more random letters
         if hint_count == 1:
             letters_to_reveal = 2
         else:
-            # Add 1-2 more letters for each additional hint
-            additional_letters = min(hint_count - 1, 4)  # Cap at 4 additional hints
+            # Add 1-2 more random letters for each additional hint
+            additional_letters = random.randint(1, 2)  # Random 1 or 2 more letters
             letters_to_reveal = min(2 + additional_letters, name_length - 1)  # Leave at least 1 letter hidden
         
-        # Always use the same positions for consistency across multiple hints
-        # This ensures we build upon the previous hint rather than randomizing each time
+        # Randomly select positions to reveal each time
         positions = list(range(name_length))
-        # Use a deterministic seed based on club and country to ensure consistent letter positions
-        random.seed(f"{club}_{country}")
         random.shuffle(positions)
-        random.seed()  # Reset seed
         
         reveal_positions = positions[:letters_to_reveal]
 
@@ -257,6 +269,34 @@ def get_hint(game_id):
         })
 
     return jsonify({"error": "No players found for this combination"}), 400
+
+@app.route("/give-up/<game_id>")
+def give_up(game_id):
+    if game_id not in active_games:
+        return jsonify({"error": "Game not found"}), 400
+
+    game = active_games[game_id]
+    
+    # Get all the correct answers for the current grid
+    answers = []
+    for club in game["clubs"]:
+        for country in game["countries"]:
+            # Get a sample player for this combination
+            matches = df[(df["team"] == club) & (df["country"] == country)]
+            
+            if len(matches) > 0:
+                sample_player = matches.iloc[0]
+                answers.append({
+                    "club": club,
+                    "country": country,
+                    "player": sample_player["name"],
+                    "id": sample_player.get("id", None)  # Make ID optional
+                })
+    
+    return jsonify({
+        "answers": answers,
+        "message": "All answers revealed"
+    })
 
 # === Run server ===
 if __name__ == "__main__":

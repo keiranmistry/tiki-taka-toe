@@ -21,7 +21,9 @@ function App() {
   const [hintCounts, setHintCounts] = useState({});
   const [loading, setLoading] = useState(false);
   const [score, setScore] = useState(0);
+  const [giveUp, setGiveUp] = useState(false);
   const [selectedCell, setSelectedCell] = useState(null);
+  const [showGiveUpConfirm, setShowGiveUpConfirm] = useState(false);
 
   // Function to convert country names to flag emojis
   const getCountryFlag = (countryName) => {
@@ -289,22 +291,23 @@ function App() {
 
   const generateNewGame = async (difficultyLevel = difficulty) => {
     try {
-      setLoading(true);
-      setMessage('');
+    setLoading(true);
+    setMessage('');
       setMessageType('');
-      setGuesses({});
-      setGameCompleted(false);
-      setScore(0);
+    setGuesses({});
+    setGameCompleted(false);
+    setScore(0);
       setSelectedCell(null);
       setClubInput('');
       setCountryInput('');
       setPlayerInput('');
-      setShowHint(false);
+    setShowHint(false);
       setHintText('');
       setHintDetails(null);
       setHints({});
       setIsFadingOut(false); // Reset fade-out state
       setHintCounts({}); // Reset hint counts
+      setGiveUp(false); // Reset give up state
       
       // Generate a unique game ID
       const newGameId = `game_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
@@ -318,6 +321,7 @@ function App() {
         setCountries(data.countries);
         setDifficulty(data.difficulty);
         console.log('Game ID set to:', newGameId);
+        console.log('Backend response data:', data);
         console.log('Clubs:', data.clubs);
         console.log('Countries:', data.countries);
         setMessage('🎮 New game generated! Click any square to start playing.');
@@ -448,16 +452,23 @@ function App() {
       return;
     }
 
+    // Check if we've reached the maximum hint count for this cell
+    const cellKey = `${selectedCell.club}|${selectedCell.country}`;
+    const currentHintCount = (hintCounts[cellKey] || 0) + 1;
+    
+    // Maximum 5 hints per cell (reveals up to 6 letters, leaving at least 1 hidden)
+    if (currentHintCount > 5) {
+      setMessage('💡 Maximum hints reached for this cell!');
+      setMessageType('info');
+      return;
+    }
+
     try {
       setLoading(true);
       
-      // Get current hint count for this cell
-      const cellKey = `${selectedCell.club}|${selectedCell.country}`;
-      const currentHintCount = (hintCounts[cellKey] || 0) + 1;
-      
-      const response = await fetch(`http://127.0.0.1:5001/hint/${gameId}?club=${encodeURIComponent(selectedCell.club)}&country=${encodeURIComponent(selectedCell.country)}&hint_count=${currentHintCount}`);
+              const response = await fetch(`http://127.0.0.1:5001/hint/${gameId}?club=${encodeURIComponent(selectedCell.club)}&country=${encodeURIComponent(selectedCell.country)}&hint_count=${currentHintCount}`);
       const data = await response.json();
-
+      
       if (response.ok) {
         setHintText(data.hint);
         setHintDetails({ 
@@ -491,6 +502,81 @@ function App() {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleGiveUp = async () => {
+    console.log('Give up clicked, gameId:', gameId);
+    console.log('Current game state:', { gameId, clubs, countries, guesses });
+    
+    if (!gameId) {
+      setMessage('❌ No active game to give up on');
+      setMessageType('error');
+      return;
+    }
+
+    try {
+      setLoading(true);
+      console.log('Fetching give-up data for game:', gameId);
+      
+              // Fetch all answers from the backend
+        const response = await fetch(`http://127.0.0.1:5001/give-up/${gameId}`);
+      console.log('Give-up response status:', response.status);
+      
+      const data = await response.json();
+      console.log('Give-up response data:', data);
+
+      if (response.ok) {
+        // Fill in all remaining cells with the correct answers
+        const allAnswers = {};
+        data.answers.forEach(answer => {
+          const key = `${answer.club}|${answer.country}`;
+          allAnswers[key] = {
+            name: answer.player,
+            id: answer.id,
+            club: answer.club,
+            country: answer.country
+          };
+        });
+        
+        console.log('Setting all answers:', allAnswers);
+        console.log('Current guesses before:', guesses);
+        
+        // Merge with existing guesses to preserve any correct answers already given
+        const mergedGuesses = { ...guesses, ...allAnswers };
+        console.log('Merged guesses:', mergedGuesses);
+        
+        setGuesses(mergedGuesses);
+        setGiveUp(true);
+        setGameCompleted(true);
+        setMessage('🏳️ Game surrendered! All answers revealed.');
+        setMessageType('info');
+        
+        // Close the confirmation popup
+        setShowGiveUpConfirm(false);
+        
+        // Force a re-render by updating a state variable
+        setTimeout(() => {
+          console.log('Final guesses state:', mergedGuesses);
+        }, 100);
+      } else {
+        setMessage(`❌ ${data.error}`);
+        setMessageType('error');
+      }
+    } catch (error) {
+      console.error('Give-up error:', error);
+      setMessage('❌ Error giving up');
+      setMessageType('error');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const confirmGiveUp = () => {
+    setShowGiveUpConfirm(true);
+  };
+
+  const cancelGiveUp = () => {
+    setShowGiveUpConfirm(false);
   };
 
   const resetGame = async () => {
@@ -588,13 +674,47 @@ function App() {
           </div>
           
           <button 
-            className="btn btn-secondary" 
-            onClick={resetGame}
+            onClick={() => generateNewGame(difficulty)} 
+            className="btn btn-primary"
             disabled={loading}
           >
-            🔄 New Game
+            {loading ? 'Generating...' : 'NEW Game'}
+          </button>
+          
+          <button 
+            onClick={confirmGiveUp} 
+            className="btn btn-danger"
+            disabled={loading || !gameId || gameCompleted}
+          >
+            {loading ? 'Giving Up...' : '🏳️ Give Up'}
           </button>
         </div>
+
+        {/* Give Up Confirmation Modal */}
+        {showGiveUpConfirm && (
+          <div className="modal-overlay">
+            <div className="modal-content">
+              <h3>🏳️ Are you sure you want to give up?</h3>
+              <p>This will reveal all the answers and end the game.</p>
+              <div className="modal-buttons">
+                <button 
+                  onClick={handleGiveUp} 
+                  className="btn btn-danger"
+                  disabled={loading}
+                >
+                  {loading ? 'Giving Up...' : 'Yes, Give Up'}
+                </button>
+                <button 
+                  onClick={cancelGiveUp} 
+                  className="btn btn-secondary"
+                  disabled={loading}
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
         {loading && <div className="loading">Loading...</div>}
 
@@ -643,51 +763,51 @@ function App() {
           <div className={`guess-section ${isFadingOut ? 'fade-out' : ''}`}>
             <h2>Enter Your Guess</h2>
             <div className="input-field-container">
-              <div className="input-group">
+            <div className="input-group">
                 <label>Club</label>
-                <input
-                  type="text"
-                  value={clubInput}
-                  className="input-field"
-                  disabled={loading}
+              <input
+                type="text"
+                value={clubInput}
+                className="input-field"
+                disabled={loading}
                   readOnly
-                />
+              />
               </div>
               <div className="input-group">
                 <label>Country</label>
-                <input
-                  type="text"
-                  value={countryInput}
-                  className="input-field"
-                  disabled={loading}
+              <input
+                type="text"
+                value={countryInput}
+                className="input-field"
+                disabled={loading}
                   readOnly
-                />
+              />
               </div>
               <div className="input-group">
                 <label>Player Name</label>
-                <input
-                  type="text"
+              <input
+                type="text"
                   placeholder="Enter player name"
-                  value={playerInput}
-                  onChange={e => setPlayerInput(e.target.value)}
+                value={playerInput}
+                onChange={e => setPlayerInput(e.target.value)}
                   onKeyDown={e => {
                     if (e.key === 'Enter' && playerInput.trim()) {
                       handleGuess();
                     }
                   }}
-                  className="input-field"
-                  disabled={loading}
-                />
+                className="input-field"
+                disabled={loading}
+              />
               </div>
               <div className="btn-container">
-                <button 
+              <button 
                   type="button"
-                  onClick={handleGuess} 
-                  className="btn btn-primary"
-                  disabled={loading}
-                >
-                  {loading ? 'Submitting...' : 'Submit Guess'}
-                </button>
+                onClick={handleGuess} 
+                className="btn btn-primary"
+                disabled={loading}
+              >
+                {loading ? 'Submitting...' : 'Submit Guess'}
+              </button>
               </div>
             </div>
             
@@ -696,9 +816,13 @@ function App() {
                 type="button"
                 onClick={getHint} 
                 className="btn btn-secondary"
-                disabled={loading || !selectedCell}
+                disabled={loading || !selectedCell || (hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] || 0) >= 5}
               >
-                {loading ? 'Getting Hint...' : `💡 Get Hint ${hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] ? `#${hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] + 1}` : ''}`}
+                {loading ? 'Getting Hint...' : 
+                  (hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] || 0) >= 5 ? 
+                  '💡 Max Hints Reached' : 
+                  `💡 Get Hint ${hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] ? `#${hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] + 1}` : ''}`
+                }
               </button>
               {showHint && hintDetails && (
                 <div className="hint-display">
@@ -706,14 +830,22 @@ function App() {
                     <h3>💡 Hint #{hintDetails.hintCount}</h3>
                     <div className="hint-progress">
                       {hintDetails.totalLettersRevealed}/{hintDetails.nameLength} letters revealed
+                      {(hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] || 0) >= 5 && 
+                        <span className="max-hints-reached"> • Max reached</span>
+                      }
                     </div>
                   </div>
                   <div className="hint-text">{hintText}</div>
                   <div className="hint-location">
-                    <span className="hint-name">{hintDetails.club}</span>
-                    <span className="hint-separator">|</span>
-                    <span className="hint-name">{hintDetails.country}</span>
+                    <span className="hint-club">{hintDetails.club}</span>
+                    <span className="hint-separator">•</span>
+                    <span className="hint-country">{hintDetails.country}</span>
                   </div>
+                  {(hintCounts[`${selectedCell?.club}|${selectedCell?.country}`] || 0) >= 5 && (
+                    <div className="hint-limit-message">
+                      💡 You've reached the maximum hints for this cell. Try to guess the player!
+                    </div>
+                  )}
                 </div>
               )}
             </div>
