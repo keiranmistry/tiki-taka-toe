@@ -74,6 +74,9 @@ def generate_grid_endpoint():
     if clubs is None:
         return jsonify({"error": "Could not generate valid grid"}), 400
 
+    # Debug: Print difficulty information
+    print(f"Setting difficulty to: '{difficulty}' for game {game_id}")
+    
     # Store game state
     active_games[game_id] = {
         "clubs": clubs,
@@ -83,7 +86,8 @@ def generate_grid_endpoint():
         "completed": False,
         "score": 0,
         "hints_used": 0,
-        "total_hint_penalty": 0
+        "total_hint_penalty": 0,
+        "hint_positions": {}  # Track revealed letter positions for each cell
     }
 
     return jsonify({
@@ -148,6 +152,10 @@ def submit_guess():
             # Add points to score
             game["score"] += points
             
+            # Debug: Print scoring information
+            print(f"Difficulty: {game['difficulty']}, Points calculated: {points}")
+            print(f"Final score: {game['score']}")
+            
             # Store the guess
             game["guesses"][cell_key] = {
                 "name": full_name,
@@ -183,7 +191,9 @@ def get_game_state(game_id):
         "countries": game["countries"],
         "difficulty": game["difficulty"],
         "guesses": game["guesses"],
-        "completed": game["completed"]
+        "completed": game["completed"],
+        "score": game["score"],
+        "total_hint_penalty": game["total_hint_penalty"]
     })
 
 # === Endpoint to reset game ===
@@ -232,26 +242,44 @@ def get_hint(game_id):
     if len(matches) > 0:
         sample_player = matches.iloc[0]["name"]
 
-        # Create hangman-like hint that reveals random letters each time
+        # Create cumulative hangman-like hint that builds upon previous hints
         name_length = len(sample_player)
         
-        # For first hint: reveal 2 letters, for subsequent hints: reveal 1-2 more random letters
+        # Get or create the hint positions for this cell
+        cell_key = f"{club}|{country}"
+        if cell_key not in game["hint_positions"]:
+            game["hint_positions"][cell_key] = set()
+        
+        previously_revealed = game["hint_positions"][cell_key]
+        
+        # Apply hint penalty based on hint count
+        hint_penalty = hint_count  # 1st hint = -1, 2nd hint = -2, etc.
+        game["score"] = max(0, game["score"] - hint_penalty)  # Don't go below 0
+        game["total_hint_penalty"] += hint_penalty
+        
+        # Calculate how many new letters to reveal
         if hint_count == 1:
-            letters_to_reveal = 2
+            new_letters_to_reveal = 2
         else:
             # Add 1-2 more random letters for each additional hint
-            additional_letters = random.randint(1, 2)  # Random 1 or 2 more letters
-            letters_to_reveal = min(2 + additional_letters, name_length - 1)  # Leave at least 1 letter hidden
+            new_letters_to_reveal = random.randint(1, 2)
         
-        # Randomly select positions to reveal each time
-        positions = list(range(name_length))
-        random.shuffle(positions)
+        # Find positions that haven't been revealed yet
+        available_positions = [i for i in range(name_length) if i not in previously_revealed]
         
-        reveal_positions = positions[:letters_to_reveal]
+        # Randomly select new positions to reveal
+        if available_positions:
+            random.shuffle(available_positions)
+            new_reveal_positions = available_positions[:new_letters_to_reveal]
+            
+            # Add new positions to the previously revealed set
+            previously_revealed.update(new_reveal_positions)
+        else:
+            new_reveal_positions = []
 
         hint_string = ""
         for i, char in enumerate(sample_player):
-            if i in reveal_positions:
+            if i in previously_revealed:
                 hint_string += char
             elif char == " ":
                 hint_string += " "
@@ -264,8 +292,11 @@ def get_hint(game_id):
             "club": club,
             "country": country,
             "hint_count": hint_count,
-            "total_letters_revealed": letters_to_reveal,
-            "name_length": name_length
+            "total_letters_revealed": len(previously_revealed),
+            "name_length": name_length,
+            "current_score": game["score"],
+            "hint_penalty": hint_penalty,
+            "total_hint_penalty": game["total_hint_penalty"]
         })
 
     return jsonify({"error": "No players found for this combination"}), 400

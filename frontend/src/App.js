@@ -410,7 +410,7 @@ function App() {
           } 
         }));
         
-        setScore(prev => prev + 10);
+        setScore(prev => prev + data.points_earned);
         setMessage(`✅ Correct! ${data.player} played for ${clubInput} and nationally represents ${countryInput}`);
         setMessageType('success');
         
@@ -486,8 +486,8 @@ function App() {
           [cellKey]: currentHintCount
         }));
         
-        // Increasing penalty: 2 points for first hint, 3 for second, 4 for third, etc.
-        const penalty = Math.min(2 + (currentHintCount - 1), 5); // Cap at 5 points
+        // Penalty: 1 point for first hint, 2 for second, 3 for third, etc.
+        const penalty = currentHintCount; // 1st hint = -1, 2nd hint = -2, etc.
         setScore(prev => Math.max(0, prev - penalty));
         
         setMessage(`💡 Hint ${currentHintCount} received! (-${penalty} points)`);
