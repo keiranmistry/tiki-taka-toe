@@ -602,24 +602,25 @@ function App() {
     const isSelected = selectedCell && selectedCell.club === club && selectedCell.country === country;
     
     if (guess) {
+      console.log(`Rendering cell for ${club}|${country}:`, {
+        name: guess.name,
+        id: guess.id,
+        hasImage: !!guess.id
+      });
+    }
+    
+    if (guess) {
       return (
         <div className="cell-content">
           <div className="image-container">
-            <img
-              src={`https://img.a.transfermarkt.technology/portrait/header/${guess.id}.jpg`}
-              alt={guess.name}
-              className="player-image"
-              onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'block';
-              }}
-              onLoad={(e) => {
-                e.target.style.display = 'block';
-                e.target.nextSibling.style.display = 'none';
-              }}
-            />
-            <div className="player-name fallback-name">
-              {guess.name}
+            <div className="no-image-wrapper">
+              <div className="player-name primary-name">
+                {guess.name}
+              </div>
+            </div>
+            <div className="player-details">
+              <div className="player-club">{guess.club}</div>
+              <div className="player-country">{guess.country}</div>
             </div>
           </div>
         </div>
@@ -651,7 +652,7 @@ function App() {
     <div className="app">
       <div className="container">
         <header className="header">
-          <h1>⚽ Tiki Taka Toe</h1>
+          <h1>⚽ Soccer Tiki Taka Toe</h1>
           <p className="subtitle">Tic-Tac-Toe with a soccer-themed twist</p>
         </header>
 

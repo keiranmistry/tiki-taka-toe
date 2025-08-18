@@ -99,13 +99,9 @@ def generate_grid_endpoint():
 
 @app.route("/player-image/<int:player_id>")
 def player_image(player_id):
-    url = f"https://img.a.transfermarkt.technology/portrait/header/{player_id}.png"
-    try:
-        response = requests.get(url, timeout=5)
-        response.raise_for_status()
-        return send_file(BytesIO(response.content), mimetype="image/png")
-    except Exception:
-        return "Image not available", 404
+    # For now, return 404 to force fallback display
+    # The external image services are unreliable and return wrong images
+    return "Image not available", 404
 
 # === Endpoint to validate a player guess ===
 @app.route("/submit-guess", methods=["POST"])

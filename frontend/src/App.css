@@ -774,6 +774,66 @@ body {
 
 .fallback-name {
   display: none;
+  text-align: center;
+}
+
+.fallback-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.primary-name {
+  display: block;
+  color: #FFD700;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, rgba(14, 30, 91, 0.8), rgba(14, 30, 91, 0.6));
+  padding: 8px 12px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(10px);
+  animation: nameGlow 2s ease-in-out infinite alternate;
+}
+
+.player-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.player-club {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #87CEEB;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.player-country {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #98FB98;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.image-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
 }
 
 .player-image:not([src]) + .fallback-name,
@@ -1223,6 +1283,17 @@ body {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes nameGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    border-color: rgba(255, 215, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    border-color: rgba(255, 215, 0, 0.6);
   }
 }
 
