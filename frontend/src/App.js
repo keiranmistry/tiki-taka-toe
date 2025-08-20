@@ -24,6 +24,32 @@ function App() {
   const [giveUp, setGiveUp] = useState(false);
   const [selectedCell, setSelectedCell] = useState(null);
   const [showGiveUpConfirm, setShowGiveUpConfirm] = useState(false);
+  const [showStats, setShowStats] = useState(false);
+  
+  // Stats tracking
+  const [stats, setStats] = useState({
+    totalGames: 0,
+    completedGames: 0,
+    totalScore: 0,
+    averageScore: 0,
+    bestScore: 0,
+    gamesByDifficulty: { easy: 0, medium: 0, hard: 0 },
+    totalHintsUsed: 0,
+    currentStreak: 0,
+    bestStreak: 0
+  });
+
+  // Load stats on component mount
+  useEffect(() => {
+    loadStats();
+  }, []);
+
+  // Save stats whenever they change
+  useEffect(() => {
+    if (stats.totalGames > 0) {
+      saveStats(stats);
+    }
+  }, [stats]);
 
   // Function to convert country names to flag emojis
   const getCountryFlag = (countryName) => {
@@ -429,6 +455,11 @@ function App() {
           setGameCompleted(true);
           setMessage('🎉 Congratulations! You completed the grid!');
           setMessageType('success');
+          
+          // Update stats for completed game
+          const hintsUsed = Object.values(hintCounts).reduce((sum, count) => sum + count, 0);
+          updateStats(true, score + data.points_earned, difficulty, hintsUsed);
+          saveStats(stats);
         }
       } else if (response.status === 400) {
         setMessage(`❌ ${data.error}`);
@@ -548,10 +579,14 @@ function App() {
         setGuesses(mergedGuesses);
         setGiveUp(true);
         setGameCompleted(true);
-        setMessage('🏳️ Game surrendered! All answers revealed.');
+        setMessage('🏳️ Game ended. Here are all the answers:');
         setMessageType('info');
         
-        // Close the confirmation popup
+        // Update stats for given up game
+        const hintsUsed = Object.values(hintCounts).reduce((sum, count) => sum + count, 0);
+        updateStats(false, score, difficulty, hintsUsed);
+        saveStats(stats);
+        
         setShowGiveUpConfirm(false);
         
         // Force a re-render by updating a state variable
@@ -634,12 +669,89 @@ function App() {
     return className;
   };
 
+  // Function to update stats
+  const updateStats = (gameCompleted, finalScore, difficulty, hintsUsed) => {
+    setStats(prev => {
+      const newTotalGames = prev.totalGames + 1;
+      const newCompletedGames = prev.completedGames + (gameCompleted ? 1 : 0);
+      const newTotalScore = prev.totalScore + finalScore;
+      const newAverageScore = newTotalScore / newTotalGames;
+      const newBestScore = Math.max(prev.bestScore, finalScore);
+      const newGamesByDifficulty = {
+        ...prev.gamesByDifficulty,
+        [difficulty]: prev.gamesByDifficulty[difficulty] + 1
+      };
+      const newTotalHintsUsed = prev.totalHintsUsed + hintsUsed;
+      
+      // Update streaks
+      let newCurrentStreak, newBestStreak;
+      if (gameCompleted) {
+        newCurrentStreak = prev.currentStreak + 1;
+        newBestStreak = Math.max(prev.bestStreak, newCurrentStreak);
+      } else {
+        newCurrentStreak = 0;
+        newBestStreak = prev.bestStreak;
+      }
+      
+      return {
+        totalGames: newTotalGames,
+        completedGames: newCompletedGames,
+        totalScore: newTotalScore,
+        averageScore: Math.round(newAverageScore),
+        bestScore: newBestScore,
+        gamesByDifficulty: newGamesByDifficulty,
+        totalHintsUsed: newTotalHintsUsed,
+        currentStreak: newCurrentStreak,
+        bestStreak: newBestStreak
+      };
+    });
+  };
+
+  // Function to load stats from localStorage
+  const loadStats = () => {
+    const savedStats = localStorage.getItem('tikiTakaToeStats');
+    if (savedStats) {
+      setStats(JSON.parse(savedStats));
+    }
+  };
+
+  // Function to save stats to localStorage
+  const saveStats = (newStats) => {
+    localStorage.setItem('tikiTakaToeStats', JSON.stringify(newStats));
+  };
+
+  // Function to reset stats
+  const resetStats = () => {
+    const defaultStats = {
+      totalGames: 0,
+      completedGames: 0,
+      totalScore: 0,
+      averageScore: 0,
+      bestScore: 0,
+      gamesByDifficulty: { easy: 0, medium: 0, hard: 0 },
+      totalHintsUsed: 0,
+      currentStreak: 0,
+      bestStreak: 0
+    };
+    setStats(defaultStats);
+    saveStats(defaultStats);
+  };
+
   return (
     <div className="app">
       <div className="container">
         <header className="header">
           <h1>⚽ Soccer Tiki Taka Toe</h1>
           <p className="subtitle">Tic-Tac-Toe with a soccer-themed twist</p>
+          
+          {/* Quick Stats Preview */}
+          {stats.totalGames > 0 && (
+            <div className="quick-stats">
+              <span className="stat-preview">🔥 {stats.currentStreak} streak</span>
+              <span className="stat-preview">🏆 {stats.bestScore} best</span>
+              <span className="stat-preview">📊 {stats.completedGames}/{stats.totalGames} wins</span>
+            </div>
+          )}
         </header>
 
         <div className="game-controls">
@@ -658,6 +770,11 @@ function App() {
           
           <div className="score-display">
             <span>Score: {score}</span>
+            {Object.keys(guesses).length > 0 && (
+              <span className="progress-indicator">
+                {Object.keys(guesses).length}/9 cells filled
+              </span>
+            )}
           </div>
           
           <button 
@@ -665,7 +782,7 @@ function App() {
             className="btn btn-primary"
             disabled={loading}
           >
-            {loading ? 'Generating...' : 'NEW Game'}
+            {loading ? 'Generating...' : '🔄 NEW Game'}
           </button>
           
           <button 
@@ -674,6 +791,13 @@ function App() {
             disabled={loading || !gameId || gameCompleted}
           >
             {loading ? 'Giving Up...' : '🏳️ Give Up'}
+          </button>
+          
+          <button 
+            onClick={() => setShowStats(true)} 
+            className="btn btn-info"
+          >
+            📊 Stats
           </button>
         </div>
 
@@ -684,20 +808,73 @@ function App() {
               <h3>🏳️ Are you sure you want to give up?</h3>
               <p>This will reveal all the answers and end the game.</p>
               <div className="modal-buttons">
-                <button 
-                  onClick={handleGiveUp} 
-                  className="btn btn-danger"
-                  disabled={loading}
-                >
-                  {loading ? 'Giving Up...' : 'Yes, Give Up'}
-                </button>
-                <button 
-                  onClick={cancelGiveUp} 
-                  className="btn btn-secondary"
-                  disabled={loading}
-                >
-                  Cancel
-                </button>
+                <button onClick={handleGiveUp} className="btn btn-danger">Yes, Give Up</button>
+                <button onClick={() => setShowGiveUpConfirm(false)} className="btn btn-secondary">Cancel</button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Stats Modal */}
+        {showStats && (
+          <div className="modal-overlay">
+            <div className="modal-content stats-modal">
+              <h3>📊 Your Game Statistics</h3>
+              
+              <div className="stats-grid">
+                <div className="stat-card">
+                  <div className="stat-number">{stats.totalGames}</div>
+                  <div className="stat-label">🎮 Total Games</div>
+                </div>
+                
+                <div className="stat-card">
+                  <div className="stat-number">{stats.completedGames}</div>
+                  <div className="stat-label">🏆 Completed</div>
+                </div>
+                
+                <div className="stat-card">
+                  <div className="stat-number">{stats.totalScore}</div>
+                  <div className="stat-label">💯 Total Score</div>
+                </div>
+                
+                <div className="stat-card">
+                  <div className="stat-number">{stats.averageScore}</div>
+                  <div className="stat-label">📊 Avg Score</div>
+                </div>
+                
+                <div className="stat-card">
+                  <div className="stat-number">{stats.bestScore}</div>
+                  <div className="stat-label">👑 Best Score</div>
+                </div>
+                
+                <div className="stat-card">
+                  <div className="stat-number">{stats.currentStreak}</div>
+                  <div className="stat-label">🔥 Current Streak</div>
+                </div>
+                
+                <div className="stat-card">
+                  <div className="stat-number">{stats.bestStreak}</div>
+                  <div className="stat-label">🚀 Best Streak</div>
+                </div>
+                
+                <div className="stat-card">
+                  <div className="stat-number">{stats.totalHintsUsed}</div>
+                  <div className="stat-label">💡 Hints Used</div>
+                </div>
+              </div>
+              
+              <div className="difficulty-breakdown">
+                <h4>Games by Difficulty:</h4>
+                <div className="difficulty-stats">
+                  <span>Easy: {stats.gamesByDifficulty.easy}</span>
+                  <span>Medium: {stats.gamesByDifficulty.medium}</span>
+                  <span>Hard: {stats.gamesByDifficulty.hard}</span>
+                </div>
+              </div>
+              
+              <div className="modal-buttons">
+                <button onClick={resetStats} className="btn btn-danger">Reset Stats</button>
+                <button onClick={() => setShowStats(false)} className="btn btn-secondary">Close</button>
               </div>
             </div>
           </div>
