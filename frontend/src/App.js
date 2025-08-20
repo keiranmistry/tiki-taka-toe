@@ -1019,8 +1019,9 @@ function App() {
             <li><strong>Click any empty square</strong> to select the club and country</li>
             <li>Enter a player name who has played for that club AND is from that country</li>
             <li>You can use full names or last names</li>
-            <li>Get hints if you're stuck (costs 2 points)</li>
+            <li>Get hints if you're stuck (1st hint: -1 point, 2nd hint: -2 points, etc.)</li>
             <li>Complete all 9 cells to win!</li>
+            <li><strong>Scoring:</strong> Easy: 20pts, Medium: 50pts, Hard: 100pts per correct answer</li>
           </ul>
         </div>
       </div>
