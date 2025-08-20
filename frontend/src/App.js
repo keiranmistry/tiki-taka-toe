@@ -2,27 +2,34 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
+  // Game state
   const [clubs, setClubs] = useState([]);
   const [countries, setCountries] = useState([]);
   const [guesses, setGuesses] = useState({});
+  const [gameId, setGameId] = useState(null);
+  const [gameCompleted, setGameCompleted] = useState(false);
+  const [score, setScore] = useState(0);
+  
+  // Input state
   const [clubInput, setClubInput] = useState('');
   const [countryInput, setCountryInput] = useState('');
   const [playerInput, setPlayerInput] = useState('');
+  const [selectedCell, setSelectedCell] = useState(null);
+  
+  // UI state
   const [message, setMessage] = useState('');
   const [messageType, setMessageType] = useState('info');
+  const [loading, setLoading] = useState(false);
   const [difficulty, setDifficulty] = useState('easy');
-  const [gameId, setGameId] = useState(null);
-  const [gameCompleted, setGameCompleted] = useState(false);
+  
+  // Hint system
   const [showHint, setShowHint] = useState(false);
   const [hintText, setHintText] = useState('');
   const [hintDetails, setHintDetails] = useState(null);
-  const [hints, setHints] = useState({});
-  const [isFadingOut, setIsFadingOut] = useState(false);
   const [hintCounts, setHintCounts] = useState({});
-  const [loading, setLoading] = useState(false);
-  const [score, setScore] = useState(0);
-  const [giveUp, setGiveUp] = useState(false);
-  const [selectedCell, setSelectedCell] = useState(null);
+  const [isFadingOut, setIsFadingOut] = useState(false);
+  
+  // Modal state
   const [showGiveUpConfirm, setShowGiveUpConfirm] = useState(false);
   const [showStats, setShowStats] = useState(false);
   
@@ -47,7 +54,7 @@ function App() {
   // Save stats whenever they change
   useEffect(() => {
     if (stats.totalGames > 0) {
-      saveStats(stats);
+      localStorage.setItem('tikiTakaToeStats', JSON.stringify(stats));
     }
   }, [stats]);
 
@@ -330,14 +337,14 @@ function App() {
     setShowHint(false);
       setHintText('');
       setHintDetails(null);
-      setHints({});
       setIsFadingOut(false); // Reset fade-out state
       setHintCounts({}); // Reset hint counts
-      setGiveUp(false); // Reset give up state
       
       // Generate a unique game ID
       const newGameId = `game_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+      setGameId(newGameId);
       
+      // Store the new game data
       const response = await fetch(`http://127.0.0.1:5001/generate-grid?difficulty=${difficultyLevel}&game_id=${newGameId}`);
       const data = await response.json();
       
@@ -346,10 +353,6 @@ function App() {
         setClubs(data.clubs);
         setCountries(data.countries);
         setDifficulty(data.difficulty);
-        console.log('Game ID set to:', newGameId);
-        console.log('Backend response data:', data);
-        console.log('Clubs:', data.clubs);
-        console.log('Countries:', data.countries);
         setMessage('🎮 New game generated! Click any square to start playing.');
         setMessageType('success');
       } else {
@@ -459,7 +462,6 @@ function App() {
           // Update stats for completed game
           const hintsUsed = Object.values(hintCounts).reduce((sum, count) => sum + count, 0);
           updateStats(true, score + data.points_earned, difficulty, hintsUsed);
-          saveStats(stats);
         }
       } else if (response.status === 400) {
         setMessage(`❌ ${data.error}`);
@@ -536,8 +538,6 @@ function App() {
   };
 
   const handleGiveUp = async () => {
-    console.log('Give up clicked, gameId:', gameId);
-    console.log('Current game state:', { gameId, clubs, countries, guesses });
     
     if (!gameId) {
       setMessage('❌ No active game to give up on');
@@ -547,14 +547,11 @@ function App() {
 
     try {
       setLoading(true);
-      console.log('Fetching give-up data for game:', gameId);
       
               // Fetch all answers from the backend
         const response = await fetch(`http://127.0.0.1:5001/give-up/${gameId}`);
-      console.log('Give-up response status:', response.status);
       
       const data = await response.json();
-      console.log('Give-up response data:', data);
 
       if (response.ok) {
         // Fill in all remaining cells with the correct answers
@@ -569,15 +566,10 @@ function App() {
           };
         });
         
-        console.log('Setting all answers:', allAnswers);
-        console.log('Current guesses before:', guesses);
-        
         // Merge with existing guesses to preserve any correct answers already given
         const mergedGuesses = { ...guesses, ...allAnswers };
-        console.log('Merged guesses:', mergedGuesses);
         
         setGuesses(mergedGuesses);
-        setGiveUp(true);
         setGameCompleted(true);
         setMessage('🏳️ Game ended. Here are all the answers:');
         setMessageType('info');
@@ -585,20 +577,11 @@ function App() {
         // Update stats for given up game
         const hintsUsed = Object.values(hintCounts).reduce((sum, count) => sum + count, 0);
         updateStats(false, score, difficulty, hintsUsed);
-        saveStats(stats);
-        
-        setShowGiveUpConfirm(false);
-        
-        // Force a re-render by updating a state variable
-        setTimeout(() => {
-          console.log('Final guesses state:', mergedGuesses);
-        }, 100);
       } else {
         setMessage(`❌ ${data.error}`);
         setMessageType('error');
       }
     } catch (error) {
-      console.error('Give-up error:', error);
       setMessage('❌ Error giving up');
       setMessageType('error');
     } finally {
@@ -715,11 +698,6 @@ function App() {
     }
   };
 
-  // Function to save stats to localStorage
-  const saveStats = (newStats) => {
-    localStorage.setItem('tikiTakaToeStats', JSON.stringify(newStats));
-  };
-
   // Function to reset stats
   const resetStats = () => {
     const defaultStats = {
@@ -734,7 +712,7 @@ function App() {
       bestStreak: 0
     };
     setStats(defaultStats);
-    saveStats(defaultStats);
+    localStorage.setItem('tikiTakaToeStats', JSON.stringify(defaultStats));
   };
 
   return (
