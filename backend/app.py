@@ -99,9 +99,148 @@ def generate_grid_endpoint():
 
 @app.route("/player-image/<int:player_id>")
 def player_image(player_id):
-    # For now, return 404 to force fallback display
-    # The external image services are unreliable and return wrong images
-    return "Image not available", 404
+    try:
+        # Find the player by ID in our dataset
+        player_row = df[df['player_id'] == player_id]
+        if player_row.empty:
+            return "Player not found", 404
+        
+        player_name = player_row.iloc[0]['name']
+        
+        # Search for player image using DuckDuckGo Images API
+        # Format: "player name fotmob" for better football-specific results
+        search_query = f"{player_name} fotmob"
+        
+        # DuckDuckGo Images API endpoint
+        api_url = "https://api.duckduckgo.com/"
+        params = {
+            'q': search_query,
+            'format': 'json',
+            'no_html': '1',
+            'skip_disambig': '1'
+        }
+        
+        response = requests.get(api_url, params=params, timeout=10)
+        response.raise_for_status()
+        
+        data = response.json()
+        
+        # Extract image results
+        if 'Image' in data and data['Image']:
+            image_url = data['Image']
+            return jsonify({
+                'image_url': image_url,
+                'player_name': player_name,
+                'search_query': search_query
+            })
+        elif 'RelatedTopics' in data and data['RelatedTopics']:
+            # Look for image URLs in related topics
+            for topic in data['RelatedTopics']:
+                if 'Icon' in topic and topic['Icon']['URL']:
+                    image_url = topic['Icon']['URL']
+                    return jsonify({
+                        'image_url': image_url,
+                        'player_name': player_name,
+                        'search_query': search_query
+                    })
+        
+        # Fallback: return search query for manual search
+        return jsonify({
+            'search_query': search_query,
+            'player_name': player_name,
+            'message': 'No image found, but you can search manually'
+        })
+        
+    except requests.RequestException as e:
+        print(f"Error fetching player image: {e}")
+        return jsonify({
+            'error': 'Failed to fetch image',
+            'player_name': player_name if 'player_name' in locals() else 'Unknown',
+            'message': 'Try searching manually'
+        }), 500
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        return jsonify({
+            'error': 'Internal server error',
+            'message': 'Try searching manually'
+        }), 500
+
+# === Endpoint to search for player image by name ===
+@app.route("/search-player-image")
+def search_player_image():
+    try:
+        player_name = request.args.get('name', '').strip()
+        if not player_name:
+            return jsonify({'error': 'Player name is required'}), 400
+        
+        # Try multiple search strategies for better results
+        search_queries = [
+            f"{player_name} fotmob",
+            f"{player_name} football player",
+            f"{player_name} soccer player",
+            f"{player_name} transfermarkt"
+        ]
+        
+        # DuckDuckGo Images API endpoint
+        api_url = "https://api.duckduckgo.com/"
+        
+        for search_query in search_queries:
+            params = {
+                'q': search_query,
+                'format': 'json',
+                'no_html': '1',
+                'skip_disambig': '1'
+            }
+            
+            try:
+                response = requests.get(api_url, params=params, timeout=5)
+                response.raise_for_status()
+                data = response.json()
+                
+                # Extract image results
+                if 'Image' in data and data['Image']:
+                    image_url = data['Image']
+                    return jsonify({
+                        'image_url': image_url,
+                        'player_name': player_name,
+                        'search_query': search_query,
+                        'source': 'duckduckgo'
+                    })
+                elif 'RelatedTopics' in data and data['RelatedTopics']:
+                    # Look for image URLs in related topics
+                    for topic in data['RelatedTopics']:
+                        if 'Icon' in topic and topic['Icon']['URL']:
+                            image_url = topic['Icon']['URL']
+                            return jsonify({
+                                'image_url': image_url,
+                                'player_name': player_name,
+                                'search_query': search_query,
+                                'source': 'duckduckgo'
+                            })
+            except:
+                continue
+        
+        # If no images found, return search links for manual searching
+        search_links = {
+            'google': f"https://www.google.com/search?q={'+'.join(player_name.split())}+fotmob&tbm=isch",
+            'duckduckgo': f"https://duckduckgo.com/?q={'+'.join(player_name.split())}+fotmob&iax=images&ia=images",
+            'bing': f"https://www.bing.com/images/search?q={'+'.join(player_name.split())}+fotmob"
+        }
+        
+        return jsonify({
+            'player_name': player_name,
+            'search_queries': search_queries,
+            'search_links': search_links,
+            'message': 'No image found automatically. Use the search links to find manually.',
+            'tip': 'Try searching "player name fotmob" for best football-specific results'
+        })
+        
+    except Exception as e:
+        print(f"Unexpected error in search_player_image: {e}")
+        return jsonify({
+            'error': 'Internal server error',
+            'message': 'Try searching manually'
+        }), 500
 
 # === Endpoint to validate a player guess ===
 @app.route("/submit-guess", methods=["POST"])

@@ -602,25 +602,11 @@ function App() {
     const isSelected = selectedCell && selectedCell.club === club && selectedCell.country === country;
     
     if (guess) {
-      console.log(`Rendering cell for ${club}|${country}:`, {
-        name: guess.name,
-        id: guess.id,
-        hasImage: !!guess.id
-      });
-    }
-    
-    if (guess) {
       return (
         <div className="cell-content">
-          <div className="image-container">
-            <div className="no-image-wrapper">
-              <div className="player-name primary-name">
-                {guess.name}
-              </div>
-            </div>
-            <div className="player-details">
-              <div className="player-club">{guess.club}</div>
-              <div className="player-country">{guess.country}</div>
+          <div className="player-name-display">
+            <div className="player-name">
+              {guess.name}
             </div>
           </div>
         </div>

@@ -836,6 +836,32 @@ body {
   min-height: 80px;
 }
 
+.no-image-wrapper.hidden {
+  display: none;
+}
+
+.search-links {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.search-links small {
+  color: #87CEEB;
+  font-size: 0.8rem;
+}
+
+.search-links a {
+  color: #98FB98;
+  text-decoration: none;
+  margin: 0 4px;
+  transition: color 0.3s ease;
+}
+
+.search-links a:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
 .player-image:not([src]) + .fallback-name,
 .player-image[src=""] + .fallback-name {
   display: block;
@@ -1983,4 +2009,24 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.player-name-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  padding: 8px;
+}
+
+.player-name {
+  font-family: 'Champions', 'Arial', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3B82F6;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
