@@ -1,5 +1,10 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Flask, request, jsonify, send_file
+try:
+    from flask_cors import CORS
+except ImportError:
+    # Fallback for environments where flask_cors might not be available
+    print("Warning: flask_cors not available, CORS will be disabled")
+    CORS = lambda app: None
 import pandas as pd
 import random
 import os
@@ -7,8 +12,8 @@ from data.valid_pairs import VALID_PAIRS
 from difficulty import easy_clubs, medium_clubs, hard_clubs, easy_countries, medium_countries, hard_countries
 
 import requests
-from flask import send_file
 from io import BytesIO
+from typing import Dict, List, Optional, Tuple, Any
 
 # Define app first
 app = Flask(__name__)

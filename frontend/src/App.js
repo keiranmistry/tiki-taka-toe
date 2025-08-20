@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import './App.css';
 
 function App() {
@@ -322,19 +322,19 @@ function App() {
     return "⚽"; // Fallback for unknown clubs
   };
 
-  const generateNewGame = async (difficultyLevel = difficulty) => {
+  const generateNewGame = useCallback(async (difficultyLevel = difficulty) => {
     try {
-    setLoading(true);
-    setMessage('');
+      setLoading(true);
+      setMessage('');
       setMessageType('');
-    setGuesses({});
-    setGameCompleted(false);
-    setScore(0);
+      setGuesses({});
+      setGameCompleted(false);
+      setScore(0);
       setSelectedCell(null);
       setClubInput('');
       setCountryInput('');
       setPlayerInput('');
-    setShowHint(false);
+      setShowHint(false);
       setHintText('');
       setHintDetails(null);
       setIsFadingOut(false); // Reset fade-out state
@@ -365,11 +365,12 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [difficulty]);
 
+  // Generate initial game
   useEffect(() => {
     generateNewGame('easy');
-  }, []);
+  }, [generateNewGame]);
 
   const handleCellClick = (club, country) => {
     if (!gameId) return;
@@ -593,22 +594,6 @@ function App() {
     setShowGiveUpConfirm(true);
   };
 
-  const cancelGiveUp = () => {
-    setShowGiveUpConfirm(false);
-  };
-
-  const resetGame = async () => {
-    if (!gameId) return;
-    
-    try {
-      await fetch(`http://127.0.0.1:5001/reset-game/${gameId}`);
-      generateNewGame(difficulty);
-    } catch (error) {
-      setMessage('❌ Error resetting game');
-      setMessageType('error');
-    }
-  };
-
   const handleDifficultyChange = (newDifficulty) => {
     setDifficulty(newDifficulty);
     generateNewGame(newDifficulty);
@@ -617,7 +602,6 @@ function App() {
   const getCellContent = (club, country) => {
     const key = `${club}|${country}`;
     const guess = guesses[key];
-    const isSelected = selectedCell && selectedCell.club === club && selectedCell.country === country;
     
     if (guess) {
       return (
