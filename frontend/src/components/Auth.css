@@ -226,6 +226,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   height: 56px;
+  font-family: 'Champions', 'Arial', sans-serif;
 }
 
 .guest-button {
@@ -237,6 +238,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   height: 56px;
+  font-family: 'Champions', 'Arial', sans-serif;
   background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
   border: 2px solid rgba(76, 175, 80, 0.3);
   box-shadow: 
@@ -310,6 +312,7 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-family: 'Champions', 'Arial', sans-serif;
 }
 
 .toggle-button:hover {
