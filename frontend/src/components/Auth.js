@@ -33,7 +33,7 @@ const Auth = ({ onLogin, onGuest }) => {
       const endpoint = isLogin ? '/auth/login' : '/auth/register';
       const payload = { username: formData.username, password: formData.password };
 
-      const response = await fetch(`http://localhost:5001${endpoint}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

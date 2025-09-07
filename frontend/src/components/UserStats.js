@@ -19,7 +19,7 @@ const UserStats = ({ user, onLogout }) => {
         return;
       }
 
-      const response = await fetch('http://localhost:5001/auth/stats', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/auth/stats`, {
         headers: {
           'Authorization': `Bearer ${sessionToken}`,
         },
@@ -42,7 +42,7 @@ const UserStats = ({ user, onLogout }) => {
     try {
       const sessionToken = localStorage.getItem('sessionToken');
       if (sessionToken) {
-        await fetch('http://localhost:5001/auth/logout', {
+        await fetch(`${process.env.REACT_APP_API_URL}/auth/logout`, {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${sessionToken}`,

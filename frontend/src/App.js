@@ -76,7 +76,7 @@ function App() {
     if (sessionToken && userData) {
       try {
         // Verify the session is still valid
-        const response = await fetch('http://localhost:5001/auth/profile', {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/auth/profile`, {
           headers: {
             'Authorization': `Bearer ${sessionToken}`,
           },
@@ -410,7 +410,7 @@ function App() {
       setGameId(newGameId);
       
       // Store the new game data
-      const response = await fetch(`http://127.0.0.1:5001/generate-grid?difficulty=${difficultyLevel}&game_id=${newGameId}`);
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/generate-grid?difficulty=${difficultyLevel}&game_id=${newGameId}`);
       const data = await response.json();
       
       if (response.ok) {
@@ -492,7 +492,7 @@ function App() {
         requestBody.user_id = user.id;
       }
 
-      const response = await fetch("http://127.0.0.1:5001/submit-guess", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/submit-guess`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -574,7 +574,7 @@ function App() {
     try {
       setLoading(true);
       
-              const response = await fetch(`http://127.0.0.1:5001/hint/${gameId}?club=${encodeURIComponent(selectedCell.club)}&country=${encodeURIComponent(selectedCell.country)}&hint_count=${currentHintCount}`);
+              const response = await fetch(`${process.env.REACT_APP_API_URL}/hint/${gameId}?club=${encodeURIComponent(selectedCell.club)}&country=${encodeURIComponent(selectedCell.country)}&hint_count=${currentHintCount}`);
       const data = await response.json();
       
       if (response.ok) {
@@ -624,7 +624,7 @@ function App() {
       setLoading(true);
       
               // Fetch all answers from the backend
-        const response = await fetch(`http://127.0.0.1:5001/give-up/${gameId}`);
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/give-up/${gameId}`);
       
       const data = await response.json();
 
