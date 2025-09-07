@@ -2,5 +2,9 @@
     "python.defaultInterpreterPath": "./backend/venv/bin/python",
     "python.terminal.activateEnvironment": true,
     "python.analysis.extraPaths": ["./backend"],
-    "python.analysis.autoImportCompletions": true
+    "python.analysis.autoImportCompletions": true,
+    "cursorpyright.analysis.autoImportCompletions": true,
+    "cursorpyright.analysis.extraPaths": [
+        "./backend"
+    ]
 }

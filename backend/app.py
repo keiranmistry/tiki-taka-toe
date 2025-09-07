@@ -8,18 +8,35 @@ except ImportError:
 import pandas as pd
 import random
 import os
+from datetime import datetime
 from data.valid_pairs import VALID_PAIRS
 from difficulty import easy_clubs, medium_clubs, hard_clubs, easy_countries, medium_countries, hard_countries
+from models import db, User, GameStats, UserSession
+from auth import require_auth, register_user, authenticate_user, logout_user, get_user_stats
 
 import requests
 from io import BytesIO
 from typing import Dict, List, Optional, Tuple, Any
 
-# Define app first
-app = Flask(__name__)
+def create_app():
+    """Application factory function"""
+    app = Flask(__name__)
+    
+    # Configuration
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///tiki_taka_toe.db')
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    
+    # Initialize extensions
+    db.init_app(app)
+    
+    # Enable CORS
+    CORS(app)
+    
+    return app
 
-# THEN enable CORS
-CORS(app)
+# Create the app instance
+app = create_app()
 
 # === Load cleaned player data ===
 DATA_PATH = os.path.join("data", "cleaned_players.csv")
@@ -32,6 +49,70 @@ active_games = {}
 @app.route("/")
 def home():
     return "Backend is working!"
+
+# === Authentication endpoints ===
+@app.route("/auth/register", methods=["POST"])
+def register():
+    """Register a new user"""
+    data = request.get_json()
+    
+    if not data:
+        return jsonify({"error": "No data provided"}), 400
+    
+    username = data.get("username", "").strip()
+    email = data.get("email", "").strip() or None  # Make email optional
+    password = data.get("password", "")
+    
+    if not username or not password:
+        return jsonify({"error": "Username and password are required"}), 400
+    
+    if len(password) < 6:
+        return jsonify({"error": "Password must be at least 6 characters long"}), 400
+    
+    result, status_code = register_user(username, password, email)
+    return jsonify(result), status_code
+
+@app.route("/auth/login", methods=["POST"])
+def login():
+    """Authenticate a user"""
+    data = request.get_json()
+    
+    if not data:
+        return jsonify({"error": "No data provided"}), 400
+    
+    username = data.get("username", "").strip()
+    password = data.get("password", "")
+    
+    if not username or not password:
+        return jsonify({"error": "Username and password are required"}), 400
+    
+    result, status_code = authenticate_user(username, password)
+    return jsonify(result), status_code
+
+@app.route("/auth/logout", methods=["POST"])
+@require_auth
+def logout():
+    """Logout a user"""
+    auth_header = request.headers.get('Authorization')
+    session_token = auth_header.split(' ')[1]
+    
+    result, status_code = logout_user(session_token)
+    return jsonify(result), status_code
+
+@app.route("/auth/profile")
+@require_auth
+def get_profile():
+    """Get current user profile"""
+    user = request.current_user
+    return jsonify(user.to_dict())
+
+@app.route("/auth/stats")
+@require_auth
+def get_stats():
+    """Get current user statistics"""
+    user = request.current_user
+    result, status_code = get_user_stats(user.id)
+    return jsonify(result), status_code
 
 # === Helper to generate a valid grid ===
 def generate_grid(clubs, countries):
@@ -92,7 +173,8 @@ def generate_grid_endpoint():
         "score": 0,
         "hints_used": 0,
         "total_hint_penalty": 0,
-        "hint_positions": {}  # Track revealed letter positions for each cell
+        "hint_positions": {},  # Track revealed letter positions for each cell
+        "start_time": datetime.utcnow()  # Track when game started
     }
 
     return jsonify({
@@ -247,6 +329,45 @@ def search_player_image():
             'message': 'Try searching manually'
         }), 500
 
+# === Helper to save game stats ===
+def save_game_stats(game_id, user_id=None):
+    """Save completed game statistics to database"""
+    if game_id not in active_games:
+        return False
+    
+    game = active_games[game_id]
+    
+    # Calculate time taken
+    start_time = game.get("start_time")
+    if start_time:
+        time_taken = int((datetime.utcnow() - start_time).total_seconds())
+    else:
+        time_taken = 0
+    
+    try:
+        # Create game stats record
+        game_stat = GameStats(
+            user_id=user_id,
+            game_id=game_id,
+            difficulty=game["difficulty"],
+            score=game["score"],
+            hints_used=game["hints_used"],
+            hint_penalty=game["total_hint_penalty"],
+            completed=game["completed"],
+            time_taken=time_taken
+        )
+        
+        db.session.add(game_stat)
+        db.session.commit()
+        
+        print(f"Game stats saved for game {game_id}")
+        return True
+        
+    except Exception as e:
+        print(f"Error saving game stats: {e}")
+        db.session.rollback()
+        return False
+
 # === Endpoint to validate a player guess ===
 @app.route("/submit-guess", methods=["POST"])
 def submit_guess():
@@ -255,6 +376,7 @@ def submit_guess():
     country = data.get("country", "").strip()
     player_input = data.get("player", "").strip()
     game_id = data.get("game_id", "default")
+    user_id = data.get("user_id")  # Optional user ID for tracking
 
     # Validate game exists
     if game_id not in active_games:
@@ -307,6 +429,11 @@ def submit_guess():
             # Check if game is complete
             if len(game["guesses"]) == 9:
                 game["completed"] = True
+                # Save game stats if user is logged in
+                if user_id:
+                    save_game_stats(game_id, user_id)
+                else:
+                    save_game_stats(game_id)  # Save as anonymous game
             
             return jsonify({
                 "result": "correct", 
@@ -396,6 +523,7 @@ def get_hint(game_id):
         hint_penalty = hint_count  # 1st hint = -1, 2nd hint = -2, etc.
         game["score"] = max(0, game["score"] - hint_penalty)  # Don't go below 0
         game["total_hint_penalty"] += hint_penalty
+        game["hints_used"] += 1
         
         # Calculate how many new letters to reveal
         if hint_count == 1:

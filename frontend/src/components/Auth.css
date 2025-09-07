@@ -1,0 +1,505 @@
+/* Auth Component - Liquid Glass Design */
+.auth-wrapper {
+  min-height: 100vh;
+  background: #0E1E5B url('../assets/uefa-champions-league-star-football-logo-8dv90jbvwwhzp9c0.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(14, 30, 91, 0.8) 0%, 
+    rgba(14, 30, 91, 0.6) 50%, 
+    rgba(14, 30, 91, 0.7) 100%);
+  pointer-events: none;
+}
+
+.auth-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 500px;
+}
+
+.auth-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.auth-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Champions', 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.auth-header .subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.auth-description {
+  font-size: 1rem;
+  opacity: 0.8;
+  max-width: 400px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+/* Liquid Glass Auth Card */
+.auth-card {
+  background: linear-gradient(135deg, 
+    rgba(53, 98, 166, 0.9) 0%, 
+    rgba(53, 98, 166, 0.7) 25%, 
+    rgba(53, 98, 166, 0.8) 50%, 
+    rgba(53, 98, 166, 0.6) 75%, 
+    rgba(53, 98, 166, 0.9) 100%);
+  backdrop-filter: blur(30px) saturate(180%);
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 8px 32px rgba(31, 38, 135, 0.37);
+  position: relative;
+  overflow: hidden;
+  animation: liquidBorder 8s ease-in-out infinite, glassFloat 6s ease-in-out infinite;
+  padding: 40px;
+}
+
+.auth-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: liquidRipple 10s linear infinite;
+  pointer-events: none;
+}
+
+.auth-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    transparent 30%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    transparent 70%);
+  animation: liquidFlow 12s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.auth-card-header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-card-header h2 {
+  color: #FFFFFF;
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-family: 'Champions', 'Arial', sans-serif;
+}
+
+.auth-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Form Styling */
+.auth-form {
+  position: relative;
+  z-index: 1;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Liquid Glass Input Fields */
+.input-field {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95) 0%, 
+    rgba(255, 255, 255, 0.9) 50%, 
+    rgba(255, 255, 255, 0.95) 100%);
+  color: #0E1E5B;
+  backdrop-filter: blur(15px) saturate(120%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Champions', 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+.input-field::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    transparent 30%, 
+    rgba(53, 98, 166, 0.1) 50%, 
+    transparent 70%);
+  animation: liquidFlow 18s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3562A6;
+  box-shadow: 
+    0 0 0 3px rgba(53, 98, 166, 0.2),
+    0 8px 25px rgba(53, 98, 166, 0.3);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.input-field:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.input-field::placeholder {
+  color: rgba(14, 30, 91, 0.6);
+  font-style: italic;
+}
+
+/* Button Styling */
+.auth-submit {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px 28px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 56px;
+}
+
+.guest-button {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 16px 28px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 56px;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  border: 2px solid rgba(76, 175, 80, 0.3);
+  box-shadow: 
+    0 8px 25px rgba(76, 175, 80, 0.3),
+    0 0 0 1px rgba(76, 175, 80, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.guest-button:hover {
+  background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.5);
+}
+
+/* Auth Divider */
+.auth-divider {
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.auth-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.3), 
+    transparent);
+}
+
+.auth-divider span {
+  background: linear-gradient(135deg, 
+    rgba(53, 98, 166, 0.9) 0%, 
+    rgba(53, 98, 166, 0.7) 100%);
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Auth Toggle */
+.auth-toggle {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-toggle p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #FFD700;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.toggle-button:hover {
+  color: #FFF;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Error Message */
+.error-message {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 2px solid rgba(255, 107, 53, 0.3);
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  position: relative;
+  z-index: 1;
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes liquidFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    background-position: 100% 50%;
+    transform: translateY(-2px) rotate(0.5deg);
+  }
+  50% {
+    background-position: 50% 100%;
+    transform: translateY(1px) rotate(-0.3deg);
+  }
+  75% {
+    background-position: 50% 0%;
+    transform: translateY(-1px) rotate(0.2deg);
+  }
+}
+
+@keyframes liquidRipple {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05) rotate(180deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+@keyframes glassFloat {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-3px) translateX(2px);
+  }
+  50% {
+    transform: translateY(-1px) translateX(-1px);
+  }
+  75% {
+    transform: translateY(-2px) translateX(3px);
+  }
+}
+
+@keyframes liquidBorder {
+  0% {
+    border-radius: 30px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  }
+  25% {
+    border-radius: 32px 28px 33px 29px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  }
+  50% {
+    border-radius: 29px 31px 28px 32px;
+    background: linear-gradient(225deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.04));
+  }
+  75% {
+    border-radius: 31px 29px 30px 33px;
+    background: linear-gradient(315deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.02));
+  }
+  100% {
+    border-radius: 30px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-wrapper {
+    padding: 15px;
+  }
+  
+  .auth-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .auth-header .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .auth-card {
+    padding: 30px 25px;
+    border-radius: 25px;
+  }
+  
+  .auth-card-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .input-field {
+    padding: 12px 16px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  .auth-submit,
+  .guest-button {
+    padding: 14px 24px;
+    font-size: 1rem;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .auth-card {
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+  
+  .auth-card-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .input-field {
+    padding: 12px 14px;
+  }
+  
+  .auth-submit,
+  .guest-button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    height: 48px;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .auth-header h1 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

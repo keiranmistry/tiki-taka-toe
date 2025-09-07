@@ -1,7 +1,14 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import './App.css';
+import Auth from './components/Auth';
+import UserStats from './components/UserStats';
 
 function App() {
+  // Authentication state
+  const [user, setUser] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [showStats, setShowStats] = useState(false);
+
   // Game state
   const [clubs, setClubs] = useState([]);
   const [countries, setCountries] = useState([]);
@@ -31,9 +38,8 @@ function App() {
   
   // Modal state
   const [showGiveUpConfirm, setShowGiveUpConfirm] = useState(false);
-  const [showStats, setShowStats] = useState(false);
   
-  // Stats tracking
+  // Stats tracking (local fallback)
   const [stats, setStats] = useState({
     totalGames: 0,
     completedGames: 0,
@@ -46,6 +52,11 @@ function App() {
     bestStreak: 0
   });
 
+  // Check authentication on app load
+  useEffect(() => {
+    checkAuth();
+  }, []);
+
   // Load stats on component mount
   useEffect(() => {
     loadStats();
@@ -57,6 +68,60 @@ function App() {
       localStorage.setItem('tikiTakaToeStats', JSON.stringify(stats));
     }
   }, [stats]);
+
+  const checkAuth = async () => {
+    const sessionToken = localStorage.getItem('sessionToken');
+    const userData = localStorage.getItem('user');
+    
+    if (sessionToken && userData) {
+      try {
+        // Verify the session is still valid
+        const response = await fetch('http://localhost:5001/auth/profile', {
+          headers: {
+            'Authorization': `Bearer ${sessionToken}`,
+          },
+        });
+        
+        if (response.ok) {
+          setUser(JSON.parse(userData));
+        } else {
+          // Session expired, clear local storage
+          localStorage.removeItem('sessionToken');
+          localStorage.removeItem('user');
+        }
+      } catch (error) {
+        console.error('Auth check failed:', error);
+        localStorage.removeItem('sessionToken');
+        localStorage.removeItem('user');
+      }
+    }
+    
+    setIsLoading(false);
+  };
+
+  const handleLogin = (data) => {
+    setUser(data.user);
+    setIsLoading(false);
+  };
+
+  const handleGuest = () => {
+    setUser({ id: null, username: 'Guest', isGuest: true });
+    setIsLoading(false);
+  };
+
+  const handleLogout = () => {
+    setUser(null);
+    setShowStats(false);
+    // Reset game state
+    setClubs([]);
+    setCountries([]);
+    setGuesses({});
+    setGameId(null);
+    setGameCompleted(false);
+    setScore(0);
+    setSelectedCell(null);
+    setMessage('');
+  };
 
   // Function to convert country names to flag emojis
   const getCountryFlag = (countryName) => {
@@ -367,10 +432,12 @@ function App() {
     }
   }, [difficulty]);
 
-  // Generate initial game
+  // Generate initial game when user is authenticated
   useEffect(() => {
-    generateNewGame('easy');
-  }, [generateNewGame]);
+    if (user && !isLoading) {
+      generateNewGame('easy');
+    }
+  }, [user, isLoading, generateNewGame]);
 
   const handleCellClick = (club, country) => {
     if (!gameId) return;
@@ -413,17 +480,24 @@ function App() {
 
     setLoading(true);
     try {
+      const requestBody = {
+        club: clubInput,
+        country: countryInput,
+        player: playerInput,
+        game_id: gameId
+      };
+
+      // Add user_id if user is authenticated and not a guest
+      if (user && !user.isGuest) {
+        requestBody.user_id = user.id;
+      }
+
       const response = await fetch("http://127.0.0.1:5001/submit-guess", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-          club: clubInput,
-          country: countryInput,
-          player: playerInput,
-          game_id: gameId
-        })
+        body: JSON.stringify(requestBody)
       });
       
       const data = await response.json();
@@ -682,29 +756,71 @@ function App() {
     }
   };
 
-  // Function to reset stats
-  const resetStats = () => {
-    const defaultStats = {
-      totalGames: 0,
-      completedGames: 0,
-      totalScore: 0,
-      averageScore: 0,
-      bestScore: 0,
-      gamesByDifficulty: { easy: 0, medium: 0, hard: 0 },
-      totalHintsUsed: 0,
-      currentStreak: 0,
-      bestStreak: 0
-    };
-    setStats(defaultStats);
-    localStorage.setItem('tikiTakaToeStats', JSON.stringify(defaultStats));
-  };
 
+  // Show loading screen while checking authentication
+  if (isLoading) {
+    return (
+      <div className="app">
+        <div className="loading-screen">
+          <div className="loading-spinner"></div>
+          <p>Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Show authentication screen if not logged in
+  if (!user) {
+    return <Auth onLogin={handleLogin} onGuest={handleGuest} />;
+  }
+
+  // Show stats screen if user wants to view stats
+  if (showStats) {
+    return (
+      <div className="app">
+        <UserStats user={user} onLogout={handleLogout} />
+        <div className="stats-actions">
+          <button 
+            onClick={() => setShowStats(false)} 
+            className="btn btn-primary"
+          >
+            Back to Game
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // Show main game interface for authenticated users
   return (
     <div className="app">
       <div className="container">
         <header className="header">
           <h1>⚽ Soccer Tiki Taka Toe</h1>
           <p className="subtitle">Tic-Tac-Toe with a soccer-themed twist</p>
+          
+          {/* User info and controls */}
+          <div className="user-controls">
+            <div className="user-info">
+              <span>Welcome, {user.username}! {user.isGuest && '(Guest)'}</span>
+            </div>
+            <div className="header-buttons">
+              {!user.isGuest && (
+                <button 
+                  onClick={() => setShowStats(true)} 
+                  className="btn btn-info"
+                >
+                  📊 My Stats
+                </button>
+              )}
+              <button 
+                onClick={handleLogout} 
+                className="btn btn-secondary"
+              >
+                {user.isGuest ? 'Sign In' : 'Logout'}
+              </button>
+            </div>
+          </div>
           
           {/* Quick Stats Preview */}
           {stats.totalGames > 0 && (
@@ -755,12 +871,6 @@ function App() {
             {loading ? 'Giving Up...' : '🏳️ Give Up'}
           </button>
           
-          <button 
-            onClick={() => setShowStats(true)} 
-            className="btn btn-info"
-          >
-            📊 Stats
-          </button>
         </div>
 
         {/* Give Up Confirmation Modal */}
@@ -777,70 +887,6 @@ function App() {
           </div>
         )}
 
-        {/* Stats Modal */}
-        {showStats && (
-          <div className="modal-overlay">
-            <div className="modal-content stats-modal">
-              <h3>📊 Your Game Statistics</h3>
-              
-              <div className="stats-grid">
-                <div className="stat-card">
-                  <div className="stat-number">{stats.totalGames}</div>
-                  <div className="stat-label">🎮 Total Games</div>
-                </div>
-                
-                <div className="stat-card">
-                  <div className="stat-number">{stats.completedGames}</div>
-                  <div className="stat-label">🏆 Completed</div>
-                </div>
-                
-                <div className="stat-card">
-                  <div className="stat-number">{stats.totalScore}</div>
-                  <div className="stat-label">💯 Total Score</div>
-                </div>
-                
-                <div className="stat-card">
-                  <div className="stat-number">{stats.averageScore}</div>
-                  <div className="stat-label">📊 Avg Score</div>
-                </div>
-                
-                <div className="stat-card">
-                  <div className="stat-number">{stats.bestScore}</div>
-                  <div className="stat-label">👑 Best Score</div>
-                </div>
-                
-                <div className="stat-card">
-                  <div className="stat-number">{stats.currentStreak}</div>
-                  <div className="stat-label">🔥 Current Streak</div>
-                </div>
-                
-                <div className="stat-card">
-                  <div className="stat-number">{stats.bestStreak}</div>
-                  <div className="stat-label">🚀 Best Streak</div>
-                </div>
-                
-                <div className="stat-card">
-                  <div className="stat-number">{stats.totalHintsUsed}</div>
-                  <div className="stat-label">💡 Hints Used</div>
-                </div>
-              </div>
-              
-              <div className="difficulty-breakdown">
-                <h4>Games by Difficulty:</h4>
-                <div className="difficulty-stats">
-                  <span>Easy: {stats.gamesByDifficulty.easy}</span>
-                  <span>Medium: {stats.gamesByDifficulty.medium}</span>
-                  <span>Hard: {stats.gamesByDifficulty.hard}</span>
-                </div>
-              </div>
-              
-              <div className="modal-buttons">
-                <button onClick={resetStats} className="btn btn-danger">Reset Stats</button>
-                <button onClick={() => setShowStats(false)} className="btn btn-secondary">Close</button>
-              </div>
-            </div>
-          </div>
-        )}
 
         {loading && <div className="loading">Loading...</div>}
 
@@ -997,16 +1043,78 @@ function App() {
           </div>
         )}
 
-        <div className="game-info">
-          <h3>Game Rules:</h3>
-          <ul>
-            <li><strong>Click any empty square</strong> to select the club and country</li>
-            <li>Enter a player name who has played for that club AND is from that country</li>
-            <li>You can use full names or last names</li>
-            <li>Get hints if you're stuck (1st hint: -1 point, 2nd hint: -2 points, etc.)</li>
-            <li>Complete all 9 cells to win!</li>
-            <li><strong>Scoring:</strong> Easy: 20pts, Medium: 50pts, Hard: 100pts per correct answer</li>
-          </ul>
+        <div className="game-rules">
+          <div className="rules-header">
+            <h2>🎮 Game Rules</h2>
+            <p className="rules-subtitle">Master the beautiful game of football knowledge</p>
+          </div>
+          
+          <div className="rules-content">
+            <div className="rules-section">
+              <div className="rule-card">
+                <div className="rule-icon">🎯</div>
+                <div className="rule-content">
+                  <h4>Select & Play</h4>
+                  <p>Click any empty square to select the club and country combination</p>
+                </div>
+              </div>
+              
+              <div className="rule-card">
+                <div className="rule-icon">⚽</div>
+                <div className="rule-content">
+                  <h4>Name the Player</h4>
+                  <p>Enter a player who has played for that club AND is from that country</p>
+                </div>
+              </div>
+              
+              <div className="rule-card">
+                <div className="rule-icon">📝</div>
+                <div className="rule-content">
+                  <h4>Flexible Naming</h4>
+                  <p>Use full names or just last names - whatever works!</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="rules-section">
+              <div className="rule-card">
+                <div className="rule-icon">💡</div>
+                <div className="rule-content">
+                  <h4>Get Help</h4>
+                  <p>Use hints when stuck (1st hint: -1 point, 2nd hint: -2 points, etc.)</p>
+                </div>
+              </div>
+              
+              <div className="rule-card">
+                <div className="rule-icon">🏆</div>
+                <div className="rule-content">
+                  <h4>Complete to Win</h4>
+                  <p>Fill all 9 cells to achieve victory!</p>
+                </div>
+              </div>
+              
+              <div className="rule-card scoring-card">
+                <div className="rule-icon">💯</div>
+                <div className="rule-content">
+                  <h4>Scoring System</h4>
+                  <div className="scoring-details">
+                    <div className="score-item">
+                      <span className="difficulty easy">Easy</span>
+                      <span className="points">20pts</span>
+                    </div>
+                    <div className="score-item">
+                      <span className="difficulty medium">Medium</span>
+                      <span className="points">50pts</span>
+                    </div>
+                    <div className="score-item">
+                      <span className="difficulty hard">Hard</span>
+                      <span className="points">100pts</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
