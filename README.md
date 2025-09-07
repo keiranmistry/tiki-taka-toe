@@ -1,100 +1,145 @@
 # ⚽ Tiki Taka Toe
 
-A fun soccer-themed puzzle game where you fill a 3x3 grid with players who match the club and country combinations!
+A beautiful, modern soccer-themed puzzle game where you fill a 3x3 grid with players who match the club and country combinations! Featuring stunning liquid glass UI design, user authentication, statistics tracking, and both guest and registered play modes.
+
+![Game Preview](https://img.shields.io/badge/Status-Live%20Demo-brightgreen) ![React](https://img.shields.io/badge/React-18.0-blue) ![Flask](https://img.shields.io/badge/Flask-3.1-green) ![Python](https://img.shields.io/badge/Python-3.11-yellow)
 
 ## 🎮 How to Play
 
-1. **Choose Difficulty**: Easy, Medium, or Hard
-2. **Fill the Grid**: Each cell needs a player who has played for the club AND is from the country
-3. **Make Guesses**: Enter club, country, and player name
-4. **Get Hints**: Use hints if you're stuck (costs 2 points)
-5. **Complete the Grid**: Fill all 9 cells to win!
+### 🎯 **Core Gameplay**
+1. **Choose Difficulty**: Easy (20pts), Medium (50pts), or Hard (100pts) per correct answer
+2. **Select a Cell**: Click any empty square to choose a club-country combination
+3. **Name the Player**: Enter a player who has played for that club AND is from that country
+4. **Get Help**: Use hints when stuck (1st hint: -1 point, 2nd hint: -2 points, etc.)
+5. **Complete the Grid**: Fill all 9 cells to achieve victory!
 
 ## ✨ Features
 
-### 🎯 **Game Modes**
-- **Easy**: Well-known clubs and countries
-- **Medium**: Popular clubs with good international presence  
-- **Hard**: Smaller clubs and less common countries
+### 🔐 **Authentication System**
+- **Guest Mode**: Play immediately without registration
+- **User Accounts**: Create account with username and password (email optional)
+- **Secure Login**: Industry-standard bcrypt password hashing
+- **Session Management**: Persistent login across browser sessions
+- **User Statistics**: Track your performance and progress
 
-### 🏆 **Scoring System**
-- **Correct Guess**: +10 points
-- **Hint Used**: -2 points
-- **Goal**: Complete the grid with the highest score!
+### 📊 **Statistics & Progress Tracking**
+- **Game Statistics**: Total games, completed games, total score, average score
+- **Performance by Difficulty**: See how you perform on Easy, Medium, and Hard
+- **Recent Games**: View your last 10 games with detailed breakdowns
+- **Success Rates**: Track completion rates and improvement over time
+- **Local Stats**: Guest players get local statistics that persist in browser
+
+### 🎯 **Game Modes & Difficulty**
+- **Easy Mode**: Well-known clubs and countries (20 points per correct answer)
+- **Medium Mode**: Popular clubs with good international presence (50 points)
+- **Hard Mode**: Smaller clubs and less common countries (100 points)
+- **Smart Grid Generation**: Ensures all combinations have valid players
+- **Hint System**: Get help when stuck with point penalties
 
 ### 💡 **Smart Features**
-- **Hints System**: Get help when stuck
-- **Player Images**: See actual player photos when correct
-- **Game State**: Track progress and resume games
-- **Validation**: Ensures all grid combinations are valid
-- **Responsive Design**: Works on all devices
+- **Player Validation**: Real-time checking against 50,000+ professional players
+- **Hint System**: Contextual help with increasing point costs
+- **Game State Management**: Resume games across sessions
+- **Error Handling**: Clear feedback for invalid guesses
+- **Progress Tracking**: Visual indicators of completion status
 
-### 🔧 **Technical Improvements**
-- **Better Grid Generation**: Ensures all combinations have valid players
-- **Game State Management**: Track multiple games simultaneously
-- **Error Handling**: Better user feedback and validation
-- **Performance**: Optimized data loading and processing
+### 🎨 **UI/UX Design**
+- **Liquid Glass Design**: Modern glassmorphism with depth and transparency
+- **Smooth Animations**: Subtle entrance effects and hover states
+- **Color-coded Feedback**: Success (green), error (red), info (blue) states
+- **Responsive Design**: Optimized for all screen sizes
+- **Accessibility**: Keyboard navigation and screen reader support
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Python 3.8+
-- Node.js 14+
-- npm or yarn
+- **Python 3.8+** (recommended: Python 3.11)
+- **Node.js 14+** (recommended: Node.js 18+)
+- **npm or yarn** package manager
 
-### Backend Setup
+### Backend Setup (Flask API)
 ```bash
+# Navigate to backend directory
 cd backend
+
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Activate virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Initialize database
+python init_db.py
+
+# Start the Flask server
 python app.py
 ```
 
-### Frontend Setup
+### Frontend Setup (React App)
 ```bash
+# Navigate to frontend directory
 cd frontend
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm start
 ```
 
 ### Access the Game
 - **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:5000
+- **Backend API**: http://localhost:5001
+- **Database**: SQLite (development) or PostgreSQL/MySQL (production)
 
 ## 🏗️ Architecture
 
-### Backend (Flask)
-- **Grid Generation**: Smart algorithm ensuring valid combinations
-- **Player Validation**: Check guesses against real player data
-- **Game State**: Track multiple active games
-- **Hints System**: Provide helpful suggestions
-- **API Endpoints**: RESTful API for game operations
+### Backend (Flask + SQLAlchemy)
+- **Authentication**: Secure user registration, login, and session management
+- **Database Models**: User, GameStats, UserSession with proper relationships
+- **Game Logic**: Smart grid generation and player validation
+- **API Endpoints**: RESTful API for all game operations
+- **Security**: bcrypt password hashing and session tokens
+- **Statistics**: Comprehensive user performance tracking
 
-### Frontend (React)
-- **Modern UI**: Beautiful, responsive design
-- **State Management**: React hooks for game logic
-- **Real-time Updates**: Live score and progress tracking
-- **Mobile First**: Optimized for all screen sizes
+### Frontend (React + Modern CSS)
+- **Component Architecture**: Modular, reusable React components
+- **State Management**: React hooks for game and user state
+- **Authentication Flow**: Seamless login/logout and guest mode
+- **Responsive Design**: Mobile-first approach with breakpoints
+- **Performance**: Optimized rendering and minimal re-renders
+
+### Database Schema
+```sql
+Users: id, username, email, password_hash, created_at, last_login
+GameStats: id, user_id, game_id, difficulty, score, hints_used, time_taken, completed, played_at
+UserSessions: id, user_id, token, created_at, expires_at
+```
 
 ## 📊 Game Data
 
-The game uses real soccer data including:
-- **Players**: 50,000+ professional players
-- **Clubs**: 200+ clubs across multiple leagues
-- **Countries**: 100+ countries represented
-- **Valid Combinations**: Pre-validated club-country pairs
-
-## 🎨 UI/UX Features
-
-- **Gradient Backgrounds**: Modern, attractive design
-- **Smooth Animations**: Fade-in effects and hover states
-- **Responsive Grid**: Adapts to different screen sizes
-- **Color-coded Messages**: Success, error, and info states
-- **Interactive Elements**: Hover effects and focus states
+The game uses comprehensive real soccer data:
+- **Players**: 50,000+ professional players from major leagues
+- **Clubs**: 200+ clubs across Premier League, La Liga, Serie A, Bundesliga, and more
+- **Countries**: 100+ countries with international representation
+- **Valid Combinations**: Pre-validated club-country pairs ensuring solvability
+- **Player Images**: High-quality photos for visual feedback
 
 ## 🔄 API Endpoints
 
+### Authentication
+- `POST /auth/register` - Register new user
+- `POST /auth/login` - User login
+- `POST /auth/logout` - User logout
+- `GET /auth/stats` - Get user statistics
+
+### Game Operations
 - `GET /generate-grid` - Generate new game grid
 - `POST /submit-guess` - Submit player guess
 - `GET /game-state/<id>` - Get current game state
@@ -102,33 +147,30 @@ The game uses real soccer data including:
 - `GET /reset-game/<id>` - Reset game
 - `GET /player-image/<id>` - Get player image
 
-## 🚧 Future Enhancements
+## 🎨 Design System
 
-- [ ] **Multiplayer Mode**: Play with friends
-- [ ] **Leaderboards**: Global and local rankings
-- [ ] **Achievements**: Unlock badges and rewards
-- [ ] **Custom Grids**: User-created challenges
-- [ ] **Statistics**: Track performance over time
-- [ ] **Offline Mode**: Play without internet
+### Liquid Glass Aesthetics
+- **Glassmorphism**: Translucent backgrounds with blur effects
+- **Depth Layers**: Multiple z-index layers for visual hierarchy
+- **Subtle Animations**: Smooth transitions without distraction
+- **Color Palette**: Professional blues and whites with accent colors
+- **Typography**: Champions font for headers, clean sans-serif for body
 
-## 🤝 Contributing
+### Responsive Breakpoints
+- **Mobile**: 320px - 768px (single column, stacked layout)
+- **Tablet**: 768px - 1024px (two column grid)
+- **Desktop**: 1024px+ (full three column layout)
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+## 🔒 Security Features
+
+- **Password Security**: bcrypt hashing with salt
+- **Session Management**: Secure token-based authentication
+- **Input Validation**: Server-side validation for all inputs
+- **CORS Protection**: Proper cross-origin request handling
+- **SQL Injection Prevention**: SQLAlchemy ORM protection
+- **XSS Protection**: Input sanitization and output encoding
+
 
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- Soccer data from Transfermarkt
-- Player images from official sources
-- Community feedback and suggestions
-
----
-
-**Enjoy playing Tiki Taka Toe! ⚽🎯**
