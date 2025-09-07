@@ -4,6 +4,12 @@ A beautiful, modern soccer-themed puzzle game where you fill a 3x3 grid with pla
 
 ![Game Preview](https://img.shields.io/badge/Status-Live%20Demo-brightgreen) ![React](https://img.shields.io/badge/React-18.0-blue) ![Flask](https://img.shields.io/badge/Flask-3.1-green) ![Python](https://img.shields.io/badge/Python-3.11-yellow)
 
+## 🌐 Live Demo
+
+**🎮 [Play Tiki Taka Toe Now!](https://tiki-taka-toe-kappa.vercel.app/)**
+
+*Deployed with Vercel (Frontend) and Render (Backend)*
+
 ## 🎮 How to Play
 
 ### 🎯 **Core Gameplay**
@@ -94,9 +100,11 @@ npm start
 ```
 
 ### Access the Game
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:5001
-- **Database**: SQLite (development) or PostgreSQL/MySQL (production)
+- **🌐 Live Demo**: [https://tiki-taka-toe-kappa.vercel.app/](https://tiki-taka-toe-kappa.vercel.app/)
+- **Local Development**:
+  - **Frontend**: http://localhost:3000
+  - **Backend API**: http://localhost:5001
+  - **Database**: SQLite (development) or PostgreSQL/MySQL (production)
 
 ## 🏗️ Architecture
 
