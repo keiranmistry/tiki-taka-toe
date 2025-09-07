@@ -50,6 +50,24 @@ active_games = {}
 def home():
     return "Backend is working!"
 
+# === Health check endpoint ===
+@app.route("/health")
+def health():
+    try:
+        # Test database connection
+        db.session.execute("SELECT 1")
+        return jsonify({
+            "status": "healthy",
+            "database": "connected",
+            "message": "Backend is working properly"
+        })
+    except Exception as e:
+        return jsonify({
+            "status": "unhealthy",
+            "database": "disconnected",
+            "error": str(e)
+        }), 500
+
 # === Authentication endpoints ===
 @app.route("/auth/register", methods=["POST"])
 def register():
@@ -596,6 +614,14 @@ def give_up(game_id):
         "answers": answers,
         "message": "All answers revealed"
     })
+
+# === Initialize database tables ===
+with app.app_context():
+    try:
+        db.create_all()
+        print("Database tables created successfully")
+    except Exception as e:
+        print(f"Error creating database tables: {e}")
 
 # === Run server ===
 if __name__ == "__main__":
