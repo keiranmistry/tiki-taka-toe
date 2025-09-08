@@ -1,3 +1,17 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+env.bak/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+
 # Database
 backend/instance/
 *.db
