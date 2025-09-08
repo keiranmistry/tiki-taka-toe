@@ -14,3 +14,7 @@ blinker==1.9.0
 bcrypt==4.1.2
 gunicorn==23.0.0
 
+# Optional but recommended for production Postgres and env loading
+psycopg2-binary==2.9.10
+python-dotenv==1.0.1
+

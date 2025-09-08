@@ -8,6 +8,7 @@ except ImportError:
 import pandas as pd
 import random
 import os
+from dotenv import load_dotenv
 from datetime import datetime
 from data.valid_pairs import VALID_PAIRS
 from difficulty import easy_clubs, medium_clubs, hard_clubs, easy_countries, medium_countries, hard_countries
@@ -17,6 +18,7 @@ from auth import require_auth, register_user, authenticate_user, logout_user, ge
 import requests
 from io import BytesIO
 from typing import Dict, List, Optional, Tuple, Any
+from sqlalchemy import text
 
 def create_app():
     """Application factory function"""
@@ -24,7 +26,15 @@ def create_app():
     
     # Configuration
     app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///tiki_taka_toe.db')
+    # Load environment variables from a .env file if present (local dev convenience)
+    load_dotenv()
+
+    # Database URL with sensible default for local dev
+    database_url = os.environ.get('DATABASE_URL', 'sqlite:///tiki_taka_toe.db')
+    # Normalize old postgres URLs if present (Railway/Heroku style)
+    if database_url.startswith('postgres://'):
+        database_url = database_url.replace('postgres://', 'postgresql+psycopg2://', 1)
+    app.config['SQLALCHEMY_DATABASE_URI'] = database_url
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
     # Initialize extensions
@@ -55,7 +65,7 @@ def home():
 def health():
     try:
         # Test database connection
-        db.session.execute("SELECT 1")
+        db.session.execute(text('SELECT 1'))
         return jsonify({
             "status": "healthy",
             "database": "connected",
